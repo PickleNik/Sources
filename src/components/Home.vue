@@ -1,5 +1,5 @@
 <template>
-  <main>
+  <main class="secondary">
 
 <!--HERO-->
 <div id="hero">

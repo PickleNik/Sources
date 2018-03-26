@@ -87,6 +87,18 @@ export default {
           logo:'https://cdn-images-1.medium.com/max/1200/1*QNimSWsBQxta_xt3XksQaw.png'
         },
         {
+          name:'Py',
+          title:'Advance your career.Learn in-demand skills with free interactive courses.',
+          link:'https://www.getpy.com/',
+          logo:'https://lh3.googleusercontent.com/QJn_8hG4PzDQ1JIiTrRkulyNUk3oMstwjCANkGnur8Xb8W8Em_yKoI6-IU2FYujofQ=w300'
+        },
+        {
+          name:'Mimo',
+          title:'Mimo is an app that teaches computer science in a fun and interactive way',
+          link:'https://getmimo.com/',
+          logo:'https://cdn-images-1.medium.com/max/1200/1*-jl0bB0xBBCypqT07hoPwA.png'
+        },
+        {
           name:'Khanacademy',
           title:'You can learn anything.For free. For everyone. Forever.',
           link:'https://www.khanacademy.org',
