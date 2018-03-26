@@ -111,6 +111,12 @@ export default {
           logo:'https://store-images.s-microsoft.com/image/apps.30495.13510798887792718.c58f517f-a070-448d-9f42-44c93b19dcae.05c3b4ed-79d8-4d84-be6d-7d3290f1533e?w=180&h=180&q=60'
         },
         {
+          name:'LinkedIn Learning',
+          title:'A revolution in learning. The evolution of you. Learn the most in-demand business, tech and creative skills from industry experts -- free for one month.',
+          link:'https://www.linkedin.com/learning/',
+          logo:'https://lh3.googleusercontent.com/WGnfuvo95Yporu_v1zBaDDpt5RLYh_eM1YMMu56pos4V81Ae2djhMfTPtAI50DhLglT4=w300'
+        },
+        {
           name:'CodeCademy',
           title:'Whether you\'re writing your first line of code or transforming your career, start with us and get the technical skills you need to skill up and stand out.',
           link:'https://www.codecademy.com/',

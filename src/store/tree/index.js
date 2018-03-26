@@ -81,6 +81,14 @@ export default {
             shared: false,
             link: 'https://www.codecademy.com/learn/learn-html',
             logo: 'https://cdn-images-1.medium.com/max/2000/1*eAkVW2LFAd9pKdL-8hBQ1A.png',
+            icon: 'attach_money' },
+
+          { name: 'in Learning',
+            todo: false,
+            starred: false,
+            shared: false,
+            link: 'https://www.linkedin.com/learning/topics/html',
+            logo: 'https://lh3.googleusercontent.com/WGnfuvo95Yporu_v1zBaDDpt5RLYh_eM1YMMu56pos4V81Ae2djhMfTPtAI50DhLglT4=w300',
             icon: 'attach_money' }
           ]
       },
@@ -164,6 +172,14 @@ export default {
             shared: false,
             link: 'https://teamtreehouse.com/learn/css?utm_source=google&cid=1352&utm_source=google&campaign=791365357&utm_term=&cid=1352&gclid=Cj0KCQiA2Y_UBRCGARIsALglqQ1V2_6236fYn3EADbp31WZ7M3XfT3rUIHZXnJJilsuq6vvj8-_DFbgaAkJHEALw_wcB&gclsrc=aw.ds',
             logo: 'https://davidwalsh.name/demo/treehouse-logo.png',
+            icon: 'attach_money' },
+
+          { name: 'in Learning',
+            todo: false,
+            starred: false,
+            shared: false,
+            link: 'https://www.linkedin.com/learning/topics/css',
+            logo: 'https://lh3.googleusercontent.com/WGnfuvo95Yporu_v1zBaDDpt5RLYh_eM1YMMu56pos4V81Ae2djhMfTPtAI50DhLglT4=w300',
             icon: 'attach_money' }
           ]
       },
@@ -240,6 +256,14 @@ export default {
             shared: false,
             link: 'https://teamtreehouse.com/learn/javascript?utm_source=google&cid=1352&utm_source=google&campaign=791365357&utm_term=&cid=1352&gclid=Cj0KCQiA2Y_UBRCGARIsALglqQ1V2_6236fYn3EADbp31WZ7M3XfT3rUIHZXnJJilsuq6vvj8-_DFbgaAkJHEALw_wcB&gclsrc=aw.ds',
             logo: 'https://davidwalsh.name/demo/treehouse-logo.png',
+            icon: 'attach_money' },
+
+          { name: 'in Learning',
+            todo: false,
+            starred: false,
+            shared: false,
+            link: 'https://www.linkedin.com/learning/topics/javascript',
+            logo: 'https://lh3.googleusercontent.com/WGnfuvo95Yporu_v1zBaDDpt5RLYh_eM1YMMu56pos4V81Ae2djhMfTPtAI50DhLglT4=w300',
             icon: 'attach_money' }
         ]
       },
@@ -259,7 +283,15 @@ export default {
             shared: false,
             link: 'https://www.sololearn.com/Course/jQuery/',
             logo: 'https://lh3.googleusercontent.com/ETvE8qpSRnKBb7QMEkctSfC8r3CjGmMy00PtV3qq0YLUVl1PtKjTVpGXCP8cO9xnGw=w300',
-            icon: 'devices' }
+            icon: 'devices' },
+
+          { name: 'in Learning',
+            todo: false,
+            starred: false,
+            shared: false,
+            link: 'https://www.linkedin.com/learning/topics/jquery',
+            logo: 'https://lh3.googleusercontent.com/WGnfuvo95Yporu_v1zBaDDpt5RLYh_eM1YMMu56pos4V81Ae2djhMfTPtAI50DhLglT4=w300',
+            icon: 'attach_money' }
         ]  },
       { name: 'Sass',
         ripple: 'pink--text',
