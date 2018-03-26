@@ -1,27 +1,26 @@
 <template lang="html">
-<main class="secondary">
-  <v-container>
-    <v-layout row wrap>
-      <vue-particles class="pnfparticles centerABS"
-      color="#eee"
-      :particleOpacity=".1"
-      :particlesNumber="22"
-      shapeType="edge"
-      :particleSize="22"
-      :lineLinked="false"
-      :moveSpeed="1"
-      :hoverEffect="true"
-      hoverMode="repulse"
-      :clickEffect="false"
-      >
-    </vue-particles>
+  <main class="secondary">
+    <v-container>
+      <v-layout row wrap>
+        <vue-particles class="pnfparticles centerABS"
+        color="#eee"
+        :particleOpacity=".1"
+        :particlesNumber="22"
+        shapeType="edge"
+        :particleSize="22"
+        :lineLinked="false"
+        :moveSpeed="1"
+        :hoverEffect="true"
+        hoverMode="repulse"
+        :clickEffect="false"
+        ></vue-particles>
         <v-flex xs12 sm12 class="text-sm-center text-xs-center">
           <h1 class="primary--text"style="font-size:4em;">Error 404</h1>
           <p class="primary--text typed" style="font-size:2em;"><span id="areyoulostbot" class="white--text"></span></p>
         </v-flex>
-    </v-layout>
-  </v-container>
-</main>
+      </v-layout>
+    </v-container>
+  </main>
 </template>
 
 <script>
@@ -38,8 +37,7 @@ export default {
       'Congratulations! You found it',
       'It\'s time to leave',
       'Do you see buttons up there?',
-      'Click one, let\'s see what happens',
-      'What are you waiting for',
+      'What are you waiting for?',
       'Do you think there will be an award at the end?',
       'There\'s no end',
       'I can stay here for hours',

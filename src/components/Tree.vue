@@ -12,7 +12,7 @@
                 </h1>
                 <span>Click to read about Basics</span>
               </v-tooltip>
-              <h3 style="text-align:center;" class="white--text words">HTML, CSS and JavaScript will open you doors to the Web Development.</h3>
+              <h3 style="text-align:center;" class="white--text words">HTML, CSS and JavaScript will to you the world of Web Development.</h3>
               <hr class="grey ma-2"/>
             </v-flex>
             <v-flex xs12 sm12>
