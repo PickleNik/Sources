@@ -169,6 +169,39 @@
             </v-flex>
           </div>
 
+          <div id="graphics" class="mb-5 mt-5 roundXXL pt-5 pb-5 elevation-22 grey darken-4">
+            <v-flex xs8 offset-xs2 sm8 offset-sm2 class="pb-3">
+              <v-tooltip top>
+                <h1 slot="activator" class="link link--yaku ma-2 text-sm-center text-xs-center">
+                  <span>G</span><span>r</span><span>a</span><span>p</span><span>h</span><span>i</span><span>c</span><span>s</span>
+                </h1>
+                <span>Click to read about Graphics</span>
+              </v-tooltip>
+              <h3 style="text-align:center;" class="white--text words">Put your projects on the web.</h3>
+              <hr class="grey ma-2"/>
+            </v-flex>
+            <v-flex xs12 sm12>
+              <v-container class="pa-0">
+                <v-layout row wrap>
+                  <v-flex class="text-sm-center text-xs-center">
+                      <div v-for="leaf in leafsGraphics"
+                      v-ripple="{ class: leaf.ripple }" @click="openLeaf(leaf.to)"
+                      id="leaf" class="hidden-xs-only mb-5 mr-3 ml-3 text-sm-center text-xs-center d-inline-block">
+                        <img id="leafLogo" class="round" :src="leaf.logo" />
+                        <h3 class="white--text mt-1" style="text-shadow: 1px 1px .1em #555;">{{ leaf.name }}</h3>
+                      </div>
+                      <div v-for="leaf in leafsGraphics"
+                      v-ripple="{ class: leaf.ripple }" @click="openLeaf(leaf.to)"
+                      id="leaf" class="hidden-sm-and-up mb-5 mr-0 ml-0 text-sm-center text-xs-center d-inline-block">
+                        <img id="leafLogo" class="round" :src="leaf.logo" />
+                        <h3 class="white--text mt-1" style="text-shadow: 1px 1px .1em #555;">{{ leaf.name }}</h3>
+                      </div>
+                  </v-flex>
+                </v-layout>
+              </v-container>
+            </v-flex>
+          </div>
+
           <div id="hosting" class="mb-5 mt-5 roundXXL pt-5 pb-5 elevation-22 grey darken-4">
             <v-flex xs8 offset-xs2 sm8 offset-sm2 class="pb-3">
               <v-tooltip top>
@@ -326,10 +359,12 @@ export default {
         { name: 'Backend', href: '#backend', offset: -33, icon: 'storage' },
         { name: 'Frameworks', href: '#frameworks', offset: -33, icon: 'settings' },
         { name: 'Libraries', href: '#libraries', offset: -33, icon: 'color_lens' },
+        { name: 'Graphics', href: '#graphics', offset: -33, icon: 'format_paint' },
         { name: 'Hosting', href: '#hosting', offset: -33, icon: 'router' },
         { name: 'Apps', href: '#mobile', offset: -33, icon: 'developer_mode' },
         { name: 'Tools', href: '#tools', offset: -33, icon: 'build' },
-        { name: 'Plan', to: '', icon: 'trending_up', offset: -33, posticon: 'keyboard_arrow_right' }
+        { name: 'Communities', href: '#communities', offset: -33, icon: 'group' },
+        { name: 'You', to: '', icon: 'person', offset: -33, posticon: 'keyboard_arrow_right' }
       ],
       frameworks: [
         { title: 'Vue.js' },
@@ -365,6 +400,9 @@ export default {
     },
     leafsAngularLibs () {
       return this.$store.getters.leafsAngularLibs
+    },
+    leafsGraphics () {
+      return this.$store.getters.leafsGraphics
     },
     leafsHosting () {
       return this.$store.getters.leafsHosting

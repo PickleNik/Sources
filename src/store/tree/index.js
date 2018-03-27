@@ -519,6 +519,12 @@ export default {
       { ripple: 'red--text', logo: 'https://s3.amazonaws.com/media-p.slid.es/uploads/344767/images/2769652/g7.png', name: 'Onsen UI', to: '/onsenui' },
       { ripple: 'orange--text', logo: 'https://habrastorage.org/webt/59/f0/51/59f05155beffd369502984.png', name: 'Clarity', to: '/clarity' }
     ],
+    leafsGraphics: [
+      { ripple: 'amber--text', logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/SVG_Logo.svg/2000px-SVG_Logo.svg.png', name: 'SVG', to: '/svg' },
+      { ripple: 'orange--text', logo: 'https://library.uoregon.edu/sites/default/files/canvasicon_0.png', name: 'Canvas', to: '/canvas' },
+      { ripple: 'red--text', logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/WebGL_Logo.svg/2000px-WebGL_Logo.svg.png', name: 'WebGL', to: '/webgl' },
+      { ripple: 'white--text', logo: 'https://kenoleon.github.io/Front-End-Web-Dev-UI-UX/assets/images/threejsLogo.jpg', name: 'Three.js', to: '/threejs' }
+    ],
     leafsHosting: [
       { ripple: 'amber--text', logo: 'https://firebase.google.com/_static/images/firebase/touchicon-180.png', name: 'Firebase', to: '/firease' },
       { ripple: 'red--text', logo: 'https://cdn.worldvectorlogo.com/logos/aws-s3.svg', name: 'Amazon S3', to: '/s3' },
@@ -587,6 +593,9 @@ export default {
     },
     leafsAngularLibs (state) {
       return state.leafsAngularLibs
+    },
+    leafsGraphics (state) {
+      return state.leafsGraphics
     },
     leafsHosting (state) {
       return state.leafsHosting
