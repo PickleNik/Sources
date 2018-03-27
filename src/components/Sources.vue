@@ -117,6 +117,12 @@ export default {
           logo:'https://cdn.worldvectorlogo.com/logos/udemy-1.svg'
         },
         {
+          name:'Code School',
+          title:'Learn. Practice. Win. The interactive learning destination for aspiring and experienced developers.',
+          link:'https://www.codeschool.com/',
+          logo:'https://www.codeschool.com/assets/pages/brand/downloads/brand-mark-47100518b9ef3c7d41cb081576451d74f8ce24b4cc6f7948cb6913f84da3072d.png'
+        },
+        {
           name:'W3schools',
           title:'THE WORLD\'S LARGEST WEB DEVELOPER SITE',
           link:'https://www.w3schools.com/',
