@@ -271,7 +271,7 @@
           <div id="tools" class="mb-5 mt-5 roundXXL  pt-5 pb-5 elevation-22 grey darken-4">
             <v-flex xs8 offset-xs2 sm8 offset-sm2 class="pb-3">
               <h1 class="grey--text ma-2 text-sm-center text-xs-center words">Tools</h1>
-              <h3 style="text-align:center;" class="white--text words">Check out theese usefull things</h3>
+              <h3 style="text-align:center;" class="white--text words">Develop faster and easier.</h3>
               <hr class="grey ma-2"/>
             </v-flex>
             <v-flex xs12 sm12>
@@ -285,6 +285,34 @@
                         <h3 class="white--text mt-1" style="text-shadow: 1px 1px .1em #555;">{{ leaf.name }}</h3>
                       </a>
                       <a  :href="leaf.href" target="_blank" v-for="leaf in leafsTools"
+                      v-ripple="{ class: leaf.ripple }"
+                      id="leaf" class="hidden-sm-and-up mb-5 ml-0 mr-0 d-inline-block text-sm-center text-xs-center">
+                        <img id="leafLogo" class="round" :src="leaf.logo" />
+                        <h3 class="white--text mt-1" style="text-shadow: 1px 1px .1em #555;">{{ leaf.name }}</h3>
+                      </a>
+                  </v-flex>
+                </v-layout>
+              </v-container>
+            </v-flex>
+          </div>
+
+          <div id="communities" class="mb-5 mt-5 roundXXL  pt-5 pb-5 elevation-22 grey darken-4">
+            <v-flex xs8 offset-xs2 sm8 offset-sm2 class="pb-3">
+              <h1 class="grey--text ma-2 text-sm-center text-xs-center words">Communities</h1>
+              <h3 style="text-align:center;" class="white--text words">Check news and ask questions.</h3>
+              <hr class="grey ma-2"/>
+            </v-flex>
+            <v-flex xs12 sm12>
+              <v-container class="pa-0">
+                <v-layout row wrap>
+                  <v-flex class="text-sm-center text-xs-center">
+                      <a  :href="leaf.href" target="_blank" v-for="leaf in leafsCommunities"
+                      v-ripple="{ class: leaf.ripple }"
+                      id="leaf" class="hidden-xs-only mb-5 ml-3 mr-3 d-inline-block text-sm-center text-xs-center">
+                        <img id="leafLogo" class="round" :src="leaf.logo" />
+                        <h3 class="white--text mt-1" style="text-shadow: 1px 1px .1em #555;">{{ leaf.name }}</h3>
+                      </a>
+                      <a  :href="leaf.href" target="_blank" v-for="leaf in leafsCommunities"
                       v-ripple="{ class: leaf.ripple }"
                       id="leaf" class="hidden-sm-and-up mb-5 ml-0 mr-0 d-inline-block text-sm-center text-xs-center">
                         <img id="leafLogo" class="round" :src="leaf.logo" />
@@ -412,6 +440,9 @@ export default {
     },
     leafsTools () {
       return this.$store.getters.leafsTools
+    },
+    leafsCommunities () {
+      return this.$store.getters.leafsCommunities
     }
   }
 }

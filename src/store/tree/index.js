@@ -542,19 +542,23 @@ export default {
     leafsTools: [
       { ripple: 'orange--text', logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Circle-icons-keyboard.svg/1024px-Circle-icons-keyboard.svg.png', name: 'Typing', to: '/typing' },
       { ripple: 'green--text', logo: 'https://raw.githubusercontent.com/stvhwrd/icons/master/atom/Atom-no_shadows-512.png', name: 'Atom', to: '/html', href: 'https://atom.io/' },
-      { ripple: 'red--text', logo: 'https://d2eip9sf3oo6c2.cloudfront.net/tags/images/000/000/188/full/npmlogo.png', name: 'NPM', href: 'https://www.npmjs.com/' },
       { ripple: 'light-blue--text', logo: 'https://assets-cdn.github.com/images/modules/logos_page/Octocat.png', name: 'GitHub', to: '/github' },
+      { ripple: 'red--text', logo: 'https://d2eip9sf3oo6c2.cloudfront.net/tags/images/000/000/188/full/npmlogo.png', name: 'NPM', href: 'https://www.npmjs.com/' },
       { ripple: 'amber--text', logo: 'https://firebase.google.com/_static/images/firebase/touchicon-180.png', name: 'Firebase', to: '/firease' },
       { ripple: 'white--text', logo: 'http://blog.codepen.io/wp-content/uploads/2012/06/Button-Fill-White-Large.png', name: 'CodePen', href: 'https://codepen.io/' },
       { ripple: 'light-green--text', logo: 'http://www.karlsjohnson.com/link/resources/images/w3school.png', name: 'Tryit Editor', href: 'https://www.w3schools.com/html/tryit.asp?filename=tryhtml_basic' },
       { ripple: 'blue--text', logo: 'https://cdn.iconscout.com/public/images/icon/free/png-512/jsfiddle-logo-cloud-38db5faa6163991e-512x512.png', name: 'jsFiddle', href: 'https://jsfiddle.net/' },
       { ripple: 'white--text', logo: 'https://static.jsbin.com/images/logo.png', name: 'jsBin', href: 'https://jsbin.com/' },
-      { ripple: 'lime--text', logo: 'http://www.lukashejtmanek.cz/assets/img/symbol_transparent.png', name: 'HackerRank', href: 'https://www.hackerrank.com/dashboard' },
-      { ripple: 'black--text', logo: 'https://jeremyblaze.com/assets/img/medium-square.png', name: 'Medium', href: 'https://medium.com' },
+      { ripple: 'black--text', logo: 'https://codepen.io/juliangarnier/pen/oZNYXB/image/large.png', name: 'Animejs', href: 'http://animejs.com' },
+      { ripple: 'white--text', logo: 'http://worthyofnote.co.uk/wp-content/uploads/2013/07/animate-css.jpg', name: 'Animate.css', href: 'https://daneden.github.io/animate.css/' }
+    ],
+    leafsCommunities: [
       { ripple: 'amber--text', logo: 'https://i.stack.imgur.com/GKbCl.png', name: 'Stack Overflow', href: 'https://stackoverflow.com/' },
+      { ripple: 'black--text', logo: 'https://jeremyblaze.com/assets/img/medium-square.png', name: 'Medium', href: 'https://medium.com' },
+      { ripple: 'lime--text', logo: 'http://www.lukashejtmanek.cz/assets/img/symbol_transparent.png', name: 'HackerRank', href: 'https://www.hackerrank.com/dashboard' },
+      { ripple: 'blue--text', logo: 'http://www.stickpng.com/assets/images/5847ebc2cef1014c0b5e4857.png', name: 'Codrops', href: 'https://tympanus.net/codrops/category/tutorials/' },
       { ripple: 'white--text', logo: 'https://pbs.twimg.com/profile_images/868061114160099328/BD0P3vsp_400x400.jpg', name: 'Tutorialzine', href: 'https://tutorialzine.com/' },
-      { ripple: 'light-blue--text', logo: 'https://avatars2.githubusercontent.com/u/15895995?s=280&v=4', name: 'Coligo', href: 'https://coligo.io' },
-      { ripple: 'blue--text', logo: 'http://www.stickpng.com/assets/images/5847ebc2cef1014c0b5e4857.png', name: 'Codrops', href: 'https://tympanus.net/codrops/category/tutorials/' }
+      { ripple: 'light-blue--text', logo: 'https://avatars2.githubusercontent.com/u/15895995?s=280&v=4', name: 'Coligo', href: 'https://coligo.io' }
     ]
   },
   mutations: {},
@@ -605,6 +609,9 @@ export default {
     },
     leafsTools (state) {
       return state.leafsTools
+    },
+    leafsCommunities (state) {
+      return state.leafsCommunities
     },
     htmlAdd (state) {
       return state.leafsTools.slice(8, 10)
