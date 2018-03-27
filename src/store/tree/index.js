@@ -89,6 +89,14 @@ export default {
             shared: false,
             link: 'https://www.linkedin.com/learning/topics/html',
             logo: 'https://lh3.googleusercontent.com/WGnfuvo95Yporu_v1zBaDDpt5RLYh_eM1YMMu56pos4V81Ae2djhMfTPtAI50DhLglT4=w300',
+            icon: 'attach_money' },
+
+          { name: 'Plurasight',
+            todo: false,
+            starred: false,
+            shared: false,
+            link: 'https://www.pluralsight.com/paths/html5',
+            logo: 'https://images-na.ssl-images-amazon.com/images/I/51-Hci2bYjL.png',
             icon: 'attach_money' }
           ]
       },
@@ -180,6 +188,14 @@ export default {
             shared: false,
             link: 'https://www.linkedin.com/learning/topics/css',
             logo: 'https://lh3.googleusercontent.com/WGnfuvo95Yporu_v1zBaDDpt5RLYh_eM1YMMu56pos4V81Ae2djhMfTPtAI50DhLglT4=w300',
+            icon: 'attach_money' },
+
+          { name: 'Plurasight',
+            todo: false,
+            starred: false,
+            shared: false,
+            link: 'https://www.pluralsight.com/paths/css',
+            logo: 'https://images-na.ssl-images-amazon.com/images/I/51-Hci2bYjL.png',
             icon: 'attach_money' }
           ]
       },
@@ -264,6 +280,14 @@ export default {
             shared: false,
             link: 'https://www.linkedin.com/learning/topics/javascript',
             logo: 'https://lh3.googleusercontent.com/WGnfuvo95Yporu_v1zBaDDpt5RLYh_eM1YMMu56pos4V81Ae2djhMfTPtAI50DhLglT4=w300',
+            icon: 'attach_money' },
+
+          { name: 'Plurasight',
+            todo: false,
+            starred: false,
+            shared: false,
+            link: 'https://www.pluralsight.com/paths/javascript',
+            logo: 'https://images-na.ssl-images-amazon.com/images/I/51-Hci2bYjL.png',
             icon: 'attach_money' }
         ]
       },
@@ -277,6 +301,14 @@ export default {
         starred: false,
         shared: false,
         sources: [
+          { name: 'JQuery',
+            todo: false,
+            starred: false,
+            shared: false,
+            link: 'https://jquery.com/',
+            logo: 'https://js.foundation/wp-content/uploads/sites/33/2017/02/jquery.png',
+            icon: 'description' },
+
           { name: 'SoloLearn',
             todo: false,
             starred: false,
@@ -291,6 +323,14 @@ export default {
             shared: false,
             link: 'https://www.linkedin.com/learning/topics/jquery',
             logo: 'https://lh3.googleusercontent.com/WGnfuvo95Yporu_v1zBaDDpt5RLYh_eM1YMMu56pos4V81Ae2djhMfTPtAI50DhLglT4=w300',
+            icon: 'attach_money' },
+
+          { name: 'Plurasight',
+            todo: false,
+            starred: false,
+            shared: false,
+            link: 'https://www.pluralsight.com/paths/jquery',
+            logo: 'https://images-na.ssl-images-amazon.com/images/I/51-Hci2bYjL.png',
             icon: 'attach_money' }
         ]  },
       { name: 'Sass',

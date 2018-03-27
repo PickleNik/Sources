@@ -1,0 +1,27 @@
+[debug] [2018-03-26T17:48:18.530Z] ----------------------------------------------------------------------
+[debug] [2018-03-26T17:48:18.533Z] Command:       /usr/local/bin/node /usr/local/bin/firebase open
+[debug] [2018-03-26T17:48:18.534Z] CLI Version:   3.17.7
+[debug] [2018-03-26T17:48:18.535Z] Platform:      linux
+[debug] [2018-03-26T17:48:18.535Z] Node Version:  v9.0.0
+[debug] [2018-03-26T17:48:18.535Z] Time:          Mon Mar 26 2018 13:48:18 GMT-0400 (EDT)
+[debug] [2018-03-26T17:48:18.535Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-03-26T17:48:18.551Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase"]
+[debug] [2018-03-26T17:48:18.551Z] > authorizing via signed-in user
+[debug] [2018-03-26T17:48:18.553Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2018-03-26T17:48:18.553Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ { refresh_token: '1/sHGFF--ZlVHOoH0zs5Gqpa-iZY9NagGi6AKNYg3oA-w',
+  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  grant_type: 'refresh_token',
+  scope: 'email https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
+ Mon Mar 26 2018 13:48:18 GMT-0400 (EDT)
+[debug] [2018-03-26T17:48:18.736Z] <<< HTTP RESPONSE 200
+[debug] [2018-03-26T17:48:18.744Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/source-2fea2  
+  
+ Mon Mar 26 2018 13:48:18 GMT-0400 (EDT)
+[debug] [2018-03-26T17:48:19.022Z] <<< HTTP RESPONSE 200
+[debug] [2018-03-26T17:48:19.025Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/source-2fea2/tokens  
+  
+ Mon Mar 26 2018 13:48:19 GMT-0400 (EDT)
+[debug] [2018-03-26T17:48:19.400Z] <<< HTTP RESPONSE 200

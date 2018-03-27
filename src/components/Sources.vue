@@ -133,6 +133,12 @@ export default {
           title:'Whether you\'re writing your first line of code or transforming your career, start with us and get the technical skills you need to skill up and stand out.',
           link:'https://www.codecademy.com/',
           logo:'http://news.codecademy.com/content/images/2017/12/square-logo.001.jpeg'
+        },
+        {
+          name:'Plurasight',
+          title:'Build skills. Work smarter.',
+          link:'https://www.pluralsight.com/',
+          logo:'https://images-na.ssl-images-amazon.com/images/I/51-Hci2bYjL.png'
         }
       ]
     }
