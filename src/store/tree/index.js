@@ -492,11 +492,12 @@ export default {
       { ripple: 'teal--text', logo: 'https://jgthms.com/web-design-in-4-minutes/bulma.png', name: 'Bulma', to: '/bulma' },
       { ripple: 'teal--text', logo: 'https://cdn.worldvectorlogo.com/logos/semantic-ui.svg', name: 'Semantic UI', to: '/html' },
       { ripple: 'red--text', logo: 'https://s3.amazonaws.com/media-p.slid.es/uploads/344767/images/2769652/g7.png', name: 'Onsen UI', to: '/onsenui' },
-      { ripple: 'light-blue--text', logo: 'http://www.developersfeed.com/wp-content/uploads/2016/02/pure-css-logo-e1455594006843.png', name: 'Pure CSS', to: '/html' }
+      { ripple: 'light-blue--text', logo: 'http://www.developersfeed.com/wp-content/uploads/2016/02/pure-css-logo-e1455594006843.png', name: 'Pure CSS', to: '/pure' },
+      { ripple: 'light-blue--text', logo: 'http://element.eleme.io/1.4/static/banner-bg.75437e1.svg', name: 'Element', to: '/element' }
     ],
     leafsVueLibs: [
       { ripple: 'teal--text', logo: 'https://bootstrap-vue.js.org/_nuxt/img/icon.f0a8c9e.png', name: 'Vue+Bootstrap', to: '/html' },
-      { ripple: 'blue--text', logo: 'https://camo.githubusercontent.com/ad0317ff725729575905d03f3acb6d7b9a6324da/687474703a2f2f7675652d6d6174657269616c2d6f6c642e6e65746c6966792e636f6d2f6173736574732f6c6f676f2d7675652d6d6174657269616c2d64656661756c742e706e67', name: 'Vue-Material', to: '/vue-material' },
+      { ripple: 'light-green--text', logo: 'https://camo.githubusercontent.com/55e8a928e9fca0eeb4e7cb7836cb60dc05703c65/68747470733a2f2f7675656d6174657269616c2e696f2f6173736574732f6c6f676f2d636f6c6f722e706e67', name: 'Vue-Material', to: '/vue-material' },
       { ripple: 'blue--text', logo: 'https://next.vuetifyjs.com/static/apple-touch-icon-180x180.png', name: 'Vuetify', to: '/html' },
       { ripple: 'purple--text', logo: 'https://avatars3.githubusercontent.com/u/26799900?s=400&v=4', name: 'Buefy', to: '/buefy' },
       { ripple: 'teal--text', logo: 'https://semantic-ui-vue.github.io/static/images/logo.png', name: 'Semantic UI Vue', to: '/html' },
@@ -536,6 +537,7 @@ export default {
       { ripple: 'black-text', logo: 'https://lh3.googleusercontent.com/s4KD6rLbGKZz-q9YzfVt_FgSk_q2yt-Jp6Al-KY14hAaVW2IFX_QOj56iC8lJoamECs=w300', name: 'Ionic DevApp', href: 'https://ionicframework.com/' },
       { ripple: 'indigo--text', logo: 'https://pbs.twimg.com/profile_images/730268134460903424/8WOgriUU_400x400.jpg', name: 'Electron', href: 'https://electronjs.org/' },
       { ripple: 'blue--text', logo: 'https://d2odgkulk9w7if.cloudfront.net/images/default-source/default-album/nativescript.png?sfvrsn=69909fe_0', name: 'NativeScript', href: 'https://www.nativescript.org/' },
+      { ripple: 'teal--text', logo: 'https://avatars1.githubusercontent.com/u/32681046?s=280&v=4', name: 'NS-Vue', href: 'https://nativescript-vue.org/' },
       { ripple: 'light-blue--text', logo: 'https://cdn-images-1.medium.com/max/358/1*JGQP6WjsRwiiLTNPiCAH5A.png', name: 'Weex', href: 'https://weex.incubator.apache.org/' },
       { ripple: 'red--text', logo: 'https://s3.amazonaws.com/media-p.slid.es/uploads/344767/images/2769652/g7.png', name: 'Onsen UI', href: 'https://onsen.io/', }
     ],
