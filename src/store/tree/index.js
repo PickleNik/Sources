@@ -483,6 +483,16 @@ export default {
         todo: false,
         starred: false,
         shared: false,
+        sources: ['']},
+      { name: 'Hugo',
+        logo: 'https://gutl.jovenclub.cu/wp-content/uploads/2016/02/apple-touch-icon.png',
+        ripple: 'pink--text',
+        to: 'hugo',
+        title: 'The world’s fastest framework for building websites',
+        whatIsVideo: '',
+        todo: false,
+        starred: false,
+        shared: false,
         sources: ['']}
     ],
     leafsLibraries: [
@@ -530,7 +540,8 @@ export default {
       { ripple: 'amber--text', logo: 'https://firebase.google.com/_static/images/firebase/touchicon-180.png', name: 'Firebase', to: '/firease' },
       { ripple: 'red--text', logo: 'https://cdn.worldvectorlogo.com/logos/aws-s3.svg', name: 'Amazon S3', to: '/s3' },
       { ripple: 'amber--text', logo: 'https://cdn.worldvectorlogo.com/logos/aws-ec2.svg', name: 'Amazon EC2', to: '/s3' },
-      { ripple: 'blue--text', logo: 'https://www.bluehost.com/blog/wp-content/uploads/2017/07/logo5.png', name: 'Bluehost', to: '/bluehost' }
+      { ripple: 'blue--text', logo: 'https://www.bluehost.com/blog/wp-content/uploads/2017/07/logo5.png', name: 'Bluehost', to: '/bluehost' },
+      { ripple: 'teal--text', logo: 'https://www.netlify.com/img/press/logos/logomark.png', name: 'Netlify', to: '/netllify' }
     ],
     leafsMobile: [
       { ripple: 'blue--text', logo: 'https://cdn-images-1.medium.com/max/1200/1*5-aoK8IBmXve5whBQM90GA.png', name: 'Flutter', href: 'https://flutter.io/' },
