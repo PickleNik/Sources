@@ -534,7 +534,15 @@ export default {
       { ripple: 'amber--text', logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/SVG_Logo.svg/2000px-SVG_Logo.svg.png', name: 'SVG', to: '/svg' },
       { ripple: 'orange--text', logo: 'https://library.uoregon.edu/sites/default/files/canvasicon_0.png', name: 'Canvas', to: '/canvas' },
       { ripple: 'red--text', logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/WebGL_Logo.svg/2000px-WebGL_Logo.svg.png', name: 'WebGL', to: '/webgl' },
-      { ripple: 'white--text', logo: 'https://kenoleon.github.io/Front-End-Web-Dev-UI-UX/assets/images/threejsLogo.jpg', name: 'Three.js', to: '/threejs' }
+      { ripple: 'white--text', logo: 'https://kenoleon.github.io/Front-End-Web-Dev-UI-UX/assets/images/threejsLogo.jpg', name: 'Three.js', to: '/threejs' },
+      { ripple: 'light-blue--text', logo: 'https://assets.hongkiat.com/uploads/javascript-libraries-animate-svg/svg-vivus.jpg', name: 'Vivus.js', to: 'http://maxwellito.github.io/vivus/' },
+      { ripple: 'indigo--text', logo: 'https://assets.hongkiat.com/uploads/javascript-libraries-animate-svg/svg-bonsai.jpg', name: 'Bonsai.js', to: 'http://bonsaijs.org/' },
+      { ripple: 'indigo--text', logo: 'https://assets.hongkiat.com/uploads/javascript-libraries-animate-svg/svg-velocity.jpg', name: 'Velocity.js', to: 'http://velocityjs.org/' },
+      { ripple: 'orange--text', logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Rapha%C3%ABl_logo.svg/2000px-Rapha%C3%ABl_logo.svg.png', name: 'Raphaël.js', to: 'http://dmitrybaranovskiy.github.io/raphael/' },
+      { ripple: 'teal--text', logo: 'http://www.stickpng.com/assets/images/58482e09cef1014c0b5e4a65.png', name: 'SnapSVG', to: 'http://snapsvg.io/' },
+      { ripple: 'white--text', logo: 'https://www.jqueryscript.net/images/SVG-Path-Animation-Plugin-with-jQuery-Lazy-Line-Painter.jpg', name: 'Lazy Line Painter', to: 'http://lazylinepainter.info/' },
+      { ripple: 'pink--text', logo: 'http://svgjs.com/assets/images/logo-svg-js-01d.png', name: 'SVG.js', to: 'http://svgjs.com/' },
+      { ripple: 'orange--text', logo: 'http://maxcdn.webappers.com/img/2014/11/walkway-js.jpg', name: 'Walkway.js', to: 'https://www.connoratherton.com/walkway' }
     ],
     leafsHosting: [
       { ripple: 'amber--text', logo: 'https://firebase.google.com/_static/images/firebase/touchicon-180.png', name: 'Firebase', to: '/firease' },
