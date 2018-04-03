@@ -444,6 +444,15 @@ export default {
         starred: false,
         shared: false,
         sources: ['']},
+      { name: 'Preact',
+        logo: 'https://seeklogo.com/images/P/preact-logo-64E4BF9ABC-seeklogo.com.png',
+        ripple: 'purple--text',
+        to: 'preact',
+        title: 'Preact - Fast 3kB alternative to React with the same modern API.',
+        todo: false,
+        starred: false,
+        shared: false,
+        sources: ['']},
       { name: 'Ember',
         logo: 'http://emberjs.com/images/tomster-sm.png',
         ripple: 'orange--text',
@@ -502,6 +511,7 @@ export default {
       { ripple: 'teal--text', logo: 'https://jgthms.com/web-design-in-4-minutes/bulma.png', name: 'Bulma', to: '/bulma' },
       { ripple: 'teal--text', logo: 'https://cdn.worldvectorlogo.com/logos/semantic-ui.svg', name: 'Semantic UI', to: '/html' },
       { ripple: 'red--text', logo: 'https://s3.amazonaws.com/media-p.slid.es/uploads/344767/images/2769652/g7.png', name: 'Onsen UI', to: '/onsenui' },
+      { ripple: 'blue--text', logo: 'https://pbs.twimg.com/profile_images/818852933483823104/YYr9qgV8_400x400.jpg', name: 'UIkit', to: '/uikit' },
       { ripple: 'light-blue--text', logo: 'http://www.developersfeed.com/wp-content/uploads/2016/02/pure-css-logo-e1455594006843.png', name: 'Pure CSS', to: '/pure' },
       { ripple: 'light-blue--text', logo: 'http://element.eleme.io/1.4/static/banner-bg.75437e1.svg', name: 'Element', to: '/element' }
     ],
@@ -511,6 +521,7 @@ export default {
       { ripple: 'blue--text', logo: 'https://next.vuetifyjs.com/static/apple-touch-icon-180x180.png', name: 'Vuetify', to: '/html' },
       { ripple: 'purple--text', logo: 'https://avatars3.githubusercontent.com/u/26799900?s=400&v=4', name: 'Buefy', to: '/buefy' },
       { ripple: 'teal--text', logo: 'https://semantic-ui-vue.github.io/static/images/logo.png', name: 'Semantic UI Vue', to: '/html' },
+      { ripple: 'white--text', logo: 'https://avatars2.githubusercontent.com/u/19988804?s=400&v=4', name: 'Vuikit', to: '/uikit' },
       { ripple: 'red--text', logo: 'https://s3.amazonaws.com/media-p.slid.es/uploads/344767/images/2769652/g7.png', name: 'Onsen UI', to: '/onsenui' },
       { ripple: 'purple--text', logo: 'https://madewithvuejs.com/uploads/07/11/vuesax.png', name: 'Vuesax', to: '/vuesax' }
     ],
@@ -519,6 +530,7 @@ export default {
       { ripple: 'light-blue--text', logo: 'https://material-ui-next.com/static/brand.png', name: 'Material UI', to: '/html' },
       { ripple: 'white-text', logo: 'https://avatars1.githubusercontent.com/u/10089934?s=280&v=4', name: 'Materialize', to: '/html' },
       { ripple: 'lime--text', logo: 'https://react.semantic-ui.com/logo.png', name: 'Semantic', to: '/html' },
+      { ripple: 'blue--text', logo: 'https://uikit-react.io/logo.svg?v2', name: 'UIkit-React', to: '/html' },
       { ripple: 'red--text', logo: 'https://s3.amazonaws.com/media-p.slid.es/uploads/344767/images/2769652/g7.png', name: 'Onsen UI', to: '/onsenui' }
     ],
     leafsAngularLibs: [
@@ -571,7 +583,8 @@ export default {
       { ripple: 'blue--text', logo: 'https://cdn.iconscout.com/public/images/icon/free/png-512/jsfiddle-logo-cloud-38db5faa6163991e-512x512.png', name: 'jsFiddle', href: 'https://jsfiddle.net/' },
       { ripple: 'white--text', logo: 'https://static.jsbin.com/images/logo.png', name: 'jsBin', href: 'https://jsbin.com/' },
       { ripple: 'black--text', logo: 'https://codepen.io/juliangarnier/pen/oZNYXB/image/large.png', name: 'Animejs', href: 'http://animejs.com' },
-      { ripple: 'white--text', logo: 'http://worthyofnote.co.uk/wp-content/uploads/2013/07/animate-css.jpg', name: 'Animate.css', href: 'https://daneden.github.io/animate.css/' }
+      { ripple: 'white--text', logo: 'http://worthyofnote.co.uk/wp-content/uploads/2013/07/animate-css.jpg', name: 'Animate.css', href: 'https://daneden.github.io/animate.css/' },
+      { ripple: 'cyan--text', logo: 'https://atomiks.github.io/30-seconds-of-css/e5b4b9ce166177b1bc2dc3772012e0a1.png', name: '30s of CSS', href: 'https://atomiks.github.io/30-seconds-of-css/' },
     ],
     leafsCommunities: [
       { ripple: 'amber--text', logo: 'https://i.stack.imgur.com/GKbCl.png', name: 'Stack Overflow', href: 'https://stackoverflow.com/' },
@@ -579,6 +592,7 @@ export default {
       { ripple: 'lime--text', logo: 'http://www.lukashejtmanek.cz/assets/img/symbol_transparent.png', name: 'HackerRank', href: 'https://www.hackerrank.com/dashboard' },
       { ripple: 'blue--text', logo: 'http://www.stickpng.com/assets/images/5847ebc2cef1014c0b5e4857.png', name: 'Codrops', href: 'https://tympanus.net/codrops/category/tutorials/' },
       { ripple: 'white--text', logo: 'https://pbs.twimg.com/profile_images/868061114160099328/BD0P3vsp_400x400.jpg', name: 'Tutorialzine', href: 'https://tutorialzine.com/' },
+      { ripple: 'blue--text', logo: 'https://static1.squarespace.com/static/564cbcb2e4b0741cdb668fe2/t/56b8c853d51cd41553c43507/1454950492725/StackShare.png', name: 'StackShare', href: 'https://stackshare.io/' },
       { ripple: 'light-blue--text', logo: 'https://avatars2.githubusercontent.com/u/15895995?s=280&v=4', name: 'Coligo', href: 'https://coligo.io' }
     ]
   },
