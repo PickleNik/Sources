@@ -1,7 +1,7 @@
 <template lang="html">
   <main class="secondary">
-    <v-container>
-      <v-layout row wrap>
+    <v-container fluid fill-height>
+      <v-layout column>
         <vue-particles class="pnfparticles centerABS"
         color="#eee"
         :particleOpacity=".1"
@@ -14,7 +14,7 @@
         hoverMode="repulse"
         :clickEffect="false"
         ></vue-particles>
-        <v-flex xs12 sm12 class="text-sm-center text-xs-center">
+        <v-flex xs12 sm12 md12 lg12 class="text-lg-center text-md-center text-sm-center text-xs-center" align-center>
           <h1 class="primary--text"style="font-size:4em;">Error 404</h1>
           <p class="primary--text typed" style="font-size:2em;"><span id="areyoulostbot" class="white--text"></span></p>
         </v-flex>
