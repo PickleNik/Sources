@@ -1,17 +1,13 @@
 <template>
-<v-card id="nav" class="elevation-0 hidden-sm-and-down ma-4 pa-2 roundXL">
-  <v-card-actions>
-    <v-layout>
-    <v-flex style="max-width:11em;">
+<v-flex md1 lg1 id="nav" class="hidden-sm-and-down mt-4 pa-3">
+    <v-layout column>
     <a v-for="nav in navs" :key="nav.name" href="#" v-scroll-to="{el:nav.href, offset: nav.offset}"><v-btn small round flat :to="nav.to"
       class="ma-0 pr-2 link link--kukuri">
       <v-icon left class="accent--text">{{ nav.icon }}</v-icon>
       {{ nav.name }}
       <v-icon>{{ nav.posticon }}</v-icon></v-btn></a>
-    </v-flex>
     </v-layout>
-  </v-card-actions>
-</v-card>
+</v-flex>
 </template>
 
 <script>
@@ -25,8 +21,6 @@ export default{
   position:fixed;
   left:0;
   top:1em;
-  background: transparent;
-  animation: zoomInLeft 1s linear 1;
 }
 .link {
 	text-decoration: none;

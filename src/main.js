@@ -33,15 +33,17 @@ Vue.use(VueScrollTo, {
 
 Vue.use(VueParticles)
 
-Vue.use(Vuetify, { theme: {
-  primary: '#eee',
-  secondary: '#333',
-  accent: 'lightgreen',
-  error: '#FF5252',
-  info: '#2196F3',
-  success: '#4CAF50',
-  warning: '#FFC107',
-}})
+Vue.use(Vuetify, {
+  theme: {
+    primary: '#eee',
+    secondary: '#333',
+    accent: '#90ee90',
+    error: '#FF5252',
+    info: '#2196F3',
+    success: '#4CAF50',
+    warning: '#FFC107'
+  }
+})
 
 Vue.config.productionTip = false
 

@@ -1,10 +1,10 @@
 <template lang="html">
   <main class="secondary">
-    <v-container class="pt-5">
+    <v-container fluid>
       <v-layout row>
-        <v-flex xs12 sm10 offset-sm1>
+        <v-flex xs12 sm12 md8 offset-md2 lg8 offset-lg2 xl8 offset-xl2>
 
-          <div id="basics" class="mb-5 mt-3 roundXXL  pt-5 pb-5 elevation-22 grey darken-4">
+          <div id="basics" class="mt-5 mb-5 roundXXL pt-5 pb-5 grey darken-4">
             <v-flex xs8 offset-xs2 sm8 offset-sm2 class="pb-3">
               <v-tooltip top>
                 <h1 slot="activator" class="link link--yaku ma-2 text-sm-center text-xs-center">
@@ -18,29 +18,30 @@
             <v-flex xs12 sm12>
               <v-container class="pa-0">
                 <v-layout row wrap>
-                  <v-flex class="text-sm-center text-xs-center">
-                        <div v-for="leaf in leafsBasic"
-                        v-ripple="{ class: leaf.ripple }"
-                        @click="openLeaf(leaf.to)" id="leaf"
-                        class="hidden-xs-only mb-5 ml-3 mr-3 d-inline-block text-sm-center text-xs-center">
-                          <img id="leafLogo" class="round" :src="leaf.logo" />
-                          <h3 class="white--text mt-1" style="text-shadow: 1px 1px .1em #555;">{{ leaf.name }}</h3>
-                        </div>
-                        <div v-for="leaf in leafsBasic"
-                        v-ripple="{ class: leaf.ripple }"
-                        @click="openLeaf(leaf.to)" id="leaf"
-                        class="hidden-sm-and-up mb-5 ml-0 mr-0 d-inline-block text-sm-center text-xs-center">
-                          <img id="leafLogo" class="round" :src="leaf.logo" />
-                          <h3 class="white--text mt-1" style="text-shadow: 1px 1px .1em #555;">{{ leaf.name }}</h3>
-                        </div>
-                    </router-link>
+                  <v-flex class="hidden-sm-and-down text-sm-center text-xs-center">
+                    <div v-for="leaf in leafsBasic"
+                    v-ripple="{ class: leaf.ripple }"
+                    @click="openLeaf(leaf.to)" id="leaf"
+                    class="d-inline-block mb-5 ml-3 mr-3 text-sm-center text-xs-center">
+                      <img id="leafLogo" class="round" :src="leaf.logo" />
+                      <h3 class="white--text mt-1" style="text-shadow: 1px 1px .1em #555;">{{ leaf.name }}</h3>
+                    </div>
+                  </v-flex>
+                  <v-flex class="hidden-md-and-up text-sm-center text-xs-center">
+                    <div v-for="leaf in leafsBasic"
+                    v-ripple="{ class: leaf.ripple }"
+                    @click="openLeaf(leaf.to)" id="leaf"
+                    class="d-inline-block mb-5 ml-0 mr-0 text-sm-center text-xs-center">
+                      <img id="leafLogo" class="round" :src="leaf.logo" />
+                      <h3 class="white--text mt-1" style="text-shadow: 1px 1px .1em #555;">{{ leaf.name }}</h3>
+                    </div>
                   </v-flex>
                 </v-layout>
               </v-container>
             </v-flex>
           </div>
 
-          <div id="backend" class="mb-5 mt-5 roundXXL  pt-5 pb-5 elevation-22 grey darken-4">
+          <div id="backend" class="mt-5 mb-5 roundXXL pt-5 pb-5 grey darken-4">
             <v-flex xs8 offset-xs2 sm8 offset-sm2 class="pb-3">
               <v-tooltip top>
                 <h1 slot="activator" class="link link--yaku ma-2 text-sm-center text-xs-center">
@@ -76,7 +77,7 @@
             </v-flex>
           </div>
 
-          <div id="frameworks" class="mb-5 mt-5 roundXXL pt-5 pb-5 elevation-22 grey darken-4">
+          <div id="frameworks" class="mt-5 mb-5 roundXXL pt-5 pb-5 grey darken-4">
             <v-flex xs8 offset-xs2 sm8 offset-sm2 class="pb-3">
               <v-tooltip top>
                 <h1 slot="activator" class="link link--yaku ma-2 text-sm-center text-xs-center">
@@ -109,7 +110,7 @@
             </v-flex>
           </div>
 
-          <div id="libraries" class="mb-5 mt-5 roundXXL  pt-5 pb-5 elevation-22 grey darken-4">
+          <div id="libraries" class="mt-5 mb-5 roundXXL pt-5 pb-5 grey darken-4">
             <v-menu open-on-hover offset-y>
               <v-btn absolute large
               slot="activator" dark class="grey darken-3"
@@ -169,7 +170,7 @@
             </v-flex>
           </div>
 
-          <div id="graphics" class="mb-5 mt-5 roundXXL pt-5 pb-5 elevation-22 grey darken-4">
+          <div id="graphics" class="mt-5 mb-5 roundXXL pt-5 pb-5 grey darken-4">
             <v-flex xs8 offset-xs2 sm8 offset-sm2 class="pb-3">
               <v-tooltip top>
                 <h1 slot="activator" class="link link--yaku ma-2 text-sm-center text-xs-center">
@@ -202,7 +203,7 @@
             </v-flex>
           </div>
 
-          <div id="hosting" class="mb-5 mt-5 roundXXL pt-5 pb-5 elevation-22 grey darken-4">
+          <div id="hosting" class="mt-5 mb-5 roundXXL pt-5 pb-5 grey darken-4">
             <v-flex xs8 offset-xs2 sm8 offset-sm2 class="pb-3">
               <v-tooltip top>
                 <h1 slot="activator" class="link link--yaku ma-2 text-sm-center text-xs-center">
@@ -235,7 +236,7 @@
             </v-flex>
           </div>
 
-          <div id="mobile" class="mb-5 mt-5 roundXXL pt-5 pb-5 elevation-22 grey darken-4">
+          <div id="mobile" class="mt-5 mb-5 roundXXL pt-5 pb-5 grey darken-4">
             <v-flex xs8 offset-xs2 sm8 offset-sm2 class="pb-3">
               <v-tooltip top>
                 <h1 slot="activator" class="link link--yaku ma-2 text-sm-center text-xs-center">
@@ -268,7 +269,7 @@
             </v-flex>
           </div>
 
-          <div id="tools" class="mb-5 mt-5 roundXXL  pt-5 pb-5 elevation-22 grey darken-4">
+          <div id="tools" class="mt-5 mb-5 roundXXL pt-5 pb-5 grey darken-4">
             <v-flex xs8 offset-xs2 sm8 offset-sm2 class="pb-3">
               <h1 class="grey--text ma-2 text-sm-center text-xs-center words">Tools</h1>
               <h3 style="text-align:center;" class="white--text words">Develop faster and easier.</h3>
@@ -296,7 +297,7 @@
             </v-flex>
           </div>
 
-          <div id="communities" class="mb-5 mt-5 roundXXL  pt-5 pb-5 elevation-22 grey darken-4">
+          <div id="communities" class="mt-5 mb-5 roundXXL pt-5 pb-5 grey darken-4">
             <v-flex xs8 offset-xs2 sm8 offset-sm2 class="pb-3">
               <h1 class="grey--text ma-2 text-sm-center text-xs-center words">Communities</h1>
               <h3 style="text-align:center;" class="white--text words">Check news and ask questions.</h3>
@@ -328,7 +329,7 @@
       </v-layout>
 
       <v-layout row wrap>
-          <v-flex xs12 sm10 offset-sm1 class="mb-5 text-sm-center text-xs-center roundXXL">
+          <v-flex xs12 sm12 md8 offset-md2 class="mb-5 text-sm-center text-xs-center roundXXL">
             <card3d class="mb-5 d-inline-block" style="width:90%; height:calc(100vh / 2);" data-image="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=0ef06f88dab75b74252e22465ad9c99d&auto=format&fit=crop&w=1050&q=80">
               <h1 slot="header"class="hidden-xs-only mb-5 pb-5"><h4>A Perfect Place For Your Advertisment</h4></h1>
               <h1 slot="header"class="hidden-sm-and-up mb-5 pb-5"><h6>Advertise Here</h6></h1>
@@ -342,7 +343,7 @@
     <!--ASIDE-->
     <app-nav :navs="navs"></app-nav>
 
-    <v-flex class="text-sm-left transparent hidden-md-and-down" style="position:fixed; left:1em; bottom:1em; background:#fff; border-radius:3em;">
+    <v-flex md1 class="hidden-md-and-down transparent" style="position:fixed; left:1em; bottom:1em; background:#fff; border-radius:3em;">
         <v-flex v-show="displayArticles" style="max-width:16em;">
           <v-chip v-ripple class="fullW darken-3 red white--text">What is web development</v-chip>
           <v-chip v-ripple class="fullW darken-3 pink white--text">Frontend</v-chip>
@@ -356,22 +357,6 @@
         <h1 @click="displayArticles = !displayArticles" class="link link--yaku"><span>A</span><span>r</span><span>t</span><span>i</span><span>c</span><span>l</span><span>e</span><span>s</span></h1>
     </v-flex>
 
-    <v-flex class="text-sm-right transparent hidden-md-and-down" style="position:fixed; right:1em; bottom:1em; background:#fff; border-radius:3em;">
-        <v-flex v-show="displaySources" style="max-width:16em;">
-          <v-chip v-ripple class="fullW darken-3 teal white--text">CodeCademy</v-chip>
-          <v-chip v-ripple class="fullW darken-3 green white--text">Khanacademy</v-chip>
-          <v-chip v-ripple class="fullW darken-3 light-green white--text">Treehouse</v-chip>
-          <v-chip v-ripple class="fullW darken-3 lime white--text">W3Schools</v-chip>
-          <v-chip v-ripple class="fullW darken-3 yellow white--text">Sololearn</v-chip>
-          <v-chip v-ripple class="fullW darken-3 amber  white--text">Docs</v-chip>
-          <v-chip v-ripple class="fullW darken-3 orange white--text">Mobile</v-chip>
-          <v-chip v-ripple class="fullW darken-3 deep-orange white--text">Udemy</v-chip>
-          <v-chip v-ripple class="fullW darken-3 red white--text">YouTube</v-chip>
-          <v-chip v-ripple class="fullW darken-3 pink white--text">All</v-chip>
-        </v-flex>
-        <h1 @click="displaySources = !displaySources" class="link link--yaku"><span>S</span><span>o</span><span>u</span><span>r</span><span>c</span><span>e</span><span>s</span></h1>
-    </v-flex>
-
   </main>
 </template>
 
@@ -381,7 +366,6 @@ export default {
     return {
       frameworkPicked: 'none',
       displayArticles: false,
-      displaySources: false,
       navs: [
         { name: 'Basics', href: '#basics', offset: -33, icon: 'code' },
         { name: 'Backend', href: '#backend', offset: -33, icon: 'storage' },

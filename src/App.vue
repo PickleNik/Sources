@@ -1,55 +1,43 @@
 <template>
   <v-app>
-    <v-speed-dial style="z-index:9999;margin:-.5em;" class="hidden-sm-and-up"
-    v-model="fab"
-    top="true"
-    right="true"
-    fixed="true"
-    direction="left"
-    transition="slide-x-reverse-transition">
-    <v-btn slot="activator" color="accent" light small fab v-model="fab">
-      <v-icon>menu</v-icon>
-      <v-icon>close</v-icon>
-    </v-btn>
+    <v-toolbar dark flat fixed dense class="transparent hidden-sm-and-down pl-4" style="min-width:100vw;">
 
-    <!-- <v-btn fab light small v-scroll-to="{el:"'#team'", offset:-33}" color="accent">
-      <v-icon>keyboard_arrow_down</v-icon>
-    </v-btn> -->
-
-    <v-btn fab light small to="/profile" color="accent">
-      <v-icon>person</v-icon>
-    </v-btn>
-
-    <v-btn fab light small to="/tree" color="accent">
-      <v-icon>device_hub</v-icon>
-    </v-btn>
-
-    <v-btn fab light small to="/" exact color="accent">
-      <v-icon>home</v-icon>
-    </v-btn>
-
-    <v-btn fab light small to="/sources" exact color="accent">
-      <v-icon>local_library</v-icon>
-    </v-btn>
-
-    <v-btn fab light small to="/about" exact color="accent">
-      <v-icon>info</v-icon>
-    </v-btn>
-
-  </v-speed-dial>
-
-    <v-toolbar dark flat fixed dense class="pl-4 transparent" style="min-width:100vw;">
-
-      <v-toolbar-title id="name" class="ml-4 mt-3 round hidden-xs-only"><router-link to="/" tag="span" class="link--ilin"><span><v-icon class="mr-1 accent--text">weekend</v-icon>Sou</span><span>rce<v-icon class="ml-1 accent--text">laptop_mac</v-icon></span></router-link></v-toolbar-title>
+      <v-toolbar-title id="name" class="ml-0 mt-3 round"><router-link to="/" tag="span" class="link--ilin"><span><v-icon class="mr-1 accent--text">weekend</v-icon>Sou</span><span>rce<v-icon class="ml-1 accent--text">laptop_mac</v-icon></span></router-link></v-toolbar-title>
       <v-spacer></v-spacer>
 
-      <v-toolbar-items class="hidden-xs-only">
-        <v-btn color="primary" flat to="/sources"><v-icon dark>local_library</v-icon>Sources</v-btn>
-        <v-btn color="primary" flat to="/tree"><v-icon dark>device_hub</v-icon>Tree</v-btn>
-        <v-btn color="primary" class="mr-2"flat to="/profile"><v-icon dark>person</v-icon>You</v-btn>
+      <v-toolbar-items class="secondary roundL">
+        <v-tooltip bottom><span>Source</span><v-btn slot="activator" color="primary" flat fab to="/sources"><v-icon dark>local_library</v-icon></v-btn></v-tooltip>
+        <v-tooltip bottom><span>Tree</span><v-btn slot="activator" color="primary" flat fab to="/tree"><v-icon dark>device_hub</v-icon></v-btn></v-tooltip>
+        <v-tooltip bottom><span>You</span><v-btn slot="activator" color="primary" flat fab to="/profile"><v-icon dark>person</v-icon></v-btn></v-tooltip>
       </v-toolbar-items>
 
     </v-toolbar>
+
+      <v-bottom-nav
+      class="hidden-md-and-up"
+      fixed
+      shift
+      value="true"
+      :active.sync="e2"
+      color="secondary"
+      >
+      <v-btn dark to="/">
+        <span>Home</span>
+        <v-icon>home</v-icon>
+      </v-btn>
+      <v-btn dark to="/sources">
+        <span>Sources</span>
+        <v-icon>local_library</v-icon>
+      </v-btn>
+      <v-btn dark to="/tree">
+        <span>Tree</span>
+        <v-icon>device_hub</v-icon>
+      </v-btn>
+      <v-btn dark to="/profile" disabled>
+        <span>You</span>
+        <v-icon>person</v-icon>
+      </v-btn>
+    </v-bottom-nav>
 
     <router-view></router-view>
 
@@ -59,7 +47,7 @@
 <script>
 export default {
   data: () => ({
-  fab: false
+   e2: 1
   })
 }
 </script>
@@ -167,19 +155,6 @@ a{
   animation: bounce 1s linear;
 }
 
-@keyframes zoomInLeft {
-  from {
-    opacity: 0;
-    transform: scale3d(.1, .1, .1) translate3d(-1000px, 0, 0);
-    animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
-  }
-
-  60% {
-    opacity: 1;
-    transform: scale3d(.475, .475, .475) translate3d(10px, 0, 0);
-    animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
-  }
-}
 @keyframes pulse {
   from {
     transform: scale3d(1, 1, 1);

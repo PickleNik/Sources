@@ -158,9 +158,10 @@ export default {
   background-size: cover;
   position:absolute;
   user-select:none;
-  height:102vh;
+  height:101vh;
   min-width: 100vw;
   width:100vw;
+  padding-bottom:3em;
 }
 #about{
   position: absolute;
@@ -168,7 +169,8 @@ export default {
   min-width: 100vw;
   width:100vw;
   height: 101vh;
-  top:99vh;
+  padding-bottom:3em;
+  top:100vh;
 }
 #team{
   background:#333;

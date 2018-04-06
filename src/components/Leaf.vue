@@ -1,6 +1,6 @@
 <template lang="html">
   <main class="secondary">
-    <v-container class="mt-4 pt-5">
+    <v-container class="mt-5 pa-0" fluid>
       <v-layout id="whatIs">
         <v-flex xs12 sm8 offset-sm2 class="mb-2 text-xs-center text-sm-center">
           <v-tooltip top>

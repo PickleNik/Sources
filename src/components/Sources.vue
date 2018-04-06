@@ -1,14 +1,14 @@
 <template lang="html">
   <main class="secondary">
-    <v-container>
+    <v-container class="pa-0">
       <v-layout column>
         <v-flex xs12 sm10 offset-sm1>
-          <v-card hover ripple v-for="source in sources" class="ma-4 roundXL grey darken-3">
-            <v-layout row wrap class="roundXL">
-              <v-flex sm2 class="border ">
+          <v-card hover ripple v-for="source in sources" class="ma-4 grey darken-3">
+            <v-layout row wrap>
+              <v-flex sm2 class="border">
               <a :href="source.link" target="_blank">
                 <v-card-media>
-                  <img class="pa-3 roundXXL" style="height:100%;width:100%;" :src="source.logo" alt="">
+                  <img class="pa-3 roundXL" style="height:100%;width:100%;" :src="source.logo" alt="">
                 </v-card-media>
               </a>
               </v-flex>
@@ -25,7 +25,7 @@
               </v-flex>
 
               <v-flex sm1 class="pa-2 border">
-                <v-layout column class="hidden-xs-only">
+                <v-layout column class="hidden-xs-only" align-content-center>
                   <v-btn icon flat light>
                     <vue-star color="#222222" animate="rubberBand">
                       <div slot="icon" style="user-select:none;cursor:pointer;" @click="liked = !liked"><v-icon medium :class="{ 'red--text' : liked, 'grey--text' : !liked }" >{{ liked ? 'favorite' : 'favorite_border' }}</v-icon></div>
@@ -44,7 +44,7 @@
                     </vue-star>
                   </v-btn>
                 </v-layout>
-                <v-layout row class="hidden-sm-and-up centerX">
+                <v-layout row class="hidden-sm-and-up"  align-content-center>
                   <v-btn icon flat light>
                     <vue-star color="#222222" animate="rubberBand">
                       <div slot="icon" style="user-select:none;cursor:pointer;" @click="liked = !liked"><v-icon medium :class="{ 'red--text' : liked, 'grey--text' : !liked }" >{{ liked ? 'favorite' : 'favorite_border' }}</v-icon></div>
@@ -69,6 +69,9 @@
         </v-flex>
       </v-layout>
     </v-container>
+
+    <app-nav :navs="navs"></app-nav>
+
   </main>
 </template>
 
@@ -79,6 +82,13 @@ export default {
       liked: false,
       shared: false,
       todo: false,
+      navs: [
+        { name: 'Paid', href: '#paid', offset: -33, icon: 'attach_money' },
+        { name: 'Mobile', href: '#mobile', offset: -33, icon: 'phone_iphone' },
+        { name: 'YouTube', href: '#youtube', offset: -33, icon: 'video_library' },
+        { name: 'Docs', href: '#docs', offset: -33, icon: 'library_books' },
+        { name: 'Other', href: '#other', offset: -33, icon: 'library_add' }
+      ],
       sources:[
         {
           name:'SoloLearn',
@@ -157,6 +167,6 @@ export default {
   border:1px solid #333;
 }
 .card{
-  border-radius:3em;
+  border-radius:2em;
 }
 </style>
