@@ -139,6 +139,18 @@ export default {
           logo:'https://store-images.s-microsoft.com/image/apps.30495.13510798887792718.c58f517f-a070-448d-9f42-44c93b19dcae.05c3b4ed-79d8-4d84-be6d-7d3290f1533e?w=180&h=180&q=60'
         },
         {
+          name:'MDN Web Docs',
+          title:'Resources for developers, by developers.',
+          link:'https://developer.mozilla.org',
+          logo:'https://avatars1.githubusercontent.com/u/7565578?s=280&v=4'
+        },
+        {
+          name:'FreeCodeCamp',
+          title:'Learn to code for free.',
+          link:'https://www.freecodecamp.org/',
+          logo:'https://pbs.twimg.com/profile_images/692531829287567360/ytP7U362.png'
+        },
+        {
           name:'LinkedIn Learning',
           title:'A revolution in learning. The evolution of you. Learn the most in-demand business, tech and creative skills from industry experts -- free for one month.',
           link:'https://www.linkedin.com/learning/',
