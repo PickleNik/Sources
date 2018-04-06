@@ -2,7 +2,7 @@
   <main class="secondary">
     <v-container class="mt-5 pa-0" fluid>
       <v-layout id="whatIs">
-        <v-flex xs12 sm8 offset-sm2 class="mb-2 text-xs-center text-sm-center">
+        <v-flex xs12 sm8 offset-sm2 md6 offset-md3 lg6 offset-lg3 class="mb-2 text-xs-center text-sm-center text-md-center text-lg-center">
           <v-tooltip top>
             <h1 slot="activator" class="titles roundL text-sm-center">
              <a class="contact grey--text" href="https://en.wikipedia.org/wiki/HTML" target="_blank">What is {{leaf.name}}</a></h1>
@@ -11,7 +11,7 @@
         </v-flex>
       </v-layout>
       <v-layout>
-        <v-flex xs12 sm10 offset-sm1>
+        <v-flex xs12 sm10 offset-sm1 md>
 
           <v-card id="fadeIn" dark class="roundXL mb-4" style="border-radius:3em;">
             <v-card-media>
@@ -33,7 +33,7 @@
       </v-layout>
 
       <v-layout row wrap>
-        <v-flex xs12 sm12 class="text-sm-center text-xs-center">
+        <v-flex xs12 sm12 md8 offset-md2 lg6 offset-lg2 class="text-sm-center text-xs-center">
           <app-src-card :sources="leaf.sources"></app-src-card>
         </v-flex>
       </v-layout>
@@ -43,8 +43,9 @@
           <h1 class="titles grey--text pt-3">Additionally</h1>
         </v-flex>
       </v-layout>
+      
       <v-layout>
-        <v-flex xs12 sm10 offset-sm1 class="pt-3 pb-3 text-xs-center text-sm-center">
+        <v-flex xs12 sm12 md8 offset-md2 lg6 offset-lg2 class="pt-3 pb-3 text-xs-center text-sm-center">
           <div v-for="add in leafsTools"
           v-ripple="{ class: add.ripple }"
           id="leaf" class="mb-5 ml-3 mr-3 d-inline-block text-sm-center text-xs-center">
@@ -53,7 +54,6 @@
           </div>
       </v-flex>
       </v-layout>
-
 
     </v-container>
 
