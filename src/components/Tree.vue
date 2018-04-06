@@ -15,6 +15,7 @@
               <h3 style="text-align:center;" class="white--text words">HTML, CSS and JavaScript will to you the world of Web Development.</h3>
               <hr class="grey ma-2"/>
             </v-flex>
+            
             <v-flex xs12 sm12>
               <v-container class="pa-0">
                 <v-layout row wrap>
@@ -27,6 +28,7 @@
                       <h3 class="white--text mt-1" style="text-shadow: 1px 1px .1em #555;">{{ leaf.name }}</h3>
                     </div>
                   </v-flex>
+                  
                   <v-flex class="hidden-md-and-up text-sm-center text-xs-center">
                     <div v-for="leaf in leafsBasic"
                     v-ripple="{ class: leaf.ripple }"
@@ -52,25 +54,28 @@
               <h3 style="text-align:center;" class="white--text words">Control and manage data on your page.</h3>
               <hr class="grey ma-2"/>
             </v-flex>
+            
             <v-flex xs12 sm12>
               <v-container class="pa-0">
                 <v-layout row wrap>
-                  <v-flex class="text-sm-center text-xs-center">
-                        <div v-for="leaf in leafsBackend"
-                        v-ripple="{ class: leaf.ripple }"
-                        @click="openLeaf(leaf.to)" id="leaf"
-                        class="hidden-xs-only mb-5 ml-3 mr-3 d-inline-block text-sm-center">
-                          <img id="leafLogo" class="round" :src="leaf.logo" />
-                          <h3 class="white--text mt-1" style="text-shadow: 1px 1px .1em #555;">{{ leaf.name }}</h3>
-                        </div>
-                        <div v-for="leaf in leafsBackend"
-                        v-ripple="{ class: leaf.ripple }"
-                        @click="openLeaf(leaf.to)" id="leaf"
-                        class="hidden-sm-and-up mb-5 ml-0 mr-0 d-inline-block text-sm-center text-xs-center">
-                          <img id="leafLogo" class="round" :src="leaf.logo" />
-                          <h3 class="white--text mt-1" style="text-shadow: 1px 1px .1em #555;">{{ leaf.name }}</h3>
-                        </div>
-                    </router-link>
+                  <v-flex class="hidden-sm-and-down text-sm-center text-xs-center">
+                     <div v-for="leaf in leafsBackend"
+                     v-ripple="{ class: leaf.ripple }"
+                     @click="openLeaf(leaf.to)" id="leaf"
+                     class="d-inline-block mb-5 ml-3 mr-3 text-sm-center">
+                       <img id="leafLogo" class="round" :src="leaf.logo" />
+                       <h3 class="white--text mt-1" style="text-shadow: 1px 1px .1em #555;">{{ leaf.name }}</h3>
+                     </div>
+                  </v-flex>
+                  
+                  <v-flex class="hidden-md-and-up text-sm-center text-xs-center">
+                     <div v-for="leaf in leafsBackend"
+                     v-ripple="{ class: leaf.ripple }"
+                     @click="openLeaf(leaf.to)" id="leaf"
+                     class="d-inline-block mb-5 ml-0 mr-0 text-sm-center text-xs-center">
+                       <img id="leafLogo" class="round" :src="leaf.logo" />
+                       <h3 class="white--text mt-1" style="text-shadow: 1px 1px .1em #555;">{{ leaf.name }}</h3>
+                     </div>
                   </v-flex>
                 </v-layout>
               </v-container>
