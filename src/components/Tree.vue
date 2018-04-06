@@ -15,7 +15,7 @@
               <h3 style="text-align:center;" class="white--text words">HTML, CSS and JavaScript will to you the world of Web Development.</h3>
               <hr class="grey ma-2"/>
             </v-flex>
-            
+
             <v-flex xs12 sm12>
               <v-container class="pa-0">
                 <v-layout row wrap>
@@ -28,7 +28,7 @@
                       <h3 class="white--text mt-1" style="text-shadow: 1px 1px .1em #555;">{{ leaf.name }}</h3>
                     </div>
                   </v-flex>
-                  
+
                   <v-flex class="hidden-md-and-up text-sm-center text-xs-center">
                     <div v-for="leaf in leafsBasic"
                     v-ripple="{ class: leaf.ripple }"
@@ -54,7 +54,7 @@
               <h3 style="text-align:center;" class="white--text words">Control and manage data on your page.</h3>
               <hr class="grey ma-2"/>
             </v-flex>
-            
+
             <v-flex xs12 sm12>
               <v-container class="pa-0">
                 <v-layout row wrap>
@@ -67,7 +67,7 @@
                        <h3 class="white--text mt-1" style="text-shadow: 1px 1px .1em #555;">{{ leaf.name }}</h3>
                      </div>
                   </v-flex>
-                  
+
                   <v-flex class="hidden-md-and-up text-sm-center text-xs-center">
                      <div v-for="leaf in leafsBackend"
                      v-ripple="{ class: leaf.ripple }"
@@ -104,7 +104,7 @@
                         <h3 class="white--text mt-1" style="text-shadow: 1px 1px .1em #555;">{{ leaf.name }}</h3>
                       </div>
                   </v-flex>
-                  
+
                   <v-flex class="hidden-md-and-up text-sm-center text-xs-center">
                       <div v-for="leaf in leafsFrameworks"
                       v-ripple="{ class: leaf.ripple }" @click="openLeaf(leaf.to)"
@@ -150,7 +150,7 @@
                         <h3 class="white--text mt-1" style="text-shadow: 1px 1px .1em #555;">{{ leaf.name }}</h3>
                       </div>
                   </v-flex>
-                  
+
                   <v-flex class="hidden-md-and-up text-sm-center text-xs-center">
                       <div v-for="leaf in leafsLibraries" v-if="frameworkPicked === 'none'"
                       v-ripple="{ class: leaf.ripple }" id="leaf"
@@ -159,7 +159,7 @@
                         <h3 class="white--text mt-1" style="text-shadow: 1px 1px .1em #555;">{{ leaf.name }}</h3>
                       </div>
                   </v-flex>
-                  
+
                   <v-flex class="hidden-sm-and-down text-md-center text-lg-center">
                       <div v-for="leaf in leafsVueLibs" v-if="frameworkPicked === 'Vue.js'"
                       v-ripple="{ class: leaf.ripple }" id="leaf"
@@ -168,7 +168,7 @@
                         <h3 class="white--text mt-1" style="text-shadow: 1px 1px .1em #555;">{{ leaf.name }}</h3>
                       </div>
                   </v-flex>
-                  
+
                   <v-flex class="hidden-md-and-up text-sm-center text-xs-center">
                       <div v-for="leaf in leafsVueLibs" v-if="frameworkPicked === 'Vue.js'"
                       v-ripple="{ class: leaf.ripple }" id="leaf"
@@ -177,7 +177,7 @@
                         <h3 class="white--text mt-1" style="text-shadow: 1px 1px .1em #555;">{{ leaf.name }}</h3>
                       </div>
                   </v-flex>
-                  
+
                   <v-flex class="hidden-sm-and-down text-md-center text-lg-center">
                       <div v-for="leaf in leafsAngularLibs" v-if="frameworkPicked === 'Angular.js'"
                       v-ripple="{ class: leaf.ripple }" id="leaf"
@@ -186,7 +186,7 @@
                         <h3 class="white--text mt-1" style="text-shadow: 1px 1px .1em #555;">{{ leaf.name }}</h3>
                       </div>
                    </v-flex>
-                  
+
                   <v-flex class="hidden-md-and-up text-sm-center text-xs-center">
                       <div v-for="leaf in leafsAngularLibs" v-if="frameworkPicked === 'Angular.js'"
                       v-ripple="{ class: leaf.ripple }" id="leaf"
@@ -195,8 +195,8 @@
                         <h3 class="white--text mt-1" style="text-shadow: 1px 1px .1em #555;">{{ leaf.name }}</h3>
                       </div>
                   </v-flex>
-                  
-                  <v-flex class="hidden-sm-and-down text-sm-center text-xs-center">
+
+                  <v-flex class="hidden-sm-and-down text-md-center text-lg-center">
                       <div v-for="leaf in leafsReactLibs" v-if="frameworkPicked === 'React.js'"
                       v-ripple="{ class: leaf.ripple }" id="leaf"
                       class="d-inline-block mb-5 ml-3 mr-3 text-md-center text-lg-center">
@@ -204,7 +204,7 @@
                         <h3 class="white--text mt-1" style="text-shadow: 1px 1px .1em #555;">{{ leaf.name }}</h3>
                       </div>
                    </v-flex>
-                  
+
                   <v-flex class="hidden-md-and-up text-sm-center text-xs-center">
                       <div v-for="leaf in leafsReactLibs" v-if="frameworkPicked === 'React.js'"
                       v-ripple="{ class: leaf.ripple }" id="leaf"
@@ -240,7 +240,7 @@
                         <h3 class="white--text mt-1" style="text-shadow: 1px 1px .1em #555;">{{ leaf.name }}</h3>
                       </div>
                    </v-flex>
-                   
+
                    <v-flex class="hidden-md-and-up text-md-center text-lg-center">
                       <div v-for="leaf in leafsGraphics"
                       v-ripple="{ class: leaf.ripple }" @click="openLeaf(leaf.to)"
@@ -276,7 +276,7 @@
                         <h3 class="white--text mt-1" style="text-shadow: 1px 1px .1em #555;">{{ leaf.name }}</h3>
                       </div>
                    </v-flex>
-                   
+
                    <v-flex class="hidden-md-and-up text-md-center text-lg-center">
                       <div v-for="leaf in leafsHosting"
                       v-ripple="{ class: leaf.ripple }" @click="openLeaf(leaf.to)"

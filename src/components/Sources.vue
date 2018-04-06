@@ -158,7 +158,7 @@ export default {
         },
         {
           name:'Laracasts',
-          title:'It's Kinda Like Netflix for Your Career!',
+          title:'It\'s Kinda Like Netflix for Your Career!',
           link:'https://laracasts.com/',
           logo:'https://media.simplecast.com/episode/image/100715/small_1513187635-artwork.jpg'
         },
