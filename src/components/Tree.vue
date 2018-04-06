@@ -19,11 +19,11 @@
             <v-flex xs12 sm12>
               <v-container class="pa-0">
                 <v-layout row wrap>
-                  <v-flex class="hidden-sm-and-down text-sm-center text-xs-center">
+                  <v-flex class="hidden-sm-and-down text-md-center text-lg-center">
                     <div v-for="leaf in leafsBasic"
                     v-ripple="{ class: leaf.ripple }"
                     @click="openLeaf(leaf.to)" id="leaf"
-                    class="d-inline-block mb-5 ml-3 mr-3 text-sm-center text-xs-center">
+                    class="d-inline-block mb-5 ml-3 mr-3 text-md-center text-lg-center">
                       <img id="leafLogo" class="round" :src="leaf.logo" />
                       <h3 class="white--text mt-1" style="text-shadow: 1px 1px .1em #555;">{{ leaf.name }}</h3>
                     </div>
@@ -58,11 +58,11 @@
             <v-flex xs12 sm12>
               <v-container class="pa-0">
                 <v-layout row wrap>
-                  <v-flex class="hidden-sm-and-down text-sm-center text-xs-center">
+                  <v-flex class="hidden-sm-and-down text-md-center text-lg-center">
                      <div v-for="leaf in leafsBackend"
                      v-ripple="{ class: leaf.ripple }"
                      @click="openLeaf(leaf.to)" id="leaf"
-                     class="d-inline-block mb-5 ml-3 mr-3 text-sm-center">
+                     class="d-inline-block mb-5 ml-3 mr-3 text-md-center text-lg-center">
                        <img id="leafLogo" class="round" :src="leaf.logo" />
                        <h3 class="white--text mt-1" style="text-shadow: 1px 1px .1em #555;">{{ leaf.name }}</h3>
                      </div>
@@ -96,16 +96,19 @@
             <v-flex xs12 sm12>
               <v-container class="pa-0">
                 <v-layout row wrap>
-                  <v-flex class="text-sm-center text-xs-center">
+                  <v-flex class="hidden-sm-and-down text-md-center text-lg-center">
                       <div v-for="leaf in leafsFrameworks"
                       v-ripple="{ class: leaf.ripple }" @click="openLeaf(leaf.to)"
-                      id="leaf" class="hidden-xs-only mb-5 mr-3 ml-3 text-sm-center text-xs-center d-inline-block">
+                      id="leaf" class="d-inline-block mb-5 mr-3 ml-3 text-md-center text-lg-center">
                         <img id="leafLogo" class="round" :src="leaf.logo" />
                         <h3 class="white--text mt-1" style="text-shadow: 1px 1px .1em #555;">{{ leaf.name }}</h3>
                       </div>
+                  </v-flex>
+                  
+                  <v-flex class="hidden-md-and-up text-sm-center text-xs-center">
                       <div v-for="leaf in leafsFrameworks"
                       v-ripple="{ class: leaf.ripple }" @click="openLeaf(leaf.to)"
-                      id="leaf" class="hidden-sm-and-up mb-5 mr-0 ml-0 text-sm-center text-xs-center d-inline-block">
+                      id="leaf" class="d-inline-block mb-5 mr-0 ml-0 text-sm-center text-xs-center">
                         <img id="leafLogo" class="round" :src="leaf.logo" />
                         <h3 class="white--text mt-1" style="text-shadow: 1px 1px .1em #555;">{{ leaf.name }}</h3>
                       </div>
@@ -139,36 +142,76 @@
             <v-flex xs12 sm12>
               <v-container class="pa-0">
                 <v-layout row wrap>
-                  <v-flex class="text-sm-center text-xs-center">
+                  <v-flex class="hidden-sm-and-down text-md-center text-lg-center">
                       <div v-for="leaf in leafsLibraries" v-if="frameworkPicked === 'none'"
                       v-ripple="{ class: leaf.ripple }" id="leaf"
-                      class="mb-5 ml-3 mr-3 d-inline-block text-sm-center text-xs-center">
-
+                      class="d-inline-block mb-5 ml-3 mr-3 text-md-center text-lg-center">
                         <img id="leafLogo" class="round" :src="leaf.logo" />
                         <h3 class="white--text mt-1" style="text-shadow: 1px 1px .1em #555;">{{ leaf.name }}</h3>
                       </div>
-
+                  </v-flex>
+                  
+                  <v-flex class="hidden-md-and-up text-sm-center text-xs-center">
+                      <div v-for="leaf in leafsLibraries" v-if="frameworkPicked === 'none'"
+                      v-ripple="{ class: leaf.ripple }" id="leaf"
+                      class="d-inline-block mb-5 ml-0 mr-0 text-sm-center text-xs-center">
+                        <img id="leafLogo" class="round" :src="leaf.logo" />
+                        <h3 class="white--text mt-1" style="text-shadow: 1px 1px .1em #555;">{{ leaf.name }}</h3>
+                      </div>
+                  </v-flex>
+                  
+                  <v-flex class="hidden-sm-and-down text-md-center text-lg-center">
                       <div v-for="leaf in leafsVueLibs" v-if="frameworkPicked === 'Vue.js'"
                       v-ripple="{ class: leaf.ripple }" id="leaf"
-                      class="mb-5 ml-3 mr-3 d-inline-block text-sm-center text-xs-center">
+                      class="d-inline-block mb-5 ml-3 mr-3 text-md-center text-lg-center">
                         <img id="leafLogo" class="round" :src="leaf.logo" />
                         <h3 class="white--text mt-1" style="text-shadow: 1px 1px .1em #555;">{{ leaf.name }}</h3>
                       </div>
-
+                  </v-flex>
+                  
+                  <v-flex class="hidden-md-and-up text-sm-center text-xs-center">
+                      <div v-for="leaf in leafsVueLibs" v-if="frameworkPicked === 'Vue.js'"
+                      v-ripple="{ class: leaf.ripple }" id="leaf"
+                      class="d-inline-block mb-5 ml-0 mr-0 text-sm-center text-xs-center">
+                        <img id="leafLogo" class="round" :src="leaf.logo" />
+                        <h3 class="white--text mt-1" style="text-shadow: 1px 1px .1em #555;">{{ leaf.name }}</h3>
+                      </div>
+                  </v-flex>
+                  
+                  <v-flex class="hidden-sm-and-down text-md-center text-lg-center">
                       <div v-for="leaf in leafsAngularLibs" v-if="frameworkPicked === 'Angular.js'"
                       v-ripple="{ class: leaf.ripple }" id="leaf"
-                      class="mb-5 ml-3 mr-3 d-inline-block text-sm-center text-xs-center">
+                      class="d-inline-block mb-5 ml-3 mr-3 text-md-center text-lg-center">
                         <img id="leafLogo" class="round" :src="leaf.logo" />
                         <h3 class="white--text mt-1" style="text-shadow: 1px 1px .1em #555;">{{ leaf.name }}</h3>
                       </div>
-
+                   </v-flex>
+                  
+                  <v-flex class="hidden-md-and-up text-sm-center text-xs-center">
+                      <div v-for="leaf in leafsAngularLibs" v-if="frameworkPicked === 'Angular.js'"
+                      v-ripple="{ class: leaf.ripple }" id="leaf"
+                      class="d-inline-block mb-5 ml-0 mr-0 text-sm-center text-xs-center">
+                        <img id="leafLogo" class="round" :src="leaf.logo" />
+                        <h3 class="white--text mt-1" style="text-shadow: 1px 1px .1em #555;">{{ leaf.name }}</h3>
+                      </div>
+                  </v-flex>
+                  
+                  <v-flex class="hidden-sm-and-down text-sm-center text-xs-center">
                       <div v-for="leaf in leafsReactLibs" v-if="frameworkPicked === 'React.js'"
                       v-ripple="{ class: leaf.ripple }" id="leaf"
-                      class="mb-5 ml-3 mr-3 d-inline-block text-sm-center text-xs-center">
+                      class="d-inline-block mb-5 ml-3 mr-3 text-md-center text-lg-center">
                         <img id="leafLogo" class="round" :src="leaf.logo" />
                         <h3 class="white--text mt-1" style="text-shadow: 1px 1px .1em #555;">{{ leaf.name }}</h3>
                       </div>
-
+                   </v-flex>
+                  
+                  <v-flex class="hidden-md-and-up text-sm-center text-xs-center">
+                      <div v-for="leaf in leafsReactLibs" v-if="frameworkPicked === 'React.js'"
+                      v-ripple="{ class: leaf.ripple }" id="leaf"
+                      class="d-inline-block mb-5 ml-0 mr-0 text-sm-center text-xs-center">
+                        <img id="leafLogo" class="round" :src="leaf.logo" />
+                        <h3 class="white--text mt-1" style="text-shadow: 1px 1px .1em #555;">{{ leaf.name }}</h3>
+                      </div>
                   </v-flex>
                 </v-layout>
               </v-container>
@@ -189,16 +232,19 @@
             <v-flex xs12 sm12>
               <v-container class="pa-0">
                 <v-layout row wrap>
-                  <v-flex class="text-sm-center text-xs-center">
+                  <v-flex class="hidden-sm-and-down text-md-center text-lg-center">
                       <div v-for="leaf in leafsGraphics"
                       v-ripple="{ class: leaf.ripple }" @click="openLeaf(leaf.to)"
-                      id="leaf" class="hidden-xs-only mb-5 mr-3 ml-3 text-sm-center text-xs-center d-inline-block">
+                      id="leaf" class="d-inline-block mb-5 mr-3 ml-3 text-lg-center text-md-center">
                         <img id="leafLogo" class="round" :src="leaf.logo" />
                         <h3 class="white--text mt-1" style="text-shadow: 1px 1px .1em #555;">{{ leaf.name }}</h3>
                       </div>
+                   </v-flex>
+                   
+                   <v-flex class="hidden-md-and-up text-md-center text-lg-center">
                       <div v-for="leaf in leafsGraphics"
                       v-ripple="{ class: leaf.ripple }" @click="openLeaf(leaf.to)"
-                      id="leaf" class="hidden-sm-and-up mb-5 mr-0 ml-0 text-sm-center text-xs-center d-inline-block">
+                      id="leaf" class="d-inline-block mb-5 mr-0 ml-0 text-sm-center text-xs-center">
                         <img id="leafLogo" class="round" :src="leaf.logo" />
                         <h3 class="white--text mt-1" style="text-shadow: 1px 1px .1em #555;">{{ leaf.name }}</h3>
                       </div>
@@ -474,8 +520,8 @@ export default {
     }
   }
   #leaf{
-    height:10em;
-    width:10em;
+    height:9em;
+    width:9em;
     padding-top:.5em;
     transform-origin: center;
     transition-duration: 1s;
@@ -485,8 +531,8 @@ export default {
     border-radius:.8em;
   }
   #leafLogo{
-    height:9em;
-    width:9em;
+    height:8em;
+    width:8em;
     transform-origin: center;
     transition-duration: 1s;
     transition-property: all;
