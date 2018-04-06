@@ -1,26 +1,24 @@
-<template lang="html">
-  <main class="secondary">
-    <v-container fluid fill-height>
-      <v-layout column>
-        <vue-particles class="pnfparticles centerABS"
-        color="#eee"
-        :particleOpacity=".1"
-        :particlesNumber="22"
-        shapeType="edge"
-        :particleSize="22"
-        :lineLinked="false"
-        :moveSpeed="1"
-        :hoverEffect="true"
-        hoverMode="repulse"
-        :clickEffect="false"
-        ></vue-particles>
-        <v-flex xs12 sm12 md12 lg12 class="text-lg-center text-md-center text-sm-center text-xs-center" align-center>
+<template>
+    <v-container id="main" fluid fill-height>
+        <v-flex class="text-xs-center text-sm-center text-md-center">
           <h1 class="primary--text"style="font-size:4em;">Error 404</h1>
           <p class="primary--text typed" style="font-size:2em;"><span id="areyoulostbot" class="white--text"></span></p>
         </v-flex>
-      </v-layout>
+      <vue-particles
+      class="fillX centerABS"
+      height="99%"
+      color="#eee"
+      :particleOpacity=".1"
+      :particlesNumber="22"
+      shapeType="edge"
+      :particleSize="22"
+      :lineLinked="false"
+      :moveSpeed="1"
+      :hoverEffect="true"
+      hoverMode="repulse"
+      :clickEffect="false"
+      ></vue-particles>
     </v-container>
-  </main>
 </template>
 
 <script>
@@ -36,10 +34,7 @@ export default {
       'Unless you were looking for this error page',
       'Congratulations! You found it',
       'It\'s time to leave',
-      'Do you see buttons up there?',
       'What are you waiting for?',
-      'Do you think there will be an award at the end?',
-      'There\'s no end',
       'I can stay here for hours',
       'Can you?',
       'Don\'t waste your time',
@@ -49,7 +44,7 @@ export default {
       '-_- I\'m watching you -_-']
     }
   },
-  mounted () {
+ mounted () {
     let typed = new Typed('#areyoulostbot', {
       strings: this.typedOptions,
       typeSpeed: 11,
@@ -63,7 +58,7 @@ export default {
 </script>
 
 <style scoped>
-main{
+#main{
   background: url('https://images.unsplash.com/photo-1494376877685-d3d2559d4f82?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=57a67cd508074eb9f10cf0da30c6db23&auto=format&fit=crop&w=1950&q=80') 100% 100% no-repeat;
   background-size: cover;
 }
@@ -76,9 +71,5 @@ main{
     0% { opacity: 1; }
     50% { opacity: 0; }
     100% { opacity: 1; }
-}
-.pnfparticles{
-  width:100vw;
-  height:99vh;
 }
 </style>

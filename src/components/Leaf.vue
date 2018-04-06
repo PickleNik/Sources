@@ -5,7 +5,7 @@
         <v-flex xs12 sm8 offset-sm2 md6 offset-md3 lg6 offset-lg3 class="mb-2 text-xs-center text-sm-center text-md-center text-lg-center">
           <v-tooltip top>
             <h1 slot="activator" class="titles roundL text-sm-center">
-             <a class="contact grey--text" href="https://en.wikipedia.org/wiki/HTML" target="_blank">What is {{leaf.name}}</a></h1>
+             <a class="contact grey--text" href="https://en.wikipedia.org/wiki/HTML" target="_blank">What is {{ this.leaf.name }}</a></h1>
             <span>Read in Wikipedia</span>
           </v-tooltip>
         </v-flex>
@@ -43,7 +43,7 @@
           <h1 class="titles grey--text pt-3">Additionally</h1>
         </v-flex>
       </v-layout>
-      
+
       <v-layout>
         <v-flex xs12 sm12 md8 offset-md2 lg6 offset-lg2 class="pt-3 pb-3 text-xs-center text-sm-center">
           <div v-for="add in leafsTools"
@@ -81,7 +81,7 @@
 
 <script>
 export default {
-  props: ['to'],
+  props: ['leaf'],
   data () {
     return {
       navs: [
@@ -93,9 +93,6 @@ export default {
     }
   },
   computed: {
-    leaf () {
-      return this.$store.getters.openedLeaf(this.to)
-    },
     leafsBasic () {
       return this.$store.getters.leafsBasic
     },

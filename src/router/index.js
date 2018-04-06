@@ -25,7 +25,7 @@ export default new Router({
       component: Tree
     },
     {
-      path: '/leaf/:to',
+      path: '/leaf-:to',
       props: true,
       component: Leaf
     },

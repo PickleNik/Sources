@@ -96,7 +96,6 @@ h1+p, p+p {
 }
 
 .card-wrap {
-  margin: 1em;
   transform: perspective(800px);
   transform-style: preserve-3d;
   cursor: pointer;
