@@ -268,16 +268,19 @@
             <v-flex xs12 sm12>
               <v-container class="pa-0">
                 <v-layout row wrap>
-                  <v-flex class="text-sm-center text-xs-center">
+                  <v-flex class="hidden-sm-and-down text-sm-center text-xs-center">
                       <div v-for="leaf in leafsHosting"
                       v-ripple="{ class: leaf.ripple }" @click="openLeaf(leaf.to)"
-                      id="leaf" class="hidden-xs-only mb-5 mr-3 ml-3 text-sm-center text-xs-center d-inline-block">
+                      id="leaf" class="d-inline-block mb-5 mr-3 ml-3 text-sm-center text-xs-center">
                         <img id="leafLogo" class="round" :src="leaf.logo" />
                         <h3 class="white--text mt-1" style="text-shadow: 1px 1px .1em #555;">{{ leaf.name }}</h3>
                       </div>
+                   </v-flex>
+                   
+                   <v-flex class="hidden-md-and-up text-md-center text-lg-center">
                       <div v-for="leaf in leafsHosting"
                       v-ripple="{ class: leaf.ripple }" @click="openLeaf(leaf.to)"
-                      id="leaf" class="hidden-sm-and-up mb-5 mr-0 ml-0 text-sm-center text-xs-center d-inline-block">
+                      id="leaf" class="d-inline-block mb-5 mr-0 ml-0 text-md-center text-lg-center">
                         <img id="leafLogo" class="round" :src="leaf.logo" />
                         <h3 class="white--text mt-1" style="text-shadow: 1px 1px .1em #555;">{{ leaf.name }}</h3>
                       </div>
