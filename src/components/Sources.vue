@@ -157,6 +157,12 @@ export default {
           logo:'https://lh3.googleusercontent.com/WGnfuvo95Yporu_v1zBaDDpt5RLYh_eM1YMMu56pos4V81Ae2djhMfTPtAI50DhLglT4=w300'
         },
         {
+          name:'Laracasts',
+          title:'It's Kinda Like Netflix for Your Career!',
+          link:'https://laracasts.com/',
+          logo:'https://media.simplecast.com/episode/image/100715/small_1513187635-artwork.jpg'
+        },
+        {
           name:'CodeCademy',
           title:'Whether you\'re writing your first line of code or transforming your career, start with us and get the technical skills you need to skill up and stand out.',
           link:'https://www.codecademy.com/',
