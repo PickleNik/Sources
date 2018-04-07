@@ -5,11 +5,9 @@
       <v-toolbar-title id="name" class="ml-0 mt-3 round"><router-link to="/" tag="span" class="link--ilin"><span><v-icon class="mr-1 accent--text">weekend</v-icon>Sou</span><span>rce<v-icon class="ml-1 accent--text">laptop_mac</v-icon></span></router-link></v-toolbar-title>
       <v-spacer></v-spacer>
 
-      <v-toolbar-items class="secondary roundL">
-        <v-tooltip bottom><span>Source</span><v-btn slot="activator" color="primary" flat fab to="/sources"><v-icon dark>local_library</v-icon></v-btn></v-tooltip>
-        <v-tooltip bottom><span>Tree</span><v-btn slot="activator" color="primary" flat fab to="/tree"><v-icon dark>device_hub</v-icon></v-btn></v-tooltip>
-        <v-tooltip bottom><span>You</span><v-btn slot="activator" color="primary" flat fab to="/profile"><v-icon dark>person</v-icon></v-btn></v-tooltip>
-      </v-toolbar-items>
+        <v-tooltip bottom><span>Source</span><v-btn slot="activator" color="primary" flat fab to="/sources" class="ma-0"><v-icon dark>local_library</v-icon></v-btn></v-tooltip>
+        <v-tooltip bottom><span>Tree</span><v-btn slot="activator" color="primary" flat fab to="/tree" class="ma-0"><v-icon dark>device_hub</v-icon></v-btn></v-tooltip>
+        <v-tooltip bottom><span>You</span><v-btn slot="activator" color="primary" flat fab to="/profile" class="ma-0"><v-icon dark>person</v-icon></v-btn></v-tooltip>
 
     </v-toolbar>
 
@@ -17,6 +15,7 @@
       class="hidden-md-and-up"
       fixed shift
       value="true"
+      height="50"app
       :active.sync="e2"
       color="secondary"
       >
@@ -38,8 +37,9 @@
       </v-btn>
     </v-bottom-nav>
 
+    <!-- <v-content> -->
     <router-view></router-view>
-
+    <!-- </v-content> -->
   </v-app>
 </template>
 

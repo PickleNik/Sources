@@ -1,17 +1,14 @@
 <template lang="html">
   <main class="secondary">
-    <v-container class="mt-5 pa-0" fluid>
+    <v-container fluid>
       <v-layout id="whatIs">
-        <v-flex xs12 sm8 offset-sm2 md6 offset-md3 lg6 offset-lg3 class="mb-2 text-xs-center text-sm-center text-md-center text-lg-center">
+
+        <v-flex xs12 sm12 md8 offset-md2 lg8 offset-lg2 class="mb-2 text-xs-center text-sm-center text-md-center text-lg-center">
           <v-tooltip top>
             <h1 slot="activator" class="titles roundL text-sm-center">
-             <a class="contact grey--text" href="https://en.wikipedia.org/wiki/HTML" target="_blank">What is {{ this.leaf.name }}</a></h1>
+             <a class="contact grey--text" href="https://en.wikipedia.org/wiki/HTML" target="_blank">What is {{leaf.name}}</a></h1>
             <span>Read in Wikipedia</span>
           </v-tooltip>
-        </v-flex>
-      </v-layout>
-      <v-layout>
-        <v-flex xs12 sm10 offset-sm1 md>
 
           <v-card id="fadeIn" dark class="roundXL mb-4" style="border-radius:3em;">
             <v-card-media>
@@ -27,26 +24,16 @@
       </v-layout>
 
       <v-layout id="sources">
-        <v-flex xs12 sm8 offset-sm2 class="text-xs-center text-sm-center">
+        <v-flex xs12 sm12 md8 offset-md2 lg8 offset-lg2 class="text-xs-center text-sm-center">
           <h1 class="titles grey--text pt-3">Sources</h1>
-        </v-flex>
-      </v-layout>
-
-      <v-layout row wrap>
-        <v-flex xs12 sm12 md8 offset-md2 lg6 offset-lg2 class="text-sm-center text-xs-center">
           <app-src-card :sources="leaf.sources"></app-src-card>
         </v-flex>
       </v-layout>
 
       <v-layout id="addition">
-        <v-flex xs12 sm4 offset-sm4 class="text-xs-center text-sm-center">
+        <v-flex xs12 sm12 md8 offset-md2 lg8 offset-lg2 class="pt-3 pb-3 text-xs-center text-sm-center">
           <h1 class="titles grey--text pt-3">Additionally</h1>
-        </v-flex>
-      </v-layout>
-
-      <v-layout>
-        <v-flex xs12 sm12 md8 offset-md2 lg6 offset-lg2 class="pt-3 pb-3 text-xs-center text-sm-center">
-          <div v-for="add in leafsTools"
+          <div v-for="add in leaf.leafs"
           v-ripple="{ class: add.ripple }"
           id="leaf" class="mb-5 ml-3 mr-3 d-inline-block text-sm-center text-xs-center">
             <img id="leafLogo" class="round" :src="add.logo" />
@@ -57,22 +44,22 @@
 
     </v-container>
 
-    <div class="text-sm-center hidden-xs-only pa-3 transparent" style="position:fixed; right:2em; bottom:2em; background:#fff; border-radius:3em;">
+    <v-flex md2 lg2 class="text-sm-center hidden-xs-only pa-3 transparent" style="position:fixed; right:2em; bottom:2em; background:#fff; border-radius:3em;">
         <h1 class="grey--text">Next</h1>
         <div class="text-sm-center" style="max-width:11em;">
           <v-chip class="teal white--text">JQuery</v-chip>
           <v-chip class="yellow darken-2 white--text">ES6</v-chip>
           <v-chip class="purple white--text">Frameworks</v-chip>
         </div>
-    </div>
+    </v-flex>
 
-    <div class="text-sm-center hidden-xs-only pa-3 transparent" style="position:fixed; left:2em; bottom:2em; background:#fff; border-radius:3em;">
+    <v-flex md2 lg2 class="text-sm-center hidden-xs-only pa-3 transparent" style="position:fixed; left:2em; bottom:2em; background:#fff; border-radius:3em;">
         <h1 class="grey--text">Required</h1>
         <div class="text-sm-center">
           <v-chip class="orange white--text">HTML</v-chip>
           <v-chip class="blue white--text">CSS</v-chip>
         </div>
-    </div>
+    </v-flex>
 
     <app-nav :navs="navs"></app-nav>
 
@@ -81,7 +68,7 @@
 
 <script>
 export default {
-  props: ['leaf'],
+  props: ['to'],
   data () {
     return {
       navs: [
@@ -93,14 +80,9 @@ export default {
     }
   },
   computed: {
-    leafsBasic () {
-      return this.$store.getters.leafsBasic
-    },
-    leafsBackend () {
-      return this.$store.getters.leafsBackend
-    },
-    leafsTools () {
-      return this.$store.getters.htmlAdd
+    leaf () {
+      return this.$store.getters.branches
+      // return this.$store.getters.openedLeaf(this.to)
     }
   }
 }

@@ -354,6 +354,20 @@ export default {
           title: 'It\'s CSS, with just a little more.',
           whatIsVideo: '',
           sources: [''] },
+        { name: 'PostCSS',
+          ripple: 'red--text',
+          logo: 'http://postcss.org/_/web_modules/Hero/postcss.svg',
+          to: 'postcss',
+          title: 'A tool for transforming CSS with JavaScript',
+          whatIsVideo: '',
+          sources: [''] },
+        { name: 'Stylus',
+          ripple: 'black--text',
+          logo: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFN9wkn14itSWP4vko1WclfxVkjj1GZ-tFGB0APoh6GddYDlbp',
+          to: 'stylus',
+          title: 'EXPRESSIVE, DYNAMIC, ROBUST CSS',
+          whatIsVideo: '',
+          sources: [''] },
         { name: 'CLI',
           ripple: 'black--text',
           logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Icons8_flat_command_line.svg/2000px-Icons8_flat_command_line.svg.png',
@@ -569,7 +583,7 @@ export default {
       leafs: [
         { ripple: 'amber--text', logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/SVG_Logo.svg/2000px-SVG_Logo.svg.png', name: 'SVG', to: '/svg' },
         { ripple: 'orange--text', logo: 'https://library.uoregon.edu/sites/default/files/canvasicon_0.png', name: 'Canvas', to: '/canvas' },
-        { ripple: 'red--text', logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/WebGL_Logo.svg/2000px-WebGL_Logo.svg.png', name: 'WebGL', to: '/webgl' },
+        { ripple: 'red--text', logo: 'https://1001freedownloads.s3.amazonaws.com/vector/thumb/74145/iOS_7_Icon_Template.png', name: 'WebGL', to: '/webgl' },
         { ripple: 'white--text', logo: 'https://kenoleon.github.io/Front-End-Web-Dev-UI-UX/assets/images/threejsLogo.jpg', name: 'Three.js', to: '/threejs' },
         { ripple: 'light-blue--text', logo: 'https://assets.hongkiat.com/uploads/javascript-libraries-animate-svg/svg-vivus.jpg', name: 'Vivus.js', to: 'http://maxwellito.github.io/vivus/' },
         { ripple: 'indigo--text', logo: 'https://assets.hongkiat.com/uploads/javascript-libraries-animate-svg/svg-bonsai.jpg', name: 'Bonsai.js', to: 'http://bonsaijs.org/' },
@@ -610,10 +624,10 @@ export default {
       id: 'tools',
       leafs: [
         { ripple: 'orange--text', logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Circle-icons-keyboard.svg/1024px-Circle-icons-keyboard.svg.png', name: 'Typing', to: '/typing' },
-        { ripple: 'green--text', logo: 'https://raw.githubusercontent.com/stvhwrd/icons/master/atom/Atom-no_shadows-512.png', name: 'Atom', href: 'https://atom.io/' },
         { ripple: 'light-blue--text', logo: 'https://assets-cdn.github.com/images/modules/logos_page/Octocat.png', name: 'GitHub', to: '/github' },
-        { ripple: 'red--text', logo: 'https://d2eip9sf3oo6c2.cloudfront.net/tags/images/000/000/188/full/npmlogo.png', name: 'NPM', href: 'https://www.npmjs.com/' },
         { ripple: 'amber--text', logo: 'https://firebase.google.com/_static/images/firebase/touchicon-180.png', name: 'Firebase', to: '/firease' },
+        { ripple: 'red--text', logo: 'https://d2eip9sf3oo6c2.cloudfront.net/tags/images/000/000/188/full/npmlogo.png', name: 'NPM', href: 'https://www.npmjs.com/' },
+        { ripple: 'green--text', logo: 'https://raw.githubusercontent.com/stvhwrd/icons/master/atom/Atom-no_shadows-512.png', name: 'Atom', href: 'https://atom.io/' },
         { ripple: 'white--text', logo: 'http://blog.codepen.io/wp-content/uploads/2012/06/Button-Fill-White-Large.png', name: 'CodePen', href: 'https://codepen.io/' },
         { ripple: 'light-green--text', logo: 'http://www.karlsjohnson.com/link/resources/images/w3school.png', name: 'Tryit Editor', href: 'https://www.w3schools.com/html/tryit.asp?filename=tryhtml_basic' },
         { ripple: 'blue--text', logo: 'https://cdn.iconscout.com/public/images/icon/free/png-512/jsfiddle-logo-cloud-38db5faa6163991e-512x512.png', name: 'jsFiddle', href: 'https://jsfiddle.net/' },
@@ -621,6 +635,7 @@ export default {
         { ripple: 'black--text', logo: 'https://codepen.io/juliangarnier/pen/oZNYXB/image/large.png', name: 'Animejs', href: 'http://animejs.com' },
         { ripple: 'white--text', logo: 'http://worthyofnote.co.uk/wp-content/uploads/2013/07/animate-css.jpg', name: 'Animate.css', href: 'https://daneden.github.io/animate.css/' },
         { ripple: 'cyan--text', logo: 'https://atomiks.github.io/30-seconds-of-css/e5b4b9ce166177b1bc2dc3772012e0a1.png', name: '30s of CSS', href: 'https://atomiks.github.io/30-seconds-of-css/' },
+        { ripple: 'pink--text', logo: 'https://1001freedownloads.s3.amazonaws.com/vector/thumb/74145/iOS_7_Icon_Template.png', name: 'Popmotion', href: 'https://popmotion.io/' }
       ]
     },
     { name: 'Communities',
@@ -633,7 +648,10 @@ export default {
         { ripple: 'blue--text', logo: 'http://www.stickpng.com/assets/images/5847ebc2cef1014c0b5e4857.png', name: 'Codrops', href: 'https://tympanus.net/codrops/category/tutorials/' },
         { ripple: 'white--text', logo: 'https://pbs.twimg.com/profile_images/868061114160099328/BD0P3vsp_400x400.jpg', name: 'Tutorialzine', href: 'https://tutorialzine.com/' },
         { ripple: 'blue--text', logo: 'https://static1.squarespace.com/static/564cbcb2e4b0741cdb668fe2/t/56b8c853d51cd41553c43507/1454950492725/StackShare.png', name: 'StackShare', href: 'https://stackshare.io/' },
-        { ripple: 'light-blue--text', logo: 'https://avatars2.githubusercontent.com/u/15895995?s=280&v=4', name: 'Coligo', href: 'https://coligo.io' }
+        { ripple: 'light-blue--text', logo: 'https://avatars2.githubusercontent.com/u/15895995?s=280&v=4', name: 'Coligo', href: 'https://coligo.io' },
+        { ripple: 'black--text', logo: 'https://1001freedownloads.s3.amazonaws.com/vector/thumb/74145/iOS_7_Icon_Template.png', name: 'SitePoint', href: 'https://sitepoint.com' },
+        { ripple: 'teal--text', logo: 'https://1001freedownloads.s3.amazonaws.com/vector/thumb/74145/iOS_7_Icon_Template.png', name: 'Coursetro', href: 'https://coursetro.com' }
+
       ]
     }
   ]
@@ -657,45 +675,6 @@ export default {
     },
     branches (state) {
       return state.branches
-    },
-    leafsBasic (state) {
-      return state.leafsBasic
-    },
-    leafsBackend (state) {
-      return state.leafsBackend
-    },
-    leafsFrameworks (state) {
-      return state.leafsFrameworks
-    },
-    leafsLibraries (state) {
-      return state.leafsLibraries
-    },
-    leafsVueLibs (state) {
-      return state.leafsVueLibs
-    },
-    leafsReactLibs (state) {
-      return state.leafsReactLibs
-    },
-    leafsAngularLibs (state) {
-      return state.leafsAngularLibs
-    },
-    leafsGraphics (state) {
-      return state.leafsGraphics
-    },
-    leafsHosting (state) {
-      return state.leafsHosting
-    },
-    leafsMobile (state) {
-      return state.leafsMobile
-    },
-    leafsTools (state) {
-      return state.leafsTools
-    },
-    leafsCommunities (state) {
-      return state.leafsCommunities
-    },
-    htmlAdd (state) {
-      return state.leafsTools.slice(8, 10)
     }
   }
 }

@@ -35,8 +35,8 @@
 
 <!--ABOUT US-->
 <v-layout id="about">
-  <v-flex xs12 sm8 offset-sm2 class="pa-5 white--text">
-    <h1 class="grey--text text-xs-center mb-1 mt-3">About</h1>
+  <v-flex xs12 sm8 offset-sm2 class="pa-5 white--text text-xs-center">
+    <h1 class="grey--text mb-1 mt-3">About</h1>
     <h2  class="pt-4 pb-3 hidden-xs-only" style="text-align:justify;">Study and explore Web development on Source with best online sources. In our organized
     <v-btn class="ma-0 accent--text"small dark flat round to="/tree"><v-icon dark>device_hub</v-icon><h3>Tree</h3></v-btn>
     you will find everything you need to become a web developer. Stop reading this and click get started!</h2>
@@ -44,11 +44,7 @@
     <v-btn class="ma-0 accent--text"small dark flat round to="/tree"><v-icon dark>device_hub</v-icon><h3>Tree</h3></v-btn>
     you will find everything you need to become a web developer. Stop reading this and click get started!</h3>
     <img class="round pa-3 hidden-xs-only" width="100%" src="http://frontenddeveloperjob.com/images/cool.png"/>
-    <div class="text-sm-center text-xs-center">
-
-      <router-link to="/tree"><v-btn round large dark class="mt-2"><v-icon class="hidden-xs-only" left>devices_other</v-icon><v-icon left>developer_mode</v-icon><h4>get started</h4><v-icon class="hidden-xs-only" right>code</v-icon><v-icon right>touch_app</v-icon></v-btn></router-link>
-
-    </div>
+      <router-link to="/tree"><v-btn round dark class="mt-2"><v-icon class="hidden-xs-only" left>devices_other</v-icon><v-icon left>developer_mode</v-icon><h4>get started</h4><v-icon class="hidden-xs-only" right>code</v-icon><v-icon right>touch_app</v-icon></v-btn></router-link>
   </v-flex>
 
 <v-btn dark href="#" v-scroll-to="'#team'" flat round class="mb-5 btnDown">
@@ -64,10 +60,10 @@
 
 <v-flex xs12 sm8 offset-sm2 class="pa-5 white--text">
 
-    <h1 class="grey--text mb-3 mt-3 text-xs-center">Team</h1>
+    <h1 class="grey--text mb-5 mt-3 text-xs-center">Team</h1>
 
     <v-layout row wrap>
-      <v-flex sm10 offset-sm1 class="text-sm-center text-xs-center">
+      <v-flex sm10 offset-sm1 class="text-xs-center">
         <a class="roundXL" target="_blank" href="https://nikita-krupin.firebaseapp.com/" >
         <card3d style="height:calc(100vh / 2.3);" data-image="https://pp.userapi.com/c837225/v837225016/5e1f9/0t3RZJtU-Ag.jpg">
           <h1 slot="header" class="pb-3 text-sm-center"><h2 class="hidden-xs-only">Nikita Krupin</h2><h3 class="hidden-sm-and-up">Nikita Krupin</h3></h1>
@@ -77,7 +73,7 @@
       </v-flex>
   </v-layout>
 
-<v-flex xs12 class="mt-4">
+<v-flex xs12 class="mt-5 mb-5 pb-5">
 
   <v-layout row>
   <v-flex><div style="float:left"><p class="contact">Add a source</p><p class="contact">Visit tree</p><p class="contact">Share</p></div></v-flex>
@@ -176,7 +172,6 @@ export default {
   background:#333;
   min-width: 100vw;
   width:100vw;
-  height: 102vh;
   margin-top:200vh;
 }
 #copyright{
@@ -196,7 +191,7 @@ export default {
   position:absolute;
   left:50%;
   transform:translateX(-50%);
-  bottom:0;
+  bottom:3em;
 }
 .inUp{
   animation: fadeInUp 1s linear 1;

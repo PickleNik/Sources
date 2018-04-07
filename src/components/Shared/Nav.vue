@@ -1,5 +1,5 @@
 <template>
-<v-flex md1 lg1 id="nav" class="hidden-sm-and-down mt-4 pa-3">
+<v-flex md2 lg2 id="nav" class="hidden-sm-and-down mt-4 pa-3">
     <v-layout column>
     <a v-for="nav in navs" :key="nav.name" href="#" v-scroll-to="{el:nav.href, offset: nav.offset}"><v-btn small round flat :to="nav.to"
       class="ma-0 pr-2 link link--kukuri">
