@@ -44,11 +44,24 @@
     <v-btn class="ma-0 accent--text"small dark flat round to="/tree"><v-icon dark>device_hub</v-icon><h3>Tree</h3></v-btn>
     you will find everything you need to become a web developer. Stop reading this and click get started!</h3>
     <img class="round pa-3 hidden-xs-only" width="100%" src="http://frontenddeveloperjob.com/images/cool.png"/>
-      <router-link to="/tree"><v-btn round dark class="mt-2"><v-icon class="hidden-xs-only" left>devices_other</v-icon><v-icon left>developer_mode</v-icon><h4>get started</h4><v-icon class="hidden-xs-only" right>code</v-icon><v-icon right>touch_app</v-icon></v-btn></router-link>
+
+      <v-btn @click="welcomeDialog = true" round dark class="mt-2"><v-icon class="hidden-xs-only" left>devices_other</v-icon><v-icon left>developer_mode</v-icon><h4>get started</h4><v-icon class="hidden-xs-only" right>code</v-icon><v-icon right>touch_app</v-icon></v-btn>
+
+      <v-dialog presistent v-model="welcomeDialog" max-width="500px">
+        <v-container class="roundXL secondary" align-content-center>
+          <v-flex xs12 class="text-xs-center">
+            <h1 class="grey--text mb-3">WooHoo</h1>
+            <p class="hidden-sm-and-down">Please notice the scroll navigation on the left top and pages navigation on the right top of the screen.</p>
+            <p class="hidden-md-and-up">Please notice the navigation at the bottom. For auto-scroll tap the button at the right and choose where to scroll to.</p>
+            <v-spacer></v-spacer>
+            <router-link to="/tree"><v-btn round light class="mt-2 accent"><v-icon class="hidden-xs-only" left>devices_other</v-icon><v-icon left>developer_mode</v-icon><h4>get started</h4><v-icon class="hidden-xs-only" right>code</v-icon><v-icon right>touch_app</v-icon></v-btn></router-link>
+          </v-flex>
+        </v-container>
+      </v-dialog>
   </v-flex>
 
 <v-btn dark href="#" v-scroll-to="'#team'" flat round class="mb-5 btnDown">
-  <v-icon  x-large >keyboard_arrow_down</v-icon>Team<v-icon  x-large >keyboard_arrow_down</v-icon>
+  <v-icon x-large >keyboard_arrow_down</v-icon>Team<v-icon  x-large >keyboard_arrow_down</v-icon>
 </v-btn>
 </v-layout>
 
@@ -109,6 +122,7 @@ import Typed from 'typed.js'
 export default {
   data () {
     return {
+      welcomeDialog: false,
       navs: [
         { name: 'Home ', href: '#hero', icon: 'home' },
         { name: 'About ', href: '#about', icon: 'info' },
@@ -116,7 +130,7 @@ export default {
         { name: 'Tree ', to: '/tree', icon: 'device_hub', posticon: 'keyboard_arrow_right' },
         { name: 'You ', to: '/profile', icon: 'person', posticon: 'keyboard_arrow_right' }
       ],
-      typedOptions: ['Welcome', 'Learn Web Development', 'Learn for free', 'Learn on the go', 'Learn online', 'Learn from best Sources', 'Scroll down']
+      typedOptions: ['Welcome', 'With Source you can:', 'Learn Web Development', 'Learn for free', 'Learn on the go', 'Learn online', 'Learn from best Sources', 'Scroll down']
     }
   },
   mounted () {

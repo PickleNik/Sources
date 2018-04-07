@@ -7,13 +7,14 @@
 
         <v-tooltip bottom><span>Source</span><v-btn slot="activator" color="primary" flat fab to="/sources" class="ma-0"><v-icon dark>local_library</v-icon></v-btn></v-tooltip>
         <v-tooltip bottom><span>Tree</span><v-btn slot="activator" color="primary" flat fab to="/tree" class="ma-0"><v-icon dark>device_hub</v-icon></v-btn></v-tooltip>
-        <v-tooltip bottom><span>You</span><v-btn slot="activator" color="primary" flat fab to="/profile" class="ma-0"><v-icon dark>person</v-icon></v-btn></v-tooltip>
+        <v-tooltip bottom><span>You</span><v-btn slot="activator" color="primary" flat fab class="ma-0"><v-icon dark disabled>person</v-icon></v-btn></v-tooltip>
 
     </v-toolbar>
 
       <v-bottom-nav
       class="hidden-md-and-up"
       fixed shift
+      style="z-index:99999;"
       value="true"
       height="50"app
       :active.sync="e2"
@@ -27,7 +28,7 @@
         <span>Sources</span>
         <v-icon>local_library</v-icon>
       </v-btn>
-      <v-btn dark to="/tree"class="accent--text">
+      <v-btn dark to="/tree" class="accent--text">
         <span>Tree</span>
         <v-icon>device_hub</v-icon>
       </v-btn>
@@ -35,7 +36,35 @@
         <span>You</span>
         <v-icon>person</v-icon>
       </v-btn>
+      <v-btn dark color="accent--text" @click="drawer = !drawer">
+        <span>Scroll</span>
+        <v-icon>menu</v-icon>
+      </v-btn>
     </v-bottom-nav>
+
+        <v-navigation-drawer
+          clipped
+          hide-overlay
+          v-model="drawer"
+          width="90"
+          dark
+          fixed
+          class="pl-1 pt-3 hidden-md-and-up"
+          right
+        >
+        <p class="pink--text">*Working for Tree page only yet.</p>
+        <v-btn v-scroll-to="{el:'#basics', offset: -33}" fab color="accent--text"><v-icon>code</v-icon></v-btn>
+        <v-btn v-scroll-to="{el:'#frontend', offset: -33}" fab color="accent--text"><v-icon>web</v-icon></v-btn>
+        <v-btn v-scroll-to="{el:'#backend', offset: -33}" fab color="accent--text"><v-icon>storage</v-icon></v-btn>
+        <v-btn v-scroll-to="{el:'#frameworks', offset: -33}" fab color="accent--text"><v-icon>settings</v-icon></v-btn>
+        <v-btn v-scroll-to="{el:'#libraries', offset: -33}" fab color="accent--text"><v-icon>color_lens</v-icon></v-btn>
+        <v-btn v-scroll-to="{el:'#graphics', offset: -33}" fab color="accent--text"><v-icon>format_paint</v-icon></v-btn>
+        <v-btn v-scroll-to="{el:'#hosting', offset: -33}" fab color="accent--text"><v-icon>router</v-icon></v-btn>
+        <v-btn v-scroll-to="{el:'#apps', offset: -33}" fab color="accent--text"><v-icon>developer_mode</v-icon></v-btn>
+        <v-btn v-scroll-to="{el:'#tools', offset: -33}" fab color="accent--text"><v-icon>build</v-icon></v-btn>
+        <v-btn v-scroll-to="{el:'#communities', offset: -33}" fab color="accent--text"><v-icon>group</v-icon></v-btn>
+        </v-navigation-drawer>
+
 
     <!-- <v-content> -->
     <router-view></router-view>
@@ -46,7 +75,8 @@
 <script>
 export default {
   data: () => ({
-   e2: 1
+    drawer: null,
+    e2: 1
   })
 }
 </script>
@@ -59,6 +89,9 @@ export default {
 }
 a{
   text-decoration:none;
+}
+.dialog{
+  border-radius:3em;
 }
 .fillY{
   height:100vh;

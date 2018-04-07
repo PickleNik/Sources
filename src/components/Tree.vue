@@ -76,6 +76,7 @@ export default {
       displayArticles: false,
       navs: [
         { name: 'Basics', href: '#basics', offset: -33, icon: 'code' },
+        { name: 'Frontend', href: '#frontend', offset: -33, icon: 'web' },
         { name: 'Backend', href: '#backend', offset: -33, icon: 'storage' },
         { name: 'Frameworks', href: '#frameworks', offset: -33, icon: 'settings' },
         { name: 'Libraries', href: '#libraries', offset: -33, icon: 'color_lens' },

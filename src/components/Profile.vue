@@ -1,8 +1,11 @@
 <template lang="html">
   <main>
-    <v-container style="width:100vw;" class="ma-0 pa-0">
-      <v-layout style="width:100vw;">
-        <v-flex class="mt-5 text-sm-center text-xs-center">
+    <v-container fluid fill-height>
+      <v-layout align-center column class="pa-5 ma-5">
+        <v-flex>
+          <p class="pink--text">*Go away, this page is not ready!</p>
+        </v-flex>
+        <v-flex xs12 class="mt-5 text-sm-center text-xs-center">
 
               <card3d @click.native="dialog = true" class="mt-5 mb-0 card3d hidden-xs-only d-inline-block" style="border-radius:100%; width:28em; height:28em;" data-image="https://images.unsplash.com/photo-1512723185835-0700e5069a9a?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=8d4b1d058305366942842e462844ee7d&auto=format&fit=crop&w=1868&q=80">
                 <h1 slot="header" class="mb-5 orange--text"><h4>{{ username }}</h4></h1>
