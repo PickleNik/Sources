@@ -738,13 +738,37 @@ export default {
   getters: {
     openedLeaf (state) {
       return (leafTo) => {
-        return state.leafsBasic.find((leaf) => {
+        return state.branches[0].leafs.find((leaf) => {
           return leaf.to === leafTo
-        }) ||
-        state.leafsFrameworks.find((leaf) => {
+        })||
+        state.branches[1].leafs.find((leaf) => {
           return leaf.to === leafTo
-        }) ||
-        state.leafsBackend.find((leaf) => {
+        })||
+        state.branches[2].leafs.find((leaf) => {
+          return leaf.to === leafTo
+        })||
+        state.branches[3].leafs.find((leaf) => {
+          return leaf.to === leafTo
+        })||
+        state.branches[4].leafs.find((leaf) => {
+          return leaf.to === leafTo
+        })||
+        state.branches[5].leafs.find((leaf) => {
+          return leaf.to === leafTo
+        })||
+        state.branches[6].leafs.find((leaf) => {
+          return leaf.to === leafTo
+        })||
+        state.branches[7].leafs.find((leaf) => {
+          return leaf.to === leafTo
+        })||
+        state.branches[8].leafs.find((leaf) => {
+          return leaf.to === leafTo
+        })||
+        state.branches[9].leafs.find((leaf) => {
+          return leaf.to === leafTo
+        })||
+        state.branches[10].leafs.find((leaf) => {
           return leaf.to === leafTo
         })
       }

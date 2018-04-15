@@ -1,8 +1,7 @@
 <template lang="html">
   <main class="secondary">
     <v-container class="pa-0">
-      <v-layout column>
-        <v-flex xs12 sm10 offset-sm1>
+        <v-flex xs12 sm12 md8 offset-md2 lg8 offset-lg2 >
           <v-card hover ripple v-for="source in sources" class="ma-4 grey darken-3">
             <v-layout row wrap>
               <v-flex sm2 class="border">
@@ -13,7 +12,7 @@
               </a>
               </v-flex>
 
-              <v-flex sm9 class="pl-3 border">
+              <v-flex sm8 class="pl-3 border">
               <a :href="source.link" target="_blank">
                 <v-card-title class="pt-4 grey--text">
                   <h1>{{ source.name }}</h1>
@@ -24,40 +23,40 @@
               </a>
               </v-flex>
 
-              <v-flex sm1 class="pa-2 border">
-                <v-layout column class="hidden-xs-only" align-content-center>
-                  <v-btn icon flat light>
+              <v-flex sm2 class="pa-2 border">
+                <v-layout column class="hidden-xs-only">
+                  <v-btn icon flat light class="mx-auto">
                     <vue-star color="#222222" animate="rubberBand">
                       <div slot="icon" style="user-select:none;cursor:pointer;" @click="liked = !liked"><v-icon medium :class="{ 'red--text' : liked, 'grey--text' : !liked }" >{{ liked ? 'favorite' : 'favorite_border' }}</v-icon></div>
                     </vue-star>
                   </v-btn>
 
-                  <v-btn icon flat light>
+                  <v-btn icon flat light class="mx-auto">
                     <vue-star color="#222222" animate="rubberBand">
                       <div slot="icon" style="user-select:none;cursor:pointer;" @click="todo = !todo"><v-icon medium :class="{ 'accent--text' : todo, 'grey--text ' : !todo }" >{{ todo ? 'playlist_add_check' : 'playlist_add' }}</v-icon></div>
                     </vue-star>
                   </v-btn>
 
-                  <v-btn icon flat light class="ml-3 pl-2">
+                  <v-btn icon flat light class="mx-auto pl-4">
                     <vue-star color="#222222" animate="rubberBand">
                       <div slot="icon" style="user-select:none;cursor:pointer;" @click="shared = !shared"><v-icon medium :class="{ 'light-blue--text' : shared, 'grey--text' : !shared }" >shared</v-icon></div>
                     </vue-star>
                   </v-btn>
                 </v-layout>
-                <v-layout row class="hidden-sm-and-up"  align-content-center>
-                  <v-btn icon flat light>
+                <v-layout row class="hidden-sm-and-up">
+                  <v-btn icon flat light class="mx-auto">
                     <vue-star color="#222222" animate="rubberBand">
                       <div slot="icon" style="user-select:none;cursor:pointer;" @click="liked = !liked"><v-icon medium :class="{ 'red--text' : liked, 'grey--text' : !liked }" >{{ liked ? 'favorite' : 'favorite_border' }}</v-icon></div>
                     </vue-star>
                   </v-btn>
 
-                  <v-btn icon flat light>
+                  <v-btn icon flat light class="mx-auto">
                     <vue-star color="#222222" animate="rubberBand">
                       <div slot="icon" style="user-select:none;cursor:pointer;" @click="todo = !todo"><v-icon medium :class="{ 'accent--text' : todo, 'grey--text ' : !todo }" >{{ todo ? 'playlist_add_check' : 'playlist_add' }}</v-icon></div>
                     </vue-star>
                   </v-btn>
 
-                  <v-btn icon flat light class="ml-3 pl-2">
+                  <v-btn icon flat light class="mx-auto pl-4">
                     <vue-star color="#222222" animate="rubberBand">
                       <div slot="icon" style="user-select:none;cursor:pointer;" @click="shared = !shared"><v-icon medium :class="{ 'light-blue--text' : shared, 'grey--text' : !shared }" >shared</v-icon></div>
                     </vue-star>
@@ -67,10 +66,11 @@
             </v-layout>
           </v-card>
         </v-flex>
-      </v-layout>
     </v-container>
 
     <app-nav :navs="navs"></app-nav>
+
+    <app-add :add="add"></app-add>
 
   </main>
 </template>
@@ -89,6 +89,7 @@ export default {
         { name: 'Docs', href: '#docs', offset: -33, icon: 'library_books' },
         { name: 'Other', href: '#other', offset: -33, icon: 'library_add' }
       ],
+      add: 'Source',
       sources:[
         {
           name:'SoloLearn',

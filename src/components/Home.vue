@@ -130,12 +130,13 @@ export default {
         { name: 'Tree ', to: '/tree', icon: 'device_hub', posticon: 'keyboard_arrow_right' },
         { name: 'You ', to: '/profile', icon: 'person', posticon: 'keyboard_arrow_right' }
       ],
-      typedOptions: ['Welcome', 'With Source you can:', 'Learn Web Development', 'Learn for free', 'Learn on the go', 'Learn online', 'Learn from best Sources', 'Scroll down']
+      typedOptions: ['Learn Web Development', 'Learn for free', 'Learn on the go', 'Learn online', 'Learn from best Sources']
     }
   },
   mounted () {
     let typed = new Typed('#greeting', {
       strings: this.typedOptions,
+      loop: true,
       typeSpeed: 20,
       backSpeed: 10,
       startDelay: 2000,

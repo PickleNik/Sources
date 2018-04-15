@@ -9,10 +9,13 @@ import VueParticles from 'vue-particles'
 import Card3d from './components/Shared/card.vue'
 import VueStar from 'vue-star'
 import SourceCard from './components/Shared/sourceCard.vue'
+import Add from  './components/Shared/Add.vue'
 
 Vue.component('vue-star', VueStar)
 
 Vue.component('app-src-card', SourceCard)
+
+Vue.component('app-add', Add)
 
 Vue.component('app-nav', Nav)
 

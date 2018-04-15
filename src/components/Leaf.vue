@@ -9,7 +9,6 @@
              <a class="contact grey--text" href="https://en.wikipedia.org/wiki/HTML" target="_blank">What is {{leaf.name}}</a></h1>
             <span>Read in Wikipedia</span>
           </v-tooltip>
-          <p class="pink--text">*Hold on a few weeks, I'll fix it!</p>
 
           <v-card id="fadeIn" dark class="roundXL mb-4" style="border-radius:3em;">
             <v-card-media>
@@ -64,6 +63,8 @@
 
     <app-nav :navs="navs"></app-nav>
 
+    <app-add :add="add"></app-add>
+
   </main>
 </template>
 
@@ -77,13 +78,13 @@ export default {
         { name: 'Sources', href: '#sources', icon: 'local_library' },
         { name: 'Additionally', href: '#addition', icon: 'add_to_queue' },
         { name: 'Tree', to: '/tree', icon: 'device_hub', posticon: 'keyboard_arrow_left' }
-      ]
+      ],
+      add: ''
     }
   },
   computed: {
     leaf () {
-      return this.$store.getters.branches
-      // return this.$store.getters.openedLeaf(this.to)
+      return this.$store.getters.openedLeaf(this.to)
     }
   }
 }
