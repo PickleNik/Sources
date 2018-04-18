@@ -52,6 +52,8 @@
     <!--ASIDE-->
     <app-nav :navs="navs"></app-nav>
 
+    <app-add :add="add"></app-add>
+
     <v-flex md1 class="hidden-md-and-down transparent" style="position:fixed; left:1em; bottom:1em; background:#fff; border-radius:3em;">
         <v-flex v-show="displayArticles" style="max-width:16em;">
           <v-chip v-ripple class="fullW darken-3 red white--text">What is web development</v-chip>
@@ -86,7 +88,8 @@ export default {
         { name: 'Tools', href: '#tools', offset: -33, icon: 'build' },
         { name: 'Communities', href: '#communities', offset: -33, icon: 'group' },
         { name: 'You', to: '', icon: 'person', offset: -33, posticon: 'keyboard_arrow_right' }
-      ]
+      ],
+      add: 'leaf'
     }
   },
   methods: {

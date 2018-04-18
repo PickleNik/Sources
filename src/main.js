@@ -10,6 +10,7 @@ import Card3d from './components/Shared/card.vue'
 import VueStar from 'vue-star'
 import SourceCard from './components/Shared/sourceCard.vue'
 import Add from  './components/Shared/Add.vue'
+import VueClipboard from 'vue-clipboard2'
 
 Vue.component('vue-star', VueStar)
 
@@ -33,6 +34,8 @@ Vue.use(VueScrollTo, {
   x: false,
   y: true
 })
+
+Vue.use(VueClipboard)
 
 Vue.use(VueParticles)
 
