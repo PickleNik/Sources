@@ -54,20 +54,6 @@
 
     <app-add :add="add"></app-add>
 
-    <v-flex md1 class="hidden-md-and-down transparent" style="position:fixed; left:1em; bottom:1em; background:#fff; border-radius:3em;">
-        <v-flex v-show="displayArticles" style="max-width:16em;">
-          <v-chip v-ripple class="fullW darken-3 red white--text">What is web development</v-chip>
-          <v-chip v-ripple class="fullW darken-3 pink white--text">Frontend</v-chip>
-          <v-chip v-ripple class="fullW darken-3 purple white--text">Backend</v-chip>
-          <v-chip v-ripple class="fullW darken-3 deep-purple white--text">Basics</v-chip>
-          <v-chip v-ripple class="fullW darken-3 indigo white--text">Frameworks</v-chip>
-          <v-chip v-ripple class="fullW darken-3 blue white--text">Libraries</v-chip>
-          <v-chip v-ripple class="fullW darken-3 light-blue white--text">Moblie Apps</v-chip>
-          <v-chip v-ripple class="fullW darken-3 cyan white--text">Tools</v-chip>
-        </v-flex>
-        <h1 @click="displayArticles = !displayArticles" class="link link--yaku"><span>A</span><span>r</span><span>t</span><span>i</span><span>c</span><span>l</span><span>e</span><span>s</span></h1>
-    </v-flex>
-
   </main>
 </template>
 
@@ -75,7 +61,6 @@
 export default {
   data () {
     return {
-      displayArticles: false,
       navs: [
         { name: 'Basics', href: '#basics', offset: -33, icon: 'code' },
         { name: 'Frontend', href: '#frontend', offset: -33, icon: 'web' },
@@ -86,8 +71,7 @@ export default {
         { name: 'Hosting', href: '#hosting', offset: -33, icon: 'router' },
         { name: 'Apps', href: '#apps', offset: -33, icon: 'developer_mode' },
         { name: 'Tools', href: '#tools', offset: -33, icon: 'build' },
-        { name: 'Communities', href: '#communities', offset: -33, icon: 'group' },
-        { name: 'You', to: '', icon: 'person', offset: -33, posticon: 'keyboard_arrow_right' }
+        { name: 'Communities', href: '#communities', offset: -33, icon: 'group' }
       ],
       add: 'leaf'
     }
@@ -143,8 +127,8 @@ export default {
     }
   }
   #leaf{
-    height:9em;
-    width:9em;
+    height:10em;
+    width:10em;
     padding-top:.5em;
     transform-origin: center;
     transition-duration: 1s;
@@ -154,8 +138,8 @@ export default {
     border-radius:.8em;
   }
   #leafLogo{
-    height:8em;
-    width:8em;
+    height:9em;
+    width:9em;
     transform-origin: center;
     transition-duration: 1s;
     transition-property: all;

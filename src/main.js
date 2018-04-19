@@ -11,6 +11,10 @@ import VueStar from 'vue-star'
 import SourceCard from './components/Shared/sourceCard.vue'
 import Add from  './components/Shared/Add.vue'
 import VueClipboard from 'vue-clipboard2'
+import 'vue-awesome/icons'
+import Icon from 'vue-awesome/components/Icon'
+
+Vue.component('icon', Icon)
 
 Vue.component('vue-star', VueStar)
 

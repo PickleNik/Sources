@@ -39,7 +39,7 @@
     <h1 class="grey--text mb-1 mt-3">About</h1>
     <h2  class="pt-4 pb-3 hidden-xs-only" style="text-align:justify;">Study and explore Web development on Source with best online sources. In our organized
     <v-btn class="ma-0 accent--text"small dark flat round to="/tree"><v-icon dark>device_hub</v-icon><h3>Tree</h3></v-btn>
-    you will find everything you need to become a web developer. Stop reading this and click get started!</h2>
+    you will find everything you need to become a web developer. Just pick a "leaf" and go through the tutorials!</h2>
     <h3  class="pt-3 hidden-sm-and-up" style="text-align:justify;">Study and explore Web development on Source with best online sources. In our organized
     <v-btn class="ma-0 accent--text"small dark flat round to="/tree"><v-icon dark>device_hub</v-icon><h3>Tree</h3></v-btn>
     you will find everything you need to become a web developer. Stop reading this and click get started!</h3>
@@ -47,7 +47,7 @@
 
       <v-btn @click="welcomeDialog = true" round dark class="mt-2"><v-icon class="hidden-xs-only" left>devices_other</v-icon><v-icon left>developer_mode</v-icon><h4>get started</h4><v-icon class="hidden-xs-only" right>code</v-icon><v-icon right>touch_app</v-icon></v-btn>
 
-      <v-dialog presistent v-model="welcomeDialog" max-width="500px">
+      <v-dialog presistent v-model="welcomeDialog" max-width="500px" content-class="elevation-0">
         <v-container class="roundXL secondary" align-content-center>
           <v-flex xs12 class="text-xs-center">
             <h1 class="grey--text mb-3">WooHoo</h1>

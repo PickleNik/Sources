@@ -14,31 +14,31 @@
   </div>
   </a>
 
-  <v-card-actions class="pr-3 pl-3 ml-2">
-  <v-flex>
-    <v-btn icon flat light>
+  <v-card-actions>
+    <v-flex>
+    <v-btn icon flat light class="ml-3">
       <vue-star style="z-index:0" color="#222222" animate="rubberBand">
         <div slot="icon" style="user-select:none;cursor:pointer;" @click="source.starred = !source.starred"><v-icon :class="{ 'red--text' : source.starred, 'grey--text' : !source.starred }" large>favorite</v-icon></div>
       </vue-star>
     </v-btn>
 
-    <v-btn icon flat light>
+    <v-btn icon flat light class="ml-2">
       <vue-star style="z-index:0" color="#222222" animate="rubberBand">
         <div slot="icon" style="user-select:none;cursor:pointer;" @click="source.todo = !source.todo"><v-icon :class="{ 'accent--text' : source.todo, 'grey--text ' : !source.todo }" large>{{ source.todo ? 'playlist_add_check' : 'playlist_add' }}</v-icon></div>
       </vue-star>
     </v-btn>
 
-    <v-btn v-clipboard:copy="source.link" icon flat light class="ml-3">
+    <v-btn v-clipboard:copy="source.link" icon flat light class="ml-4">
       <vue-star style="z-index:0" color="#222222" animate="rubberBand">
         <div slot="icon" style="user-select:none;cursor:pointer;" @click.once="source.shared = !source.shared, copied = !copied"><v-icon :class="{ 'light-blue--text' : source.shared, 'grey--text' : !source.shared }" large>shared</v-icon></div>
       </vue-star>
     </v-btn>
-  </v-flex>
+    </v-flex>
   </v-card-actions>
 
   </v-card>
 
-  <v-dialog width="500" v-model="copied" content-class="roundXL"><v-card class="secondary pa-3 text-xs-center" ><v-card-text class="accent--text display-1">Link have been copied!</v-card-text><v-card-actions><v-btn @click="copied = !copied" outline light round color="accent" class="mx-auto">Ok</v-btn></v-card-actions></v-card></v-dialog>
+  <v-dialog width="500" v-model="copied" style="border-radius:3em;"><v-card class="secondary pa-3 text-xs-center" ><v-card-text class="accent--text display-1">Link have been copied!</v-card-text><v-card-actions><v-btn @click="copied = !copied" outline light round color="accent" class="mx-auto">Ok</v-btn></v-card-actions></v-card></v-dialog>
 
 </div>
 </template>
