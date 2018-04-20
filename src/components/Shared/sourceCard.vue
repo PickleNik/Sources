@@ -59,7 +59,7 @@
     width:auto;
     max-width:90%;
     height:7em;
-    border-radius:3em;
+    border-radius:1em;
   }
   .src-card{
     transition-duration:.5s;

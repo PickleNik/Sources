@@ -246,12 +246,12 @@ export default {
           { name: 'CSS', color: 'blue', to: 'leaf-css', icon: 'brands/css3-alt' }
         ],
         next: [
+          { name: 'Sass', color: 'pink lighten-2', to: 'leaf-sass', icon: 'brands/sass'},
+          { name: 'ECMAScript', color: 'amber', to: 'leaf-es6', icon: 'brands/js'},
           { name: 'Node.js', color: 'lime', to: 'leaf-nodejs', icon: 'brands/node-js'},
-          { name: 'ES6', color: 'amber', to: 'es6'},
-          { name: 'Babel', color: 'amber', to: 'babel'},
-          { name: 'Sass', color: 'pink lighten-2', to: 'sass', icon: 'brands/sass'},
-          { name: 'Less', color: 'blue darken-2', to: 'less', icon: 'brands/less'},
-          { name: 'Frameworks', color: 'accent', to: 'tree#frameworks', icon: 'cogs'}
+          { name: 'Frameworks', color: 'accent', href: 'https://source-2fea2.firebaseapp.com/tree#frameworks', icon: 'cog'},
+          { name: 'Webpack', color: 'light-blue lighten-2', to: 'leaf-webpack'},
+          { name: 'ClI', color: 'grey', to: 'leaf-cli', icon: 'terminal'}
         ],
         sources: [
           { name: 'SoloLearn',
@@ -352,7 +352,25 @@ export default {
           todo: false,
           starred: false,
           shared: false,
-          sources: ['']  },
+          req: [
+            { name: 'HTML', color: 'orange', to: 'leaf-html', icon: 'brands/html5' },
+            { name: 'CSS', color: 'blue', to: 'leaf-css', icon: 'brands/css3-alt' },
+            { name: 'JavaScript', color: 'amber', to: 'leaf-javascript', icon: 'brands/js'}
+          ],
+          next: [
+            { name: 'ECMAScript', color: 'amber', to: 'leaf-es6', icon: 'brands/js'},
+            { name: 'Frameworks', color: 'accent', href: 'https://source-2fea2.firebaseapp.com/tree#frameworks', icon: 'cog'}
+          ],
+          sources: [
+            { name: 'W3schools',
+              todo: false,
+              starred: false,
+              shared: false,
+              link: 'https://www.w3schools.com/nodejs/',
+              logo: 'https://store-images.s-microsoft.com/image/apps.30495.13510798887792718.c58f517f-a070-448d-9f42-44c93b19dcae.05c3b4ed-79d8-4d84-be6d-7d3290f1533e?w=180&h=180&q=60',
+              icon: 'library_books' },
+
+          ]  },
         { name: 'Webpack',
           ripple: 'light-blue--text',
           logo: 'https://topheman.github.io/webpack-babel-starter/assets/974262647c82057b6078c432841a53ea.png',
@@ -362,7 +380,15 @@ export default {
           todo: false,
           starred: false,
           shared: false,
-          sources: ['']  },
+          sources: [
+            { name: 'Documentation',
+              todo: false,
+              starred: false,
+              shared: false,
+              link: 'https://webpack.js.org',
+              logo: 'https://topheman.github.io/webpack-babel-starter/assets/974262647c82057b6078c432841a53ea.png',
+              icon: 'important_devices' },
+          ]  },
         { name: 'CLI',
           ripple: 'black--text',
           logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Icons8_flat_command_line.svg/2000px-Icons8_flat_command_line.svg.png',
@@ -580,7 +606,24 @@ export default {
           todo: false,
           starred: false,
           shared: false,
-          sources: ['']},
+          wiki: 'https://en.wikipedia.org/wiki/Vue.js',
+          req: [
+            { name: 'HTML', color: 'orange', to: 'leaf-html', icon: 'brands/html5' },
+            { name: 'CSS', color: 'blue', to: 'leaf-css', icon: 'brands/css3-alt' },
+            { name: 'JavaScript', color: 'amber', to: 'leaf-javascript', icon: 'brands/js'}
+          ],
+          next: [
+            { name: 'Libraries', color: 'accent', href: 'https://source-2fea2.firebaseapp.com/tree#libraries', icon: 'paint-brush'},
+          ],
+          sources: [
+            { name: 'Documentation',
+              todo: false,
+              starred: false,
+              shared: false,
+              link: 'https://vuejs.org',
+              logo: 'https://vuejs.org/images/logo.png',
+              icon: 'important_devices' },
+          ]},
         { name: 'Angular',
           logo: 'https://cdn.worldvectorlogo.com/logos/angular-icon-1.svg',
           ripple: 'red--text',
@@ -762,7 +805,11 @@ export default {
         { ripple: 'black--text', logo: 'https://codepen.io/juliangarnier/pen/oZNYXB/image/large.png', name: 'Animejs', href: 'http://animejs.com' },
         { ripple: 'white--text', logo: 'http://worthyofnote.co.uk/wp-content/uploads/2013/07/animate-css.jpg', name: 'Animate.css', href: 'https://daneden.github.io/animate.css/' },
         { ripple: 'cyan--text', logo: 'https://atomiks.github.io/30-seconds-of-css/e5b4b9ce166177b1bc2dc3772012e0a1.png', name: '30s of CSS', href: 'https://atomiks.github.io/30-seconds-of-css/' },
-        { ripple: 'pink--text', logo: 'https://pbs.twimg.com/profile_images/932879315343167488/m4w3StTy_400x400.jpg', name: 'Popmotion', href: 'https://popmotion.io/' }
+        { ripple: 'pink--text', logo: 'https://pbs.twimg.com/profile_images/932879315343167488/m4w3StTy_400x400.jpg', name: 'Popmotion', href: 'https://popmotion.io/' },
+        { ripple: 'pink--text', logo: 'https://i.pinimg.com/originals/da/96/c9/da96c94b507e4c508dd6e901455cfe68.jpg', name: 'Loaders.css', href: 'https://connoratherton.com/loaders' },
+        { ripple: 'red--text', logo: 'https://i.pinimg.com/originals/84/30/d2/8430d2bfcdfe8d00a9eaacb62fb272df.png', name: 'Particles.js', href: 'https://vincentgarreau.com/particles.js/' },
+        { ripple: 'light-blue--text', logo: 'http://www.webknowledgefree.com/wp-content/uploads/2015/12/bouncejs-css-animation-library-for-web-designer.jpg', name: 'Bounce.js', href: 'http://bouncejs.com/' },
+        { ripple: '--text', logo: '', name: '', href: '' },
       ]
     },
     { name: 'Communities',
