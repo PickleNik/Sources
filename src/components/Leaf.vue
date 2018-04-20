@@ -33,12 +33,7 @@
       <v-layout id="addition">
         <v-flex xs12 sm12 md8 offset-md2 lg8 offset-lg2 class="pt-3 pb-3 text-xs-center">
           <h1 class="titles grey--text pt-3">Additionally</h1>
-          <div v-for="add in leaf.leafs"
-          v-ripple="{ class: add.ripple }"
-          id="leaf" class="mb-5 ml-3 mr-3 d-inline-block  text-xs-center">
-            <img id="leafLogo" class="round" :src="add.logo" />
-            <h3 class="white--text mt-1" style="text-shadow: 1px 1px .1em #555;">{{ add.name }}</h3>
-          </div>
+          <app-src-card :sources="leaf.addition"></app-src-card>
       </v-flex>
       </v-layout>
 
@@ -88,47 +83,6 @@ export default {
 </script>
 
 <style scoped>
-  #leaf{
-    height:10em;
-    width:10em;
-    padding-top:.5em;
-    transform-origin: center;
-    transition-duration: 1s;
-    transition-property: all;
-    transform-origin: top center;
-    animation: pulse .5s linear 1;
-    border-radius:.8em;
-  }
-  #up{
-      animation: zoomInRight 1s linear 1;
-  }
-  #leafLogo{
-    height:9em;
-    width:9em;
-    transform-origin: center;
-    transition-duration: 1s;
-    transition-property: all;
-    transform: scale(0.8);
-    user-select: none;
-  }
-  #leaf:hover{
-    background: rgba(222,222,222,0.5);
-    border-radius:100%;
-    transform: scale(1.1);
-    cursor:pointer;
-    transform-origin: center;
-    transition-duration: .8s;
-    transition-property: all;
-  }
-  #leaf:hover > #leafLogo{
-    transform: scale(0.7);
-    transform-origin: center;
-    transition-duration: .3s;
-    transition-property: all;
-  }
-  .half-trans{
-    background:rgba(0,0,0,0.5);
-  }
   .mycard{
     transition-duration:.3s;
     transition-property: all;

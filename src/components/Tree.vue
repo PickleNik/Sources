@@ -243,4 +243,9 @@ export default {
 	-webkit-transition-delay: 1s;
 	transition-delay: 1s;
 }
+.link--yaku span:nth-child(12)
+.link--yaku:hover span:nth-child(12) {
+	-webkit-transition-delay: 1.1s;
+	transition-delay: 1.1s;
+}
 </style>
