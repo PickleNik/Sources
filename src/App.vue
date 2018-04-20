@@ -52,7 +52,6 @@
           class="pl-1 pt-3 hidden-md-and-up"
           right
         >
-        <p class="pink--text">*Working for Tree page only yet.</p>
         <v-btn v-scroll-to="{el:'#basics', offset: -33}" fab color="accent--text"><v-icon>code</v-icon></v-btn>
         <v-btn v-scroll-to="{el:'#frontend', offset: -33}" fab color="accent--text"><v-icon>web</v-icon></v-btn>
         <v-btn v-scroll-to="{el:'#backend', offset: -33}" fab color="accent--text"><v-icon>storage</v-icon></v-btn>

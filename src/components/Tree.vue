@@ -20,8 +20,9 @@
             :href="leaf.href" target="_blank"
             v-ripple="{ class: leaf.ripple }"
             @click="openLeaf(leaf.to)" id="leaf"
-            class="d-inline-block mb-5 ml-3 mr-3">
-              <img id="leafLogo" class="round" :src="leaf.logo" />
+            class="d-inline-block mb-5 mx-4">
+              <v-badge v-if="leaf.badge" color="transparent" overlap><icon slot="badge" :name="leaf.badge" scale="10" :class="leaf.badgecolor" ></icon><img id="leafLogo" class="round" :src="leaf.logo" /></v-badge>
+              <img v-if="!leaf.badge" id="leafLogo" class="round" :src="leaf.logo" />
               <h3 class="white--text mt-1" style="text-shadow: 1px 1px .1em #555;">{{ leaf.name }}</h3>
             </a>
           </v-flex>
@@ -31,8 +32,9 @@
             :href="leaf.href" target="_blank"
             v-ripple="{ class: leaf.ripple }"
             @click="openLeaf(leaf.to)" id="leaf"
-            class="d-inline-block mb-5 ml-0 mr-0">
-              <img id="leafLogo" class="round" :src="leaf.logo" />
+            class="d-inline-block mb-5 mx-0">
+              <v-badge v-if="leaf.badge" color="transparent" overlap><icon slot="badge" :name="leaf.badge" scale="10" :class="leaf.badgecolor" ></icon><img id="leafLogo" class="round" :src="leaf.logo" /></v-badge>
+              <img v-if="!leaf.badge" id="leafLogo" class="round" :src="leaf.logo" />
               <h3 class="white--text mt-1" style="text-shadow: 1px 1px .1em #555;">{{ leaf.name }}</h3>
             </a>
           </v-flex>
@@ -127,8 +129,8 @@ export default {
     }
   }
   #leaf{
-    height:10em;
-    width:10em;
+    height:9em;
+    width:9em;
     padding-top:.5em;
     transform-origin: center;
     transition-duration: 1s;
@@ -138,8 +140,8 @@ export default {
     border-radius:.8em;
   }
   #leafLogo{
-    height:9em;
-    width:9em;
+    height:8em;
+    width:8em;
     transform-origin: center;
     transition-duration: 1s;
     transition-property: all;

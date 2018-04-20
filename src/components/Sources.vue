@@ -1,6 +1,6 @@
 <template lang="html">
   <main class="secondary">
-    <v-container class="pa-0">
+    <v-container fluid class="pa-0">
         <v-flex xs12 sm12 md8 offset-md2 lg8 offset-lg2 >
           <v-card hover ripple v-for="source in sources" class="ma-4 grey darken-3">
             <v-layout row wrap>
