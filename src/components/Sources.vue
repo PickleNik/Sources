@@ -2,7 +2,7 @@
   <main class="secondary">
     <v-container fluid class="pa-0">
         <v-flex xs12 sm12 md8 offset-md2 lg8 offset-lg2 >
-          <v-card hover ripple v-for="source in sources" class="ma-4 grey darken-3">
+          <v-card hover ripple v-for="source in sources" :key="source.name" class="ma-4 grey darken-3">
             <v-layout row wrap>
               <v-flex sm2 class="border">
               <a :href="source.link" target="_blank">

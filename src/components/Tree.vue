@@ -19,10 +19,9 @@
             <a v-for="leaf in branch.leafs"
             :href="leaf.href" target="_blank"
             v-ripple="{ class: leaf.ripple }"
-            @click="openLeaf(leaf.to)" id="leaf"
-            class="d-inline-block mb-5 mx-4">
-              <v-badge v-if="leaf.badge" color="transparent" overlap><icon slot="badge" :name="leaf.badge" scale="10" :class="leaf.badgecolor" ></icon><img id="leafLogo" class="round" :src="leaf.logo" /></v-badge>
-              <img v-if="!leaf.badge" id="leafLogo" class="round" :src="leaf.logo" />
+            @click="openLeaf(leaf.to)" class="leaf d-inline-block mb-5 mx-4">
+              <v-badge v-if="leaf.badge" color="transparent" overlap class="leafLogo"><icon slot="badge" :name="leaf.badge" scale="10" :class="leaf.badgecolor" ></icon><img class="leafLogo round" :src="leaf.logo" /></v-badge>
+              <img v-if="!leaf.badge" class="leafLogo round" :src="leaf.logo" />
               <h3 class="white--text mt-1" style="text-shadow: 1px 1px .1em #555;">{{ leaf.name }}</h3>
             </a>
           </v-flex>
@@ -31,10 +30,9 @@
             <a v-for="leaf in branch.leafs"
             :href="leaf.href" target="_blank"
             v-ripple="{ class: leaf.ripple }"
-            @click="openLeaf(leaf.to)" id="leaf"
-            class="d-inline-block mb-5 mx-0">
-              <v-badge v-if="leaf.badge" color="transparent" overlap><icon slot="badge" :name="leaf.badge" scale="10" :class="leaf.badgecolor" ></icon><img id="leafLogo" class="round" :src="leaf.logo" /></v-badge>
-              <img v-if="!leaf.badge" id="leafLogo" class="round" :src="leaf.logo" />
+            @click="openLeaf(leaf.to)"  class="leaf d-inline-block mb-5 mx-0">
+              <v-badge v-if="leaf.badge" color="transparent" overlap class="leafLogo"><icon slot="badge" :name="leaf.badge" scale="10" :class="leaf.badgecolor" ></icon><img class="leafLogo round" :src="leaf.logo" /></v-badge>
+              <img v-if="!leaf.badge" class="leafLogo round" :src="leaf.logo" />
               <h3 class="white--text mt-1" style="text-shadow: 1px 1px .1em #555;">{{ leaf.name }}</h3>
             </a>
           </v-flex>
@@ -128,7 +126,7 @@ export default {
       transform: translate3d(0, 0, 0);
     }
   }
-  #leaf{
+  .leaf{
     height:9em;
     width:9em;
     padding-top:.5em;
@@ -139,7 +137,7 @@ export default {
     animation: pulse .5s linear 1;
     border-radius:.8em;
   }
-  #leafLogo{
+  .leafLogo{
     height:8em;
     width:8em;
     transform-origin: center;
@@ -148,7 +146,7 @@ export default {
     transform: scale(0.8);
     user-select: none;
   }
-  #leaf:hover{
+  .leaf:hover{
     background: #444;
     border-radius:100%;
     transform: scale(1.1);
@@ -157,7 +155,8 @@ export default {
     transition-duration: .8s;
     transition-property: all;
   }
-  #leaf:hover > #leafLogo{
+  .leaf:hover > .leafLogo{
+    filter: hue-rotate(180deg);
     transform: scale(0.7);
     transform-origin: center;
     transition-duration: .3s;
@@ -166,86 +165,4 @@ export default {
   .words{
     animation: fadeInDown .5s linear 1;
   }
-
-
-/* Yaku */
-.link--yaku {
-	color: #bababa;
-	overflow: hidden;
-  cursor: pointer;
-}
-.link--yaku span {
-	display: inline-block;
-	position: relative;
-	-webkit-transform: perspective(1000px) rotate3d(0,1,0,0deg);
-	transform: perspective(1000px) rotate3d(0,1,0,0deg);
-	-webkit-transition: -webkit-transform 0.5s, color 0.5s;
-	transition: transform 0.5s, color 0.5s;
-}
-
-.link--yaku:hover span {
-	color: lightgreen;
-	-webkit-transform: perspective(1000px) rotate3d(0,1,0,360deg);
-	transform: perspective(1000px) rotate3d(0,1,0,360deg);
-}
-
-.link--yaku span:first-child,
-.link--yaku:hover span:first-child {
-	-webkit-transition-delay: 0s;
-	transition-delay: 0s;
-}
-.link--yaku span:nth-child(2),
-.link--yaku:hover span:nth-child(2) {
-	-webkit-transition-delay: 0.1s;
-	transition-delay: 0.1s;
-}
-.link--yaku span:nth-child(3),
-.link--yaku:hover span:nth-child(3) {
-	-webkit-transition-delay: 0.2s;
-	transition-delay: 0.2s;
-}
-.link--yaku span:nth-child(4),
-.link--yaku:hover span:nth-child(4) {
-	-webkit-transition-delay: 0.3s;
-	transition-delay: 0.3s;
-}
-.link--yaku span:nth-child(5),
-.link--yaku:hover span:nth-child(5) {
-	-webkit-transition-delay: 0.4s;
-	transition-delay: 0.4s;
-}
-.link--yaku span:nth-child(6),
-.link--yaku:hover span:nth-child(6) {
-	-webkit-transition-delay: 0.5s;
-	transition-delay: 0.5s;
-}
-.link--yaku span:nth-child(7),
-.link--yaku:hover span:nth-child(7) {
-	-webkit-transition-delay: 0.6s;
-	transition-delay: 0.6s;
-}
-.link--yaku span:nth-child(8),
-.link--yaku:hover span:nth-child(8) {
-	-webkit-transition-delay: 0.7s;
-	transition-delay: 0.7s;
-}.link--yaku span:nth-child(9),
-.link--yaku:hover span:nth-child(9) {
-	-webkit-transition-delay: 0.8s;
-	transition-delay: 0.8s;
-}
-.link--yaku span:nth-child(10),
-.link--yaku:hover span:nth-child(10) {
-	-webkit-transition-delay: 0.9s;
-	transition-delay: 0.9s;
-}
-.link--yaku span:nth-child(11)
-.link--yaku:hover span:nth-child(11) {
-	-webkit-transition-delay: 1s;
-	transition-delay: 1s;
-}
-.link--yaku span:nth-child(12)
-.link--yaku:hover span:nth-child(12) {
-	-webkit-transition-delay: 1.1s;
-	transition-delay: 1.1s;
-}
 </style>

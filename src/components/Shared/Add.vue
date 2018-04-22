@@ -1,6 +1,6 @@
 <template>
   <div>
-    <v-btn disabled @click="open = !open" id="add" large round class="hidden-sm-and-down grey darken-3"><h2 class="grey--text">Add {{ add }}</h2></v-btn>
+    <v-flex md2 class="hidden-sm-and-down" id="add"><v-btn disabled @click="open = !open" large round class="grey darken-3"><h2 class="grey--text">Add {{ add }}</h2></v-btn></v-flex>
     <v-dialog width="500" style="border-radius:3em;" v-model="open">
       <v-card class="pa-3">
         <v-card-title><h2 class="grey--text mx-auto">Add {{ add }}</h2></v-card-title>

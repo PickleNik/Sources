@@ -1,11 +1,11 @@
 <template>
   <v-app dark>
-    <v-toolbar dark flat fixed dense class="transparent hidden-sm-and-down pl-4" style="min-width:100vw;">
+    <v-toolbar dark flat fixed class="transparent hidden-sm-and-down pl-4" style="min-width:100vw;">
 
-      <v-toolbar-title id="name" class="ml-0 mt-3 round"><router-link to="/" tag="span" class="link--ilin"><span><v-icon class="mr-1 accent--text">weekend</v-icon>Sou</span><span>rce<v-icon class="ml-1 accent--text">laptop_mac</v-icon></span></router-link></v-toolbar-title>
+      <v-toolbar-title id="name" class="ml-0 round"><router-link to="/" tag="span" class="link--ilin"><span><v-icon class="mr-1 accent--text">weekend</v-icon>Sou</span><span>rce<v-icon class="ml-1 accent--text">laptop_mac</v-icon></span></router-link></v-toolbar-title>
       <v-spacer></v-spacer>
 
-        <v-tooltip bottom><span>Source</span><v-btn slot="activator" color="primary" flat fab to="/sources" class="ma-0"><v-icon dark>local_library</v-icon></v-btn></v-tooltip>
+        <v-tooltip bottom><span>Sources</span><v-btn slot="activator" color="primary" flat fab to="/sources" class="ma-0"><v-icon dark>local_library</v-icon></v-btn></v-tooltip>
         <v-tooltip bottom><span>Tree</span><v-btn slot="activator" color="primary" flat fab to="/tree" class="ma-0"><v-icon dark>device_hub</v-icon></v-btn></v-tooltip>
         <v-tooltip bottom><span>You</span><v-btn slot="activator" color="primary" flat fab class="ma-0"><v-icon dark disabled>person</v-icon></v-btn></v-tooltip>
 
@@ -304,5 +304,85 @@ a{
 .link--ilin span:last-of-type::before {
 	-webkit-transform: translate3d(0,150%,0);
 	transform: translate3d(0,150%,0);
+}
+/* Yaku */
+.link--yaku {
+	color: #bababa;
+	overflow: hidden;
+  cursor: pointer;
+}
+.link--yaku span {
+	display: inline-block;
+	position: relative;
+	-webkit-transform: perspective(1000px) rotate3d(0,1,0,0deg);
+	transform: perspective(1000px) rotate3d(0,1,0,0deg);
+	-webkit-transition: -webkit-transform 0.5s, color 0.5s;
+	transition: transform 0.5s, color 0.5s;
+}
+
+.link--yaku:hover span {
+	color: lightgreen;
+	-webkit-transform: perspective(1000px) rotate3d(0,1,0,360deg);
+	transform: perspective(1000px) rotate3d(0,1,0,360deg);
+}
+
+.link--yaku span:first-child,
+.link--yaku:hover span:first-child {
+	-webkit-transition-delay: 0s;
+	transition-delay: 0s;
+}
+.link--yaku span:nth-child(2),
+.link--yaku:hover span:nth-child(2) {
+	-webkit-transition-delay: 0.1s;
+	transition-delay: 0.1s;
+}
+.link--yaku span:nth-child(3),
+.link--yaku:hover span:nth-child(3) {
+	-webkit-transition-delay: 0.2s;
+	transition-delay: 0.2s;
+}
+.link--yaku span:nth-child(4),
+.link--yaku:hover span:nth-child(4) {
+	-webkit-transition-delay: 0.3s;
+	transition-delay: 0.3s;
+}
+.link--yaku span:nth-child(5),
+.link--yaku:hover span:nth-child(5) {
+	-webkit-transition-delay: 0.4s;
+	transition-delay: 0.4s;
+}
+.link--yaku span:nth-child(6),
+.link--yaku:hover span:nth-child(6) {
+	-webkit-transition-delay: 0.5s;
+	transition-delay: 0.5s;
+}
+.link--yaku span:nth-child(7),
+.link--yaku:hover span:nth-child(7) {
+	-webkit-transition-delay: 0.6s;
+	transition-delay: 0.6s;
+}
+.link--yaku span:nth-child(8),
+.link--yaku:hover span:nth-child(8) {
+	-webkit-transition-delay: 0.7s;
+	transition-delay: 0.7s;
+}.link--yaku span:nth-child(9),
+.link--yaku:hover span:nth-child(9) {
+	-webkit-transition-delay: 0.8s;
+	transition-delay: 0.8s;
+}
+.link--yaku span:nth-child(10),
+.link--yaku:hover span:nth-child(10) {
+	-webkit-transition-delay: 0.9s;
+	transition-delay: 0.9s;
+}
+.link--yaku span:nth-child(11)
+.link--yaku:hover span:nth-child(11) {
+	-webkit-transition-delay: 1s;
+	transition-delay: 1s;
+}
+.link--yaku span:nth-child(12)
+.link--yaku:hover span:nth-child(12) {
+	-webkit-transition-delay: 1.1s;
+	transition-delay: 1.1s;
 }
 </style>
