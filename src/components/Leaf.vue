@@ -1,9 +1,9 @@
 <template lang="html">
   <main class="secondary">
-    <v-container fluid>
+    <v-container fluid class="py-5">
       <v-layout id="whatIs">
 
-        <v-flex xs12 sm12 md8 offset-md2 lg8 offset-lg2 class="mb-2 mt-4 text-xs-center">
+        <v-flex  v-if="leaf.whatIsVideo" xs12 sm12 md8 offset-md2 lg8 offset-lg2 class="mb-2 text-xs-center">
           <v-tooltip top>
             <h1 slot="activator" class="titles roundL mb-2 mt-4">
              <a class="grey--text link link--yaku" :href="leaf.wiki" target="_blank">What is <span v-for="letter in leaf.name.split('')">{{ letter }}</span></a></h1>
@@ -30,7 +30,7 @@
         </v-flex>
       </v-layout>
 
-      <v-layout id="addition">
+      <v-layout id="addition" v-if="leaf.addition">
         <v-flex xs12 sm12 md8 offset-md2 lg8 offset-lg2 class="pt-3 pb-3 text-xs-center">
           <h1 class="titles grey--text pt-3">Additionally</h1>
           <app-src-card :sources="leaf.addition"></app-src-card>
@@ -68,7 +68,7 @@ export default {
       navs: [
         { name: 'What is', href: '#whatIs', icon: 'details' },
         { name: 'Sources', href: '#sources', icon: 'local_library' },
-        { name: 'Additionally', href: '#addition', icon: 'add_to_queue' },
+        { name: 'Additionally', href: '#addition', icon: 'add_to_queue', },
         { name: 'Tree', to: '/tree', icon: 'device_hub', posticon: 'keyboard_arrow_left' }
       ],
       add: ''

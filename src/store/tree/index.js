@@ -72,7 +72,15 @@ export default {
               starred: false,
               shared: false,
               link: 'https://www.youtube.com/watch?v=OxOx3WI3Df4&list=PL55RiY5tL51rv_vo3TM3Byu71RYchX_l_',
-              logo: 'https://academind.com/images/academind-logo.png',
+              logo: 'https://yt3.ggpht.com/a-/AJLlDp2SxGyOXg1EdT5FzOlL3VyDzSUN-567RzdUZg=s900-mo-c-c0xffffffff-rj-k-no',
+              icon: 'video_library' },
+
+            { name: 'Traversy Media',
+              todo: false,
+              starred: false,
+              shared: false,
+              link: 'https://www.youtube.com/watch?v=UB1O30fR-EE&list=PLillGF-RfqbZTASqIqdvm1R5mLrQq79CU&index=1',
+              logo: 'https://yt3.ggpht.com/a-/AJLlDp1dGyGeP0kf7oj9ykar-Mb2I2O8c8KyrEgIbg=s900-mo-c-c0xffffffff-rj-k-no',
               icon: 'video_library' },
 
             { name: 'Udemy',
@@ -114,6 +122,15 @@ export default {
               link: 'https://www.pluralsight.com/paths/html5',
               logo: 'https://images-na.ssl-images-amazon.com/images/I/51-Hci2bYjL.png',
               icon: 'attach_money' }
+            ],
+            addition: [
+              { name: 'Absolute Beginners',
+                todo: false,
+                starred: false,
+                shared: false,
+                link: 'https://www.youtube.com/playlist?list=PLillGF-RfqbZTASqIqdvm1R5mLrQq79CU',
+                logo: 'https://yt3.ggpht.com/a-/AJLlDp1dGyGeP0kf7oj9ykar-Mb2I2O8c8KyrEgIbg=s900-mo-c-c0xffffffff-rj-k-no',
+                icon: 'video_library' }
             ]
         },
         { name: 'CSS',
@@ -175,7 +192,15 @@ export default {
               starred: false,
               shared: false,
               link: 'https://www.youtube.com/watch?v=zwgSc3EntWM&index=5&list=PL55RiY5tL51rv_vo3TM3Byu71RYchX_l_',
-              logo: 'https://academind.com/images/academind-logo.png',
+              logo: 'https://yt3.ggpht.com/a-/AJLlDp2SxGyOXg1EdT5FzOlL3VyDzSUN-567RzdUZg=s900-mo-c-c0xffffffff-rj-k-no',
+              icon: 'video_library' },
+
+            { name: 'Traversy Media',
+              todo: false,
+              starred: false,
+              shared: false,
+              link: 'https://www.youtube.com/watch?v=yfoY53QXEnI&index=2&list=PLillGF-RfqbZTASqIqdvm1R5mLrQq79CU',
+              logo: 'https://yt3.ggpht.com/a-/AJLlDp1dGyGeP0kf7oj9ykar-Mb2I2O8c8KyrEgIbg=s900-mo-c-c0xffffffff-rj-k-no',
               icon: 'video_library' },
 
             { name: 'Stefan Mischook',
@@ -225,6 +250,88 @@ export default {
               link: 'https://www.pluralsight.com/paths/css',
               logo: 'https://images-na.ssl-images-amazon.com/images/I/51-Hci2bYjL.png',
               icon: 'attach_money' }
+            ],
+            addition: [
+              { name: 'Absolute Beginners',
+                todo: false,
+                starred: false,
+                shared: false,
+                link: 'https://www.youtube.com/playlist?list=PLillGF-RfqbZTASqIqdvm1R5mLrQq79CU',
+                logo: 'https://yt3.ggpht.com/a-/AJLlDp1dGyGeP0kf7oj9ykar-Mb2I2O8c8KyrEgIbg=s900-mo-c-c0xffffffff-rj-k-no',
+                icon: 'video_library' },
+
+              { name: 'Transition & Animation',
+                todo: false,
+                starred: false,
+                shared: false,
+                link: 'https://www.youtube.com/watch?v=zHUpx90NerM&list=PLillGF-RfqbYeckUaD1z6nviTp31GLTH8&index=33',
+                logo: 'https://yt3.ggpht.com/a-/AJLlDp1dGyGeP0kf7oj9ykar-Mb2I2O8c8KyrEgIbg=s900-mo-c-c0xffffffff-rj-k-no',
+                icon: 'video_library' },
+
+              { name: 'Flexbox',
+                todo: false,
+                starred: false,
+                shared: false,
+                link: 'https://www.youtube.com/watch?v=JJSoEo8JSnc&index=18&list=PLillGF-RfqbYeckUaD1z6nviTp31GLTH8',
+                logo: 'https://yt3.ggpht.com/a-/AJLlDp1dGyGeP0kf7oj9ykar-Mb2I2O8c8KyrEgIbg=s900-mo-c-c0xffffffff-rj-k-no',
+                icon: 'video_library' },
+
+              { name: 'Understanding CSS',
+                todo: false,
+                starred: false,
+                shared: false,
+                link: 'https://www.youtube.com/playlist?list=PL55RiY5tL51q6KKXoA0_CIskaTSJEM1fN',
+                logo: 'https://yt3.ggpht.com/a-/AJLlDp2SxGyOXg1EdT5FzOlL3VyDzSUN-567RzdUZg=s900-mo-c-c0xffffffff-rj-k-no',
+                icon: 'video_library' },
+
+              { name: 'CSS Positioning',
+                todo: false,
+                starred: false,
+                shared: false,
+                link: 'https://www.youtube.com/playlist?list=PL4cUxeGkcC9hudKGi5o5UiWuTAGbxiLTh',
+                logo: 'https://yt3.ggpht.com/a-/AJLlDp2oM9rg7DFu7iit71Ndh0yNIEL7F_j0VCRWuQ=s900-mo-c-c0xffffffff-rj-k-no',
+                icon: 'video_library' },
+
+              { name: 'CSS Animation',
+                todo: false,
+                starred: false,
+                shared: false,
+                link: 'https://www.youtube.com/playlist?list=PL4cUxeGkcC9iGYgmEd2dm3zAKzyCGDtM5',
+                logo: 'https://yt3.ggpht.com/a-/AJLlDp2oM9rg7DFu7iit71Ndh0yNIEL7F_j0VCRWuQ=s900-mo-c-c0xffffffff-rj-k-no',
+                icon: 'video_library' },
+
+              { name: 'CSS Flexbox',
+                todo: false,
+                starred: false,
+                shared: false,
+                link: 'https://www.youtube.com/playlist?list=PL4cUxeGkcC9i3FXJSUfmsNOx8E7u6UuhG',
+                logo: 'https://yt3.ggpht.com/a-/AJLlDp2oM9rg7DFu7iit71Ndh0yNIEL7F_j0VCRWuQ=s900-mo-c-c0xffffffff-rj-k-no',
+                icon: 'video_library' },
+
+              { name: 'CSS Grid',
+                todo: false,
+                starred: false,
+                shared: false,
+                link: 'https://www.youtube.com/playlist?list=PL4cUxeGkcC9itC4TxYMzFCfveyutyPOCY',
+                logo: 'https://yt3.ggpht.com/a-/AJLlDp2oM9rg7DFu7iit71Ndh0yNIEL7F_j0VCRWuQ=s900-mo-c-c0xffffffff-rj-k-no',
+                icon: 'video_library' },
+
+              { name: 'CSS Variables',
+                todo: false,
+                starred: false,
+                shared: false,
+                link: 'https://www.youtube.com/playlist?list=PL4cUxeGkcC9ii5PB2UMyYH7QFZWfGnVgZ',
+                logo: 'https://yt3.ggpht.com/a-/AJLlDp2oM9rg7DFu7iit71Ndh0yNIEL7F_j0VCRWuQ=s900-mo-c-c0xffffffff-rj-k-no',
+                icon: 'video_library' },
+
+              { name: 'CSS Tips & Tricks',
+                todo: false,
+                starred: false,
+                shared: false,
+                link: 'https://www.youtube.com/playlist?list=PL4cUxeGkcC9htzG9o-QzCTsGMbmfuF4kk',
+                logo: 'https://yt3.ggpht.com/a-/AJLlDp2oM9rg7DFu7iit71Ndh0yNIEL7F_j0VCRWuQ=s900-mo-c-c0xffffffff-rj-k-no',
+                icon: 'video_library' }
+
             ]
         },
         { name: 'JavaScript',
@@ -240,11 +347,10 @@ export default {
           ],
           next: [
             { name: 'Jquery', color: 'teal lighten-2', to: 'leaf-jquery'},
-            { name: 'Sass', color: 'pink lighten-2', to: 'leaf-sass', icon: 'brands/sass'},
             { name: 'Node.js', color: 'lime', to: 'leaf-nodejs', icon: 'brands/node-js'},
-            { name: 'Webpack', color: 'light-blue lighten-2', to: 'leaf-webpack'},
             { name: 'ECMAScript', color: 'amber', to: 'leaf-es6', icon: 'brands/js'},
-            { name: 'ClI', color: 'grey', to: 'leaf-command_line', icon: 'terminal'}
+            { name: 'Sass', color: 'pink lighten-2', to: 'leaf-sass', icon: 'brands/sass'},
+            { name: 'Webpack', color: 'light-blue lighten-2', to: 'leaf-webpack'}
           ],
           sources: [
             { name: 'SoloLearn',
@@ -291,15 +397,15 @@ export default {
               todo: false,
               starred: false,
               shared: false,
-              link: 'https://www.youtube.com/watch?v=_mj72QqsOs4&feature=youtu.be',
-              logo: 'https://academind.com/images/academind-logo.png',
+              link: 'https://www.youtube.com/watch?v=o5ffh3KUaTM&index=14&list=PL55RiY5tL51rv_vo3TM3Byu71RYchX_l_',
+              logo: 'https://yt3.ggpht.com/a-/AJLlDp2SxGyOXg1EdT5FzOlL3VyDzSUN-567RzdUZg=s900-mo-c-c0xffffffff-rj-k-no',
               icon: 'video_library' },
 
             { name: 'Traversy Media',
               todo: false,
               starred: false,
               shared: false,
-              link: 'https://www.youtube.com/watch?v=vEROU2XtPR8',
+              link: 'https://www.youtube.com/playlist?list=PLillGF-RfqbbnEGy3ROiLWk7JMCuSyQtX',
               logo: 'https://yt3.ggpht.com/a-/AJLlDp1dGyGeP0kf7oj9ykar-Mb2I2O8c8KyrEgIbg=s900-mo-c-c0xffffffff-rj-k-no',
               icon: 'video_library' },
 
@@ -323,7 +429,7 @@ export default {
               todo: false,
               starred: false,
               shared: false,
-              link: 'https://teamtreehouse.com/learn/javascript?utm_source=google&cid=1352&utm_source=google&campaign=791365357&utm_term=&cid=1352&gclid=Cj0KCQiA2Y_UBRCGARIsALglqQ1V2_6236fYn3EADbp31WZ7M3XfT3rUIHZXnJJilsuq6vvj8-_DFbgaAkJHEALw_wcB&gclsrc=aw.ds',
+              link: 'https://teamtreehouse.com/learn/javascript',
               logo: 'https://davidwalsh.name/demo/treehouse-logo.png',
               icon: 'attach_money' },
 
@@ -342,6 +448,47 @@ export default {
               link: 'https://www.pluralsight.com/paths/javascript',
               logo: 'https://images-na.ssl-images-amazon.com/images/I/51-Hci2bYjL.png',
               icon: 'attach_money' }
+            ],
+            addition: [
+              { name: 'JS Cardio Session',
+                todo: false,
+                starred: false,
+                shared: false,
+                link: 'https://www.youtube.com/watch?v=M2bJBuaOeOQ&list=PLillGF-Rfqbb4ZOnsNCIB-DnLuUrQjS_G',
+                logo: 'https://yt3.ggpht.com/a-/AJLlDp1dGyGeP0kf7oj9ykar-Mb2I2O8c8KyrEgIbg=s900-mo-c-c0xffffffff-rj-k-no',
+                icon: 'video_library' },
+
+              { name: 'JS DOM Crash Course',
+                todo: false,
+                starred: false,
+                shared: false,
+                link: 'https://www.youtube.com/playlist?list=PLillGF-RfqbYE6Ik_EuXA2iZFcE082B3s',
+                logo: 'https://yt3.ggpht.com/a-/AJLlDp1dGyGeP0kf7oj9ykar-Mb2I2O8c8KyrEgIbg=s900-mo-c-c0xffffffff-rj-k-no',
+                icon: 'video_library' },
+
+              { name: 'JavaScript DOM',
+                todo: false,
+                starred: false,
+                shared: false,
+                link: 'https://www.youtube.com/playlist?list=PL4cUxeGkcC9gfoKa5la9dsdCNpuey2s-V',
+                logo: 'https://yt3.ggpht.com/a-/AJLlDp2oM9rg7DFu7iit71Ndh0yNIEL7F_j0VCRWuQ=s900-mo-c-c0xffffffff-rj-k-no',
+                icon: 'video_library' },
+
+              { name: 'JS Tips & Trics',
+                todo: false,
+                starred: false,
+                shared: false,
+                link: 'https://www.youtube.com/playlist?list=PL4cUxeGkcC9gdqHxcUgGhl_cV6xET1_0N',
+                logo: 'https://yt3.ggpht.com/a-/AJLlDp2oM9rg7DFu7iit71Ndh0yNIEL7F_j0VCRWuQ=s900-mo-c-c0xffffffff-rj-k-no',
+                icon: 'video_library' },
+
+              { name: 'Asynchronous JS',
+                todo: false,
+                starred: false,
+                shared: false,
+                link: 'https://www.youtube.com/playlist?list=PL4cUxeGkcC9jAhrjtZ9U93UMIhnCc44MH',
+                logo: 'https://yt3.ggpht.com/a-/AJLlDp2oM9rg7DFu7iit71Ndh0yNIEL7F_j0VCRWuQ=s900-mo-c-c0xffffffff-rj-k-no',
+                icon: 'video_library' }
             ]
         },
         { name: 'Webpack',
@@ -357,7 +504,7 @@ export default {
             { name: 'JavaScript', color: 'amber', to: 'leaf-javascript', icon: 'brands/js'}
           ],
           next: [
-            { name: 'ClI', color: 'grey', to: 'leaf-command_line', icon: 'terminal'},
+            { name: 'ClI', color: 'grey lighten-2', to: 'leaf-command_line', icon: 'terminal'},
             { name: 'Frameworks', color: 'accent', href: 'https://source-2fea2.firebaseapp.com/tree#frameworks', icon: 'cog'}
           ],
           sources: [
@@ -368,15 +515,67 @@ export default {
               link: 'https://webpack.js.org',
               logo: 'https://topheman.github.io/webpack-babel-starter/assets/974262647c82057b6078c432841a53ea.png',
               icon: 'important_devices' },
+
+            { name: 'The Net Ninja',
+              todo: false,
+              starred: false,
+              shared: false,
+              link: 'https://www.youtube.com/playlist?list=PL4cUxeGkcC9iTQ3J5oa6orDIMQKKxl8dC',
+              logo: 'https://yt3.ggpht.com/a-/AJLlDp2oM9rg7DFu7iit71Ndh0yNIEL7F_j0VCRWuQ=s900-mo-c-c0xffffffff-rj-k-no',
+              icon: 'video_library' },
+
+            { name: 'Traversy Media',
+              todo: false,
+              starred: false,
+              shared: false,
+              link: 'https://www.youtube.com/watch?v=lziuNMk_8eQ',
+              logo: 'https://yt3.ggpht.com/a-/AJLlDp1dGyGeP0kf7oj9ykar-Mb2I2O8c8KyrEgIbg=s900-mo-c-c0xffffffff-rj-k-no',
+              icon: 'video_library' },
+
+            { name: 'Academind',
+              todo: false,
+              starred: false,
+              shared: false,
+              link: 'https://www.youtube.com/playlist?list=PL55RiY5tL51rcCnrOrZixuOsZhAHHy6os',
+              logo: 'https://yt3.ggpht.com/a-/AJLlDp2SxGyOXg1EdT5FzOlL3VyDzSUN-567RzdUZg=s900-mo-c-c0xffffffff-rj-k-no',
+              icon: 'video_library' },
           ]  },
         { name: 'CLI',
           title: 'CLI - Command Line Interface',
           ripple: 'black--text',
           to: 'command_line',
           logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Icons8_flat_command_line.svg/2000px-Icons8_flat_command_line.svg.png',
-          whatIsVideo: '',
           wiki: 'https://en.wikipedia.org/wiki/Command-line_interface',
-          sources: [''] }
+          req: [
+            { name: 'Computer', color: 'grey', icon: 'desktop', disabled: true }
+          ],
+          next: [
+            { name: 'Frameworks', color: 'accent', href: 'https://source-2fea2.firebaseapp.com/tree#frameworks', icon: 'cog'}
+          ],
+          sources: [
+            { name: 'Wikipedia',
+              todo: false,
+              starred: false,
+              shared: false,
+              link: 'https://en.wikipedia.org/wiki/Command-line_interface',
+              logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Wikipedia_logo_v3.svg/1024px-Wikipedia_logo_v3.svg.png',
+              icon: 'description' },
+            { name: 'Treehouse',
+              todo: false,
+              starred: false,
+              shared: false,
+              link: 'http://blog.teamtreehouse.com/command-line-basics',
+              logo: 'https://davidwalsh.name/demo/treehouse-logo.png',
+              icon: 'description' },
+            { name: 'Codecademy',
+              todo: false,
+              starred: false,
+              shared: false,
+              link: 'https://www.codecademy.com/learn/introduction-to-javascript',
+              logo: 'https://cdn-images-1.medium.com/max/2000/1*eAkVW2LFAd9pKdL-8hBQ1A.png',
+              icon: 'attach_money' }
+          ]
+        }
       ]
     },
     { name: 'Frontend',
@@ -386,13 +585,10 @@ export default {
         { name: 'Haml',
           title: 'Beautiful, DRY, well-indented, clear markup: templating haiku.',
           ripple: 'white--text',
-          to: 'haml',
+          href: 'http://haml.info/',
           badge: 'brands/html5',
           badgecolor: 'orange--text',
-          logo: 'https://codekitapp.com/images/help/free-haml-icon@2x.png',
-          whatIsVideo: '',
-          wiki: '',
-          sources: ['']  },
+          logo: 'https://codekitapp.com/images/help/free-haml-icon@2x.png', },
         { name: 'Slim',
           ripple: 'grey--text',
           logo: 'http://ahoylemon.github.io/minnebar2016/img/slim.png',
@@ -678,7 +874,7 @@ export default {
               starred: false,
               shared: false,
               link: 'https://www.youtube.com/playlist?list=PL55RiY5tL51p-YU-Uw90qQH419BM4Iz07',
-              logo: 'https://academind.com/images/academind-logo.png',
+              logo: 'https://yt3.ggpht.com/a-/AJLlDp2SxGyOXg1EdT5FzOlL3VyDzSUN-567RzdUZg=s900-mo-c-c0xffffffff-rj-k-no',
               icon: 'video_library' },
             { name: 'The Net Ninja',
               todo: false,

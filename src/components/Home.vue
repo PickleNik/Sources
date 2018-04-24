@@ -128,7 +128,7 @@ export default {
         { name: 'About ', href: '#about', icon: 'info' },
         { name: 'Team ', href: '#team', icon: 'group' },
         { name: 'Tree ', to: '/tree', icon: 'device_hub', posticon: 'keyboard_arrow_right' },
-        { name: 'You ', to: '/profile', icon: 'person', posticon: 'keyboard_arrow_right' }
+        { name: 'Sources ', to: '/sources', icon: 'local_library', posticon: 'keyboard_arrow_right' }
       ],
       typedOptions: ['Learn Web Development', 'Learn for free', 'Learn on the go', 'Learn online', 'Learn from best Sources']
     }

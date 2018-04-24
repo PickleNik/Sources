@@ -156,7 +156,6 @@ export default {
     transition-property: all;
   }
   .leaf:hover > .leafLogo{
-    filter: hue-rotate(180deg);
     transform: scale(0.7);
     transform-origin: center;
     transition-duration: .3s;
