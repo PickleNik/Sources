@@ -5,7 +5,7 @@
 <div id="hero">
   <div class="text-sm-center">
     <div class="centerABS">
-    <h1 class="white--text" style="font-size:4.5em;">Source</h1>
+    <h1 class="white--text" style="font-size:4.5em;">TutsTree</h1>
     <p class="white--text typed" style="font-size:2em;"><span id="greeting" class="white--text"></span></p>
   </div>
 
@@ -37,12 +37,9 @@
 <v-layout id="about">
   <v-flex xs12 sm8 offset-sm2 class="pa-5 white--text text-xs-center">
     <h1 class="grey--text mb-1 mt-3">About</h1>
-    <h2  class="pt-4 pb-3 hidden-xs-only" style="text-align:justify;">Study and explore Web development on Source with best online sources. In our organized
-    <v-btn class="ma-0 accent--text"small dark flat round to="/tree"><v-icon dark>device_hub</v-icon><h3>Tree</h3></v-btn>
-    you will find everything you need to become a web developer. Just pick a "leaf" and go through the tutorials!</h2>
-    <h3  class="pt-3 hidden-sm-and-up" style="text-align:justify;">Study and explore Web development on Source with best online sources. In our organized
-    <v-btn class="ma-0 accent--text"small dark flat round to="/tree"><v-icon dark>device_hub</v-icon><h3>Tree</h3></v-btn>
-    you will find everything you need to become a web developer. Stop reading this and click get started!</h3>
+    <h2  class="py-3 hidden-xs-only" style="text-align:justify;">Learn Web development on TutsTree with tutoials from best online sources. In our organized
+    <v-btn class="ma-0 accent--text"small dark flat round to="/tree"><h3><icon dark name="tree"></icon>Tree<icon dark name="tree"></icon></h3></v-btn>
+    you will find everything you need to become a web developer. Just pick a "leaf" and explore! Next and Required sections will help you out with deciding what to learn. Hover titles to read some useful info about a "leaf" or a "branch" on the tree. </h2>
     <img class="round pa-3 hidden-xs-only" width="100%" src="http://frontenddeveloperjob.com/images/cool.png"/>
 
       <v-btn @click="welcomeDialog = true" round dark class="mt-2"><v-icon class="hidden-xs-only" left>devices_other</v-icon><v-icon left>developer_mode</v-icon><h4>get started</h4><v-icon class="hidden-xs-only" right>code</v-icon><v-icon right>touch_app</v-icon></v-btn>

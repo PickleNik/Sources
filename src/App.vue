@@ -2,7 +2,7 @@
   <v-app dark>
     <v-toolbar dark flat fixed class="transparent hidden-sm-and-down pl-4" style="min-width:100vw;">
 
-      <v-toolbar-title id="name" class="ml-0 round"><router-link to="/" tag="span" class="link--ilin"><span><v-icon class="mr-1 accent--text">weekend</v-icon>Sou</span><span>rce<v-icon class="ml-1 accent--text">laptop_mac</v-icon></span></router-link></v-toolbar-title>
+      <v-toolbar-title id="name" class="ml-0 round"><router-link to="/" tag="span" class="link--ilin"><span><icon class="mx-1 accent--text" name="tree" scale="1.5"></icon>Tuts</span><span>Tree<icon class="mx-1 accent--text" name="terminal" scale="1.5"></icon></span></router-link></v-toolbar-title>
       <v-spacer></v-spacer>
 
         <v-tooltip bottom><span>Sources</span><v-btn slot="activator" color="primary" flat fab to="/sources" class="ma-0"><v-icon dark>local_library</v-icon></v-btn></v-tooltip>
