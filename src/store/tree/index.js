@@ -12,9 +12,6 @@ export default {
           logo: 'https://www.shareicon.net/download/2015/09/08/97875_html_512x512.png',
           whatIsVideo: 'https://www.youtube.com/embed/3V2q5E4wwko',
           wiki: 'https://en.wikipedia.org/wiki/HTML',
-          req: [
-            { name: 'Computer', color: 'grey', icon: 'desktop', disabled: true }
-          ],
           next: [
             { name: 'CSS', color: 'blue', to: 'leaf-css', icon: 'brands/css3-alt'}
           ],
@@ -545,9 +542,6 @@ export default {
           to: 'command_line',
           logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Icons8_flat_command_line.svg/2000px-Icons8_flat_command_line.svg.png',
           wiki: 'https://en.wikipedia.org/wiki/Command-line_interface',
-          req: [
-            { name: 'Computer', color: 'grey', icon: 'desktop', disabled: true }
-          ],
           next: [
             { name: 'Frameworks', color: 'accent', href: 'https://source-2fea2.firebaseapp.com/tree#frameworks', icon: 'cog'}
           ],
@@ -722,9 +716,6 @@ export default {
           badgecolor: 'amber--text',
           title: '',
           whatIsVideo: '',
-          todo: false,
-          starred: false,
-          shared: false,
           wiki: 'https://en.wikipedia.org/wiki/ECMAScript',
           sources: ['']  },
         { name: 'Babel',
@@ -807,7 +798,6 @@ export default {
               link: 'https://www.w3schools.com/nodejs/',
               logo: 'https://store-images.s-microsoft.com/image/apps.30495.13510798887792718.c58f517f-a070-448d-9f42-44c93b19dcae.05c3b4ed-79d8-4d84-be6d-7d3290f1533e?w=180&h=180&q=60',
               icon: 'library_books' },
-
           ]  },
         { ripple: 'blue--text', logo: 'https://sipexa.com/wp-content/uploads/php-logo.png', name: 'PHP', to: 'php' },
         { ripple: 'blue--text', logo: 'https://e-mc2.net/sites/default/files/articles/SQL_2.png', name: 'SQL', to: 'sql' },
@@ -1040,9 +1030,9 @@ export default {
       description: 'That\'s about drawing and animating things',
       id: 'graphics',
       leafs: [
-        { ripple: 'amber--text', logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/SVG_Logo.svg/2000px-SVG_Logo.svg.png', name: 'SVG'},
-        { ripple: 'red--text', logo: 'https://1001freedownloads.s3.amazonaws.com/vector/thumb/74145/iOS_7_Icon_Template.png', name: 'WebGL'},
-        { ripple: 'white--text', logo: 'https://kenoleon.github.io/Front-End-Web-Dev-UI-UX/assets/images/threejsLogo.jpg', name: 'Three.js'},
+        { ripple: 'amber--text', logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/SVG_Logo.svg/2000px-SVG_Logo.svg.png', href: 'https://www.w3schools.com/graphics/svg_intro.asp', name: 'SVG'},
+        { ripple: 'red--text', logo: 'https://1001freedownloads.s3.amazonaws.com/vector/thumb/74145/iOS_7_Icon_Template.png', href: 'https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API', name: 'WebGL'},
+        { ripple: 'white--text', logo: 'https://kenoleon.github.io/Front-End-Web-Dev-UI-UX/assets/images/threejsLogo.jpg', href: 'https://threejs.org/', name: 'Three.js'},
         { ripple: 'light-blue--text', logo: 'https://assets.hongkiat.com/uploads/javascript-libraries-animate-svg/svg-vivus.jpg', name: 'Vivus.js', href: 'http://maxwellito.github.io/vivus/' },
         { ripple: 'indigo--text', logo: 'https://assets.hongkiat.com/uploads/javascript-libraries-animate-svg/svg-bonsai.jpg', name: 'Bonsai.js', href: 'http://bonsaijs.org/' },
         { ripple: 'indigo--text', logo: 'https://assets.hongkiat.com/uploads/javascript-libraries-animate-svg/svg-velocity.jpg', name: 'Velocity.js', href: 'http://velocityjs.org/' },
@@ -1092,9 +1082,82 @@ export default {
           name: 'Typing',
           logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Circle-icons-keyboard.svg/1024px-Circle-icons-keyboard.svg.png',
           ripple: 'orange--text',
-          to: '/typing' ,
+          to: 'typing' ,
+          sources: [
+            { name: 'TypingClub',
+              todo: false,
+              starred: false,
+              shared: false,
+              link: 'https://www.typingclub.com',
+              logo: 'https://www.typingclub.com/m/corp2/img/typingclub_logo.png'
+            },
+            { name: 'TypingCat',
+              todo: false,
+              starred: false,
+              shared: false,
+              link: 'http://thetypingcat.com/',
+              logo: 'https://i.imgur.com/t51HrPx.gif'
+            },
+            { name: 'Ratatype',
+              todo: false,
+              starred: false,
+              shared: false,
+              link: 'https://www.ratatype.com/',
+              logo: 'https://pbs.twimg.com/profile_images/3349964038/59dd7f2e10b3e1f098b5c50272f02f4f_400x400.png'
+             },
+             { name: 'Typing.com',
+               todo: false,
+               starred: false,
+               shared: false,
+               link: 'https://www.typing.com/',
+               logo: 'https://www.typing.com/dist/site/images/svg/badge_teacher.svg'
+             },
+             { name: 'Typing.io',
+               todo: false,
+               starred: false,
+               shared: false,
+               link: 'https://typing.io/',
+               logo: 'https://pbs.twimg.com/profile_images/2543082656/87sa2w3inlw7tfw826u0_400x400.png'
+             },
+             { name: 'Nitro Type',
+               todo: false,
+               starred: false,
+               shared: false,
+               link: 'https://www.nitrotype.com/',
+               logo: 'https://pbs.twimg.com/profile_images/907681304426057728/Vt-ZMjCL_400x400.jpg'
+             },
+             { name: 'TypingStudy',
+               todo: false,
+               starred: false,
+               shared: false,
+               link: 'http://www.typingstudy.com/',
+               logo: 'https://www.shareicon.net/data/2016/07/10/119686_keyboard_512x512.png'
+            }
+          ]
         },
-        { name: 'GitHub', logo: 'https://assets-cdn.github.com/images/modules/logos_page/Octocat.png', ripple: 'light-blue--text',  to: '/github' },
+        { name: 'GitHub',
+          logo: 'https://assets-cdn.github.com/images/modules/logos_page/Octocat.png',
+          ripple: 'light-blue--text',
+          to: 'github',
+          sources: [
+            { name: 'Documentation',
+              todo: false,
+              starred: false,
+              shared: false,
+              link: 'https://guides.github.com/',
+              logo: 'https://image.flaticon.com/icons/svg/25/25231.svg',
+              icon: 'important_devices'
+            },
+            { name: 'The Net Ninja',
+              todo: false,
+              starred: false,
+              shared: false,
+              link: 'https://www.youtube.com/playlist?list=PL4cUxeGkcC9goXbgTDQ0n_4TBzOO0ocPR',
+              logo: 'https://yt3.ggpht.com/a-/AJLlDp2oM9rg7DFu7iit71Ndh0yNIEL7F_j0VCRWuQ=s900-mo-c-c0xffffffff-rj-k-no',
+              icon: 'important_devices'
+            }
+          ]
+         },
         { name: 'Firebase', logo: 'https://firebase.google.com/_static/images/firebase/touchicon-180.png', ripple: 'amber--text',  to: '/firease' },
         { name: 'NPM', logo: 'https://d2eip9sf3oo6c2.cloudfront.net/tags/images/000/000/188/full/npmlogo.png', ripple: 'red--text',  href: 'https://www.npmjs.com/' },
         { ripple: 'green--text', logo: 'https://raw.githubusercontent.com/stvhwrd/icons/master/atom/Atom-no_shadows-512.png', name: 'Atom', href: 'https://atom.io/' },

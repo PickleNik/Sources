@@ -5,7 +5,7 @@
 
   <a class="primary--text" target="_blank" :href="source.link">
   <v-card-title class="d-inline-block text-xs-center pb-2">
-    {{ source.name }}<v-icon dark class="accent--text ml-1">{{ source.icon }}</v-icon>
+    {{ source.name }}<v-icon v-if="source.icon" dark class="accent--text ml-1">{{ source.icon }}</v-icon>
   </v-card-title>
 
 
