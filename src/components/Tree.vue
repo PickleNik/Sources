@@ -20,7 +20,7 @@
             :href="leaf.href" target="_blank"
             v-ripple="{ class: leaf.ripple }"
             @click="openLeaf(leaf.to)" class="leaf d-inline-block mb-5 mx-4">
-              <v-badge v-if="leaf.badge" color="transparent" overlap class="leafLogo"><icon slot="badge" :name="leaf.badge" scale="10" :class="leaf.badgecolor" ></icon><img class="leafLogo round" :src="leaf.logo" /></v-badge>
+              <v-badge v-if="leaf.badge" color="transparent" class="leafLogo"><icon slot="badge" :name="leaf.badge" scale="10" :class="leaf.badgecolor" ></icon><img class="leafLogo round" :src="leaf.logo" /></v-badge>
               <img v-if="!leaf.badge" class="leafLogo round" :src="leaf.logo" />
               <h3 class="white--text mt-1" style="text-shadow: 1px 1px .1em #555;">{{ leaf.name }}</h3>
             </a>
@@ -31,7 +31,7 @@
             :href="leaf.href" target="_blank"
             v-ripple="{ class: leaf.ripple }"
             @click="openLeaf(leaf.to)"  class="leaf d-inline-block mb-5 mx-0">
-              <v-badge v-if="leaf.badge" color="transparent" overlap class="leafLogo"><icon slot="badge" :name="leaf.badge" scale="10" :class="leaf.badgecolor" ></icon><img class="leafLogo round" :src="leaf.logo" /></v-badge>
+              <v-badge v-if="leaf.badge" color="transparent" class="leafLogo"><icon slot="badge" :name="leaf.badge" scale="10" :class="leaf.badgecolor" ></icon><img class="leafLogo round" :src="leaf.logo" /></v-badge>
               <img v-if="!leaf.badge" class="leafLogo round" :src="leaf.logo" />
               <h3 class="white--text mt-1" style="text-shadow: 1px 1px .1em #555;">{{ leaf.name }}</h3>
             </a>
@@ -78,8 +78,8 @@ export default {
   },
   methods: {
     openLeaf (to) {
-      if(to){
-      this.$router.push('/leaf-' + to)}
+      if (to) {
+        this.$router.push('/leaf-' + to)}
     }
   },
   computed: {

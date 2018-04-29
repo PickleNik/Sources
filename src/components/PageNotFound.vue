@@ -45,7 +45,7 @@ export default {
       '-_- I\'m watching you -_-']
     }
   },
- mounted () {
+  mounted () {
     let typed = new Typed('#areyoulostbot', {
       strings: this.typedOptions,
       typeSpeed: 11,

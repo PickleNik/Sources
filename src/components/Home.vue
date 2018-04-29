@@ -5,13 +5,18 @@
 <div id="hero">
   <div class="text-sm-center">
     <div class="centerABS">
-    <h1 class="white--text" style="font-size:4.5em;">TutsTree</h1>
-    <p class="white--text typed" style="font-size:2em;"><span id="greeting" class="white--text"></span></p>
+    <img class="hidden-sm-and-up centerX" width="50%" height="50%" src="../assets/treeLogo.png" alt="logo">
+    <img class="hidden-xs-only" width="300" height="300" src="../assets/treeLogo.png" alt="logo">
+    <h2 class="display-3 white--text">TutsTree</h2>
+    <p class="white--text typed" style="font-size:1.5em;"><span id="greeting" class="white--text"></span></p>
+    <a href="#" v-scroll-to="'#about'"><v-btn dark large flat icon class="hidden-sm-and-up centerX pa-5">
+      <v-icon x-large class="down">keyboard_arrow_down</v-icon>
+    </v-btn></a>
+    <a href="#" v-scroll-to="'#about'"><v-btn dark large flat icon class="hidden-xs-only pa-5">
+      <v-icon x-large class="down">keyboard_arrow_down</v-icon>
+    </v-btn></a>
   </div>
 
-    <a href="#" v-scroll-to="'#about'"><v-btn dark large flat icon class="mb-5 pa-5 btnDown">
-    <v-icon x-large class="down">keyboard_arrow_down</v-icon>
-    </v-btn></a>
   </div>
   <vue-particles
   color="#90ee90"class="particles"
@@ -24,7 +29,7 @@
   :lineLinked="true"
   :lineOpacity="1"
   :linesDistance="111"
-  :moveSpeed="5"
+  :moveSpeed="3"
   :hoverEffect="true"
   hoverMode="grab"
   :clickEffect="true"
@@ -55,11 +60,10 @@
           </v-flex>
         </v-container>
       </v-dialog>
+      <v-btn dark href="#" v-scroll-to="'#team'" flat round class="mt-4">
+        <v-icon x-large >keyboard_arrow_down</v-icon>Team<v-icon  x-large >keyboard_arrow_down</v-icon>
+      </v-btn>
   </v-flex>
-
-<v-btn dark href="#" v-scroll-to="'#team'" flat round class="mb-5 btnDown">
-  <v-icon x-large >keyboard_arrow_down</v-icon>Team<v-icon  x-large >keyboard_arrow_down</v-icon>
-</v-btn>
 </v-layout>
 
 
@@ -127,16 +131,16 @@ export default {
         { name: 'Tree ', to: '/tree', icon: 'device_hub', posticon: 'keyboard_arrow_right' },
         { name: 'Sources ', to: '/sources', icon: 'local_library', posticon: 'keyboard_arrow_right' }
       ],
-      typedOptions: ['Learn Web Development', 'Learn for free', 'Learn on the go', 'Learn online', 'Learn from best Sources']
+      typedOptions: ['Welcome to TutorialsTree', 'Here you can find bunch of tutorials about Web Development', 'Explore and Learn on TutsTree.']
     }
   },
   mounted () {
     let typed = new Typed('#greeting', {
       strings: this.typedOptions,
-      loop: true,
       typeSpeed: 20,
       backSpeed: 10,
       startDelay: 2000,
+      backDelay: 2000,
       smartBackspace: true,
       showCursor: false
     })
@@ -156,7 +160,7 @@ export default {
     50% { opacity: 0; }
     100% { opacity: 1; }
 }
-#hero h1{
+#hero h2{
   font-family: 'Rammetto One', cursive;
   text-shadow: 0em 0em 1em #222;
   animation: jackInTheBox 1s linear 1;
@@ -198,12 +202,6 @@ export default {
   animation: bounce 1.5s linear infinite;
   animation-delay: 2s;
   transform-origin: bottom;
-}
-.btnDown{
-  position:absolute;
-  left:50%;
-  transform:translateX(-50%);
-  bottom:3em;
 }
 .inUp{
   animation: fadeInUp 1s linear 1;
