@@ -487,55 +487,6 @@ export default {
                 icon: 'video_library' }
             ]
         },
-        { name: 'Webpack',
-          title: 'Webpack - bundle your files!',
-          ripple: 'light-blue--text',
-          to: 'webpack',
-          logo: 'https://topheman.github.io/webpack-babel-starter/assets/974262647c82057b6078c432841a53ea.png',
-          whatIsVideo: 'https://www.youtube.com/embed/5zeXFC_-gMQ',
-          wiki: 'https://en.wikipedia.org/wiki/Webpack',
-          req: [
-            { name: 'HTML', color: 'orange', to: 'leaf-html', icon: 'brands/html5' },
-            { name: 'CSS', color: 'blue', to: 'leaf-css', icon: 'brands/css3-alt' },
-            { name: 'JavaScript', color: 'amber', to: 'leaf-javascript', icon: 'brands/js'}
-          ],
-          next: [
-            { name: 'ClI', color: 'grey lighten-2', to: 'leaf-command_line', icon: 'terminal'},
-            { name: 'Frameworks', color: 'accent', href: 'https://source-2fea2.firebaseapp.com/tree#frameworks', icon: 'cog'}
-          ],
-          sources: [
-            { name: 'Documentation',
-              todo: false,
-              starred: false,
-              shared: false,
-              link: 'https://webpack.js.org',
-              logo: 'https://topheman.github.io/webpack-babel-starter/assets/974262647c82057b6078c432841a53ea.png',
-              icon: 'important_devices' },
-
-            { name: 'The Net Ninja',
-              todo: false,
-              starred: false,
-              shared: false,
-              link: 'https://www.youtube.com/playlist?list=PL4cUxeGkcC9iTQ3J5oa6orDIMQKKxl8dC',
-              logo: 'https://yt3.ggpht.com/a-/AJLlDp2oM9rg7DFu7iit71Ndh0yNIEL7F_j0VCRWuQ=s900-mo-c-c0xffffffff-rj-k-no',
-              icon: 'video_library' },
-
-            { name: 'Traversy Media',
-              todo: false,
-              starred: false,
-              shared: false,
-              link: 'https://www.youtube.com/watch?v=lziuNMk_8eQ',
-              logo: 'https://yt3.ggpht.com/a-/AJLlDp1dGyGeP0kf7oj9ykar-Mb2I2O8c8KyrEgIbg=s900-mo-c-c0xffffffff-rj-k-no',
-              icon: 'video_library' },
-
-            { name: 'Academind',
-              todo: false,
-              starred: false,
-              shared: false,
-              link: 'https://www.youtube.com/playlist?list=PL55RiY5tL51rcCnrOrZixuOsZhAHHy6os',
-              logo: 'https://yt3.ggpht.com/a-/AJLlDp2SxGyOXg1EdT5FzOlL3VyDzSUN-567RzdUZg=s900-mo-c-c0xffffffff-rj-k-no',
-              icon: 'video_library' },
-          ]  },
         { name: 'CLI',
           title: 'CLI - Command Line Interface',
           ripple: 'black--text',
@@ -575,6 +526,55 @@ export default {
       description: 'Templating, CSS extentions and compiling!',
       id: 'frontend',
       leafs: [
+        { name: 'Webpack',
+        title: 'Webpack - bundle your files!',
+        ripple: 'light-blue--text',
+        to: 'webpack',
+        logo: 'https://topheman.github.io/webpack-babel-starter/assets/974262647c82057b6078c432841a53ea.png',
+        whatIsVideo: 'https://www.youtube.com/embed/5zeXFC_-gMQ',
+        wiki: 'https://en.wikipedia.org/wiki/Webpack',
+        req: [
+          { name: 'HTML', color: 'orange', to: 'leaf-html', icon: 'brands/html5' },
+          { name: 'CSS', color: 'blue', to: 'leaf-css', icon: 'brands/css3-alt' },
+          { name: 'JavaScript', color: 'amber', to: 'leaf-javascript', icon: 'brands/js'}
+        ],
+        next: [
+          { name: 'ClI', color: 'grey lighten-2', to: 'leaf-command_line', icon: 'terminal'},
+          { name: 'Frameworks', color: 'accent', href: 'https://source-2fea2.firebaseapp.com/tree#frameworks', icon: 'cog'}
+        ],
+        sources: [
+          { name: 'Documentation',
+          todo: false,
+          starred: false,
+          shared: false,
+          link: 'https://webpack.js.org',
+          logo: 'https://topheman.github.io/webpack-babel-starter/assets/974262647c82057b6078c432841a53ea.png',
+          icon: 'important_devices' },
+
+          { name: 'The Net Ninja',
+          todo: false,
+          starred: false,
+          shared: false,
+          link: 'https://www.youtube.com/playlist?list=PL4cUxeGkcC9iTQ3J5oa6orDIMQKKxl8dC',
+          logo: 'https://yt3.ggpht.com/a-/AJLlDp2oM9rg7DFu7iit71Ndh0yNIEL7F_j0VCRWuQ=s900-mo-c-c0xffffffff-rj-k-no',
+          icon: 'video_library' },
+
+          { name: 'Traversy Media',
+          todo: false,
+          starred: false,
+          shared: false,
+          link: 'https://www.youtube.com/watch?v=lziuNMk_8eQ',
+          logo: 'https://yt3.ggpht.com/a-/AJLlDp1dGyGeP0kf7oj9ykar-Mb2I2O8c8KyrEgIbg=s900-mo-c-c0xffffffff-rj-k-no',
+          icon: 'video_library' },
+
+          { name: 'Academind',
+          todo: false,
+          starred: false,
+          shared: false,
+          link: 'https://www.youtube.com/playlist?list=PL55RiY5tL51rcCnrOrZixuOsZhAHHy6os',
+          logo: 'https://yt3.ggpht.com/a-/AJLlDp2SxGyOXg1EdT5FzOlL3VyDzSUN-567RzdUZg=s900-mo-c-c0xffffffff-rj-k-no',
+          icon: 'video_library' },
+        ]  },
         { name: 'Haml',
           ripple: 'white--text',
           badge: 'brands/html5',
@@ -672,9 +672,6 @@ export default {
           badgecolor: 'amber--text',
           title: 'jQuery - a lightweight javascript library',
           whatIsVideo: 'https://www.youtube.com/embed/U4UZVbQ8md0',
-          todo: false,
-          starred: false,
-          shared: false,
           sources: [
             { name: 'JQuery',
               todo: false,
@@ -769,47 +766,46 @@ export default {
       ]
     },
     { name: 'Backend',
-      description: 'Control and manage data on your page.',
+      description: 'Control and manage data on your page with scripting languages and their frameworks',
       id: 'backend',
       leafs: [
         { name: 'Node.js',
-          ripple: 'lime--text',
-          logo: 'http://blog.iampuneet.in/wp-content/uploads/2017/06/nodejs_logo.png',
-          to: 'nodejs',
-          title: 'Node.js - javascript for the server side',
-          whatIsVideo: 'https://www.youtube.com/embed/lNiGH21gMiw?list=PL55RiY5tL51qXR-9ypW3HyzyWKpuuglKg',
+        ripple: 'lime--text',
+        logo: 'http://blog.iampuneet.in/wp-content/uploads/2017/06/nodejs_logo.png',
+        to: 'nodejs',
+        title: 'Node.js - javascript for the server side',
+        whatIsVideo: 'https://www.youtube.com/embed/lNiGH21gMiw?list=PL55RiY5tL51qXR-9ypW3HyzyWKpuuglKg',
+        todo: false,
+        starred: false,
+        shared: false,
+        req: [
+          { name: 'HTML', color: 'orange', to: 'leaf-html', icon: 'brands/html5' },
+          { name: 'CSS', color: 'blue', to: 'leaf-css', icon: 'brands/css3-alt' },
+          { name: 'JavaScript', color: 'amber', to: 'leaf-javascript', icon: 'brands/js'}
+        ],
+        next: [
+          { name: 'Expressjs', color: 'grey lighten-3', href: 'http://expressjs.com/'},
+          { name: 'Frameworks', color: 'accent', href: 'https://source-2fea2.firebaseapp.com/tree#frameworks', icon: 'cog'}
+        ],
+        sources: [
+          { name: 'W3schools',
           todo: false,
           starred: false,
           shared: false,
-          req: [
-            { name: 'HTML', color: 'orange', to: 'leaf-html', icon: 'brands/html5' },
-            { name: 'CSS', color: 'blue', to: 'leaf-css', icon: 'brands/css3-alt' },
-            { name: 'JavaScript', color: 'amber', to: 'leaf-javascript', icon: 'brands/js'}
-          ],
-          next: [
-            { name: 'ECMAScript', color: 'amber', to: 'leaf-es6', icon: 'brands/js'},
-            { name: 'Frameworks', color: 'accent', href: 'https://source-2fea2.firebaseapp.com/tree#frameworks', icon: 'cog'}
-          ],
-          sources: [
-            { name: 'W3schools',
-              todo: false,
-              starred: false,
-              shared: false,
-              link: 'https://www.w3schools.com/nodejs/',
-              logo: 'https://store-images.s-microsoft.com/image/apps.30495.13510798887792718.c58f517f-a070-448d-9f42-44c93b19dcae.05c3b4ed-79d8-4d84-be6d-7d3290f1533e?w=180&h=180&q=60',
-              icon: 'library_books' },
-          ]  },
-        { ripple: 'blue--text', logo: 'https://sipexa.com/wp-content/uploads/php-logo.png', name: 'PHP', to: 'php' },
-        { ripple: 'blue--text', logo: 'https://e-mc2.net/sites/default/files/articles/SQL_2.png', name: 'SQL', to: 'sql' },
-        { ripple: 'light-blue--text', logo: 'http://provp.sd-grp.com/wp-content/uploads/2014/03/ASP-NET-LOGO.png', name: 'ASP.NET', to: 'asp' },
-        { ripple: 'yellow--text', logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/2000px-Python-logo-notext.svg.png', name: 'Python', to: 'python' },
-        { ripple: 'red--text', logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Ruby_logo.svg/2000px-Ruby_logo.svg.png', name: 'Ruby', to: 'ruby' },
-        { ripple: 'amber--text', logo: 'https://firebase.google.com/_static/images/firebase/touchicon-180.png', name: 'Firebase', to: '/firease' },
-        { name: 'Symfony', ripple: 'black--text', logo: 'https://symfony.com/images/v5/pictos/home-main-illu.svg', to: 'symfony' },
-        { name: 'Django', ripple: 'green--text', logo: 'http://www.unixstickers.com/image/data/buttons/png/django.png', to: 'django' },
-        { name: 'Laravel', ripple: 'red--text', logo: 'http://www.stickpng.com/assets/images/58480e35cef1014c0b5e4920.png', to: 'laravel' },
-        { name: 'Ruby On Rails', ripple: 'red--text', logo: 'https://upload.wikimedia.org/wikipedia/commons/1/16/Ruby_on_Rails-logo.png', to: 'rails' },
-        { name: 'MongoDB', ripple: 'green--text', logo: 'http://www.unixstickers.com/image/cache/data/stickers/mongo/mongo.sh-600x600.png', to: 'mongo' }
+          link: 'https://www.w3schools.com/nodejs/',
+          logo: 'https://store-images.s-microsoft.com/image/apps.30495.13510798887792718.c58f517f-a070-448d-9f42-44c93b19dcae.05c3b4ed-79d8-4d84-be6d-7d3290f1533e?w=180&h=180&q=60',
+          icon: 'library_books' },
+        ]  },
+        { name: 'PHP', to: 'php', ripple: 'blue--text', logo: 'https://sipexa.com/wp-content/uploads/php-logo.png' },
+        { name: 'Ruby', to: 'ruby', ripple: 'red--text', logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Ruby_logo.svg/2000px-Ruby_logo.svg.png' },
+        { name: 'Python', to: 'python', ripple: 'yellow--text', logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/2000px-Python-logo-notext.svg.png' },
+        { name: 'Expressjs', ripple: 'white--text', href: 'http://expressjs.com/', logo: 'https://camo.githubusercontent.com/647e291a5fd52d50e01deb82f9392c462df148a6/687474703a2f2f617070732e6f63746f636f6e73756c74696e672e636f6d2f696d616765732f6578707265737349636f6e2e706e67' },
+        { name: 'Ruby On Rails', ripple: 'red--text', href: 'https://rubyonrails.org/', logo: 'https://upload.wikimedia.org/wikipedia/commons/1/16/Ruby_on_Rails-logo.png' },
+        { name: 'Django', ripple: 'green--text', href: 'https://www.djangoproject.com/', logo: 'http://www.unixstickers.com/image/data/buttons/png/django.png' },
+        { name: 'Flask', ripple: 'white--text', href: 'http://flask.pocoo.org/', logo: 'http://www.unixstickers.com/image/data/stickers/flask/Flask-logo.sh.png' },
+        { name: 'Symfony', ripple: 'black--text', href: 'https://symfony.com/', logo: 'https://symfony.com/images/v5/pictos/home-main-illu.svg'},
+        { name: 'Laravel', ripple: 'red--text', href: 'https://laravel.com/', logo: 'http://www.stickpng.com/assets/images/58480e35cef1014c0b5e4920.png' },
+        { name: 'MongoDB', ripple: 'green--text', href: 'https://www.mongodb.com/', logo: 'http://www.unixstickers.com/image/cache/data/stickers/mongo/mongo.sh-600x600.png' }
       ]
     },
     { name: 'Frameworks',
@@ -830,10 +826,10 @@ export default {
             { name: 'HTML', color: 'orange', to: 'leaf-html', icon: 'brands/html5' },
             { name: 'CSS', color: 'blue', to: 'leaf-css', icon: 'brands/css3-alt' },
             { name: 'JavaScript', color: 'amber', to: 'leaf-javascript', icon: 'brands/js'},
-            { name: 'CLI', color: 'grey lighten-2', to: 'leaf-command_line', icon: 'terminal'},
-            { name: 'Webpack', color: 'light-blue lighten-2', to: 'leaf-webpack'}
+            { name: 'Node.js', color: 'lime', to: 'leaf-nodejs', icon: 'brands/node-js'}
           ],
           next: [
+            { name: 'Nuxt.js', color: 'teal', to: 'leaf-nuxt'},
             { name: 'Libraries', color: 'accent', href: 'https://source-2fea2.firebaseapp.com/tree#libraries', icon: 'brands/vuejs'},
           ],
           sources: [
@@ -910,9 +906,6 @@ export default {
           to: 'angular',
           title: 'Angular - makes it easy to build applications with the web.',
           whatIsVideo: 'https://www.youtube.com/embed/b9gnX62ZMTU',
-          todo: false,
-          starred: false,
-          shared: false,
           sources: ['']},
         { name: 'React',
           logo: 'https://sandstorm.de/_Resources/Persistent/3285416e8503b2c8354c321bcd690cf550b8b2d3/React-Logo.svg',
@@ -989,7 +982,7 @@ export default {
       description: 'Add awesome styles and components with Component Libraries.',
       id: 'libraries',
       leafs: [
-        { name: 'Bootstrap', ripple: 'deep-purple--text', href: 'https://getbootstrap.com/', logo: 'https://getbootstrap.com/assets/img/bootstrap-stack.png' },
+        { name: 'Bootstrap', ripple: 'deep-purple--text', href: 'https://getbootstrap.com/', logo: 'https://sdtimes.com/wp-content/uploads/2018/01/bootstrap-stack-490x412.png' },
         { name: 'Vue-Bootstrap', ripple: 'teal--text', href: 'https://bootstrap-vue.js.org/', logo: 'https://bootstrap-vue.js.org/_nuxt/img/icon.f0a8c9e.png', badge: 'brands/vuejs', badgecolor: 'teal--text' },
         { name: 'Rct-Bootstrap', ripple: 'light-blue--text', href: 'https://react-bootstrap.github.io/', logo: 'https://qph.ec.quoracdn.net/main-qimg-a1cba7ee0601b2ea0bd44d7900e23cc8', badge: 'brands/react', badgecolor: 'light-blue--text' },
         { name: 'NG-Bootstrap', ripple: 'blue--text', href: 'https://ng-bootstrap.github.io/#/home', logo: 'https://ng-bootstrap.github.io/img/logo.svg', badge: 'brands/angular', badgecolor: 'pink--text' },
@@ -1024,6 +1017,52 @@ export default {
 
         { name: 'PrimeNG', ripple: 'red--text', href: 'https://www.primefaces.org/primeng/#/', logo: 'https://www.primefaces.org/presskit/primeng-logo.png', badge: 'brands/angular', badgecolor: 'pink--text' },
         { name: 'Clarity', ripple: 'orange--text', href: 'https://vmware.github.io/clarity/', logo: 'https://habrastorage.org/webt/59/f0/51/59f05155beffd369502984.png', badge: 'brands/angular', badgecolor: 'pink--text' }
+      ]
+    },
+    { name: 'SSR',
+      description: 'Make your website load faster with Server Side Rendering',
+      id: 'ssr',
+      leafs: [
+        {
+          name: 'Nuxt.js',
+          ripple: 'white--text',
+          to:'nuxt',
+          logo: 'https://pbs.twimg.com/profile_images/805469971664998400/UAIojlzx_400x400.jpg',
+          badge: 'brands/vuejs',
+          badgecolor: 'teal--text',
+          req: [
+            { name: 'Vue', color: 'teal', to: 'leaf-vue', icon: 'brands/vuejs' },
+          ],
+          sources: [
+            { name: 'Documentation',
+              todo: false,
+              starred: false,
+              shared: false,
+              link: 'https://nuxtjs.org/',
+              logo: 'https://pbs.twimg.com/profile_images/805469971664998400/UAIojlzx_400x400.jpg',
+              icon: 'important_devices' },
+          ]
+        },
+        {
+          name: 'Next.js',
+          ripple: 'white--text',
+          to:'next',
+          logo: 'https://d2eip9sf3oo6c2.cloudfront.net/tags/images/000/001/074/full/nextjs.png',
+          badge: 'brands/react',
+          badgecolor: 'light-blue--text',
+          req: [
+            { name: 'React', color: 'light-blue', to: 'leaf-react', icon: 'brands/react' },
+          ],
+          sources: [
+            { name: 'Documentation',
+              todo: false,
+              starred: false,
+              shared: false,
+              link: 'https://nextjs.org/',
+              logo: 'https://d2eip9sf3oo6c2.cloudfront.net/tags/images/000/001/074/full/nextjs.png',
+              icon: 'important_devices' },
+          ]
+        }
       ]
     },
     { name: 'Graphics',
@@ -1070,6 +1109,7 @@ export default {
         { name: 'Electron', ripple: 'indigo--text', href: 'https://electronjs.org/', logo: 'https://pbs.twimg.com/profile_images/730268134460903424/8WOgriUU_400x400.jpg' },
         { name: 'NativeScript', ripple: 'blue--text', href: 'https://www.nativescript.org/', logo: 'https://d2odgkulk9w7if.cloudfront.net/images/default-source/default-album/nativescript.png?sfvrsn=69909fe_0' },
         { name: 'NS-Vue', ripple: 'teal--text', href: 'https://nativescript-vue.org/', logo: 'https://avatars1.githubusercontent.com/u/32681046?s=280&v=4', badge: 'brands/vuejs', badgecolor: 'teal--text' },
+        { name: 'React Native', ripple: 'light-blue--text', href: 'https://facebook.github.io/react-native/', logo: 'https://cdn-images-1.medium.com/max/1600/1*XXF26vmDRr6vRY84d1BCKA.png', badge: 'brands/react', badgecolor: 'light-blue--text' },
         { name: 'Weex', ripple: 'light-blue--text', href: 'https://weex.incubator.apache.org/', logo: 'https://cdn-images-1.medium.com/max/358/1*JGQP6WjsRwiiLTNPiCAH5A.png' },
         { name: 'Onsen UI', ripple: 'red--text', href: 'https://onsen.io/', logo: 'https://s3.amazonaws.com/media-p.slid.es/uploads/344767/images/2769652/g7.png' }
       ]
@@ -1080,9 +1120,9 @@ export default {
       leafs: [
         {
           name: 'Typing',
-          logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Circle-icons-keyboard.svg/1024px-Circle-icons-keyboard.svg.png',
           ripple: 'orange--text',
           to: 'typing' ,
+          logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Circle-icons-keyboard.svg/1024px-Circle-icons-keyboard.svg.png',
           sources: [
             { name: 'TypingClub',
               todo: false,
@@ -1152,7 +1192,7 @@ export default {
               todo: false,
               starred: false,
               shared: false,
-              link: 'https://www.youtube.com/playlist?list=PL4cUxeGkcC9goXbgTDQ0n_4TBzOO0ocPR',
+              link: 'https://www.youtube.com/playlist?list=PL4cUxeGkcC9goXbgTDQ0n_4TBzOO0ocPR;',
               logo: 'https://yt3.ggpht.com/a-/AJLlDp2oM9rg7DFu7iit71Ndh0yNIEL7F_j0VCRWuQ=s900-mo-c-c0xffffffff-rj-k-no',
               icon: 'important_devices'
             }
@@ -1160,6 +1200,7 @@ export default {
          },
         { name: 'Firebase', logo: 'https://firebase.google.com/_static/images/firebase/touchicon-180.png', ripple: 'amber--text',  to: '/firease' },
         { name: 'NPM', logo: 'https://d2eip9sf3oo6c2.cloudfront.net/tags/images/000/000/188/full/npmlogo.png', ripple: 'red--text',  href: 'https://www.npmjs.com/' },
+        { name: 'Stenciljs', logo: 'https://pbs.twimg.com/profile_images/895677818998185985/mWrrADXf_400x400.jpg', ripple: 'white--text',  href: 'https://stenciljs.com/' },
         { ripple: 'green--text', logo: 'https://raw.githubusercontent.com/stvhwrd/icons/master/atom/Atom-no_shadows-512.png', name: 'Atom', href: 'https://atom.io/' },
         { ripple: 'white--text', logo: 'http://blog.codepen.io/wp-content/uploads/2012/06/Button-Fill-White-Large.png', name: 'CodePen', href: 'https://codepen.io/' },
         { ripple: 'light-green--text', logo: 'http://www.karlsjohnson.com/link/resources/images/w3school.png', name: 'Tryit Editor', href: 'https://www.w3schools.com/html/tryit.asp?filename=tryhtml_basic' },
@@ -1231,6 +1272,9 @@ export default {
           return leaf.to === leafTo
         })||
         state.branches[10].leafs.find((leaf) => {
+          return leaf.to === leafTo
+        })||
+        state.branches[11].leafs.find((leaf) => {
           return leaf.to === leafTo
         })
       }

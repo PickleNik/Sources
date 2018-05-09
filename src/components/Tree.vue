@@ -67,6 +67,7 @@ export default {
         { name: 'Backend', href: '#backend', offset: -33, icon: 'storage' },
         { name: 'Frameworks', href: '#frameworks', offset: -33, icon: 'settings' },
         { name: 'Libraries', href: '#libraries', offset: -33, icon: 'color_lens' },
+        { name: 'SSR', href: '#ssr', offset: -33, icon: 'access_time' },
         { name: 'Graphics', href: '#graphics', offset: -33, icon: 'format_paint' },
         { name: 'Hosting', href: '#hosting', offset: -33, icon: 'router' },
         { name: 'Apps', href: '#apps', offset: -33, icon: 'developer_mode' },

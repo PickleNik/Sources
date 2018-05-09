@@ -38,7 +38,17 @@
 
   </v-card>
 
-  <v-dialog width="500" v-model="copied" style="border-radius:3em;"><v-card class="secondary pa-3 text-xs-center" ><v-card-text class="accent--text display-1">Link have been copied!</v-card-text><v-card-actions><v-btn @click="copied = !copied" outline light round color="accent" class="mx-auto">Ok</v-btn></v-card-actions></v-card></v-dialog>
+  <v-dialog width="500" v-model="copied" style="border-radius:3em;">
+
+
+    <v-container class="roundXL secondary" align-content-center>
+      <v-flex xs12 class="text-xs-center">
+        <h1 class="accent--text mb-3">Link Copied!</h1>
+        <v-spacer></v-spacer>
+        <v-btn @click="copied = !copied" outline light round color="accent" class="mx-auto">Ok</v-btn>
+      </v-flex>
+    </v-container>
+  </v-dialog>
 
 </div>
 </template>

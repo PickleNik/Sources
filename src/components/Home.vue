@@ -5,10 +5,9 @@
 <div id="hero">
   <div class="text-sm-center">
     <div class="centerABS">
-    <img class="hidden-sm-and-up centerX" width="50%" height="50%" src="../assets/treeLogo.png" alt="logo">
-    <img class="hidden-xs-only" width="300" height="300" src="../assets/treeLogo.png" alt="logo">
+    <img class="mx-5" width="200" height="200" src="../assets/treeLogo.png" style="  animation: bounce 1.5s 2s linear 1;" alt="logo">
     <h2 class="display-3 white--text">TutsTree</h2>
-    <p class="white--text typed" style="font-size:1.5em;"><span id="greeting" class="white--text"></span></p>
+    <p class="white--text typed accent--text secondary round pa-2" style="font-size:1.5em;"><span id="greeting"></span></p>
     <a href="#" v-scroll-to="'#about'"><v-btn dark large flat icon class="hidden-sm-and-up centerX pa-5">
       <v-icon x-large class="down">keyboard_arrow_down</v-icon>
     </v-btn></a>
@@ -42,19 +41,19 @@
 <v-layout id="about">
   <v-flex xs12 sm8 offset-sm2 class="pa-5 white--text text-xs-center">
     <h1 class="grey--text mb-1 mt-3">About</h1>
-    <h2  class="py-3 hidden-xs-only" style="text-align:justify;">Learn Web development on TutsTree with tutoials from best online sources. In our organized
+    <h2  class="py-3" style="text-align:justify;">TutsTree is for learning Web Development with online tutorials organized in
     <v-btn class="ma-0 accent--text"small dark flat round to="/tree"><h3><icon dark name="tree"></icon>Tree<icon dark name="tree"></icon></h3></v-btn>
-    you will find everything you need to become a web developer. Just pick a "leaf" and explore! Next and Required sections will help you out with deciding what to learn. Hover titles to read some useful info about a "leaf" or a "branch" on the tree. </h2>
+    . The project is under development yet.</h2>
     <img class="round pa-3 hidden-xs-only" width="100%" src="http://frontenddeveloperjob.com/images/cool.png"/>
 
       <v-btn @click="welcomeDialog = true" round dark class="mt-2"><v-icon class="hidden-xs-only" left>devices_other</v-icon><v-icon left>developer_mode</v-icon><h4>get started</h4><v-icon class="hidden-xs-only" right>code</v-icon><v-icon right>touch_app</v-icon></v-btn>
 
-      <v-dialog presistent v-model="welcomeDialog" max-width="500px" content-class="elevation-0">
+      <v-dialog presistent v-model="welcomeDialog" max-width="500px">
         <v-container class="roundXL secondary" align-content-center>
           <v-flex xs12 class="text-xs-center">
             <h1 class="grey--text mb-3">WooHoo</h1>
-            <p class="hidden-sm-and-down">Please notice the scroll navigation on the left top and pages navigation on the right top of the screen.</p>
-            <p class="hidden-md-and-up">Please notice the navigation at the bottom. For auto-scroll tap the button at the right and choose where to scroll to.</p>
+            <p class="hidden-sm-and-down">Please notice the scroll navigation on the left top and pages navigation on the right top of the screen. Hover titles to read about something.</p>
+            <p class="hidden-md-and-up">Please notice the navigation at the bottom. For auto-scroll tap the button at the right and choose where to scroll to. Tap on titles to read about something.</p>
             <v-spacer></v-spacer>
             <router-link to="/tree"><v-btn round light class="mt-2 accent"><v-icon class="hidden-xs-only" left>devices_other</v-icon><v-icon left>developer_mode</v-icon><h4>get started</h4><v-icon class="hidden-xs-only" right>code</v-icon><v-icon right>touch_app</v-icon></v-btn></router-link>
           </v-flex>
@@ -131,7 +130,7 @@ export default {
         { name: 'Tree ', to: '/tree', icon: 'device_hub', posticon: 'keyboard_arrow_right' },
         { name: 'Sources ', to: '/sources', icon: 'local_library', posticon: 'keyboard_arrow_right' }
       ],
-      typedOptions: ['Welcome to TutorialsTree', 'Here you can find bunch of tutorials about Web Development', 'Explore and Learn on TutsTree.']
+      typedOptions: ['Welcome to TutorialsTree', 'Here you can find bunch of tutorials about Web Development', 'By the way this website is using cookies.']
     }
   },
   mounted () {
