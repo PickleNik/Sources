@@ -52,8 +52,8 @@
         <v-container class="roundXL secondary" align-content-center>
           <v-flex xs12 class="text-xs-center">
             <h1 class="grey--text mb-3">WooHoo</h1>
-            <p class="hidden-sm-and-down">Please notice the scroll navigation on the left top and pages navigation on the right top of the screen. Hover titles to read about something.</p>
-            <p class="hidden-md-and-up">Please notice the navigation at the bottom. For auto-scroll tap the button at the right and choose where to scroll to. Tap on titles to read about something.</p>
+            <p class="hidden-sm-and-down">Please notice the scroll navigation on the left top and pages navigation on the right top of the screen. Hover titles to read about topics.</p>
+            <p class="hidden-md-and-up">Please notice the navigation at the bottom. For auto-scroll tap the button at the right and choose where to scroll to. Tap on titles to read about topics.</p>
             <v-spacer></v-spacer>
             <router-link to="/tree"><v-btn round light class="mt-2 accent"><v-icon class="hidden-xs-only" left>devices_other</v-icon><v-icon left>developer_mode</v-icon><h4>get started</h4><v-icon class="hidden-xs-only" right>code</v-icon><v-icon right>touch_app</v-icon></v-btn></router-link>
           </v-flex>
@@ -71,7 +71,7 @@
 
 <v-layout id="team">
 
-<v-flex xs12 sm8 offset-sm2 class="pa-5 white--text">
+<v-flex xs12 sm8 offset-sm2 class="pa-5 white--text" style="min-height:100vh;">
 
     <h1 class="grey--text mb-5 mt-3 text-xs-center">Team</h1>
 
@@ -86,16 +86,16 @@
       </v-flex>
   </v-layout>
 
-<v-flex xs12 class="mt-5 mb-5 pb-5">
+<!-- <v-flex xs12 class="mt-5 mb-5 pb-5">
 
   <v-layout row>
-  <v-flex><div style="float:left"><p class="contact">Add a source</p><p class="contact">Visit tree</p><p class="contact">Share</p></div></v-flex>
+  <v-flex><div style="float:left"><a href="https://source-2fea2.firebaseapp.com/sources" class="contact">Sources</a></br></br><a href="https://source-2fea2.firebaseapp.com/tree" class="contact">Tree</a></br></br><p class="contact">Share</p></div></v-flex>
 
   <v-flex><div class="hidden-xs-only centerX" style="float:both"><p class="contact">Stay up to date</p><p class="contact">Report a bug</p><p class="contact">Our Twitter</p></div></v-flex>
 
   <v-flex><div style="float:right"><p class="contact">Our Sponsors</p><p class="contact">Support us</p><p class="contact">Help</p></div></v-flex>
   </v-layout>
-</v-flex>
+</v-flex> -->
 
 </v-flex>
 </v-layout>

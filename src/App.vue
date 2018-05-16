@@ -365,7 +365,8 @@ a{
 .link--yaku:hover span:nth-child(8) {
 	-webkit-transition-delay: 0.7s;
 	transition-delay: 0.7s;
-}.link--yaku span:nth-child(9),
+}
+.link--yaku span:nth-child(9),
 .link--yaku:hover span:nth-child(9) {
 	-webkit-transition-delay: 0.8s;
 	transition-delay: 0.8s;
@@ -375,14 +376,24 @@ a{
 	-webkit-transition-delay: 0.9s;
 	transition-delay: 0.9s;
 }
-.link--yaku span:nth-child(11)
+.link--yaku span:nth-child(11),
 .link--yaku:hover span:nth-child(11) {
 	-webkit-transition-delay: 1s;
 	transition-delay: 1s;
 }
-.link--yaku span:nth-child(12)
+.link--yaku span:nth-child(12),
 .link--yaku:hover span:nth-child(12) {
 	-webkit-transition-delay: 1.1s;
 	transition-delay: 1.1s;
+}
+.link--yaku span:nth-child(13),
+.link--yaku:hover span:nth-child(13) {
+	-webkit-transition-delay: 1.2s;
+	transition-delay: 1.2s;
+}
+.link--yaku span:nth-child(14),
+.link--yaku:hover span:nth-child(14) {
+	-webkit-transition-delay: 1.3s;
+	transition-delay: 1.3s;
 }
 </style>

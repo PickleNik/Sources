@@ -343,10 +343,8 @@ export default {
             { name: 'CSS', color: 'blue', to: 'leaf-css', icon: 'brands/css3-alt' }
           ],
           next: [
-            { name: 'Jquery', color: 'teal lighten-2', to: 'leaf-jquery'},
             { name: 'Node.js', color: 'lime', to: 'leaf-nodejs', icon: 'brands/node-js'},
             { name: 'ECMAScript', color: 'amber', to: 'leaf-es6', icon: 'brands/js'},
-            { name: 'Webpack', color: 'light-blue lighten-2', to: 'leaf-webpack'}
           ],
           sources: [
             { name: 'SoloLearn',
@@ -355,6 +353,14 @@ export default {
               shared: false,
               link: 'https://www.sololearn.com/Course/JavaScript/',
               logo: 'https://lh3.googleusercontent.com/VMhNdwD6dEukMpEoX9muTVHfdNdR61_isd0VWongciNOUQjQ5Zlm5habSTplvQM3J00=w300',
+              icon: 'devices' },
+
+            { name: 'JavaScript.com',
+              todo: false,
+              starred: false,
+              shared: false,
+              link: 'https://www.javascript.com',
+              logo: 'http://wwwhere.io/img/thumbs/javascriptcom.jpg',
               icon: 'devices' },
 
             { name: 'Grasshopper',
@@ -493,9 +499,6 @@ export default {
           to: 'command_line',
           logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Icons8_flat_command_line.svg/2000px-Icons8_flat_command_line.svg.png',
           wiki: 'https://en.wikipedia.org/wiki/Command-line_interface',
-          next: [
-            { name: 'Frameworks', color: 'accent', href: 'https://source-2fea2.firebaseapp.com/tree#frameworks', icon: 'cog'}
-          ],
           sources: [
             { name: 'Wikipedia',
               todo: false,
@@ -511,13 +514,20 @@ export default {
               link: 'http://blog.teamtreehouse.com/command-line-basics',
               logo: 'https://davidwalsh.name/demo/treehouse-logo.png',
               icon: 'description' },
+            { name: 'Ionic Blog',
+              todo: false,
+              starred: false,
+              shared: false,
+              link: 'https://blog.ionicframework.com/new-to-the-command-line/',
+              logo: 'https://pbs.twimg.com/profile_images/834457277830541312/bYMCvtHD.jpg',
+              icon: 'description' },
             { name: 'Codecademy',
               todo: false,
               starred: false,
               shared: false,
               link: 'https://www.codecademy.com/learn/introduction-to-javascript',
               logo: 'https://cdn-images-1.medium.com/max/2000/1*eAkVW2LFAd9pKdL-8hBQ1A.png',
-              icon: 'attach_money' }
+              icon: 'attach_money' },
           ]
         }
       ]
@@ -664,47 +674,6 @@ export default {
           title: 'EXPRESSIVE, DYNAMIC, ROBUST CSS',
           whatIsVideo: '',
           sources: [''] },
-        { name: 'JQuery',
-          ripple: 'green--text',
-          logo: 'http://ethiopiarabb.com/assets/images/icon-jquery.png',
-          to: 'jquery',
-          badge: 'brands/js',
-          badgecolor: 'amber--text',
-          title: 'jQuery - a lightweight javascript library',
-          whatIsVideo: 'https://www.youtube.com/embed/U4UZVbQ8md0',
-          sources: [
-            { name: 'JQuery',
-              todo: false,
-              starred: false,
-              shared: false,
-              link: 'https://jquery.com/',
-              logo: 'https://js.foundation/wp-content/uploads/sites/33/2017/02/jquery.png',
-              icon: 'description' },
-
-            { name: 'SoloLearn',
-              todo: false,
-              starred: false,
-              shared: false,
-              link: 'https://www.sololearn.com/Course/jQuery/',
-              logo: 'https://lh3.googleusercontent.com/ETvE8qpSRnKBb7QMEkctSfC8r3CjGmMy00PtV3qq0YLUVl1PtKjTVpGXCP8cO9xnGw=w300',
-              icon: 'devices' },
-
-            { name: 'in Learning',
-              todo: false,
-              starred: false,
-              shared: false,
-              link: 'https://www.linkedin.com/learning/topics/jquery',
-              logo: 'https://lh3.googleusercontent.com/WGnfuvo95Yporu_v1zBaDDpt5RLYh_eM1YMMu56pos4V81Ae2djhMfTPtAI50DhLglT4=w300',
-              icon: 'attach_money' },
-
-            { name: 'Plurasight',
-              todo: false,
-              starred: false,
-              shared: false,
-              link: 'https://www.pluralsight.com/paths/jquery',
-              logo: 'https://images-na.ssl-images-amazon.com/images/I/51-Hci2bYjL.png',
-              icon: 'attach_money' }
-          ]  },
         { name: 'ECMAScript',
           ripple: 'yellow--text',
           logo: 'https://codereviewvideos.com/blog/wp-content/uploads/2016/04/es6-logo.png',
@@ -785,7 +754,7 @@ export default {
         ],
         next: [
           { name: 'Expressjs', color: 'grey lighten-3', href: 'http://expressjs.com/'},
-          { name: 'Frameworks', color: 'accent', href: 'https://source-2fea2.firebaseapp.com/tree#frameworks', icon: 'cog'}
+          { name: 'JS Frameworks', color: 'accent', href: 'https://source-2fea2.firebaseapp.com/tree#frameworks', icon: 'cog'}
         ],
         sources: [
           { name: 'W3schools',
@@ -808,7 +777,7 @@ export default {
         { name: 'MongoDB', ripple: 'green--text', href: 'https://www.mongodb.com/', logo: 'http://www.unixstickers.com/image/cache/data/stickers/mongo/mongo.sh-600x600.png' }
       ]
     },
-    { name: 'Frameworks',
+    { name: 'JS-Frameworks',
       description: 'Make JavaScript running faster with JavaScript Frameworks!',
       id: 'frameworks',
       leafs: [
@@ -975,11 +944,50 @@ export default {
           todo: false,
           starred: false,
           shared: false,
-          sources: ['']}
+          sources: [''] },
+        { name: 'JQuery',
+          ripple: 'green--text',
+          logo: 'http://ethiopiarabb.com/assets/images/icon-jquery.png',
+          to: 'jquery',
+          title: 'jQuery - a lightweight javascript library',
+          whatIsVideo: 'https://www.youtube.com/embed/U4UZVbQ8md0',
+          sources: [
+            { name: 'JQuery',
+              todo: false,
+              starred: false,
+              shared: false,
+              link: 'https://jquery.com/',
+              logo: 'https://js.foundation/wp-content/uploads/sites/33/2017/02/jquery.png',
+              icon: 'description' },
+
+            { name: 'SoloLearn',
+              todo: false,
+              starred: false,
+              shared: false,
+              link: 'https://www.sololearn.com/Course/jQuery/',
+              logo: 'https://lh3.googleusercontent.com/ETvE8qpSRnKBb7QMEkctSfC8r3CjGmMy00PtV3qq0YLUVl1PtKjTVpGXCP8cO9xnGw=w300',
+              icon: 'devices' },
+
+            { name: 'in Learning',
+              todo: false,
+              starred: false,
+              shared: false,
+              link: 'https://www.linkedin.com/learning/topics/jquery',
+              logo: 'https://lh3.googleusercontent.com/WGnfuvo95Yporu_v1zBaDDpt5RLYh_eM1YMMu56pos4V81Ae2djhMfTPtAI50DhLglT4=w300',
+              icon: 'attach_money' },
+
+            { name: 'Plurasight',
+              todo: false,
+              starred: false,
+              shared: false,
+              link: 'https://www.pluralsight.com/paths/jquery',
+              logo: 'https://images-na.ssl-images-amazon.com/images/I/51-Hci2bYjL.png',
+              icon: 'attach_money' }
+          ] }
       ]
     },
-    { name: 'Libraries',
-      description: 'Add awesome styles and components with Component Libraries.',
+    { name: 'CSS-Frameworks',
+      description: 'Add awesome styles and components with CSS Frameworks.',
       id: 'libraries',
       leafs: [
         { name: 'Bootstrap', ripple: 'deep-purple--text', href: 'https://getbootstrap.com/', logo: 'https://sdtimes.com/wp-content/uploads/2018/01/bootstrap-stack-490x412.png' },
@@ -993,7 +1001,6 @@ export default {
         { name: 'Rct-Semantic', ripple: 'teal--text', href: 'https://react.semantic-ui.com/introduction', logo: 'https://react.semantic-ui.com/logo.png', badge: 'brands/react', badgecolor: 'light-blue--text' },
         { name: 'NG-Semantic', ripple: 'teal--text', href: 'https://ng-semantic.herokuapp.com/#/', logo: 'https://raw.githubusercontent.com/edcarroll/ng2-semantic-ui/master/demo/src/assets/logo.png', badge: 'brands/angular', badgecolor: 'pink--text' },
 
-        { name: 'Material Des...', ripple: 'grey--text', href: 'https://material.io/', logo: 'https://cdn.dribbble.com/users/75794/screenshots/3051672/mb_social_1.gif'},
         { name: 'Material Lite', ripple: 'black--text', href: 'https://getmdl.io/', logo: 'https://www.3pillarglobal.com/wp-content/uploads/2015/10/mdl_logo_320x260-300x260.png'},
         { name: 'Vue-Material', ripple: 'light-green--text', href: 'https://vuematerial.io/', logo: 'https://camo.githubusercontent.com/55e8a928e9fca0eeb4e7cb7836cb60dc05703c65/68747470733a2f2f7675656d6174657269616c2e696f2f6173736574732f6c6f676f2d636f6c6f722e706e67',  badge: 'brands/vuejs', badgecolor: 'teal--text' },
         { name: 'Material UI', ripple: 'light-blue--text', href: 'https://www.material-ui.com/#/', logo: 'https://material-ui-next.com/static/brand.png', badge: 'brands/react', badgecolor: 'light-blue--text' },
@@ -1010,7 +1017,9 @@ export default {
         { name: 'UIkit', ripple: 'blue--text', href: 'https://getuikit.com/', logo: 'https://pbs.twimg.com/profile_images/818852933483823104/YYr9qgV8_400x400.jpg' },
         { name: 'Vuikit', ripple: 'white--text', href: 'https://vuikit.js.org/', logo: 'https://avatars2.githubusercontent.com/u/19988804?s=400&v=4', badge: 'brands/vuejs', badgecolor: 'teal--text' },
 
-        { name: 'Onsen UI', ripple: 'red--text', href: 'https://onsen.io/', logo: 'https://s3.amazonaws.com/media-p.slid.es/uploads/344767/images/2769652/g7.png'},
+        { name: 'Foundation', ripple: 'white--text', href: 'https://foundation.zurb.com/', logo: 'https://foundation.zurb.com/assets/img/learn/features/svgs/code-reduction-01.svg' },
+        { name: 'Rct-Foundati...', ripple: 'light-blue--text', href: 'https://react.foundation/', logo: 'https://cdn.worldvectorlogo.com/logos/react.svg', badge: 'brands/react', badgecolor: 'light-blue--text' },
+
         { name: 'Pure CSS', ripple: 'light-blue--text', href: 'https://purecss.io/', logo: 'http://www.developersfeed.com/wp-content/uploads/2016/02/pure-css-logo-e1455594006843.png'},
         { name: 'Element', ripple: 'light-blue--text', href: 'http://element.eleme.io/1.4/#/en-US', logo: 'http://element.eleme.io/1.4/static/banner-bg.75437e1.svg'},
         { name: 'Vuesax', ripple: 'purple--text', href: 'https://lusaxweb.github.io/vuesax/#/en/home', logo: 'https://madewithvuejs.com/uploads/07/11/vuesax.png', badge: 'brands/vuejs', badgecolor: 'teal--text' },
@@ -1070,21 +1079,21 @@ export default {
       id: 'graphics',
       leafs: [
         { ripple: 'amber--text', logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/SVG_Logo.svg/2000px-SVG_Logo.svg.png', href: 'https://www.w3schools.com/graphics/svg_intro.asp', name: 'SVG'},
-        { ripple: 'red--text', logo: 'https://1001freedownloads.s3.amazonaws.com/vector/thumb/74145/iOS_7_Icon_Template.png', href: 'https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API', name: 'WebGL'},
+        { ripple: 'red--text', logo: 'https://taxi-luxembourg.lu/wp-content/uploads/2016/04/dummy-post-square-1.jpg', href: 'https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API', name: 'WebGL'},
         { ripple: 'white--text', logo: 'https://kenoleon.github.io/Front-End-Web-Dev-UI-UX/assets/images/threejsLogo.jpg', href: 'https://threejs.org/', name: 'Three.js'},
-        { ripple: 'light-blue--text', logo: 'https://assets.hongkiat.com/uploads/javascript-libraries-animate-svg/svg-vivus.jpg', name: 'Vivus.js', href: 'http://maxwellito.github.io/vivus/' },
-        { ripple: 'indigo--text', logo: 'https://assets.hongkiat.com/uploads/javascript-libraries-animate-svg/svg-bonsai.jpg', name: 'Bonsai.js', href: 'http://bonsaijs.org/' },
-        { ripple: 'indigo--text', logo: 'https://assets.hongkiat.com/uploads/javascript-libraries-animate-svg/svg-velocity.jpg', name: 'Velocity.js', href: 'http://velocityjs.org/' },
+        { ripple: 'light-blue--text', logo: 'https://taxi-luxembourg.lu/wp-content/uploads/2016/04/dummy-post-square-1.jpg', name: 'Vivus.js', href: 'http://maxwellito.github.io/vivus/' },
+        { ripple: 'indigo--text', logo: 'https://taxi-luxembourg.lu/wp-content/uploads/2016/04/dummy-post-square-1.jpg', name: 'Bonsai.js', href: 'http://bonsaijs.org/' },
+        { ripple: 'indigo--text', logo: 'https://taxi-luxembourg.lu/wp-content/uploads/2016/04/dummy-post-square-1.jpg', name: 'Velocity.js', href: 'http://velocityjs.org/' },
         { ripple: 'orange--text', logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Rapha%C3%ABl_logo.svg/2000px-Rapha%C3%ABl_logo.svg.png', name: 'Raphaël.js', href: 'http://dmitrybaranovskiy.github.io/raphael/' },
         { ripple: 'teal--text', logo: 'http://www.stickpng.com/assets/images/58482e09cef1014c0b5e4a65.png', name: 'SnapSVG', href: 'http://snapsvg.io/' },
         { ripple: 'white--text', logo: 'https://www.jqueryscript.net/images/SVG-Path-Animation-Plugin-with-jQuery-Lazy-Line-Painter.jpg', name: 'Lazy Line Painter', href: 'http://lazylinepainter.info/' },
         { ripple: 'pink--text', logo: 'http://svgjs.com/assets/images/logo-svg-js-01d.png', name: 'SVG.js', href: 'http://svgjs.com/' },
         { ripple: 'orange--text', logo: 'http://maxcdn.webappers.com/img/2014/11/walkway-js.jpg', name: 'Walkway.js', href: 'https://www.connoratherton.com/walkway' },
         { ripple: 'pink--text', logo: 'https://pbs.twimg.com/profile_images/932879315343167488/m4w3StTy_400x400.jpg', name: 'Popmotion', href: 'https://popmotion.io/' },
-        { ripple: 'light-blue--text', logo: 'http://www.webknowledgefree.com/wp-content/uploads/2015/12/bouncejs-css-animation-library-for-web-designer.jpg', name: 'Bounce.js', href: 'http://bouncejs.com/' },
-        { ripple: 'amber--text', logo: 'http://s3-eu-west-2.amazonaws.com/s3alessioangeloro/wp-content/uploads/2017/04/11155100/typed.js.gif', name: 'Typed.js', href: 'https://mattboldt.com/demos/typed-js/' },
+        { ripple: 'light-blue--text', logo: 'https://taxi-luxembourg.lu/wp-content/uploads/2016/04/dummy-post-square-1.jpg', name: 'Bounce.js', href: 'http://bouncejs.com/' },
+        { ripple: 'amber--text', logo: 'https://taxi-luxembourg.lu/wp-content/uploads/2016/04/dummy-post-square-1.jpg', name: 'Typed.js', href: 'https://mattboldt.com/demos/typed-js/' },
         { ripple: 'white--text', logo: 'https://d2eip9sf3oo6c2.cloudfront.net/tags/images/000/001/088/thumb/tweenmax.png', name: 'GSAP', href: 'https://greensock.com/' },
-        { ripple: 'pink--text', logo: 'https://www.bram.us/wordpress/wp-content/uploads/2017/04/tiltjs.gif', name: 'Tilt.js', href: 'https://gijsroge.github.io/tilt.js/' },
+        { ripple: 'pink--text', logo: 'https://taxi-luxembourg.lu/wp-content/uploads/2016/04/dummy-post-square-1.jpg', name: 'Tilt.js', href: 'https://gijsroge.github.io/tilt.js/' },
         { ripple: 'black--text', logo: 'https://codepen.io/juliangarnier/pen/oZNYXB/image/large.png', name: 'Animejs', href: 'http://animejs.com' },
         { ripple: 'white--text', logo: 'http://worthyofnote.co.uk/wp-content/uploads/2013/07/animate-css.jpg', name: 'Animate.css', href: 'https://daneden.github.io/animate.css/' }
       ]
@@ -1093,25 +1102,35 @@ export default {
       description: 'Put your project on the web',
       id: 'hosting',
       leafs: [
-        { name: 'Firebase', ripple: 'amber--text', to: '/firease', logo: 'https://firebase.google.com/_static/images/firebase/touchicon-180.png' },
         { name: 'Amazon S3', ripple: 'red--text', to: '/s3', logo: 'https://cdn.worldvectorlogo.com/logos/aws-s3.svg' },
         { name: 'Amazon EC2', ripple: 'amber--text', to: '/ec2', logo: 'https://cdn.worldvectorlogo.com/logos/aws-ec2.svg' },
         { name: 'Netlify', ripple: 'teal--text', href: 'https://www.netlify.com/', logo: 'https://www.netlify.com/img/press/logos/logomark.png' },
-        { name: 'Bluehost', ripple: 'blue--text', href: 'https://www.bluehost.com/', logo: 'https://www.bluehost.com/blog/wp-content/uploads/2017/07/logo5.png' }
+        { name: 'Bluehost', ripple: 'blue--text', href: 'https://www.bluehost.com/', logo: 'https://www.bluehost.com/blog/wp-content/uploads/2017/07/logo5.png' },
+        { name: 'Firebase', ripple: 'amber--text', to: '/firease', logo: 'https://firebase.google.com/_static/images/firebase/touchicon-180.png' }
       ]
     },
     { name: 'Apps',
-      description: 'Create cross-platform apps using web development skill',
+      description: 'Build cross-platform native apps using web development skill',
       id: 'apps',
       leafs: [
         { name: 'Flutter', ripple: 'blue--text', href: 'https://flutter.io/', logo: 'https://cdn-images-1.medium.com/max/1200/1*5-aoK8IBmXve5whBQM90GA.png' },
-        { name: 'Ionic DevApp', ripple: 'black-text', href: 'https://ionicframework.com/', logo: 'https://lh3.googleusercontent.com/s4KD6rLbGKZz-q9YzfVt_FgSk_q2yt-Jp6Al-KY14hAaVW2IFX_QOj56iC8lJoamECs=w300' },
+        { name: 'Ionic', ripple: 'black-text', href: 'https://ionicframework.com/', logo: 'https://lh3.googleusercontent.com/s4KD6rLbGKZz-q9YzfVt_FgSk_q2yt-Jp6Al-KY14hAaVW2IFX_QOj56iC8lJoamECs=w300' },
         { name: 'Electron', ripple: 'indigo--text', href: 'https://electronjs.org/', logo: 'https://pbs.twimg.com/profile_images/730268134460903424/8WOgriUU_400x400.jpg' },
         { name: 'NativeScript', ripple: 'blue--text', href: 'https://www.nativescript.org/', logo: 'https://d2odgkulk9w7if.cloudfront.net/images/default-source/default-album/nativescript.png?sfvrsn=69909fe_0' },
         { name: 'NS-Vue', ripple: 'teal--text', href: 'https://nativescript-vue.org/', logo: 'https://avatars1.githubusercontent.com/u/32681046?s=280&v=4', badge: 'brands/vuejs', badgecolor: 'teal--text' },
         { name: 'React Native', ripple: 'light-blue--text', href: 'https://facebook.github.io/react-native/', logo: 'https://cdn-images-1.medium.com/max/1600/1*XXF26vmDRr6vRY84d1BCKA.png', badge: 'brands/react', badgecolor: 'light-blue--text' },
+        { name: 'Fuse', ripple: 'white--text', href: 'https://www.fusetools.com/', logo: 'https://avatars1.githubusercontent.com/u/10243317?s=280&v=4' },
+        { name: 'Onsen UI', ripple: 'red--text', href: 'https://onsen.io/', logo: 'https://s3.amazonaws.com/media-p.slid.es/uploads/344767/images/2769652/g7.png' },
+        { name: 'Framework7', ripple: 'red--text', href: 'https://framework7.io/', logo: 'https://discoversdkcdn.azureedge.net/runtimecontent/companyfiles/6680/2706/thumbnail.png?v131157447489100864' },
+        { name: 'Appcelerator', ripple: 'red--text', href: 'https://www.appcelerator.com/', logo: 'https://pbs.twimg.com/profile_images/865600112868769794/TECPQ7Rb_400x400.jpg' },
         { name: 'Weex', ripple: 'light-blue--text', href: 'https://weex.incubator.apache.org/', logo: 'https://cdn-images-1.medium.com/max/358/1*JGQP6WjsRwiiLTNPiCAH5A.png' },
-        { name: 'Onsen UI', ripple: 'red--text', href: 'https://onsen.io/', logo: 'https://s3.amazonaws.com/media-p.slid.es/uploads/344767/images/2769652/g7.png' }
+        { name: 'Quasar', ripple: 'blue--text', href: 'https://quasar-framework.org/', logo: 'https://avatars3.githubusercontent.com/u/23064371?v=4' },
+        { name: 'Cocoon', ripple: 'grey--text', href: 'https://cocoon.io/', logo: 'https://pbs.twimg.com/profile_images/590908349471916033/GGl0hWfy_400x400.png' },
+        { name: 'Monaca', ripple: 'blue--text', href: 'https://monaca.io', logo: 'https://img.crx4chrome.com/4e/79/df/igimoohpkianbofjknpbnfehmkecbegl-logo.png' },
+        { name: 'Cordova', ripple: 'grey--text', href: 'https://cordova.apache.org/', logo: 'https://cordova.apache.org/static/img/cordova_bot.png' },
+        { name: 'RubyMotion', ripple: 'red--text', href: 'http://www.rubymotion.com/', logo: 'http://www.rubymotion.com/img/rubymotion-logo.png' },
+        { name: 'PhoneGap', ripple: 'black--text', href: 'https://phonegap.com/', logo: 'https://cdn.worldvectorlogo.com/logos/phonegap.svg' },
+
       ]
     },
     { name: 'Tools',
@@ -1201,6 +1220,7 @@ export default {
         { name: 'Firebase', logo: 'https://firebase.google.com/_static/images/firebase/touchicon-180.png', ripple: 'amber--text',  to: '/firease' },
         { name: 'NPM', logo: 'https://d2eip9sf3oo6c2.cloudfront.net/tags/images/000/000/188/full/npmlogo.png', ripple: 'red--text',  href: 'https://www.npmjs.com/' },
         { name: 'Stenciljs', logo: 'https://pbs.twimg.com/profile_images/895677818998185985/mWrrADXf_400x400.jpg', ripple: 'white--text',  href: 'https://stenciljs.com/' },
+        { name: 'Material Design', ripple: 'grey--text', href: 'https://material.io/', logo: 'https://cdn.dribbble.com/users/75794/screenshots/3051672/mb_social_1.gif'},
         { ripple: 'green--text', logo: 'https://raw.githubusercontent.com/stvhwrd/icons/master/atom/Atom-no_shadows-512.png', name: 'Atom', href: 'https://atom.io/' },
         { ripple: 'white--text', logo: 'http://blog.codepen.io/wp-content/uploads/2012/06/Button-Fill-White-Large.png', name: 'CodePen', href: 'https://codepen.io/' },
         { ripple: 'light-green--text', logo: 'http://www.karlsjohnson.com/link/resources/images/w3school.png', name: 'Tryit Editor', href: 'https://www.w3schools.com/html/tryit.asp?filename=tryhtml_basic' },

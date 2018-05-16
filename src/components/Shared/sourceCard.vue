@@ -38,9 +38,7 @@
 
   </v-card>
 
-  <v-dialog width="500" v-model="copied" style="border-radius:3em;">
-
-
+  <v-dialog width="500" v-model="copied" >
     <v-container class="roundXL secondary" align-content-center>
       <v-flex xs12 class="text-xs-center">
         <h1 class="accent--text mb-3">Link Copied!</h1>
