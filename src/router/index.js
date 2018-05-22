@@ -7,6 +7,7 @@ import Profile from '@/components/Profile'
 import PageNotFound from '@/components/PageNotFound'
 import Article from '@/components/Article'
 import Sources from '@/components/Sources'
+import SignInUp from '@/components/SignInUp'
 
 Vue.use(Router)
 
@@ -19,6 +20,10 @@ export default new Router({
     {
       path: '/profile',
       component: Profile
+    },
+    {
+      path: '/sign-in-up',
+      component: SignInUp
     },
     {
       path: '/tree',

@@ -199,6 +199,9 @@ a{
     transform: scale3d(1, 1, 1);
   }
 }
+.pulse{
+  animation: pulse .5s linear;
+}
 @keyframes Gradient {
 	0% {
 		background-position: 0% 50%;

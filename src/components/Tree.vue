@@ -63,6 +63,7 @@ export default {
     return {
       navs: [
         { name: 'Basics', href: '#basics', offset: -33, icon: 'code' },
+        { name: 'Text Editors', href: '#editors', offset: -33, icon: 'title'},
         { name: 'Frontend', href: '#frontend', offset: -33, icon: 'web' },
         { name: 'Backend', href: '#backend', offset: -33, icon: 'storage' },
         { name: 'JS Frameworks', href: '#frameworks', offset: -33, icon: 'settings' },
@@ -71,7 +72,6 @@ export default {
         { name: 'Graphics', href: '#graphics', offset: -33, icon: 'format_paint' },
         { name: 'Hosting', href: '#hosting', offset: -33, icon: 'router' },
         { name: 'Apps', href: '#apps', offset: -33, icon: 'developer_mode' },
-        { name: 'Text Editors', href: '#editors', offset: -33, icon: 'subtitles'},
         { name: 'Tools', href: '#tools', offset: -33, icon: 'build' },
         { name: 'Communities', href: '#communities', offset: -33, icon: 'group' }
       ],
