@@ -3,7 +3,7 @@
     <v-container fluid class="py-5">
       <v-layout id="whatIs">
 
-        <v-flex  v-if="leaf.whatIsVideo" xs12 sm12 md8 offset-md2 lg8 offset-lg2 class="mb-2 text-xs-center">
+        <v-flex xs12 sm12 md8 offset-md2 lg8 offset-lg2 class="mb-2 text-xs-center">
           <v-tooltip top>
             <h1 slot="activator" class="titles roundL mb-2 mt-4">
              <a class="grey--text link link--yaku" :href="leaf.wiki" target="_blank">What is <span v-for="letter in leaf.name.split('')">{{ letter }}</span></a></h1>
@@ -11,7 +11,7 @@
           </v-tooltip>
 
           <v-card id="fadeIn" dark class="roundXL mb-4" style="border-radius:3em;">
-            <v-card-media>
+            <v-card-media  v-if="leaf.whatIsVideo">
               <iframe style="border-top-right-radius: 3em; border-top-left-radius: 3em;" width="100%" height="514" :src="leaf.whatIsVideo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
             </v-card-media>
 

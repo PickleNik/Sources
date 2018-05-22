@@ -71,6 +71,7 @@ export default {
         { name: 'Graphics', href: '#graphics', offset: -33, icon: 'format_paint' },
         { name: 'Hosting', href: '#hosting', offset: -33, icon: 'router' },
         { name: 'Apps', href: '#apps', offset: -33, icon: 'developer_mode' },
+        { name: 'Text Editors', href: '#editors', offset: -33, icon: 'subtitles'},
         { name: 'Tools', href: '#tools', offset: -33, icon: 'build' },
         { name: 'Communities', href: '#communities', offset: -33, icon: 'group' }
       ],
@@ -80,7 +81,8 @@ export default {
   methods: {
     openLeaf (to) {
       if (to) {
-        this.$router.push('/leaf-' + to)}
+        this.$router.push('/leaf-' + to)
+      }
     }
   },
   computed: {
