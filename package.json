@@ -11,6 +11,7 @@
     "build": "node build/build.js"
   },
   "dependencies": {
+    "firebase": "^5.0.3",
     "typed.js": "^2.0.6",
     "vue": "^2.5.2",
     "vue-awesome": "^3.0.0",

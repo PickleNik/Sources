@@ -13,6 +13,7 @@ import Add from './components/Shared/Add.vue'
 import VueClipboard from 'vue-clipboard2'
 import 'vue-awesome/icons'
 import Icon from 'vue-awesome/components/Icon'
+import * as firebase from 'firebase'
 
 Vue.component('icon', Icon)
 
@@ -62,5 +63,14 @@ new Vue({
   el: '#app',
   router,
   store,
-  render: h => h(App)
+  render: h => h(App),
+  created () {
+    firebase.initializeApp({
+      apiKey: "AIzaSyD34PT-x-4w7_nr5Q74STd187dxwUOeQ-E",
+      authDomain: "tuts-tree.firebaseapp.com",
+      databaseURL: "https://tuts-tree.firebaseio.com",
+      projectId: "tuts-tree",
+      storageBucket: "tuts-tree.appspot.com"
+    })
+  }
 })

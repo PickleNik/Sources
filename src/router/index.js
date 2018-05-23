@@ -8,6 +8,7 @@ import PageNotFound from '@/components/PageNotFound'
 import Article from '@/components/Article'
 import Sources from '@/components/Sources'
 import SignInUp from '@/components/SignInUp'
+import AuthGuard from './auth-guard'
 
 Vue.use(Router)
 
@@ -19,10 +20,11 @@ export default new Router({
     },
     {
       path: '/profile',
-      component: Profile
+      component: Profile,
+      beforeEnter: AuthGuard 
     },
     {
-      path: '/sign-in-up',
+      path: '/signupin',
       component: SignInUp
     },
     {

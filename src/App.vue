@@ -7,7 +7,7 @@
 
         <v-tooltip bottom><span>Sources</span><v-btn slot="activator" color="primary" flat fab to="/sources" class="ma-0"><v-icon dark>local_library</v-icon></v-btn></v-tooltip>
         <v-tooltip bottom><span>Tree</span><v-btn slot="activator" color="primary" flat fab to="/tree" class="ma-0"><v-icon dark>device_hub</v-icon></v-btn></v-tooltip>
-        <v-tooltip bottom><span>You</span><v-btn slot="activator" color="primary" flat fab class="ma-0"><v-icon dark disabled>person</v-icon></v-btn></v-tooltip>
+        <v-tooltip bottom><span>You</span><v-btn slot="activator" color="primary" flat fab to="/profile" class="ma-0"><v-icon dark>person</v-icon></v-btn></v-tooltip>
 
     </v-toolbar>
 
