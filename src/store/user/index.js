@@ -24,6 +24,28 @@ export default {
   },
 
   actions: {
+    ProviderSignIn ({commit}, payload) {
+      commit('clearError')
+      firebase.auth().signInWithPopup(payload)
+        .then(function(result) {
+          console.log(result.user)
+          user => {
+            const newUser = {
+              id: result.user,
+              bookmarks: []
+            }
+            commit('setLoading', false)
+            commit('setUser', newUser)
+
+          }}
+        )
+        .catch(
+          error => {
+            commit('setLoading', false)
+            commit('setError', error)
+          }
+        )
+    },
     SignUp ({commit}, payload) {
       commit('setLoading', true)
       commit('clearError')
@@ -40,7 +62,6 @@ export default {
         )
         .catch(
           error => {
-            console.log(error)
             commit('setLoading', false)
             commit('setError', error)
           }
@@ -62,7 +83,6 @@ export default {
         )
         .catch(
           error => {
-            console.log(error)
             commit('setLoading', false)
             commit('setError', error)
           }

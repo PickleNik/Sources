@@ -1,68 +1,5 @@
 <template lang="html">
   <v-app class="secondary">
-  <v-container fluid class="py-5">
-    <v-layout>
-      <v-flex xs12 sm8 offset-sm2 md4 offset-md4 class="text-xs-center">
-        <h1 class="display-1 grey--text my-3">Profile</h1>
-        <form @submit.prevent="SignUpIn">
-          <v-text-field autofocus
-            name="email"
-            type="email"
-            label="Email"
-            v-model="email"
-            prepend-icon="email"
-            clearable
-            required >
-          </v-text-field>
-          <v-text-field
-            name="password"
-            :type="eye ? 'password' : 'text'"
-            label="Password"
-            v-model="password"
-            prepend-icon="lock"
-            :append-icon="eye ? 'visibility_off' : 'visibility'"
-            :append-icon-cb="() => (eye = !eye)"
-            :loading="signup"
-            required >
-            <v-progress-linear
-              class="roundXL"
-              v-if="signup"
-              slot="progress"
-              :value="progress"
-              :color="color"
-              height="2" >
-            </v-progress-linear>
-          </v-text-field>
-          <v-text-field
-            name="confirm"
-            type="password"
-            label="Confirm Password"
-            v-model="confirm"
-            :rules="confirmRules"
-            prepend-icon="done_all"
-            class="pulse"
-            v-if="signup"
-            clearable
-            required >
-          </v-text-field>
-          <v-layout row>
-            <v-btn @click="signup = !signup" outline round color="grey">Sign {{ signup ? 'In' : 'Up' }}</v-btn>
-            <v-spacer></v-spacer>
-            <v-btn type="submit" class="mb-5" round color="accent" light>Sign {{ signup ? 'Up' : 'In' }}</v-btn>
-          </v-layout>
-        </form>
-        <v-divider class="my-3"></v-divider>
-
-        <div class="altSign">
-          <v-btn id="b1" icon flat color="accent"><icon scale="2" name="brands/github"></icon></v-btn>
-          <v-btn id="b2" icon flat color="accent"><icon scale="2" name="brands/google"></icon></v-btn>
-          <v-btn id="b3" icon flat color="accent"><icon scale="2" name="brands/google-play"></icon></v-btn>
-          <v-btn id="b4" icon flat color="accent"><icon scale="2" name="brands/twitter"></icon></v-btn>
-          <v-btn id="b5" icon flat color="accent"><icon scale="2" name="brands/facebook-f"></icon></v-btn>
-        </div>
-
-      </v-flex>
-    </v-layout>
     <v-alert
       transition="slide-y-reverse-transition"
       origin="center center"
@@ -96,11 +33,70 @@
         </v-flex>
       </v-layout>
     </v-alert>
-  </v-container>
-</v-app>
+    <v-container fluid class="py-5">
+      <v-layout>
+        <v-flex xs12 sm8 offset-sm2 md4 offset-md4 class="text-xs-center">
+          <h1 class="display-1 grey--text my-3">Profile</h1>
+          <form @submit.prevent="SignUpIn">
+            <v-text-field autofocus
+              name="email"
+              type="email"
+              label="Email"
+              v-model="email"
+              prepend-icon="email"
+              clearable
+              required >
+            </v-text-field>
+            <v-text-field
+              name="password"
+              :type="eye ? 'password' : 'text'"
+              label="Password"
+              v-model="password"
+              prepend-icon="lock"
+              :append-icon="eye ? 'visibility_off' : 'visibility'"
+              :append-icon-cb="() => (eye = !eye)"
+              :loading="signup"
+              required >
+              <v-progress-linear
+                class="roundXL"
+                v-if="signup"
+                slot="progress"
+                :value="progress"
+                :color="color"
+                height="2" >
+              </v-progress-linear>
+            </v-text-field>
+            <v-text-field
+              name="confirm"
+              type="password"
+              label="Confirm Password"
+              v-model="confirm"
+              :rules="confirmRules"
+              prepend-icon="done_all"
+              class="pulse"
+              v-if="signup"
+              clearable
+              required >
+            </v-text-field>
+            <v-layout row>
+              <v-btn @click="signup = !signup" outline round color="grey">Sign {{ signup ? 'In' : 'Up' }}</v-btn>
+              <v-spacer></v-spacer>
+              <v-btn type="submit" class="mb-5" round color="accent" light :dark="loading" :loading="loading" :disabled="loading">Sign {{ signup ? 'Up' : 'In' }}</v-btn>
+            </v-layout>
+          </form>
+          <v-divider class="my-3"></v-divider>
+          <v-tooltip bottom><span>Sign {{ signup ? 'Up' : 'In' }} with Google</span><v-btn slot="activator" color="accent" icon flat id="b1" @click="GoogleSignIn" ><icon scale="2" name="brands/google"></icon></v-btn></v-tooltip>
+          <v-tooltip bottom><span>Sign {{ signup ? 'Up' : 'In' }} with Github</span><v-btn slot="activator" color="accent" icon flat id="b2" @click="GithubSignIn" ><icon scale="2" name="brands/github"></icon></v-btn></v-tooltip>
+          <v-tooltip bottom><span>Sign {{ signup ? 'Up' : 'In' }} with Twitter</span><v-btn slot="activator" color="accent" icon flat id="b3" @click="TwitterSignIn" ><icon scale="2" name="brands/twitter"></icon></v-btn></v-tooltip>
+          <v-tooltip bottom><span>Sign {{ signup ? 'Up' : 'In' }} with Facebook</span><v-btn slot="activator" color="accent" icon flat id="b4" @click="FacebookSignIn" ><icon scale="2" name="brands/facebook-f"></icon></v-btn></v-tooltip>
+        </v-flex>
+      </v-layout>
+    </v-container>
+  </v-app>
 </template>
 
 <script>
+import * as firebase from 'firebase'
 export default {
   data () {
     return {
@@ -145,6 +141,18 @@ export default {
     }
   },
   methods: {
+    GithubSignIn () {
+      this.$store.dispatch('ProviderSignIn', new firebase.auth.GithubAuthProvider())
+    },
+    GoogleSignIn () {
+      this.$store.dispatch('ProviderSignIn', new firebase.auth.GoogleAuthProvider())
+    },
+    TwitterSignIn () {
+      this.$store.dispatch('ProviderSignIn', new firebase.auth.TwitterAuthProvider())
+    },
+    FacebookSignIn () {
+      this.$store.dispatch('ProviderSignIn', new firebase.auth.FacebookAuthProvider())
+    },
     SignUpIn () {
       if (this.signup) {
         this.$store.dispatch('SignUp', {email: this.email, password: this.password})
@@ -168,24 +176,20 @@ export default {
   border-top-right-radius: 3em;
 }
 
-.altSign #b1{
+#b1{
   opacity: 0;
   animation: rollIn 1s ease 1 forwards;
 }
-.altSign #b2{
+#b2{
   opacity: 0;
   animation: rollIn 1s ease .2s 1 forwards;
 }
-.altSign #b3{
+#b3{
   opacity: 0;
   animation: rollIn 1s ease .4s 1 forwards;
 }
-.altSign #b4{
+#b4{
   opacity: 0;
   animation: rollIn 1s ease .6s 1 forwards;
-}
-.altSign #b5{
-  opacity: 0;
-  animation: rollIn 1s ease .8s 1 forwards;
 }
 </style>

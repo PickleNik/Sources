@@ -19,23 +19,23 @@
       height="60" app
       :active.sync="e2"
       color="secondary">
-      <v-btn to="/">
+      <v-btn to="/" color="accent--text">
         <span>Home</span>
         <v-icon>home</v-icon>
       </v-btn>
-      <v-btn to="/sources">
+      <v-btn to="/sources" color="accent--text">
         <span>Sources</span>
         <v-icon>local_library</v-icon>
       </v-btn>
-      <v-btn to="/tree">
+      <v-btn to="/tree" color="accent--text">
         <span>Tree</span>
         <v-icon>device_hub</v-icon>
       </v-btn>
-      <v-btn to="/profile">
+      <v-btn to="/profile" color="accent--text">
         <span>You</span>
         <v-icon>person</v-icon>
       </v-btn>
-      <v-btn @click="drawer = !drawer">
+      <v-btn @click="drawer = !drawer" color="accent--text">
         <span>Scroll</span>
         <v-icon>menu</v-icon>
       </v-btn>
