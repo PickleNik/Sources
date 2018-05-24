@@ -21,7 +21,7 @@ export default new Router({
     {
       path: '/profile',
       component: Profile,
-      beforeEnter: AuthGuard 
+      beforeEnter: AuthGuard
     },
     {
       path: '/signupin',

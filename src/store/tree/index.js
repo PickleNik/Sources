@@ -534,134 +534,133 @@ export default {
       ]
     },
     { name: 'Text-Editors',
-    description: '',
-    id: 'editors',
-    leafs: [
-      {
-        name: 'Typing',
-        ripple: 'orange--text',
-        to: 'typing' ,
-        title: 'Learn Touch Typing to work faster.',
-        logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Circle-icons-keyboard.svg/1024px-Circle-icons-keyboard.svg.png',
-        wiki: 'https://en.wikipedia.org/wiki/Touch_typing',
-        sources: [
-          { name: 'TypingClub',
-          todo: false,
-          starred: false,
-          shared: false,
-          link: 'https://www.typingclub.com',
-          logo: 'https://www.typingclub.com/m/corp2/img/typingclub_logo.png'
-          },
-          { name: 'TypingCat',
-          todo: false,
-          starred: false,
-          shared: false,
-          link: 'http://thetypingcat.com/',
-          logo: 'https://i.imgur.com/t51HrPx.gif'
-          },
-          { name: 'Ratatype',
-          todo: false,
-          starred: false,
-          shared: false,
-          link: 'https://www.ratatype.com/',
-          logo: 'https://pbs.twimg.com/profile_images/3349964038/59dd7f2e10b3e1f098b5c50272f02f4f_400x400.png'
-          },
-          { name: 'Typing.com',
-          todo: false,
-          starred: false,
-          shared: false,
-          link: 'https://www.typing.com/',
-          logo: 'https://www.typing.com/dist/site/images/svg/badge_teacher.svg'
-          },
-          { name: 'Typing.io',
-          todo: false,
-          starred: false,
-          shared: false,
-          link: 'https://typing.io/',
-          logo: 'https://pbs.twimg.com/profile_images/2543082656/87sa2w3inlw7tfw826u0_400x400.png'
-          },
-          { name: 'Nitro Type',
-          todo: false,
-          starred: false,
-          shared: false,
-          link: 'https://www.nitrotype.com/',
-          logo: 'https://pbs.twimg.com/profile_images/907681304426057728/Vt-ZMjCL_400x400.jpg'
-          },
-          { name: 'TypingStudy',
-          todo: false,
-          starred: false,
-          shared: false,
-          link: 'http://www.typingstudy.com/',
-          logo: 'https://www.shareicon.net/data/2016/07/10/119686_keyboard_512x512.png'
-          }
-        ]
-      },
-      { name: 'Atom', ripple: 'green--text', logo: 'https://raw.githubusercontent.com/stvhwrd/icons/master/atom/Atom-no_shadows-512.png', href: 'https://atom.io/' },
-      { name: 'Brackets', ripple: 'blue--text', href: 'http://brackets.io/', logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Brackets_Icon.svg/2000px-Brackets_Icon.svg.png' },
-      { name: 'Sublime Text', ripple: 'orange--text', href: 'https://www.sublimetext.com/', logo: 'https://icon-icons.com/icons2/1381/PNG/512/sublimetext_94866.png' },
-    ]  },
+      description: '',
+      id: 'editors',
+      leafs: [
+        {
+          name: 'Typing',
+          ripple: 'orange--text',
+          to: 'typing' ,
+          title: 'Learn Touch Typing to work faster.',
+          logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Circle-icons-keyboard.svg/1024px-Circle-icons-keyboard.svg.png',
+          wiki: 'https://en.wikipedia.org/wiki/Touch_typing',
+          sources: [
+            { name: 'TypingClub',
+              todo: false,
+              starred: false,
+              shared: false,
+              link: 'https://www.typingclub.com',
+              logo: 'https://www.typingclub.com/m/corp2/img/typingclub_logo.png'
+            },
+            { name: 'TypingCat',
+              todo: false,
+              starred: false,
+              shared: false,
+              link: 'http://thetypingcat.com/',
+              logo: 'https://i.imgur.com/t51HrPx.gif'
+            },
+            { name: 'Ratatype',
+              todo: false,
+              starred: false,
+              shared: false,
+              link: 'https://www.ratatype.com/',
+              logo: 'https://pbs.twimg.com/profile_images/3349964038/59dd7f2e10b3e1f098b5c50272f02f4f_400x400.png'
+            },
+            { name: 'Typing.com',
+              todo: false,
+              starred: false,
+              shared: false,
+              link: 'https://www.typing.com/',
+              logo: 'https://www.typing.com/dist/site/images/svg/badge_teacher.svg'
+            },
+            { name: 'Typing.io',
+              todo: false,
+              starred: false,
+              shared: false,
+              link: 'https://typing.io/',
+              logo: 'https://pbs.twimg.com/profile_images/2543082656/87sa2w3inlw7tfw826u0_400x400.png'
+            },
+            { name: 'Nitro Type',
+              todo: false,
+              starred: false,
+              shared: false,
+              link: 'https://www.nitrotype.com/',
+              logo: 'https://pbs.twimg.com/profile_images/907681304426057728/Vt-ZMjCL_400x400.jpg'
+            },
+            { name: 'TypingStudy',
+              todo: false,
+              starred: false,
+              shared: false,
+              link: 'http://www.typingstudy.com/',
+              logo: 'https://www.shareicon.net/data/2016/07/10/119686_keyboard_512x512.png'
+            }
+          ]
+        },
+        { name: 'Atom', ripple: 'green--text', logo: 'https://raw.githubusercontent.com/stvhwrd/icons/master/atom/Atom-no_shadows-512.png', href: 'https://atom.io/' },
+        { name: 'Brackets', ripple: 'blue--text', href: 'http://brackets.io/', logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Brackets_Icon.svg/2000px-Brackets_Icon.svg.png' },
+        { name: 'Sublime Text', ripple: 'orange--text', href: 'https://www.sublimetext.com/', logo: 'https://icon-icons.com/icons2/1381/PNG/512/sublimetext_94866.png' },
+    ] },
     { name: 'Frontend',
       description: 'Templating, CSS extentions and compiling!',
       id: 'frontend',
       leafs: [
         { name: 'Webpack',
-        title: 'Webpack - bundle your files!',
-        ripple: 'light-blue--text',
-        to: 'webpack',
-        logo: 'https://topheman.github.io/webpack-babel-starter/assets/974262647c82057b6078c432841a53ea.png',
-        whatIsVideo: 'https://www.youtube.com/embed/5zeXFC_-gMQ',
-        wiki: 'https://en.wikipedia.org/wiki/Webpack',
-        req: [
-          { name: 'HTML', color: 'orange', to: 'leaf-html', icon: 'brands/html5' },
-          { name: 'CSS', color: 'blue', to: 'leaf-css', icon: 'brands/css3-alt' },
-          { name: 'JavaScript', color: 'amber', to: 'leaf-javascript', icon: 'brands/js'}
-        ],
-        next: [
-          { name: 'ClI', color: 'grey lighten-2', to: 'leaf-command_line', icon: 'terminal'},
-          { name: 'Frameworks', color: 'accent', href: 'https://source-2fea2.firebaseapp.com/tree#frameworks', icon: 'cog'}
-        ],
-        sources: [
-          { name: 'Documentation',
-          todo: false,
-          starred: false,
-          shared: false,
-          link: 'https://webpack.js.org',
+          title: 'Webpack - bundle your files!',
+          ripple: 'light-blue--text',
+          to: 'webpack',
           logo: 'https://topheman.github.io/webpack-babel-starter/assets/974262647c82057b6078c432841a53ea.png',
-          icon: 'important_devices' },
+          whatIsVideo: 'https://www.youtube.com/embed/5zeXFC_-gMQ',
+          wiki: 'https://en.wikipedia.org/wiki/Webpack',
+          req: [
+            { name: 'HTML', color: 'orange', to: 'leaf-html', icon: 'brands/html5' },
+            { name: 'CSS', color: 'blue', to: 'leaf-css', icon: 'brands/css3-alt' },
+            { name: 'JavaScript', color: 'amber', to: 'leaf-javascript', icon: 'brands/js' }
+          ],
+          next: [
+            { name: 'ClI', color: 'grey lighten-2', to: 'leaf-command_line', icon: 'terminal' },
+            { name: 'Frameworks', color: 'accent', href: 'https://source-2fea2.firebaseapp.com/tree#frameworks', icon: 'cog' }
+          ],
+          sources: [
+            { name: 'Documentation',
+              todo: false,
+              starred: false,
+              shared: false,
+              link: 'https://webpack.js.org',
+              logo: 'https://topheman.github.io/webpack-babel-starter/assets/974262647c82057b6078c432841a53ea.png',
+              icon: 'important_devices' },
 
-          { name: 'The Net Ninja',
-          todo: false,
-          starred: false,
-          shared: false,
-          link: 'https://www.youtube.com/playlist?list=PL4cUxeGkcC9iTQ3J5oa6orDIMQKKxl8dC',
-          logo: 'https://yt3.ggpht.com/a-/AJLlDp2oM9rg7DFu7iit71Ndh0yNIEL7F_j0VCRWuQ=s900-mo-c-c0xffffffff-rj-k-no',
-          icon: 'video_library' },
+            { name: 'The Net Ninja',
+              todo: false,
+              starred: false,
+              shared: false,
+              link: 'https://www.youtube.com/playlist?list=PL4cUxeGkcC9iTQ3J5oa6orDIMQKKxl8dC',
+              logo: 'https://yt3.ggpht.com/a-/AJLlDp2oM9rg7DFu7iit71Ndh0yNIEL7F_j0VCRWuQ=s900-mo-c-c0xffffffff-rj-k-no',
+              icon: 'video_library' },
 
-          { name: 'Traversy Media',
-          todo: false,
-          starred: false,
-          shared: false,
-          link: 'https://www.youtube.com/watch?v=lziuNMk_8eQ',
-          logo: 'https://yt3.ggpht.com/a-/AJLlDp1dGyGeP0kf7oj9ykar-Mb2I2O8c8KyrEgIbg=s900-mo-c-c0xffffffff-rj-k-no',
-          icon: 'video_library' },
+            { name: 'Traversy Media',
+              todo: false,
+              starred: false,
+              shared: false,
+              link: 'https://www.youtube.com/watch?v=lziuNMk_8eQ',
+              logo: 'https://yt3.ggpht.com/a-/AJLlDp1dGyGeP0kf7oj9ykar-Mb2I2O8c8KyrEgIbg=s900-mo-c-c0xffffffff-rj-k-no',
+              icon: 'video_library' },
 
-          { name: 'Academind',
-          todo: false,
-          starred: false,
-          shared: false,
-          link: 'https://www.youtube.com/playlist?list=PL55RiY5tL51rcCnrOrZixuOsZhAHHy6os',
-          logo: 'https://yt3.ggpht.com/a-/AJLlDp2SxGyOXg1EdT5FzOlL3VyDzSUN-567RzdUZg=s900-mo-c-c0xffffffff-rj-k-no',
-          icon: 'video_library' },
+            { name: 'Academind',
+              todo: false,
+              starred: false,
+              shared: false,
+              link: 'https://www.youtube.com/playlist?list=PL55RiY5tL51rcCnrOrZixuOsZhAHHy6os',
+              logo: 'https://yt3.ggpht.com/a-/AJLlDp2SxGyOXg1EdT5FzOlL3VyDzSUN-567RzdUZg=s900-mo-c-c0xffffffff-rj-k-no',
+              icon: 'video_library' },
 
-          { name: 'Chris Courses',
-          todo: false,
-          starred: false,
-          shared: false,
-          link: 'https://www.youtube.com/playlist?list=PLpPnRKq7eNW2_dy8Re4lyByThMtTAhw5Q',
-          logo: 'https://i.ytimg.com/vi/pYA1SpCdEHo/mqdefault.jpg',
-          icon: 'video_library' },
-
-        ]  },
+            { name: 'Chris Courses',
+              todo: false,
+              starred: false,
+              shared: false,
+              link: 'https://www.youtube.com/playlist?list=PLpPnRKq7eNW2_dy8Re4lyByThMtTAhw5Q',
+              logo: 'https://i.ytimg.com/vi/pYA1SpCdEHo/mqdefault.jpg',
+              icon: 'video_library' },
+      ] },
         { name: 'Haml',
           ripple: 'white--text',
           badge: 'brands/html5',
@@ -703,7 +702,7 @@ export default {
 
           ],
           next: [
-            { name: 'CSS-Frameworks', color: 'accent', href: 'https://source-2fea2.firebaseapp.com/tree#libraries'},
+            { name: 'CSS-Frameworks', color: 'accent', href: 'https://source-2fea2.firebaseapp.com/tree#libraries' }
           ],
           sources: [
 
@@ -729,9 +728,10 @@ export default {
               shared: false,
               link: 'https://www.youtube.com/playlist?list=PL2CB1F80266E986EA',
               logo: 'https://webdesignledger.com/wp-content/uploads/2015/09/00-level-up-tutorials-logo.jpg',
-              icon: 'video_library' },
+              icon: 'video_library' }
 
-          ]  },
+          ]
+        },
         { name: 'Less',
           ripple: 'blue--text',
           logo: 'https://cdn-images-1.medium.com/max/1600/1*O_NwDtfHb1sirw6CAbyoxg.png',
@@ -1320,37 +1320,37 @@ export default {
       return (leafTo) => {
         return state.branches[0].leafs.find((leaf) => {
           return leaf.to === leafTo
-        })||
+        }) ||
         state.branches[1].leafs.find((leaf) => {
           return leaf.to === leafTo
-        })||
+        }) ||
         state.branches[2].leafs.find((leaf) => {
           return leaf.to === leafTo
-        })||
+        }) ||
         state.branches[3].leafs.find((leaf) => {
           return leaf.to === leafTo
-        })||
+        }) ||
         state.branches[4].leafs.find((leaf) => {
           return leaf.to === leafTo
-        })||
+        }) ||
         state.branches[5].leafs.find((leaf) => {
           return leaf.to === leafTo
-        })||
+        }) ||
         state.branches[6].leafs.find((leaf) => {
           return leaf.to === leafTo
-        })||
+        }) ||
         state.branches[7].leafs.find((leaf) => {
           return leaf.to === leafTo
-        })||
+        }) ||
         state.branches[8].leafs.find((leaf) => {
           return leaf.to === leafTo
-        })||
+        }) ||
         state.branches[9].leafs.find((leaf) => {
           return leaf.to === leafTo
-        })||
+        }) ||
         state.branches[10].leafs.find((leaf) => {
           return leaf.to === leafTo
-        })||
+        }) ||
         state.branches[11].leafs.find((leaf) => {
           return leaf.to === leafTo
         })

@@ -49,7 +49,7 @@ Vue.use(Vuetify, {
     primary: '#eee',
     secondary: '#303030',
     accent: '#90ee90',
-    error: '#FF5252',
+    error: '#F6546A',
     info: '#2196F3',
     success: '#4CAF50',
     warning: '#FFC107'
@@ -66,11 +66,16 @@ new Vue({
   render: h => h(App),
   created () {
     firebase.initializeApp({
-      apiKey: "AIzaSyD34PT-x-4w7_nr5Q74STd187dxwUOeQ-E",
-      authDomain: "tuts-tree.firebaseapp.com",
-      databaseURL: "https://tuts-tree.firebaseio.com",
-      projectId: "tuts-tree",
-      storageBucket: "tuts-tree.appspot.com"
+      apiKey: 'AIzaSyD34PT-x-4w7_nr5Q74STd187dxwUOeQ-E',
+      authDomain: 'tuts-tree.firebaseapp.com',
+      databaseURL: 'https://tuts-tree.firebaseio.com',
+      projectId: 'tuts-tree',
+      storageBucket: 'tuts-tree.appspot.com'
+    })
+    firebase.auth().onAuthStateChanged((user) => {
+      if (user) {
+        this.$store.dispatch('autoSignIn', user)
+      }
     })
   }
 })

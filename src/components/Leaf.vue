@@ -68,7 +68,7 @@ export default {
       navs: [
         { name: 'What is', href: '#whatIs', icon: 'details' },
         { name: 'Sources', href: '#sources', icon: 'local_library' },
-        { name: 'Additionally', href: '#addition', icon: 'add_to_queue', },
+        { name: 'Additionally', href: '#addition', icon: 'add_to_queue' },
         { name: 'Tree', to: '/tree', icon: 'device_hub', posticon: 'keyboard_arrow_left' }
       ],
       add: ''

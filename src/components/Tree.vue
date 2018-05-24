@@ -63,7 +63,7 @@ export default {
     return {
       navs: [
         { name: 'Basics', href: '#basics', offset: -33, icon: 'code' },
-        { name: 'Text Editors', href: '#editors', offset: -33, icon: 'title'},
+        { name: 'Text Editors', href: '#editors', offset: -33, icon: 'title' },
         { name: 'Frontend', href: '#frontend', offset: -33, icon: 'web' },
         { name: 'Backend', href: '#backend', offset: -33, icon: 'storage' },
         { name: 'JS Frameworks', href: '#frameworks', offset: -33, icon: 'settings' },

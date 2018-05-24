@@ -16,52 +16,49 @@
       fixed shift
       style="z-index:99999;"
       value="true"
-      height="50"app
+      height="60" app
       :active.sync="e2"
-      color="secondary"
-      >
-      <v-btn dark to="/">
+      color="secondary">
+      <v-btn to="/">
         <span>Home</span>
         <v-icon>home</v-icon>
       </v-btn>
-      <v-btn dark to="/sources" class="warning--text">
+      <v-btn to="/sources">
         <span>Sources</span>
         <v-icon>local_library</v-icon>
       </v-btn>
-      <v-btn dark to="/tree" class="accent--text">
+      <v-btn to="/tree">
         <span>Tree</span>
         <v-icon>device_hub</v-icon>
       </v-btn>
-      <v-btn dark to="/profile" disabled>
+      <v-btn to="/profile">
         <span>You</span>
         <v-icon>person</v-icon>
       </v-btn>
-      <v-btn dark color="accent--text" @click="drawer = !drawer">
+      <v-btn @click="drawer = !drawer">
         <span>Scroll</span>
         <v-icon>menu</v-icon>
       </v-btn>
     </v-bottom-nav>
 
         <v-navigation-drawer
-          clipped
           hide-overlay
           v-model="drawer"
-          width="90"
+          width="60"
           dark
           fixed
-          class="pl-1 pt-3 hidden-md-and-up"
-          right
-        >
-        <v-btn v-scroll-to="{el:'#basics', offset: -33}" fab color="accent--text"><v-icon>code</v-icon></v-btn>
-        <v-btn v-scroll-to="{el:'#frontend', offset: -33}" fab color="accent--text"><v-icon>web</v-icon></v-btn>
-        <v-btn v-scroll-to="{el:'#backend', offset: -33}" fab color="accent--text"><v-icon>storage</v-icon></v-btn>
-        <v-btn v-scroll-to="{el:'#frameworks', offset: -33}" fab color="accent--text"><v-icon>settings</v-icon></v-btn>
-        <v-btn v-scroll-to="{el:'#libraries', offset: -33}" fab color="accent--text"><v-icon>color_lens</v-icon></v-btn>
-        <v-btn v-scroll-to="{el:'#graphics', offset: -33}" fab color="accent--text"><v-icon>format_paint</v-icon></v-btn>
-        <v-btn v-scroll-to="{el:'#hosting', offset: -33}" fab color="accent--text"><v-icon>router</v-icon></v-btn>
-        <v-btn v-scroll-to="{el:'#apps', offset: -33}" fab color="accent--text"><v-icon>developer_mode</v-icon></v-btn>
-        <v-btn v-scroll-to="{el:'#tools', offset: -33}" fab color="accent--text"><v-icon>build</v-icon></v-btn>
-        <v-btn v-scroll-to="{el:'#communities', offset: -33}" fab color="accent--text"><v-icon>group</v-icon></v-btn>
+          class="pl-1 pt-3 secondary hidden-md-and-up"
+          right >
+        <v-btn v-scroll-to="{el:'#basics', offset: -33}" fab small class="accent--text"><v-icon>code</v-icon></v-btn>
+        <v-btn v-scroll-to="{el:'#frontend', offset: -33}" fab small class="accent--text"><v-icon>web</v-icon></v-btn>
+        <v-btn v-scroll-to="{el:'#backend', offset: -33}" fab small class="accent--text"><v-icon>storage</v-icon></v-btn>
+        <v-btn v-scroll-to="{el:'#frameworks', offset: -33}" fab small class="accent--text"><v-icon>settings</v-icon></v-btn>
+        <v-btn v-scroll-to="{el:'#libraries', offset: -33}" fab small class="accent--text"><v-icon>color_lens</v-icon></v-btn>
+        <v-btn v-scroll-to="{el:'#graphics', offset: -33}" fab small class="accent--text"><v-icon>format_paint</v-icon></v-btn>
+        <v-btn v-scroll-to="{el:'#hosting', offset: -33}" fab small class="accent--text"><v-icon>router</v-icon></v-btn>
+        <v-btn v-scroll-to="{el:'#apps', offset: -33}" fab small class="accent--text"><v-icon>developer_mode</v-icon></v-btn>
+        <v-btn v-scroll-to="{el:'#tools', offset: -33}" fab small class="accent--text"><v-icon>build</v-icon></v-btn>
+        <v-btn v-scroll-to="{el:'#communities', offset: -33}" fab small class="accent--text"><v-icon>group</v-icon></v-btn>
         </v-navigation-drawer>
 
 
@@ -233,6 +230,17 @@ a{
     transform: none;
   }
 }
+@keyframes rollIn {
+  from {
+    opacity: 0;
+    transform: translate3d(-100%, 0, 0) rotate3d(0, 0, 1, -120deg);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
 @keyframes rubberBand {
   from {
     transform: scale3d(1, 1, 1);
@@ -261,6 +269,43 @@ a{
   to {
     transform: scale3d(1, 1, 1);
   }
+
+}
+
+@keyframes bounceIn {
+  from, 20%, 40%, 60%, 80%, to {
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  }
+
+  0% {
+    opacity: 0;
+    transform: scale3d(.3, .3, .3);
+  }
+
+  20% {
+    transform: scale3d(1.1, 1.1, 1.1);
+  }
+
+  40% {
+    transform: scale3d(.9, .9, .9);
+  }
+
+  60% {
+    opacity: 1;
+    transform: scale3d(1.03, 1.03, 1.03);
+  }
+
+  80% {
+    transform: scale3d(.97, .97, .97);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale3d(1, 1, 1);
+  }
+}
+.bounceIn {
+  animation: bounceIn 1s linear 1;
 }
 .rubberBand {
   animation: rubberBand 1s linear 1;

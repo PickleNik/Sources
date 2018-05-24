@@ -134,7 +134,7 @@ export default {
     }
   },
   mounted () {
-    let typed = new Typed('#greeting', {
+    new Typed('#greeting', {// eslint-disable-line no-new
       strings: this.typedOptions,
       typeSpeed: 20,
       backSpeed: 10,

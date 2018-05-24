@@ -29,24 +29,24 @@ export default {
   data () {
     return {
       typedOptions: [
-      'Howdy traveller',
-      'This is not page you were looking for',
-      'Probably',
-      'Unless you were looking for this error page',
-      'Congratulations! You found it',
-      'It\'s time to leave',
-      'What are you waiting for?',
-      'I can stay here for hours',
-      'Can you?',
-      'Don\'t waste your time',
-      'Overachiever',
-      'Congratulations, you\'ve reached the end.',
-      'Are you still here?',
-      '-_- I\'m watching you -_-']
+        'Howdy traveller',
+        'This is not page you were looking for',
+        'Probably',
+        'Unless you were looking for this error page',
+        'Congratulations! You found it',
+        'It\'s time to leave',
+        'What are you waiting for?',
+        'I can stay here for hours',
+        'Can you?',
+        'Don\'t waste your time',
+        'Overachiever',
+        'Congratulations, you\'ve reached the end.',
+        'Are you still here?',
+        '-_- I\'m watching you -_-' ]
     }
   },
   mounted () {
-    let typed = new Typed('#areyoulostbot', {
+    new Typed('#areyoulostbot', {// eslint-disable-line no-new
       strings: this.typedOptions,
       typeSpeed: 11,
       backSpeed: 11,
