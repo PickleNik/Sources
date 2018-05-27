@@ -152,6 +152,23 @@ a{
   background: transparent;
   color: lightgreen;
 }
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    transform: scale3d(.3, .3, .3);
+  }
+
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.zoom {
+  opacity: 0;
+  animation: zoomIn .5s ease 1 forwards;
+}
 #name{  transition-duration: 1s;  transition-property: all; cursor:pointer; }
 
 .contact:hover {

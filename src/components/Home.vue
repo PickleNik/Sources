@@ -1,5 +1,5 @@
 <template>
-  <main class="secondary">
+<v-app class="secondary pb-5">
 
 <!--HERO-->
 <div id="hero">
@@ -103,17 +103,13 @@
 
 
 <!--COPYRIGHT-->
-<!-- <v-layout id="copyright">
-  <v-flex dark xs12 sm6 offset-sm3 class="pa-3 text-sm-center text-xs-center">
-<p> Copyright by PickleNik.io</p>
-  </v-flex>
-</v-layout> -->
+<copyright></copyright>
 
 
 <app-nav :navs="navs"></app-nav>
 
 
-  </main>
+</v-app>
 </template>
 
 <script>
@@ -188,14 +184,6 @@ export default {
   min-width: 100vw;
   width:100vw;
   margin-top:200vh;
-}
-#copyright{
-  background:#333;
-  position: absolute;
-  height:10vh;
-  min-width: 100vw;
-  width:100vw;
-  margin-top:302vh;
 }
 .down{
   animation: bounce 1.5s linear infinite;

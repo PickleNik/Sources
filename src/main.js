@@ -14,6 +14,7 @@ import VueClipboard from 'vue-clipboard2'
 import 'vue-awesome/icons'
 import Icon from 'vue-awesome/components/Icon'
 import * as firebase from 'firebase'
+import Copyright from './components/Shared/Copyright.vue'
 
 Vue.component('icon', Icon)
 
@@ -24,6 +25,8 @@ Vue.component('app-src-card', SourceCard)
 Vue.component('app-add', Add)
 
 Vue.component('app-nav', Nav)
+
+Vue.component('copyright', Copyright)
 
 Vue.component('card3d', Card3d)
 var VueScrollTo = require('vue-scrollto')
@@ -47,7 +50,7 @@ Vue.use(VueParticles)
 Vue.use(Vuetify, {
   theme: {
     primary: '#eee',
-    secondary: '#303030',
+    secondary: '#333',
     accent: '#90ee90',
     error: '#F6546A',
     info: '#2196F3',
@@ -74,7 +77,7 @@ new Vue({
     })
     firebase.auth().onAuthStateChanged((user) => {
       if (user) {
-        this.$store.dispatch('autoSignIn', user)
+        this.$store.dispatch('autoSignIn', {id: user.uid, email: user.email, name: user.displayName, photo: user.photoURL, bookmarks: []})
       }
     })
   }

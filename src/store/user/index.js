@@ -5,7 +5,7 @@ export default {
   state: {
     user: null,
     loading: false,
-    error: false
+    error: false,
   },
 
   mutations: {
@@ -24,19 +24,31 @@ export default {
   },
 
   actions: {
-    ProviderSignIn ({commit}, payload) {
+    EmailSignIn ({commit}, payload) {
       commit('clearError')
-      firebase.auth().signInWithPopup(payload)
+      firebase.auth().sendSignInLinkToEmail(payload, { url: 'https://tuts-tree.firebaseapp.com/proceed', handleCodeInApp: true })
+      .catch(
+        error => {
+          commit('setLoading', false)
+          commit('setError', error)
+        }
+      )
+    },
+    ProceedSignIn ({commit}, payload) {
+      commit('clearError')
+      firebase.auth().signInWithEmailLink(payload.email, payload.href)
         .then(function(result) {
           console.log(result.user)
           user => {
             const newUser = {
-              id: result.user,
+              id: user.uid,
+              email: user.email,
+              name: user.displayName,
+              photo: user.photoURL,
               bookmarks: []
             }
             commit('setLoading', false)
             commit('setUser', newUser)
-
           }}
         )
         .catch(
@@ -46,40 +58,22 @@ export default {
           }
         )
     },
-    SignUp ({commit}, payload) {
-      commit('setLoading', true)
+    ProviderSignIn ({commit}, payload) {
       commit('clearError')
-      firebase.auth().createUserWithEmailAndPassword(payload.email, payload.password)
-        .then(
+      firebase.auth().signInWithPopup(payload)
+        .then(function(result) {
+          console.log(result)
           user => {
             const newUser = {
               id: user.uid,
+              email: user.email,
+              name: user.displayName,
+              photo: user.photoURL,
               bookmarks: []
             }
+            commit('setLoading', false)
             commit('setUser', newUser)
-            commit('setLoading', false)
-          }
-        )
-        .catch(
-          error => {
-            commit('setLoading', false)
-            commit('setError', error)
-          }
-        )
-    },
-    SignIn ({commit}, payload) {
-      commit('setLoading', true)
-      commit('clearError')
-      firebase.auth().signInWithEmailAndPassword(payload.email, payload.password)
-        .then(
-          user => {
-            const newUser = {
-              id: user.uid,
-              bookmarks: []
-            }
-            commit('setUser', newUser)
-            commit('setLoading', false)
-          }
+          }}
         )
         .catch(
           error => {
@@ -89,7 +83,7 @@ export default {
         )
     },
     autoSignIn ({commit}, payload) {
-      commit('setUser', {id: payload.uid, bookmarks: []})
+      commit('setUser', payload)
     },
     SignOut ({commit}) {
       firebase.auth().signOut()
