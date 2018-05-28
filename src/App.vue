@@ -11,7 +11,7 @@
 
     </v-toolbar>
 
-      <v-bottom-nav
+    <v-bottom-nav
       class="hidden-md-and-up"
       fixed shift
       style="z-index:99999;"
@@ -41,27 +41,27 @@
       </v-btn>
     </v-bottom-nav>
 
-        <v-navigation-drawer
-          hide-overlay
-          v-model="drawer"
-          width="60"
-          dark
-          fixed
-          class="pl-1 pt-3 secondary hidden-md-and-up"
-          right >
-        <v-btn v-scroll-to="{el:'#basics', offset: -33}" fab small class="accent--text"><v-icon>code</v-icon></v-btn>
-        <v-btn v-scroll-to="{el:'#frontend', offset: -33}" fab small class="accent--text"><v-icon>web</v-icon></v-btn>
-        <v-btn v-scroll-to="{el:'#backend', offset: -33}" fab small class="accent--text"><v-icon>storage</v-icon></v-btn>
-        <v-btn v-scroll-to="{el:'#frameworks', offset: -33}" fab small class="accent--text"><v-icon>settings</v-icon></v-btn>
-        <v-btn v-scroll-to="{el:'#libraries', offset: -33}" fab small class="accent--text"><v-icon>color_lens</v-icon></v-btn>
-        <v-btn v-scroll-to="{el:'#graphics', offset: -33}" fab small class="accent--text"><v-icon>format_paint</v-icon></v-btn>
-        <v-btn v-scroll-to="{el:'#hosting', offset: -33}" fab small class="accent--text"><v-icon>router</v-icon></v-btn>
-        <v-btn v-scroll-to="{el:'#apps', offset: -33}" fab small class="accent--text"><v-icon>developer_mode</v-icon></v-btn>
-        <v-btn v-scroll-to="{el:'#tools', offset: -33}" fab small class="accent--text"><v-icon>build</v-icon></v-btn>
-        <v-btn v-scroll-to="{el:'#communities', offset: -33}" fab small class="accent--text"><v-icon>group</v-icon></v-btn>
-        </v-navigation-drawer>
+    <!-- <v-navigation-drawer
+      hide-overlay
+      v-model="drawer"
+      width="60"
+      dark
+      fixed
+      class="pl-1 pt-3 secondary hidden-md-and-up"
+      right >
+      <v-btn v-scroll-to="{el:'#basics', offset: -33}" fab small class="accent--text"><v-icon>code</v-icon></v-btn>
+      <v-btn v-scroll-to="{el:'#frontend', offset: -33}" fab small class="accent--text"><v-icon>web</v-icon></v-btn>
+      <v-btn v-scroll-to="{el:'#backend', offset: -33}" fab small class="accent--text"><v-icon>storage</v-icon></v-btn>
+      <v-btn v-scroll-to="{el:'#frameworks', offset: -33}" fab small class="accent--text"><v-icon>settings</v-icon></v-btn>
+      <v-btn v-scroll-to="{el:'#libraries', offset: -33}" fab small class="accent--text"><v-icon>color_lens</v-icon></v-btn>
+      <v-btn v-scroll-to="{el:'#graphics', offset: -33}" fab small class="accent--text"><v-icon>format_paint</v-icon></v-btn>
+      <v-btn v-scroll-to="{el:'#hosting', offset: -33}" fab small class="accent--text"><v-icon>router</v-icon></v-btn>
+      <v-btn v-scroll-to="{el:'#apps', offset: -33}" fab small class="accent--text"><v-icon>developer_mode</v-icon></v-btn>
+      <v-btn v-scroll-to="{el:'#tools', offset: -33}" fab small class="accent--text"><v-icon>build</v-icon></v-btn>
+      <v-btn v-scroll-to="{el:'#communities', offset: -33}" fab small class="accent--text"><v-icon>group</v-icon></v-btn>
+    </v-navigation-drawer> -->
 
-
+    <a style="position:fixed;right:1em;top:6em;z-index:1" class="zoom hidden-sm-and-down copyrighted-badge" title="Copyrighted.com Registered &amp; Protected" target="_blank" href="https://www.copyrighted.com/website/dS8B0bc4ACr280Uw"><img class="round" alt="Copyrighted.com Registered &amp; Protected" border="0" width="125" height="75" srcset="https://static.copyrighted.com/badges/125x75/04_2x.png 2x" src="https://static.copyrighted.com/badges/125x75/04.png" /></a>
     <!-- <v-content> -->
     <router-view></router-view>
     <!-- </v-content> -->

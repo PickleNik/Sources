@@ -12,7 +12,6 @@ import Proceed from '@/components/Proceed'
 import AuthGuard from './auth-guard'
 import AuthGuard2 from './auth2-guard'
 
-
 Vue.use(Router)
 
 export default new Router({

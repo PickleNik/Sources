@@ -114,7 +114,7 @@ export default {
     },
     EmailSignIn () {
       this.$store.dispatch('EmailSignIn', this.email)
-      .then( this.sent = true )
+      .then(this.sent = true)
     },
     GithubSignIn () {
       this.$store.dispatch('ProviderSignIn', new firebase.auth.GithubAuthProvider())

@@ -5,7 +5,7 @@
 <div id="hero">
   <div class="text-sm-center">
     <div class="centerABS">
-    <img class="mx-5" width="200" height="200" src="../assets/treeLogo.png" style="  animation: bounce 1.5s 2s linear 1;" alt="logo">
+    <img class="zoom mx-5" width="200" height="200" src="../assets/treeLogo.png" alt="logo">
     <h2 class="display-3 white--text">TutsTree</h2>
     <p class="white--text typed accent--text secondary round pa-2" style="font-size:1.5em;"><span id="greeting"></span></p>
     <a href="#" v-scroll-to="'#about'"><v-btn dark large flat icon class="hidden-sm-and-up centerX pa-5">
@@ -78,7 +78,7 @@
     <v-layout row wrap>
       <v-flex sm10 offset-sm1 class="text-xs-center">
         <a class="roundXL" target="_blank" href="https://nikita-krupin.firebaseapp.com/" >
-        <card3d style="height:calc(100vh / 2.3);" data-image="https://pp.userapi.com/c837225/v837225016/5e1f9/0t3RZJtU-Ag.jpg">
+        <card3d class="zoom" style="height:calc(100vh / 2.3);" data-image="https://pp.userapi.com/c837225/v837225016/5e1f9/0t3RZJtU-Ag.jpg">
           <h1 slot="header" class="pb-3 text-sm-center"><h2 class="hidden-xs-only">Nikita Krupin</h2><h3 class="hidden-sm-and-up">Nikita Krupin</h3></h1>
           <p slot="content"><b><v-icon class="mb-2 white--text">lightbulb_outline</v-icon> Creator, &nbsp;<v-icon class="mb-2 white--text" left>color_lens</v-icon> Designer, &nbsp;<v-icon class="mb-2 white--text" left>developer_board</v-icon> Developer</b></p>
         </card3d>
@@ -102,13 +102,12 @@
 
 
 
-<!--COPYRIGHT-->
-<copyright></copyright>
 
 
 <app-nav :navs="navs"></app-nav>
 
 
+<!--COPYRIGHT-->
 </v-app>
 </template>
 

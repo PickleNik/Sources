@@ -2,7 +2,7 @@
   <main class="secondary">
     <v-container fluid>
       <v-flex xs12 sm12 md8 offset-md2 lg8 offset-lg2 xl8 offset-xl2>
-        <div v-for="branch in branches" :id="branch.id" class="mb-5 mt-3 roundXXL pt-5 pb-3 grey darken-4">
+        <div v-for="branch in branches" :id="branch.id" style="animation-delay:.5s;" class="zoom mb-5 mt-3 roundXXL pt-5 pb-3 grey darken-4">
 
           <v-flex xs12 sm8 offset-sm2 class="pb-3">
             <v-tooltip top>
@@ -11,11 +11,11 @@
               </h1>
               <span>Click to read about {{ branch.name }}</span>
             </v-tooltip>
-            <h3 style="text-align:center;" class="white--text words">{{ branch.description }}</h3>
+            <h3 style="text-align:center;" class="white--text">{{ branch.description }}</h3>
             <hr class="grey ma-2"/>
           </v-flex>
 
-          <v-flex class="hidden-sm-and-down text-md-center text-lg-center">
+          <v-flex style="animation-delay:1s;" class="zoom hidden-sm-and-down text-md-center text-lg-center">
             <a v-for="leaf in branch.leafs"
             :href="leaf.href" target="_blank"
             v-ripple="{ class: leaf.ripple }"
@@ -26,7 +26,7 @@
             </a>
           </v-flex>
 
-          <v-flex class="hidden-md-and-up text-sm-center text-xs-center">
+          <v-flex style="animation-delay:.5s;" class="zoom hidden-md-and-up text-sm-center text-xs-center">
             <a v-for="leaf in branch.leafs"
             :href="leaf.href" target="_blank"
             v-ripple="{ class: leaf.ripple }"
@@ -51,8 +51,15 @@
 
     <!--ASIDE-->
     <app-nav :navs="navs"></app-nav>
-
-    <app-add :add="add"></app-add>
+    <!-- <v-navigation-drawer
+      hide-overlay
+      v-model="drawer"
+      dark
+      fixed
+      class="pl-1 pt-3 secondary hidden-md-and-up"
+      left >
+      <app-nav :navs="navs"></app-nav>
+    </v-navigation-drawer> -->
 
   </main>
 </template>
@@ -75,7 +82,8 @@ export default {
         { name: 'Tools', href: '#tools', offset: -33, icon: 'build' },
         { name: 'Communities', href: '#communities', offset: -33, icon: 'group' }
       ],
-      add: 'leaf'
+      add: 'leaf',
+      drawer: true
     }
   },
   methods: {
@@ -94,41 +102,6 @@ export default {
 </script>
 
 <style lang="css" scoped>
-  .fullW{
-    width:100%;
-    animation: bounceInUp 1s linear 1;
-    user-select:none;
-  }
-  .fullW:hover{
-    filter:brightness(111%);
-  }
-  @keyframes bounceInUp {
-    from, 60%, 75%, 90%, to {
-      animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
-    }
-
-    from {
-      opacity: 0;
-      transform: translate3d(0, 3000px, 0);
-    }
-
-    60% {
-      opacity: 1;
-      transform: translate3d(0, -20px, 0);
-    }
-
-    75% {
-      transform: translate3d(0, 10px, 0);
-    }
-
-    90% {
-      transform: translate3d(0, -5px, 0);
-    }
-
-    to {
-      transform: translate3d(0, 0, 0);
-    }
-  }
   .leaf{
     height:9em;
     width:9em;
@@ -137,7 +110,6 @@ export default {
     transition-duration: 1s;
     transition-property: all;
     transform-origin: top center;
-    animation: pulse .5s linear 1;
     border-radius:.8em;
   }
   .leafLogo{
@@ -163,8 +135,5 @@ export default {
     transform-origin: center;
     transition-duration: .3s;
     transition-property: all;
-  }
-  .words{
-    animation: fadeInDown .5s linear 1;
   }
 </style>

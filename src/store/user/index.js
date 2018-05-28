@@ -1,13 +1,11 @@
 import * as firebase from 'firebase'
 
 export default {
-
   state: {
     user: null,
     loading: false,
-    error: false,
+    error: false
   },
-
   mutations: {
     setUser (state, payload) {
       state.user = payload
@@ -22,7 +20,6 @@ export default {
       state.error = false
     }
   },
-
   actions: {
     EmailSignIn ({commit}, payload) {
       commit('clearError')
@@ -93,7 +90,6 @@ export default {
       commit('clearError')
     }
   },
-
   getters: {
     user (state) {
       return state.user

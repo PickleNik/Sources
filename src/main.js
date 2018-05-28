@@ -9,24 +9,17 @@ import VueParticles from 'vue-particles'
 import Card3d from './components/Shared/card.vue'
 import VueStar from 'vue-star'
 import SourceCard from './components/Shared/sourceCard.vue'
-import Add from './components/Shared/Add.vue'
 import VueClipboard from 'vue-clipboard2'
 import 'vue-awesome/icons'
 import Icon from 'vue-awesome/components/Icon'
 import * as firebase from 'firebase'
-import Copyright from './components/Shared/Copyright.vue'
-
 Vue.component('icon', Icon)
 
 Vue.component('vue-star', VueStar)
 
 Vue.component('app-src-card', SourceCard)
 
-Vue.component('app-add', Add)
-
 Vue.component('app-nav', Nav)
-
-Vue.component('copyright', Copyright)
 
 Vue.component('card3d', Card3d)
 var VueScrollTo = require('vue-scrollto')

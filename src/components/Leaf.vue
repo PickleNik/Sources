@@ -3,7 +3,7 @@
     <v-container fluid class="py-5">
       <v-layout id="whatIs">
 
-        <v-flex xs12 sm12 md8 offset-md2 lg8 offset-lg2 class="mb-2 text-xs-center">
+        <v-flex xs12 sm12 md8 offset-md2 lg8 offset-lg2 style="animation-delay:.5s;" class="zoom mb-2 text-xs-center">
           <v-tooltip top>
             <h1 slot="activator" class="titles roundL mb-2 mt-4">
              <a class="grey--text link link--yaku" :href="leaf.wiki" target="_blank">What is <span v-for="letter in leaf.name.split('')">{{ letter }}</span></a></h1>
@@ -26,27 +26,27 @@
       <v-layout id="sources">
         <v-flex xs12 sm12 md8 offset-md2 lg8 offset-lg2 class="text-xs-center">
           <h1 class="titles grey--text pt-3">Sources</h1>
-          <app-src-card :sources="leaf.sources"></app-src-card>
+          <app-src-card class="zoom" style="animation-delay:.5s;" :sources="leaf.sources"></app-src-card>
         </v-flex>
       </v-layout>
 
       <v-layout id="addition" v-if="leaf.addition">
         <v-flex xs12 sm12 md8 offset-md2 lg8 offset-lg2 class="pt-3 pb-3 text-xs-center">
           <h1 class="titles grey--text pt-3">Additionally</h1>
-          <app-src-card :sources="leaf.addition"></app-src-card>
+          <app-src-card class="zoom" style="animation-delay:.5s;" :sources="leaf.addition"></app-src-card>
       </v-flex>
       </v-layout>
 
     </v-container>
 
-    <v-flex v-if="leaf.next" md2 lg2 class="text-sm-center hidden-sm-and-down transparent" style="position:fixed; right:1em; bottom:1em; background:#fff; border-radius:3em;">
+    <v-flex v-if="leaf.next" md2 lg2 class="zoom text-sm-center hidden-sm-and-down transparent" style="animation-delay:.5s;position:fixed; right:1em; bottom:1em; background:#fff; border-radius:3em;">
         <h1 class="grey--text">Next</h1>
           <v-btn round v-for="next in leaf.next" :key="next.name" :href="next.href" :to="next.to" :class="next.color" :disabled="next.disabled" class="secondary--text">
             <icon v-if="next.icon" :name="next.icon" class="mr-2" scale="1.5" ></icon>{{ next.name }}
           </v-btn>
     </v-flex>
 
-    <v-flex v-if="leaf.req" md2 lg2 class="text-sm-center hidden-sm-and-down transparent" style="position:fixed; left:1em; bottom:1em; background:#fff; border-radius:3em;">
+    <v-flex v-if="leaf.req" md2 lg2 class="zoom text-sm-center hidden-sm-and-down transparent" style="position:fixed; left:1em; bottom:1em; background:#fff; border-radius:3em;">
         <h1 class="grey--text">Required</h1>
           <v-btn round v-for="req in leaf.req" :key="req.name" :href="req.href" :to="req.to" :class="req.color" :disabled="req.disabled" class="secondary--text">
             <icon v-if="req.icon" :name="req.icon" class="mr-2" scale="1.5" ></icon>{{ req.name }}
@@ -54,8 +54,6 @@
     </v-flex>
 
     <app-nav :navs="navs"></app-nav>
-
-    <app-add :add="add"></app-add>
 
   </main>
 </template>

@@ -1,78 +1,60 @@
 <template lang="html">
-  <main class="secondary">
+  <v-app class="secondary pb-5">
     <v-container fluid class="pa-0">
         <v-flex xs12 sm12 md8 offset-md2 lg8 offset-lg2 >
-          <v-card hover ripple v-for="source in sources" :key="source.name" class="ma-4 grey darken-3">
-            <v-layout row wrap>
-              <v-flex sm2 class="border">
-              <a :href="source.link" target="_blank">
-                <v-card-media>
-                  <img class="pa-3 roundXL" style="height:100%;width:100%;" :src="source.logo" alt="">
-                </v-card-media>
-              </a>
-              </v-flex>
+          <v-layout row wrap>
+            <v-flex xs12 sm6 md6 lg4 v-for="source in sources" :key="source.name">
+              <v-card hover ripple class="roundXL zoom ma-2 grey darken-3">
+                <v-layout column wrap>
+                  <v-flex sm2>
+                  <a :href="source.link" target="_blank">
+                    <v-card-media>
+                      <img class="mx-auto pa-3 roundXXL" style="height:20em;width:20em;" :src="source.logo" alt="">
+                    </v-card-media>
+                  </a>
+                  </v-flex>
+                  <v-divider></v-divider>
+                  <v-flex sm8 class="pl-3" style="height:15em;">
+                  <a :href="source.link" target="_blank">
+                    <v-card-text class="primary--text">
+                      <h2 class="grey--text mb-3">{{ source.name }}</h2>
+                      {{ source.title }}
+                    </v-card-text>
+                  </a>
+                  </v-flex>
+                  <v-divider></v-divider>
+                  <v-flex sm2 class="pa-2 ">
+                    <v-layout class="hidden-xs-only">
+                      <v-btn icon flat light class="mx-auto">
+                        <vue-star style="z-index:1" color="#222222" animate="rubberBand">
+                          <div slot="icon" style="user-select:none;cursor:pointer;" @click="liked = !liked"><v-icon medium :class="{ 'red--text' : liked, 'grey--text' : !liked }" >{{ liked ? 'favorite' : 'favorite_border' }}</v-icon></div>
+                        </vue-star>
+                      </v-btn>
 
-              <v-flex sm8 class="pl-3 border">
-              <a :href="source.link" target="_blank">
-                <v-card-title class="pt-4 grey--text">
-                  <h1>{{ source.name }}</h1>
-                </v-card-title>
-                <v-card-text class="primary--text">
-                  {{ source.title }}
-                </v-card-text>
-              </a>
-              </v-flex>
+                      <v-btn icon flat light class="mx-auto">
+                        <vue-star style="z-index:1" color="#222222" animate="rubberBand">
+                          <div slot="icon" style="user-select:none;cursor:pointer;" @click="todo = !todo"><v-icon medium :class="{ 'accent--text' : todo, 'grey--text ' : !todo }" >{{ todo ? 'playlist_add_check' : 'playlist_add' }}</v-icon></div>
+                        </vue-star>
+                      </v-btn>
 
-              <v-flex sm2 class="pa-2 border">
-                <v-layout column class="hidden-xs-only">
-                  <v-btn icon flat light class="mx-auto">
-                    <vue-star style="z-index:1" color="#222222" animate="rubberBand">
-                      <div slot="icon" style="user-select:none;cursor:pointer;" @click="liked = !liked"><v-icon medium :class="{ 'red--text' : liked, 'grey--text' : !liked }" >{{ liked ? 'favorite' : 'favorite_border' }}</v-icon></div>
-                    </vue-star>
-                  </v-btn>
-
-                  <v-btn icon flat light class="mx-auto">
-                    <vue-star style="z-index:1" color="#222222" animate="rubberBand">
-                      <div slot="icon" style="user-select:none;cursor:pointer;" @click="todo = !todo"><v-icon medium :class="{ 'accent--text' : todo, 'grey--text ' : !todo }" >{{ todo ? 'playlist_add_check' : 'playlist_add' }}</v-icon></div>
-                    </vue-star>
-                  </v-btn>
-
-                  <v-btn icon flat light class="mx-auto pl-4">
-                    <vue-star style="z-index:1" color="#222222" animate="rubberBand">
-                      <div slot="icon" style="user-select:none;cursor:pointer;" @click="shared = !shared"><v-icon medium :class="{ 'light-blue--text' : shared, 'grey--text' : !shared }" >shared</v-icon></div>
-                    </vue-star>
-                  </v-btn>
+                      <v-btn icon flat light class="mx-auto pl-4">
+                        <vue-star style="z-index:1" color="#222222" animate="rubberBand">
+                          <div slot="icon" style="user-select:none;cursor:pointer;" @click="shared = !shared"><v-icon medium :class="{ 'light-blue--text' : shared, 'grey--text' : !shared }" >shared</v-icon></div>
+                        </vue-star>
+                      </v-btn>
+                    </v-layout>
+                  </v-flex>
                 </v-layout>
-                <v-layout row class="hidden-sm-and-up">
-                  <v-btn icon flat light class="mx-auto">
-                    <vue-star style="z-index:1" color="#222222" animate="rubberBand">
-                      <div slot="icon" style="user-select:none;cursor:pointer;" @click="liked = !liked"><v-icon medium :class="{ 'red--text' : liked, 'grey--text' : !liked }" >{{ liked ? 'favorite' : 'favorite_border' }}</v-icon></div>
-                    </vue-star>
-                  </v-btn>
-
-                  <v-btn icon flat light class="mx-auto">
-                    <vue-star style="z-index:1" color="#222222" animate="rubberBand">
-                      <div slot="icon" style="user-select:none;cursor:pointer;" @click="todo = !todo"><v-icon medium :class="{ 'accent--text' : todo, 'grey--text ' : !todo }" >{{ todo ? 'playlist_add_check' : 'playlist_add' }}</v-icon></div>
-                    </vue-star>
-                  </v-btn>
-
-                  <v-btn icon flat light class="mx-auto pl-4">
-                    <vue-star style="z-index:1" color="#222222" animate="rubberBand">
-                      <div slot="icon" style="user-select:none;cursor:pointer;" @click="shared = !shared"><v-icon medium :class="{ 'light-blue--text' : shared, 'grey--text' : !shared }" >shared</v-icon></div>
-                    </vue-star>
-                  </v-btn>
-                </v-layout>
-              </v-flex>
-            </v-layout>
-          </v-card>
+              </v-card>
+            </v-flex>
+          </v-layout>
         </v-flex>
     </v-container>
 
     <app-nav :navs="navs"></app-nav>
 
-    <app-add :add="add"></app-add>
 
-  </main>
+  </v-app>
 </template>
 
 <script>
@@ -182,10 +164,4 @@ export default {
 </script>
 
 <style scoped>
-.border{
-  border:1px solid #333;
-}
-.card{
-  border-radius:2em;
-}
 </style>
