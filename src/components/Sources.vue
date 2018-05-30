@@ -68,7 +68,6 @@ export default {
         { name: 'Video', href: '#video', offset: -33, icon: 'video_library' },
         { name: 'Other', href: '#other', offset: -33, icon: 'library_add' }
       ],
-      add: 'Source',
       sources: [
         {
           name: 'Mimo',

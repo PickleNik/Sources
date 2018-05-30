@@ -15,7 +15,7 @@
             <hr class="grey ma-2"/>
           </v-flex>
 
-          <v-flex style="animation-delay:.5s;" class="zoom hidden-sm-and-down text-md-center text-lg-center">
+          <v-flex style="animation-delay:.2s;" class="zoom hidden-sm-and-down text-md-center text-lg-center">
             <a v-for="leaf in branch.leafs"
             :href="leaf.href" target="_blank"
             v-ripple="{ class: leaf.ripple }"
@@ -26,7 +26,7 @@
             </a>
           </v-flex>
 
-          <v-flex style="animation-delay:.5s;" class="zoom hidden-md-and-up text-sm-center text-xs-center">
+          <v-flex style="animation-delay:.2s;" class="zoom hidden-md-and-up text-sm-center text-xs-center">
             <a v-for="leaf in branch.leafs"
             :href="leaf.href" target="_blank"
             v-ripple="{ class: leaf.ripple }"

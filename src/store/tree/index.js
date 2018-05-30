@@ -1317,7 +1317,7 @@ export default {
         { name: 'Firebase', ripple: 'amber--text', to: '/firease', logo: 'https://firebase.google.com/_static/images/firebase/touchicon-180.png' },
         { name: 'NPM', ripple: 'red--text', href: 'https://www.npmjs.com/', logo: 'https://d2eip9sf3oo6c2.cloudfront.net/tags/images/000/000/188/full/npmlogo.png' },
         { name: 'Stenciljs', ripple: 'black--text', href: 'https://stenciljs.com/', logo: 'https://pbs.twimg.com/profile_images/895677818998185985/mWrrADXf_400x400.jpg' },
-        { name: 'Material Design', ripple: 'grey--text', href: 'https://material.io/', logo: 'https://cdn.dribbble.com/users/75794/screenshots/3051672/mb_social_1.gif'},
+        { name: 'Material Design', ripple: 'grey--text', href: 'https://material.io/', logo: 'https://cdn.dribbble.com/users/75794/screenshots/3051672/mb_social_1.gif' },
         { name: 'CodePen', ripple: 'white--text', href: 'https://codepen.io/', logo: 'http://blog.codepen.io/wp-content/uploads/2012/06/Button-Fill-White-Large.png' },
         { name: 'Tryit Editor', ripple: 'light-green--text', href: 'https://www.w3schools.com/html/tryit.asp?filename=tryhtml_basic', logo: 'http://www.karlsjohnson.com/link/resources/images/w3school.png' },
         { name: 'jsFiddle', ripple: 'blue--text', href: 'https://jsfiddle.net/', logo: 'https://cdn.iconscout.com/public/images/icon/free/png-512/jsfiddle-logo-cloud-38db5faa6163991e-512x512.png' },

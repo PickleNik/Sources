@@ -6,12 +6,12 @@
   <div class="text-sm-center">
     <div class="centerABS">
     <img class="zoom mx-5" width="200" height="200" src="../assets/treeLogo.png" alt="logo">
-    <h2 class="display-3 white--text">TutsTree</h2>
+    <h2 class="zoom display-3 white--text">TutsTree</h2>
     <p class="white--text typed accent--text secondary round pa-2" style="font-size:1.5em;"><span id="greeting"></span></p>
-    <a href="#" v-scroll-to="'#about'"><v-btn dark large flat icon class="hidden-sm-and-up centerX pa-5">
+    <a href="#" v-scroll-to="'#about'"><v-btn dark large flat icon class="zoom hidden-sm-and-up centerX pa-5">
       <v-icon x-large class="down">keyboard_arrow_down</v-icon>
     </v-btn></a>
-    <a href="#" v-scroll-to="'#about'"><v-btn dark large flat icon class="hidden-xs-only pa-5">
+    <a href="#" v-scroll-to="'#about'"><v-btn dark large flat icon class="zoom hidden-xs-only mx-auto pa-5">
       <v-icon x-large class="down">keyboard_arrow_down</v-icon>
     </v-btn></a>
   </div>
@@ -157,7 +157,6 @@ export default {
 #hero h2{
   font-family: 'Rammetto One', cursive;
   text-shadow: 0em 0em 1em #222;
-  animation: jackInTheBox 1s linear 1;
 }
 #hero{
   background: url('../assets/hero.jpg') 100% 100% no-repeat;
@@ -192,26 +191,7 @@ export default {
 .inUp{
   animation: fadeInUp 1s linear 1;
 }
-@keyframes jackInTheBox {
-  from {
-    opacity: 0;
-    transform: scale(0.1) rotate(30deg);
-    transform-origin: center bottom;
-  }
 
-  50% {
-    transform: rotate(-10deg);
-  }
-
-  70% {
-    transform: rotate(3deg);
-  }
-
-  to {
-    opacity: 1;
-    transform: scale(1);
-  }
-}
 .particles{
   width:100vw;
   height:102vh;
