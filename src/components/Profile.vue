@@ -1,12 +1,12 @@
 <template lang="html">
-  <v-app class="secondary">
+  <v-app class="secondary py-5">
     <v-container fluid fill-height>
       <v-layout align-center column>
         <v-flex>
-          <v-btn round class="my-5" color="error" @click="SignOut">Sign Out</v-btn>
+          <v-btn round class="zoom my-3" color="error" @click="SignOut">Sign Out</v-btn>
         </v-flex>
         <v-flex xs12 class="mt-5 text-sm-center text-xs-center">
-              <card3d class="zoom mb-0 card3d hidden-sm-and-up d-inline-block" style="border-radius:100%; width:20em; height:20em;" :data-image="user.photo">
+              <card3d class="zoom mb-0 card3d hidden-sm-and-up d-inline-block" style="animation-delay:.5s;border-radius:100%; width:20em; height:20em;" :data-image="user.photo">
                 <h2 slot="header" class="mb-5 accent--text">{{ user.name }}</h2>
                 <p slot="content" class="mb-5">{{ user.email }}</p>
               </card3d>

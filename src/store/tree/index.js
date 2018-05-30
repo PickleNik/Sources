@@ -329,7 +329,6 @@ export default {
                 link: 'https://www.youtube.com/playlist?list=PL4cUxeGkcC9htzG9o-QzCTsGMbmfuF4kk',
                 logo: 'https://yt3.ggpht.com/a-/AJLlDp2oM9rg7DFu7iit71Ndh0yNIEL7F_j0VCRWuQ=s900-mo-c-c0xffffffff-rj-k-no',
                 icon: 'video_library' }
-
             ]
         },
         { name: 'JavaScript',
@@ -491,7 +490,15 @@ export default {
                 shared: false,
                 link: 'https://www.youtube.com/playlist?list=PL4cUxeGkcC9jAhrjtZ9U93UMIhnCc44MH',
                 logo: 'https://yt3.ggpht.com/a-/AJLlDp2oM9rg7DFu7iit71Ndh0yNIEL7F_j0VCRWuQ=s900-mo-c-c0xffffffff-rj-k-no',
-                icon: 'video_library' }
+                icon: 'video_library' },
+
+              { name: 'Codewars',
+                todo: false,
+                starred: false,
+                shared: false,
+                link: 'https://www.codewars.com/?language=javascript',
+                logo: 'http://www.softlab.ntua.gr/~nickie/images/logo/codewars.png',
+                icon: 'games' }
             ]
         },
         { name: 'CLI',
@@ -507,6 +514,13 @@ export default {
               shared: false,
               link: 'https://en.wikipedia.org/wiki/Command-line_interface',
               logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Wikipedia_logo_v3.svg/1024px-Wikipedia_logo_v3.svg.png',
+              icon: 'description' },
+            { name: 'Conquering the CLI',
+              todo: false,
+              starred: false,
+              shared: false,
+              link: 'http://conqueringthecommandline.com/book',
+              logo: 'https://softcover.s3.amazonaws.com/8/unix_commands/images/cover-web.png',
               icon: 'description' },
             { name: 'Treehouse',
               todo: false,
@@ -529,6 +543,22 @@ export default {
               link: 'https://www.codecademy.com/learn/introduction-to-javascript',
               logo: 'https://cdn-images-1.medium.com/max/2000/1*eAkVW2LFAd9pKdL-8hBQ1A.png',
               icon: 'attach_money' },
+            { name: 'CLI Power User',
+              todo: false,
+              starred: false,
+              shared: false,
+              link: 'https://commandlinepoweruser.com/',
+              logo: 'https://wesbos.com/wp-content/uploads/2015/04/ss-2015-04-02-at-2.20.32-PM-650x425.png',
+              icon: 'video_library' }
+          ],
+          addition: [
+            { name: 'Codewars',
+              todo: false,
+              starred: false,
+              shared: false,
+              link: 'https://www.codewars.com/?language=shell',
+              logo: 'http://www.softlab.ntua.gr/~nickie/images/logo/codewars.png',
+              icon: 'games' }
           ]
         }
       ]
@@ -828,7 +858,17 @@ export default {
               link: 'https://www.typescriptlang.org/',
               logo: 'https://lh3.googleusercontent.com/-A0wE9U2zDI0/WJY7M98lmEI/AAAAAAAAcQo/-KHSsKPozoQw1USqlSqlaP3GDBhCFyAqwCE0/s1024/ts.png',
               icon: 'important_devices' },
-          ]  },
+          ],
+          addition: [
+            { name: 'Codewars',
+              todo: false,
+              starred: false,
+              shared: false,
+              link: 'https://www.codewars.com/?language=typescript',
+              logo: 'http://www.softlab.ntua.gr/~nickie/images/logo/codewars.png',
+              icon: 'games' }
+          ]
+        },
         { name: 'CofeeScript',
           ripple: 'blue-grey--text',
           logo: 'https://cdn.worldvectorlogo.com/logos/coffeescript.svg',
@@ -1276,7 +1316,7 @@ export default {
          },
         { name: 'Firebase', logo: 'https://firebase.google.com/_static/images/firebase/touchicon-180.png', ripple: 'amber--text',  to: '/firease' },
         { name: 'NPM', logo: 'https://d2eip9sf3oo6c2.cloudfront.net/tags/images/000/000/188/full/npmlogo.png', ripple: 'red--text',  href: 'https://www.npmjs.com/' },
-        { name: 'Stenciljs', logo: 'https://pbs.twimg.com/profile_images/895677818998185985/mWrrADXf_400x400.jpg', ripple: 'white--text',  href: 'https://stenciljs.com/' },
+        { name: 'Stenciljs', logo: 'https://pbs.twimg.com/profile_images/895677818998185985/mWrrADXf_400x400.jpg', ripple: 'black--text',  href: 'https://stenciljs.com/' },
         { name: 'Material Design', ripple: 'grey--text', href: 'https://material.io/', logo: 'https://cdn.dribbble.com/users/75794/screenshots/3051672/mb_social_1.gif'},
         { ripple: 'white--text', logo: 'http://blog.codepen.io/wp-content/uploads/2012/06/Button-Fill-White-Large.png', name: 'CodePen', href: 'https://codepen.io/' },
         { ripple: 'light-green--text', logo: 'http://www.karlsjohnson.com/link/resources/images/w3school.png', name: 'Tryit Editor', href: 'https://www.w3schools.com/html/tryit.asp?filename=tryhtml_basic' },
@@ -1288,7 +1328,10 @@ export default {
         { ripple: 'grey--text', logo: 'https://madewithvuejs.com/uploads/09/15/9e63f3fe-2e67-11e7-9074-7bd9458ed691.png', name: 'Vue-Particles', href: 'http://vue-particles.netlify.com/' },
         { ripple: 'green--text', logo: 'https://camo.githubusercontent.com/66719bf4fc62612031c20a927c19afaeb372fbc2/68747470733a2f2f7773332e73696e61696d672e636e2f6c617267652f303036744b665463677931666a78626633316370356a33306d383065697133702e6a7067', name: 'Vue-Flat-Su...', href: 'https://grzhan.github.io/vue-flat-surface-shader/' },
         { ripple: 'cyan--text', logo: 'https://atomiks.github.io/30-seconds-of-css/e5b4b9ce166177b1bc2dc3772012e0a1.png', name: '30s of CSS', href: 'https://atomiks.github.io/30-seconds-of-css/' },
-        { ripple: 'indigo--text', logo: 'https://stripe.com/img/v3/home/twitter.png', name: 'Stripe', href: 'https://stripe.com' }
+        { ripple: 'indigo--text', logo: 'https://stripe.com/img/v3/home/twitter.png', name: 'Stripe', href: 'https://stripe.com' },
+        { name: 'Termly', ripple: 'light-blue--text', href: 'https://termly.io', logo: 'https://termly.io/wp-content/themes/genesis-tly-v2/build/images/favicon-192.png' },
+        { name: 'Copyrighted', ripple: 'red--text', href: 'https://www.copyrighted.com/', logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Red_copyright.svg/768px-Red_copyright.svg.png' }
+
       ]
     },
     { name: 'Communities',
@@ -1298,6 +1341,7 @@ export default {
         { ripple: 'amber--text', logo: 'https://i.stack.imgur.com/GKbCl.png', name: 'StackOverflow', href: 'https://stackoverflow.com/' },
         { ripple: 'black--text', logo: 'https://cdn-images-1.medium.com/max/1600/1*emiGsBgJu2KHWyjluhKXQw.png', name: 'Medium', href: 'https://medium.com' },
         { ripple: 'lime--text', logo: 'http://www.lukashejtmanek.cz/assets/img/symbol_transparent.png', name: 'HackerRank', href: 'https://www.hackerrank.com/dashboard' },
+        { ripple: 'red--text', logo: 'http://www.softlab.ntua.gr/~nickie/images/logo/codewars.png', name: 'codewars', href: 'https://www.codewars.com/' },
         { ripple: 'blue--text', logo: 'http://www.stickpng.com/assets/images/5847ebc2cef1014c0b5e4857.png', name: 'Codrops', href: 'https://tympanus.net/codrops/category/tutorials/' },
         { ripple: 'white--text', logo: 'https://pbs.twimg.com/profile_images/868061114160099328/BD0P3vsp_400x400.jpg', name: 'Tutorialzine', href: 'https://tutorialzine.com/' },
         { ripple: 'blue--text', logo: 'https://static1.squarespace.com/static/564cbcb2e4b0741cdb668fe2/t/56b8c853d51cd41553c43507/1454950492725/StackShare.png', name: 'StackShare', href: 'https://stackshare.io/' },

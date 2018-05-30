@@ -2,7 +2,7 @@
   <main class="secondary">
     <v-container fluid>
       <v-flex xs12 sm12 md8 offset-md2 lg8 offset-lg2 xl8 offset-xl2>
-        <div v-for="branch in branches" :id="branch.id" style="animation-delay:.5s;" class="zoom mb-5 mt-3 roundXXL pt-5 pb-3 grey darken-4">
+        <div v-for="branch in branches" :id="branch.id" class="zoom mb-5 mt-3 roundXXL pt-5 pb-3 grey darken-4">
 
           <v-flex xs12 sm8 offset-sm2 class="pb-3">
             <v-tooltip top>
@@ -11,11 +11,11 @@
               </h1>
               <span>Click to read about {{ branch.name }}</span>
             </v-tooltip>
-            <h3 style="text-align:center;" class="white--text">{{ branch.description }}</h3>
+            <p style="text-align:center;" class="white--text">{{ branch.description }}</p>
             <hr class="grey ma-2"/>
           </v-flex>
 
-          <v-flex style="animation-delay:1s;" class="zoom hidden-sm-and-down text-md-center text-lg-center">
+          <v-flex style="animation-delay:.5s;" class="zoom hidden-sm-and-down text-md-center text-lg-center">
             <a v-for="leaf in branch.leafs"
             :href="leaf.href" target="_blank"
             v-ripple="{ class: leaf.ripple }"
@@ -38,14 +38,6 @@
           </v-flex>
 
         </div>
-      </v-flex>
-
-      <v-flex xs12 sm12 md8 offset-md2 class="mb-5 text-sm-center text-xs-center roundXXL">
-        <card3d class="ma-0 mb-5 d-inline-block" style="width:90%; height:calc(100vh / 2);" data-image="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=0ef06f88dab75b74252e22465ad9c99d&auto=format&fit=crop&w=1050&q=80">
-          <h1 slot="header"class="hidden-xs-only mb-5 pb-5"><h4>A Perfect Place For Your Advertisment</h4></h1>
-          <h1 slot="header"class="hidden-sm-and-up mb-5 pb-5"><h6>Advertise Here</h6></h1>
-          <p slot="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-        </card3d>
       </v-flex>
     </v-container>
 

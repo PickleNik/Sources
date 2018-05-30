@@ -14,26 +14,26 @@
   </div>
   </a>
 
-  <v-card-actions>
-    <v-flex>
-    <v-btn icon flat light class="ml-3">
-      <vue-star style="z-index:0" color="#222222" animate="rubberBand">
-        <div slot="icon" style="user-select:none;cursor:pointer;" @click="source.starred = !source.starred"><v-icon :class="{ 'red--text' : source.starred, 'grey--text' : !source.starred }" large>favorite</v-icon></div>
-      </vue-star>
-    </v-btn>
+  <v-card-actions class="px-2">
+    <v-layout row>
+      <v-btn icon flat light class="mx-auto">
+        <vue-star style="z-index:0" color="#222222" animate="rubberBand">
+          <div slot="icon" style="user-select:none;cursor:pointer;" @click="source.starred = !source.starred"><v-icon :class="{ 'red--text' : source.starred, 'grey--text' : !source.starred }" large>favorite</v-icon></div>
+        </vue-star>
+      </v-btn>
 
-    <v-btn icon flat light class="ml-2">
-      <vue-star style="z-index:0" color="#222222" animate="rubberBand">
-        <div slot="icon" style="user-select:none;cursor:pointer;" @click="source.todo = !source.todo"><v-icon :class="{ 'accent--text' : source.todo, 'grey--text ' : !source.todo }" large>{{ source.todo ? 'playlist_add_check' : 'playlist_add' }}</v-icon></div>
-      </vue-star>
-    </v-btn>
+      <v-btn icon flat light class="mx-auto">
+        <vue-star style="z-index:0" color="#222222" animate="rubberBand">
+          <div slot="icon" style="user-select:none;cursor:pointer;" @click="source.todo = !source.todo"><v-icon :class="{ 'accent--text' : source.todo, 'grey--text ' : !source.todo }" large>{{ source.todo ? 'playlist_add_check' : 'playlist_add' }}</v-icon></div>
+        </vue-star>
+      </v-btn>
 
-    <v-btn v-clipboard:copy="source.link" icon flat light class="ml-4">
-      <vue-star style="z-index:0" color="#222222" animate="rubberBand">
-        <div slot="icon" style="user-select:none;cursor:pointer;" @click.once="source.shared = !source.shared, copied = !copied"><v-icon :class="{ 'light-blue--text' : source.shared, 'grey--text' : !source.shared }" large>shared</v-icon></div>
-      </vue-star>
-    </v-btn>
-    </v-flex>
+      <v-btn v-clipboard:copy="source.link" icon flat light class="mx-auto pl-4">
+        <vue-star style="z-index:0" color="#222222" animate="rubberBand">
+          <div slot="icon" style="user-select:none;cursor:pointer;" @click.once="source.shared = !source.shared, copied = !copied"><v-icon :class="{ 'light-blue--text' : source.shared, 'grey--text' : !source.shared }" large>shared</v-icon></div>
+        </vue-star>
+      </v-btn>
+    </v-layout>
   </v-card-actions>
 
   </v-card>
