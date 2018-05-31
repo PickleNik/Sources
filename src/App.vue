@@ -35,42 +35,22 @@
         <span>You</span>
         <v-icon>person</v-icon>
       </v-btn>
-      <v-btn @click="drawer = !drawer" color="accent--text">
+      <v-btn disabled color="accent--text">
         <span>Scroll</span>
         <v-icon>menu</v-icon>
       </v-btn>
     </v-bottom-nav>
 
-    <!-- <v-navigation-drawer
-      hide-overlay
-      v-model="drawer"
-      width="60"
-      dark
-      fixed
-      class="pl-1 pt-3 secondary hidden-md-and-up"
-      right >
-      <v-btn v-scroll-to="{el:'#basics', offset: -33}" fab small class="accent--text"><v-icon>code</v-icon></v-btn>
-      <v-btn v-scroll-to="{el:'#frontend', offset: -33}" fab small class="accent--text"><v-icon>web</v-icon></v-btn>
-      <v-btn v-scroll-to="{el:'#backend', offset: -33}" fab small class="accent--text"><v-icon>storage</v-icon></v-btn>
-      <v-btn v-scroll-to="{el:'#frameworks', offset: -33}" fab small class="accent--text"><v-icon>settings</v-icon></v-btn>
-      <v-btn v-scroll-to="{el:'#libraries', offset: -33}" fab small class="accent--text"><v-icon>color_lens</v-icon></v-btn>
-      <v-btn v-scroll-to="{el:'#graphics', offset: -33}" fab small class="accent--text"><v-icon>format_paint</v-icon></v-btn>
-      <v-btn v-scroll-to="{el:'#hosting', offset: -33}" fab small class="accent--text"><v-icon>router</v-icon></v-btn>
-      <v-btn v-scroll-to="{el:'#apps', offset: -33}" fab small class="accent--text"><v-icon>developer_mode</v-icon></v-btn>
-      <v-btn v-scroll-to="{el:'#tools', offset: -33}" fab small class="accent--text"><v-icon>build</v-icon></v-btn>
-      <v-btn v-scroll-to="{el:'#communities', offset: -33}" fab small class="accent--text"><v-icon>group</v-icon></v-btn>
-    </v-navigation-drawer> -->
-
     <a style="position:fixed;right:1em;top:8em;z-index:1;" class="zoom hidden-sm-and-down copyrighted-badge" title="Copyrighted.com Registered, Protected &amp; Monitored" target="_blank" href="https://www.copyrighted.com/website/dS8B0bc4ACr280Uw"><img class="round" alt="Copyrighted.com Registered &amp; Protected" border="0" width="125" height="75" srcset="https://static.copyrighted.com/badges/125x75/04_2x.png 2x" src="https://static.copyrighted.com/badges/125x75/04.png" /></a>
     <a style="position:fixed;right:1em;top:14em;z-index:1;" class="zoom hidden-sm-and-down grey darken-2 round py-2 px-1" target="_blank" href="https://app.termly.io/document/privacy-policy/cfd2389e-89ab-4341-882a-dd5ed79e213b"><v-icon class="accent--text">verified_user</v-icon><span class="contact">Privacy Policy</span></a>
-    <v-flex xs2 style="position:absolute;right:1em;top:27em;z-index:1;">
-    <v-switch class="mr-5 pa-0"
-    v-model="theme" color="accent"
-    prepend-icon="brightness_7"
-    append-icon="brightness_2"
-    hint="Change theme"
-    persistent-hint
-    ></v-switch>
+    <v-flex xs2 style="position:fixed;right:1em;top:27em;z-index:1;">
+      <v-switch class="mr-5 pa-0"
+      v-model="theme" color="accent"
+      prepend-icon="brightness_7"
+      append-icon="brightness_2"
+      hint="Change theme"
+      persistent-hint
+      ></v-switch>
     </v-flex>
     <!-- <v-content> -->
     <router-view></router-view>
@@ -81,7 +61,6 @@
 <script>
 export default {
   data: () => ({
-    drawer: null,
     e2: 1,
     theme: false
   }),

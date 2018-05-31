@@ -2,7 +2,7 @@ export default {
   state: {
     branches: [
       { name: 'Basics',
-        description: 'HTML, CSS and JavaScript will to you the world of Web Development.',
+        description: 'HTML, CSS and JavaScript will open to you the world of Web Development.',
         id: 'basics',
         leafs: [
           { name: 'HTML',
@@ -1391,6 +1391,7 @@ export default {
           { name: 'codewars', ripple: 'red--text', href: 'https://www.codewars.com/', logo: 'http://www.softlab.ntua.gr/~nickie/images/logo/codewars.png' },
           { name: 'Codrops', ripple: 'blue--text', href: 'https://tympanus.net/codrops/category/tutorials/', logo: 'http://www.stickpng.com/assets/images/5847ebc2cef1014c0b5e4857.png' },
           { name: 'Tutorialzine', ripple: 'white--text', href: 'https://tutorialzine.com/', logo: 'https://pbs.twimg.com/profile_images/868061114160099328/BD0P3vsp_400x400.jpg' },
+          { name: 'CSS-Tricks', ripple: 'black--text', href: 'https://css-tricks.com/', logo: 'https://cdn.css-tricks.com/wp-content/uploads/2014/03/css-tricks-star.png' },
           { name: 'StackShare', ripple: 'blue--text', href: 'https://stackshare.io/', logo: 'https://static1.squarespace.com/static/564cbcb2e4b0741cdb668fe2/t/56b8c853d51cd41553c43507/1454950492725/StackShare.png' },
           { name: 'Coligo', ripple: 'light-blue--text', href: 'https://coligo.io', logo: 'https://avatars2.githubusercontent.com/u/15895995?s=280&v=4' },
           { name: 'Smashing', ripple: 'deep-orange--text', href: 'https://www.smashingmagazine.com/', logo: 'http://www.stickpng.com/assets/images/58482e1fcef1014c0b5e4a66.png' },
