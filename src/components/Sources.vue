@@ -19,7 +19,7 @@
                     <v-card-text class="primary--text">
                       <h2 class="grey--text mb-3">{{ source.name }}</h2>
                       <span>{{ source.title }}</span><br/>
-                      <v-icon v-for="i in source.icons" class="mt-2 accent--text">{{ i }}</v-icon>
+                      <v-icon v-for="i in source.icons" :key="i" class="mt-2 accent--text">{{ i }}</v-icon>
                     </v-card-text>
                   </a>
                   </v-flex>
@@ -398,7 +398,7 @@ export default {
           todo: false,
           link: 'https://learncodethehardway.org/',
           logo: 'https://learncodethehardway.org/images/logo-code.svg'
-        },
+        }
       ]
     }
   }

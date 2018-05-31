@@ -34,8 +34,8 @@ export default {
     ProceedSignIn ({commit}, payload) {
       commit('clearError')
       firebase.auth().signInWithEmailLink(payload.email, payload.href)
-        .then(function(result) {
-          console.log(result.user)
+        .then(result => {
+          // eslint-disable-next-line
           user => {
             const newUser = {
               id: user.uid,
@@ -46,8 +46,8 @@ export default {
             }
             commit('setLoading', false)
             commit('setUser', newUser)
-          }}
-        )
+          }
+        })
         .catch(
           error => {
             commit('setLoading', false)
@@ -58,8 +58,8 @@ export default {
     ProviderSignIn ({commit}, payload) {
       commit('clearError')
       firebase.auth().signInWithPopup(payload)
-        .then(function(result) {
-          console.log(result)
+        .then(result => {
+          // eslint-disable-next-line
           user => {
             const newUser = {
               id: user.uid,
@@ -70,8 +70,8 @@ export default {
             }
             commit('setLoading', false)
             commit('setUser', newUser)
-          }}
-        )
+          }
+        })
         .catch(
           error => {
             commit('setLoading', false)

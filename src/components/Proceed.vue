@@ -28,11 +28,8 @@ export default {
     return {
       email: '',
       emailRules: [
-        v => {
-          return !!v || 'Email cannot be empty'
-        },
         v => /^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/.test(v) || 'Email must be valid'
-      ],
+      ]
     }
   },
   computed: {

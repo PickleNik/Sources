@@ -1,11 +1,13 @@
 <template>
 <v-flex md2 lg2 id="nav" class="zoom hidden-sm-and-down mt-4 pa-3">
     <v-layout column>
-    <a v-for="nav in navs" :key="nav.name" href="#" v-scroll-to="{el:nav.href, offset: nav.offset}"><v-btn small round flat :to="nav.to"
-      class="ma-0 pr-2 link link--kukuri">
-      <v-icon left class="accent--text">{{ nav.icon }}</v-icon>
-      {{ nav.name }}
-      <v-icon>{{ nav.posticon }}</v-icon></v-btn></a>
+    <a v-for="nav in navs" :key="nav.name" href="#" v-scroll-to="{el:nav.href, offset: nav.offset}">
+      <v-btn small round flat :to="nav.to" class="ma-0 pr-2 link link--kukuri">
+        <v-icon left class="accent--text">{{ nav.icon }}</v-icon>
+        {{ nav.name }}
+        <v-icon>{{ nav.posticon }}</v-icon>
+      </v-btn>
+    </a>
     </v-layout>
 </v-flex>
 </template>
@@ -33,11 +35,11 @@ export default{
 	font-weight: 900;
 	overflow: hidden;
 	line-height: 0.75;
-	color: #fff;
+	color: var(--primary);
 }
 
 .link--kukuri:hover {
-	color: lightgreen;
+	color: var(--accent);
 }
 
 .link--kukuri::after {
@@ -48,7 +50,7 @@ export default{
 	top: 50%;
 	margin-top: -4px;
 	right: 0;
-	background: lightgreen;
+	background: var(--accent);
   border-radius:1em;
 	-webkit-transform: translate3d(-111%,0,0);
 	transform: translate3d(-111%,0,0);

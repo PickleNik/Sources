@@ -63,6 +63,15 @@
 
     <a style="position:fixed;right:1em;top:8em;z-index:1;" class="zoom hidden-sm-and-down copyrighted-badge" title="Copyrighted.com Registered, Protected &amp; Monitored" target="_blank" href="https://www.copyrighted.com/website/dS8B0bc4ACr280Uw"><img class="round" alt="Copyrighted.com Registered &amp; Protected" border="0" width="125" height="75" srcset="https://static.copyrighted.com/badges/125x75/04_2x.png 2x" src="https://static.copyrighted.com/badges/125x75/04.png" /></a>
     <a style="position:fixed;right:1em;top:14em;z-index:1;" class="zoom hidden-sm-and-down grey darken-2 round py-2 px-1" target="_blank" href="https://app.termly.io/document/privacy-policy/cfd2389e-89ab-4341-882a-dd5ed79e213b"><v-icon class="accent--text">verified_user</v-icon><span class="contact">Privacy Policy</span></a>
+    <v-flex xs2 style="position:absolute;right:1em;top:27em;z-index:1;">
+    <v-switch class="mr-5 pa-0"
+    v-model="theme" color="accent"
+    prepend-icon="brightness_7"
+    append-icon="brightness_2"
+    hint="Change theme"
+    persistent-hint
+    ></v-switch>
+    </v-flex>
     <!-- <v-content> -->
     <router-view></router-view>
     <!-- </v-content> -->
@@ -73,8 +82,15 @@
 export default {
   data: () => ({
     drawer: null,
-    e2: 1
-  })
+    e2: 1,
+    theme: false
+  }),
+  computed: {
+    themeChange () {
+      this.$vuetify.theme.primary = '#333'
+      this.$vuetify.theme.secondary = '#eee'
+    }
+  }
 }
 </script>
 
@@ -83,6 +99,15 @@ export default {
   @import url('https://fonts.googleapis.com/css?family=Comfortaa|Quicksand');
   *{
     font-family: 'Comfortaa', sans-serif;
+  }
+  :root{
+    --primary: #eee;
+    --secondary: #333;
+    --accent: #90ee90;
+  }
+  .theme-light{
+    --primary: #333;
+    --secondary: #eee;
   }
   p {
     font-size: 1em;
@@ -143,25 +168,25 @@ export default {
   }
   ::-webkit-scrollbar{
     width: 8px;
-    background-color:#333;
+    background-color:var(--secondary);
   }
   ::-webkit-scrollbar-thumb{
     border-radius: 20px;
-    background-color: lightgreen;
+    background-color: var(--accent);
   }
   ::-webkit-scrollbar-thumb:hover{
-    background:  #ededed;
+    background:  var(--primary);
   }
   ::-webkit-scrollbar-thumb:active {
-    background: #fefefe;
+    background: white;
   }
   ::-moz-selection{
     background: transparent;
-    color: lightgreen;
+    color: var(--accent);
   }
   ::selection{
     background: transparent;
-    color: lightgreen;
+    color: var(--accent);
   }
   @-webkit-keyframes zoomIn {
     from {
@@ -199,7 +224,7 @@ export default {
   #name{  -webkit-transition-duration: 1s;  transition-duration: 1s;  -webkit-transition-property: all;  transition-property: all; cursor:pointer; }
 
   .contact:hover {
-    color: lightgreen;
+    color: var(--accent);
     cursor:pointer;
     text-decoration:underline;
   }
@@ -556,7 +581,7 @@ export default {
   /* Ilin */
   .link--ilin {
   	overflow: hidden;
-  	color: #fff;
+  	color: var(--primary);
   }
 
   .link--ilin span {
@@ -567,7 +592,7 @@ export default {
   }
 
   .link--ilin:hover span{
-  	color: lightgreen;
+  	color: var(--accent);
   }
 
   .link--ilin span::before {
@@ -575,7 +600,7 @@ export default {
   	position: absolute;
   	width: 100%;
   	height: 100%;
-  	background: lightgreen;
+  	background: var(--accent);
   	line-height: 0.8;
   	-webkit-transition: -webkit-transform 0.5s;
   	transition: -webkit-transform 0.5s;
@@ -584,7 +609,7 @@ export default {
   }
 
   .link--ilin span:last-of-type::before {
-  	background: lightgreen;
+  	background: var(--accent);
   }
 
   .link--ilin:hover span:last-of-type::before,
@@ -617,7 +642,7 @@ export default {
   }
 
   .link--yaku:hover span {
-  	color: lightgreen;
+  	color: var(--accent);
   	-webkit-transform: perspective(1000px) rotate3d(0,1,0,360deg);
   	transform: perspective(1000px) rotate3d(0,1,0,360deg);
   }
