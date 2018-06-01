@@ -41,17 +41,16 @@
       </v-btn>
     </v-bottom-nav>
 
-    <a style="position:fixed;right:1em;top:8em;z-index:1;" class="zoom hidden-sm-and-down copyrighted-badge" title="Copyrighted.com Registered, Protected &amp; Monitored" target="_blank" href="https://www.copyrighted.com/website/dS8B0bc4ACr280Uw"><img class="round" alt="Copyrighted.com Registered &amp; Protected" border="0" width="125" height="75" srcset="https://static.copyrighted.com/badges/125x75/04_2x.png 2x" src="https://static.copyrighted.com/badges/125x75/04.png" /></a>
-    <a style="position:fixed;right:1em;top:14em;z-index:1;" class="zoom hidden-sm-and-down grey darken-2 round py-2 px-1" target="_blank" href="https://app.termly.io/document/privacy-policy/cfd2389e-89ab-4341-882a-dd5ed79e213b"><v-icon class="accent--text">verified_user</v-icon><span class="contact">Privacy Policy</span></a>
-    <v-flex xs2 style="position:fixed;right:1em;top:27em;z-index:1;">
-      <v-switch class="mr-5 pa-0"
-      v-model="theme" color="accent"
-      prepend-icon="brightness_7"
-      append-icon="brightness_2"
-      hint="Change theme"
-      persistent-hint
-      ></v-switch>
-    </v-flex>
+    <a style="position:fixed;right:1em;top:5em;z-index:1;" class="zoom hidden-sm-and-down copyrighted-badge" title="Copyrighted.com Registered, Protected &amp; Monitored" target="_blank" href="https://www.copyrighted.com/website/dS8B0bc4ACr280Uw"><img class="round" alt="Copyrighted.com Registered &amp; Protected" border="0" width="125" height="75" srcset="https://static.copyrighted.com/badges/125x75/04_2x.png 2x" src="https://static.copyrighted.com/badges/125x75/04.png" /></a>
+    <!-- <v-layout row style="position:fixed;right:1em;top:11em;z-index:1;">
+      <v-icon class="accent--text pb-4">brightness_2</v-icon>
+      <v-switch class="px-2 pt-1"
+        v-model="theme" color="accent"
+        hint="Change Theme" @click="ThemeChange"
+        presistent-hint>
+      </v-switch>
+      <v-icon class="accent--text darken-3 pb-4">brightness_7</v-icon>
+    </v-layout> -->
     <!-- <v-content> -->
     <router-view></router-view>
     <!-- </v-content> -->
@@ -65,9 +64,16 @@ export default {
     theme: false
   }),
   computed: {
-    themeChange () {
-      this.$vuetify.theme.primary = '#333'
-      this.$vuetify.theme.secondary = '#eee'
+    ThemeChange () {
+      if (this.theme === true) {
+        this.$vuetify.theme.primary = '#555'
+        this.$vuetify.theme.secondary = '#fff'
+        this.$vuetify.theme.accent = '#90ee90'
+      } else {
+        this.$vuetify.theme.primary = '#eee'
+        this.$vuetify.theme.secondary = '#333'
+        this.$vuetify.theme.accent = '#90ee90'
+      }
     }
   }
 }
@@ -80,13 +86,9 @@ export default {
     font-family: 'Comfortaa', sans-serif;
   }
   :root{
-    --primary: #eee;
+    --primary: ;
     --secondary: #333;
     --accent: #90ee90;
-  }
-  .theme-light{
-    --primary: #333;
-    --secondary: #eee;
   }
   p {
     font-size: 1em;

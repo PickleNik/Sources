@@ -1,7 +1,7 @@
 <template lang="html">
 <div>
   <v-card light width="230" ripple v-for="source in sources" :key="source.name"
-  class="src-card d-inline-block ma-2 grey darken-3">
+  class="src-card d-inline-block ma-2 secondary lighten-1">
 
   <a class="primary--text" target="_blank" :href="source.link">
   <v-card-title class="d-inline-block text-xs-center pb-2">

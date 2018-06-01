@@ -15,7 +15,7 @@
               <iframe style="border-top-right-radius: 3em; border-top-left-radius: 3em;" width="100%" height="514" :src="leaf.whatIsVideo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
             </v-card-media>
 
-            <v-card-text class="text-xs-center grey darken-3 primary--text">
+            <v-card-text class="text-xs-center secondary lighten-1 primary--text">
             {{leaf.title}}
             </v-card-text>
           </v-card>
@@ -41,14 +41,14 @@
 
     <v-flex v-if="leaf.next" md2 lg2 class="zoom text-sm-center hidden-sm-and-down transparent" style="position:fixed; right:1em; bottom:1em; background:#fff; border-radius:3em;">
         <h1 class="grey--text">Next</h1>
-          <v-btn round v-for="next in leaf.next" :key="next.name" :href="next.href" :to="next.to" :class="next.color" :disabled="next.disabled" class="secondary--text">
+          <v-btn round v-for="next in leaf.next" :key="next.name" :href="next.href" :to="next.to" :class="next.color" :disabled="next.disabled" class="black--text">
             <icon v-if="next.icon" :name="next.icon" class="mr-2" scale="1.5" ></icon>{{ next.name }}
           </v-btn>
     </v-flex>
 
     <v-flex v-if="leaf.req" md2 lg2 class="zoom text-sm-center hidden-sm-and-down transparent" style="position:fixed; left:1em; bottom:1em; background:#fff; border-radius:3em;">
         <h1 class="grey--text">Required</h1>
-          <v-btn round v-for="req in leaf.req" :key="req.name" :href="req.href" :to="req.to" :class="req.color" :disabled="req.disabled" class="secondary--text">
+          <v-btn round v-for="req in leaf.req" :key="req.name" :href="req.href" :to="req.to" :class="req.color" :disabled="req.disabled" class="black--text">
             <icon v-if="req.icon" :name="req.icon" class="mr-2" scale="1.5" ></icon>{{ req.name }}
           </v-btn>
     </v-flex>

@@ -35,7 +35,7 @@ export default{
 	font-weight: 900;
 	overflow: hidden;
 	line-height: 0.75;
-	color: var(--primary);
+  color: var(--primary);
 }
 
 .link--kukuri:hover {

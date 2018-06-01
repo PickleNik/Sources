@@ -2,7 +2,7 @@
   <main class="secondary">
     <v-container fluid>
       <v-flex xs12 sm12 md8 offset-md2 lg8 offset-lg2 xl8 offset-xl2>
-        <div v-for="branch in branches" :id="branch.id" class="zoom mb-5 mt-3 roundXXL pt-5 pb-3 grey darken-4">
+        <div v-for="branch in branches" :id="branch.id" class="zoom mb-5 mt-3 roundXXL pt-5 pb-3 secondary darken-1">
 
           <v-flex xs12 sm8 offset-sm2 class="pb-3">
             <v-tooltip top>
@@ -11,7 +11,7 @@
               </h1>
               <span>Click to read about {{ branch.name }}</span>
             </v-tooltip>
-            <p style="text-align:center;" class="white--text">{{ branch.description }}</p>
+            <p style="text-align:center;" class="primary--text">{{ branch.description }}</p>
             <hr class="grey ma-2"/>
           </v-flex>
 
@@ -22,7 +22,7 @@
             @click="openLeaf(leaf.to)" class="leaf d-inline-block mb-5 mx-4">
               <v-badge v-if="leaf.badge" color="transparent" class="leafLogo"><icon slot="badge" :name="leaf.badge" scale="10" :class="leaf.badgecolor" ></icon><img class="leafLogo round" :src="leaf.logo" /></v-badge>
               <img v-if="!leaf.badge" class="leafLogo round" :src="leaf.logo" />
-              <h3 class="white--text mt-1" style="text-shadow: 1px 1px .1em #555;">{{ leaf.name }}</h3>
+              <h3 class="primary--text mt-1" style="text-shadow: 1px 1px .1em #555;">{{ leaf.name }}</h3>
             </a>
           </v-flex>
 

@@ -11,7 +11,7 @@
             v-model="email"
             prepend-icon="email"
             :rules="emailRules"
-            class="my-5"
+            class="my-5 secondary lighten-1 primary--text"
             style="border-radius: 2em;"
             clearable>
           </v-text-field>

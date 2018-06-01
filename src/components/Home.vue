@@ -6,7 +6,7 @@
   <div class="text-sm-center">
     <div class="centerABS">
     <img class="zoom mx-5" width="200" height="200" src="../assets/treeLogo.png" alt="logo">
-    <h2 class="zoom display-3 white--text">TutsTree</h2>
+    <h2 class="zoom display-3 white--text">TutorialsTree</h2>
     <p class="white--text typed accent--text secondary round pa-2" style="font-size:1.5em;"><span id="greeting"></span></p>
     <a href="#" v-scroll-to="'#about'"><v-btn dark large flat icon class="zoom hidden-sm-and-up centerX pa-5">
       <v-icon x-large class="down">keyboard_arrow_down</v-icon>
@@ -41,12 +41,12 @@
 <v-layout id="about">
   <v-flex xs12 sm8 offset-sm2 class="pa-5 white--text text-xs-center">
     <h1 class="grey--text mb-1 mt-3">About</h1>
-    <h2  class="py-3" style="text-align:justify;">TutsTree is for learning Web Development with online tutorials organized in
-    <v-btn class="ma-0 accent--text"small dark flat round to="/tree"><h3><icon dark name="tree"></icon>Tree<icon dark name="tree"></icon></h3></v-btn>
+    <h2 class="py-3 primary--text" style="text-align:justify;">TutsTree is for learning Web Development with online tutorials organized in
+    <v-btn class="ma-0 accent--text"small flat round to="/tree"><h3><icon name="tree"></icon>Tree<icon dark name="tree"></icon></h3></v-btn>
     . The project is under development yet.</h2>
     <img class="round pa-3 hidden-xs-only" width="100%" src="http://frontenddeveloperjob.com/images/cool.png"/>
 
-      <v-btn @click="welcomeDialog = true" round dark class="mt-2"><v-icon class="hidden-xs-only" left>devices_other</v-icon><v-icon left>developer_mode</v-icon><h4>get started</h4><v-icon class="hidden-xs-only" right>code</v-icon><v-icon right>touch_app</v-icon></v-btn>
+      <v-btn @click="welcomeDialog = true" round class="mt-2 secondary darken-2 primary--text"><v-icon class="hidden-xs-only" left>devices_other</v-icon><v-icon left>developer_mode</v-icon><h4>get started</h4><v-icon class="hidden-xs-only" right>code</v-icon><v-icon right>touch_app</v-icon></v-btn>
 
       <v-dialog presistent v-model="welcomeDialog" max-width="500px">
         <v-container class="roundXL secondary" align-content-center>
@@ -159,7 +159,7 @@ export default {
   text-shadow: 0em 0em 1em #222;
 }
 #hero{
-  background: url('../assets/hero.jpg') 100% 100% no-repeat;
+  background: url('https://images.unsplash.com/photo-1477244075012-5cc28286e465?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=76ae2034864198c0b4daf6117ba25e72&auto=format&fit=crop&w=1868&q=80') 100% 100% no-repeat;
   background-size: cover;
   position:absolute;
   user-select:none;
@@ -170,7 +170,6 @@ export default {
 }
 #about{
   position: absolute;
-  background:#333;
   min-width: 100vw;
   width:100vw;
   height: 101vh;
@@ -178,7 +177,6 @@ export default {
   top:100vh;
 }
 #team{
-  background:#333;
   min-width: 100vw;
   width:100vw;
   margin-top:200vh;

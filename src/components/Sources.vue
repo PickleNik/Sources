@@ -4,16 +4,16 @@
         <v-flex xs12 sm12 md8 offset-md2 lg8 offset-lg2 >
           <v-layout row wrap>
             <v-flex xs12 sm6 md6 lg4 v-for="source in sources" :key="source.name">
-              <v-card :id="source.id" style="border-radius:3em;" hover ripple class="zoom ma-4 grey darken-3">
+              <v-card :id="source.id" style="border-radius:3em;" hover ripple class="zoom ma-4 secondary lighten-1">
                 <v-layout column wrap>
                   <v-flex sm2>
                   <a :href="source.link" target="_blank">
                     <v-card-media>
-                      <img class="mx-auto pa-4 roundXXL" style="height:18em;width:18em;" :src="source.logo" alt="">
+                      <img class="mx-auto pa-4 roundXXL shadow" style="height:18em;width:18em;" :src="source.logo" alt="">
                     </v-card-media>
                   </a>
                   </v-flex>
-                  <v-divider></v-divider>
+                  <v-divider class="secondary"></v-divider>
                   <v-flex sm8 class="pl-3" style="height:14em;">
                   <a :href="source.link" target="_blank">
                     <v-card-text class="primary--text">
@@ -23,7 +23,7 @@
                     </v-card-text>
                   </a>
                   </v-flex>
-                  <v-divider></v-divider>
+                  <v-divider class="secondary"></v-divider>
                   <v-flex sm2 class="pa-2 ">
                     <v-layout row>
                       <v-btn icon flat light class="mx-auto">
@@ -406,4 +406,7 @@ export default {
 </script>
 
 <style scoped>
+.shadow{
+  filter: drop-shadow(0 0 .3em #555);
+}
 </style>
