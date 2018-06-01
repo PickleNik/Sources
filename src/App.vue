@@ -16,27 +16,26 @@
       fixed shift
       style="z-index:99999;"
       value="true"
-      height="60" app
+      height="30" app
       :active.sync="e2"
       color="secondary">
       <v-btn to="/" color="accent--text">
         <span>Home</span>
-        <v-icon>home</v-icon>
+        <v-icon v-if="e2 != 0">home</v-icon>
       </v-btn>
       <v-btn to="/sources" color="accent--text">
         <span>Sources</span>
-        <v-icon>local_library</v-icon>
+        <v-icon v-if="e2 != 1">local_library</v-icon>
       </v-btn>
       <v-btn to="/tree" color="accent--text">
         <span>Tree</span>
-        <v-icon>device_hub</v-icon>
+        <v-icon v-if="e2 != 2">device_hub</v-icon>
       </v-btn>
       <v-btn to="/profile" color="accent--text">
         <span>You</span>
-        <v-icon>person</v-icon>
+        <v-icon v-if="e2 != 3">person</v-icon>
       </v-btn>
       <v-btn disabled color="accent--text">
-        <span>Scroll</span>
         <v-icon>menu</v-icon>
       </v-btn>
     </v-bottom-nav>
@@ -60,7 +59,7 @@
 <script>
 export default {
   data: () => ({
-    e2: 1,
+    e2: 0,
     theme: false
   }),
   computed: {

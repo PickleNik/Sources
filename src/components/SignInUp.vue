@@ -71,7 +71,7 @@
         <v-tooltip bottom><span>Log in ingn with Github</span><v-btn slot="activator" color="accent" icon flat id="b2" @click="GithubSignIn" ><icon scale="2" name="brands/github"></icon></v-btn></v-tooltip>
         <v-tooltip bottom><span>Log in with Twitter</span><v-btn slot="activator" color="accent" icon flat id="b3" @click="TwitterSignIn" ><icon scale="2" name="brands/twitter"></icon></v-btn></v-tooltip>
         <v-tooltip bottom><span>Log in with Facebook</span><v-btn slot="activator" color="accent" icon flat id="b4" @click="FacebookSignIn" ><icon scale="2" name="brands/facebook-f"></icon></v-btn></v-tooltip>
-        <br/><br/><br/><a class="zoom secondary lighten-1 round pa-2" target="_blank" href="https://app.termly.io/document/privacy-policy/cfd2389e-89ab-4341-882a-dd5ed79e213b"><v-icon class="mr-2 accent--text">verified_user</v-icon><span class="contact">Privacy Policy</span></a>
+        <br/><br/><br/><a style="animation-delay:.5s;" class="zoom secondary lighten-1 round pa-2" target="_blank" href="https://app.termly.io/document/privacy-policy/cfd2389e-89ab-4341-882a-dd5ed79e213b"><v-icon class="mr-2 accent--text">verified_user</v-icon><span class="contact">Privacy Policy</span></a>
       </v-flex>
     </v-container>
   </v-app>

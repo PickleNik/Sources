@@ -6,9 +6,10 @@
   <div class="text-sm-center">
     <div class="centerABS">
     <img class="zoom mx-5" width="200" height="200" src="../assets/treeLogo.png" alt="logo">
-    <h2 class="zoom display-3 white--text">TutorialsTree</h2>
+    <h2 class="zoom display-3 primary--text hidden-xs-only">TutorialsTree</h2>
+    <h2 class="zoom display-3 primary--text hidden-sm-and-up">TutsTree</h2>
     <p class="white--text typed accent--text secondary round pa-2" style="font-size:1.5em;"><span id="greeting"></span></p>
-    <a href="#" v-scroll-to="'#about'"><v-btn dark large flat icon class="zoom hidden-sm-and-up centerX pa-5">
+    <a href="#" v-scroll-to="'#about'"><v-btn style="margin-left: 50%;transform:translateX(-50%);" dark large flat icon class="hidden-sm-and-up pa-5">
       <v-icon x-large class="down">keyboard_arrow_down</v-icon>
     </v-btn></a>
     <a href="#" v-scroll-to="'#about'"><v-btn dark large flat icon class="zoom hidden-xs-only mx-auto pa-5">
@@ -41,12 +42,12 @@
 <v-layout id="about">
   <v-flex xs12 sm8 offset-sm2 class="pa-5 white--text text-xs-center">
     <h1 class="grey--text mb-1 mt-3">About</h1>
-    <h2 class="py-3 primary--text" style="text-align:justify;">TutsTree is for learning Web Development with online tutorials organized in
+    <h2 class="py-3 primary--text" style="text-align:justify;">TutorialsTree is for learning Web Development with online tutorials organized in
     <v-btn class="ma-0 accent--text"small flat round to="/tree"><h3><icon name="tree"></icon>Tree<icon dark name="tree"></icon></h3></v-btn>
     . The project is under development yet.</h2>
     <img class="round pa-3 hidden-xs-only" width="100%" src="http://frontenddeveloperjob.com/images/cool.png"/>
 
-      <v-btn @click="welcomeDialog = true" round class="mt-2 secondary darken-2 primary--text"><v-icon class="hidden-xs-only" left>devices_other</v-icon><v-icon left>developer_mode</v-icon><h4>get started</h4><v-icon class="hidden-xs-only" right>code</v-icon><v-icon right>touch_app</v-icon></v-btn>
+      <v-btn @click="welcomeDialog = true" round class="mt-2 secondary darken-1 primary--text"><v-icon class="hidden-xs-only" left>devices_other</v-icon><v-icon left>developer_mode</v-icon><h4>get started</h4><v-icon class="hidden-xs-only" right>code</v-icon><v-icon right>touch_app</v-icon></v-btn>
 
       <v-dialog presistent v-model="welcomeDialog" max-width="500px">
         <v-container class="roundXL secondary" align-content-center>
