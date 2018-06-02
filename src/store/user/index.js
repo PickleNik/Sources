@@ -1,4 +1,6 @@
-import * as firebase from 'firebase'
+import firebase from 'firebase/app'
+import 'firebase/auth'
+import 'firebase/database'
 
 export default {
   state: {
@@ -7,6 +9,20 @@ export default {
     error: false
   },
   mutations: {
+    addBookmark (state, payload) {
+      const src = payload.src
+      if (state.user.bookmarks.findIndex(source => source === src) >= 0) {
+        return null
+      } else {
+        state.user.bookmarks.push(src)
+        state.user.fbKeys[src] = payload.fbKey
+      }
+    },
+    removeBookmark (state, payload) {
+      const bookmarks = state.user.bookmarks
+      bookmarks.splice(bookmarks.findIndex(source => source === payload), 1)
+      Reflect.deleteProperty(state.user.fbKeys, payload)
+    },
     setUser (state, payload) {
       state.user = payload
     },
@@ -21,6 +37,38 @@ export default {
     }
   },
   actions: {
+    addBookmark ({commit, getters}, payload) {
+      commit('setLoading', true)
+      const user = getters.user
+      firebase.database().ref('/users/' + user.id).child('/bookmarks/')
+      .push(payload)
+      .then(data => {
+        commit('setLoading', false)
+        commit('addBookmark', {src: payload, fbKey: data.key})
+      })
+      .catch(error => {
+        commit('setLoading', false)
+        commit('setError', error)
+      })
+    },
+    removeBookmark ({commit, getters}, payload) {
+      commit('setLoading', true)
+      const user = getters.user
+      if (!user.fbKeys) {
+        return
+      }
+      const fbKey = user.fbKeys[payload]
+      firebase.database().ref('/users/' + user.id + '/bookmarks/').child(fbKey)
+      .remove()
+      .then(() => {
+        commit('setLoading', false)
+        commit('removeBookmark', payload)
+      })
+      .catch(error => {
+        commit('setLoading', false)
+        commit('setError', error)
+      })
+    },
     EmailSignIn ({commit}, payload) {
       commit('clearError')
       firebase.auth().sendSignInLinkToEmail(payload, { url: 'https://tuts-tree.firebaseapp.com/proceed', handleCodeInApp: true })
@@ -42,7 +90,8 @@ export default {
               email: user.email,
               name: user.displayName,
               photo: user.photoURL,
-              bookmarks: []
+              bookmarks: [],
+              fbKeys: {}
             }
             commit('setLoading', false)
             commit('setUser', newUser)
@@ -66,7 +115,8 @@ export default {
               email: user.email,
               name: user.displayName,
               photo: user.photoURL,
-              bookmarks: []
+              bookmarks: [],
+              fbKeys: {}
             }
             commit('setLoading', false)
             commit('setUser', newUser)
@@ -80,7 +130,43 @@ export default {
         )
     },
     autoSignIn ({commit}, payload) {
-      commit('setUser', payload)
+      commit('setUser', {
+        id: payload.uid,
+        email: payload.email,
+        name: payload.displayName,
+        photo: payload.photoURL,
+        bookmarks: [],
+        fbKeys: {}
+      })
+    },
+    fetchUserData ({commit, getters}) {
+      commit('setLoading', true)
+      firebase.database().ref('/users/' + getters.user.id + '/bookmarks/').once('value')
+      .then(data => {
+        const dataPairs = data.val()
+        let swappedPairs = {}
+        let bookmarks = []
+        for (let key in dataPairs) {
+          bookmarks.push(dataPairs[key])
+          swappedPairs[dataPairs[key]] = key
+        }
+        const updatedUser = {
+          id: getters.user.id,
+          email: getters.user.email,
+          name: getters.user.name,
+          photo: getters.user.photo,
+          bookmarks: bookmarks,
+          fbKeys: swappedPairs
+        }
+        commit('setLoading', false)
+        commit('setUser', updatedUser)
+      })
+      .catch(
+        error => {
+          commit('setLoading', false)
+          commit('setError', error)
+        }
+      )
     },
     SignOut ({commit}) {
       firebase.auth().signOut()

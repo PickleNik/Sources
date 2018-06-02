@@ -24,7 +24,7 @@
 
       <v-btn icon flat light class="mx-auto">
         <vue-star style="z-index:0" color="#222222" animate="rubberBand">
-          <div slot="icon" style="user-select:none;cursor:pointer;" @click="source.todo = !source.todo"><v-icon :class="{ 'accent--text' : source.todo, 'grey--text ' : !source.todo }" large>{{ source.todo ? 'playlist_add_check' : 'playlist_add' }}</v-icon></div>
+          <div slot="icon" style="user-select:none;cursor:pointer;" @click="addBookmark(source)"><v-icon :class="{ 'accent--text' : source.todo, 'grey--text ' : !source.todo }" large>{{ source.todo ? 'playlist_add_check' : 'playlist_add' }}</v-icon></div>
         </vue-star>
       </v-btn>
 
@@ -57,6 +57,24 @@
     data () {
       return {
         copied: false
+      }
+    },
+    computed: {
+      user () {
+        return this.$store.getters.user
+      }
+    },
+    methods: {
+      addBookmark (source) {
+        if (this.user) {
+          if (this.user.bookmarks.findIndex(src => src === source) >= 0) {
+            this.$store.dispatch('removeBookmark', source)
+          } else {
+            this.$store.dispatch('addBookmark', source)
+          }
+        } else {
+          return null
+        }
       }
     }
   }

@@ -12,7 +12,7 @@
 
           <v-card id="fadeIn" dark class="roundXL mb-4" style="border-radius:3em;">
             <v-card-media  v-if="leaf.whatIsVideo">
-              <iframe style="border-top-right-radius: 3em; border-top-left-radius: 3em;" width="100%" height="514" :src="leaf.whatIsVideo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+              <iframe style="border-top-right-radius: 3em; border-top-left-radius: 3em; border:none" width="100%" height="514" :src="leaf.whatIsVideo" allowfullscreen></iframe>
             </v-card-media>
 
             <v-card-text class="text-xs-center secondary lighten-1 primary--text">

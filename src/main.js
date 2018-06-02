@@ -12,7 +12,9 @@ import SourceCard from './components/Shared/sourceCard.vue'
 import VueClipboard from 'vue-clipboard2'
 import 'vue-awesome/icons'
 import Icon from 'vue-awesome/components/Icon'
-import * as firebase from 'firebase'
+import firebase from 'firebase/app'
+import 'firebase/auth'
+
 Vue.component('icon', Icon)
 
 Vue.component('vue-star', VueStar)
@@ -70,7 +72,8 @@ new Vue({
     })
     firebase.auth().onAuthStateChanged((user) => {
       if (user) {
-        this.$store.dispatch('autoSignIn', {id: user.uid, email: user.email, name: user.displayName, photo: user.photoURL, bookmarks: []})
+        this.$store.dispatch('autoSignIn', user)
+        this.$store.dispatch('fetchUserData')
       }
     })
   }
