@@ -150,6 +150,7 @@ export default {
         let bookmarks = []
         for (let key in dataPairs) {
           bookmarks.push(dataPairs[key])
+          dataPairs[key].todo = true
           swappedPairs[dataPairs[key].link] = key
         }
         const updatedUser = {

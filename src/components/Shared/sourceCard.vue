@@ -80,7 +80,7 @@
   }
   </script>
 
-  <style lang="css">
+  <style scoped>
   .src-logo{
     width:auto;
     max-width:90%;

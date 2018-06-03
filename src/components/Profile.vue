@@ -15,7 +15,7 @@
     </v-container>
         <v-flex xs12 sm12 md8 offset-md2 lg8 offset-lg2 class="text-xs-center">
           <h1 class="title--text pt-3">Bookmarks</h1>
-          <app-src-card class="zoom" :sources="bookmarks"></app-src-card>
+          <app-src-card class="hinge" :sources="bookmarks"></app-src-card>
         </v-flex>
   </v-app>
 </template>
@@ -44,4 +44,5 @@ export default {
 </script>
 
 <style scoped>
+
 </style>
