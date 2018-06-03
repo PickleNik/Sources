@@ -26,14 +26,14 @@
       <v-layout id="sources">
         <v-flex xs12 sm12 md8 offset-md2 lg8 offset-lg2 class="text-xs-center">
           <h1 class="titles title--text pt-3">Sources</h1>
-          <app-src-card class="zoom" :sources="leaf.sources"></app-src-card>
+          <app-src-card :sources="leaf.sources"></app-src-card>
         </v-flex>
       </v-layout>
 
       <v-layout id="addition" v-if="leaf.addition">
         <v-flex xs12 sm12 md8 offset-md2 lg8 offset-lg2 class="pt-3 pb-3 text-xs-center">
           <h1 class="titles title--text pt-3">Additionally</h1>
-          <app-src-card class="zoom" :sources="leaf.addition"></app-src-card>
+          <app-src-card :sources="leaf.addition"></app-src-card>
       </v-flex>
       </v-layout>
 

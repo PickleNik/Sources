@@ -12,14 +12,14 @@
           <h3 class="ma-4 d-inline-block">{{ error.message }}</h3>
         </v-flex>
         <v-flex>
-          <v-btn fab class="d-inline-block text error--text" @click="Close"><v-icon>close</v-icon></v-btn>
+          <v-btn fab class="d-inline-block white error--text" @click="Close"><v-icon>close</v-icon></v-btn>
         </v-flex>
       </v-layout>
     </v-alert>
     <v-alert
       transition="slide-y-reverse-transition"
       origin="center center"
-      color="error"
+      color="error"light
       style="width: 100%;left:0;z-index:987654321;"
       class="primary--text alert ma-0 pa-1 hidden-sm-and-up"
       :value="error">
@@ -29,7 +29,7 @@
         </v-flex>
         <v-spacer></v-spacer>
         <v-flex>
-          <v-btn fab class="d-inline-block text error--text" @click="Close"><v-icon>close</v-icon></v-btn>
+          <v-btn fab class="d-inline-block white error--text" @click="Close"><v-icon>close</v-icon></v-btn>
         </v-flex>
       </v-layout>
     </v-alert>
@@ -39,21 +39,21 @@
         <form v-if="!sent || error" @submit.prevent="EmailSignIn" class="zoom my-5">
           <v-layout row>
             <v-flex xs10>
-              <v-text-field autofocus solo
+              <v-text-field autofocus solo dark
               name="email"
               type="email"
               label="Email"
               v-model="email"
               :rules="emailRules"
               prepend-icon="email"
-              class="primary"
+              class="primary text--text"
               color="accent"
               style="border-radius: 2em;"
               clearable
               required>
               </v-text-field>
             </v-flex><v-flex xs2>
-              <v-btn type="submit" light :color="error ? 'error' : 'accent'" icon :disabled="loading" :loading="loading"><v-icon>exit_to_app</v-icon></v-btn>
+              <v-btn type="submit" icon :disabled="loading" :loading="loading" class="accent primary--text"><v-icon>exit_to_app</v-icon></v-btn>
             </v-flex>
           </v-layout>
         </form>
@@ -142,11 +142,24 @@ export default {
 
 <style scoped>
 .alert{
-  z-index:99999999999999999999999;
+  z-index:999999999;
   position: fixed;
   bottom: 0;
   border-top-left-radius: 3em;
   border-top-right-radius: 3em;
+}
+@keyframes rollIn {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0) rotate3d(0, 0, 1, -120deg);
+            transform: translate3d(-100%, 0, 0) rotate3d(0, 0, 1, -120deg);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+            transform: none;
+  }
 }
 #b1{
   opacity: 0;

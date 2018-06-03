@@ -1,5 +1,5 @@
 <template lang="html">
-<div>
+<div class="zoom">
   <v-card hover width="230" ripple v-for="source in sources" :key="source.name"
   class="src-card d-inline-block ma-2 primary">
 
@@ -22,7 +22,7 @@
 
       <v-btn icon flat light class="mx-auto">
         <vue-star style="z-index:0" color="#222222" animate="rubberBand">
-          <div slot="icon" style="user-select:none;cursor:pointer;" @click="addBookmark(source)"><v-icon :class="{ 'accent--text' : source.todo, 'title--text ' : !source.todo }" large>{{ source.todo ? 'close' : 'playlist_add' }}</v-icon></div>
+          <div slot="icon" style="user-select:none;cursor:pointer;" @click="addBookmark(source)"><v-icon :class="{ 'success--text' : source.todo, 'title--text ' : !source.todo }" large>{{ source.todo ? 'close' : 'playlist_add' }}</v-icon></div>
         </vue-star>
       </v-btn>
 
@@ -85,7 +85,7 @@
     height:7em;
     border-radius:1em;
     filter: drop-shadow(0 0 .1em #555);
-    
+
   }
   .src-card{
     transition-duration: .5s;

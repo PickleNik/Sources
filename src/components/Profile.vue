@@ -13,7 +13,7 @@
         </v-flex>
       </v-layout>
     </v-container>
-        <v-flex xs12 sm12 md8 offset-md2 lg8 offset-lg2 class="text-xs-center">
+        <v-flex xs12 sm12 md8 offset-md2 lg8 offset-lg2 class="mt-5 text-xs-center">
           <h1 class="title--text pt-3">Bookmarks</h1>
           <app-src-card :sources="bookmarks"></app-src-card>
         </v-flex>

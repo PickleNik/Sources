@@ -1,44 +1,44 @@
 <template>
-  <v-app dark>
+  <v-app class="background" :class="{ light: theme }">
     <v-toolbar dark flat fixed class="transparent hidden-sm-and-down pl-4" style="min-width:100vw;">
 
-      <v-toolbar-title id="name" class="ml-0 round"><router-link to="/" tag="span" class="link--ilin text--text"><span><icon class="mx-1 accent--text" name="tree" scale="1.5"></icon>Tuts</span><span>Tree<icon class="mx-1 accent--text" name="terminal" scale="1.5"></icon></span></router-link></v-toolbar-title>
+      <v-toolbar-title style="cursor:pointer;" class="ml-0 round"><router-link to="/" tag="span" class="link--ilin text--text"><span><icon class="mx-1 accent--text" name="tree" scale="1.5"></icon>Tuts</span><span>Tree<icon class="mx-1 accent--text" name="terminal" scale="1.5"></icon></span></router-link></v-toolbar-title>
       <v-spacer></v-spacer>
 
-        <v-tooltip bottom><span>Sources</span><v-btn slot="activator" color="accent" flat fab to="/sources" class="zoom ma-0"><v-icon dark>local_library</v-icon></v-btn></v-tooltip>
-        <v-tooltip bottom><span>Tree</span><v-btn slot="activator" color="accent" flat fab to="/tree" class="zoom ma-0"><v-icon dark>device_hub</v-icon></v-btn></v-tooltip>
-        <v-tooltip bottom><span>You</span><v-btn slot="activator" color="accent" flat fab to="/profile" class="zoom ma-0"><v-icon dark>person</v-icon></v-btn></v-tooltip>
+        <v-tooltip bottom color="primary"><span class="text--text">Sources</span><v-btn slot="activator" color="accent" flat fab to="/sources" class="zoom ma-0"><v-icon dark>local_library</v-icon></v-btn></v-tooltip>
+        <v-tooltip bottom color="primary"><span class="text--text">Tree</span><v-btn slot="activator" color="accent" flat fab to="/tree" class="zoom ma-0"><v-icon dark>device_hub</v-icon></v-btn></v-tooltip>
+        <v-tooltip bottom color="primary"><span class="text--text">You</span><v-btn slot="activator" color="accent" flat fab to="/profile" class="zoom ma-0"><v-icon dark>person</v-icon></v-btn></v-tooltip>
 
     </v-toolbar>
 
     <v-bottom-nav
-      class="hidden-md-and-up"
+      style="z-index:99999; border-top-right-radius: 3em;border-top-left-radius: 3em;"
+      class="hidden-md-and-up slideInUp py-1"
       fixed shift
-      style="z-index:99999;"
       value="true"
       height="40" app
       :active.sync="e2"
-      color="background">
-      <v-btn class="pt-3 pb-1" to="/" color="accent--text">
+      color="primary">
+      <v-btn :ripple="false" class="pt-3 pb-1" to="/" color="accent--text">
         <span class="pt-2">Home</span>
         <v-icon>home</v-icon>
       </v-btn>
-      <v-btn class="pt-3 pb-1" to="/sources" color="accent--text">
+      <v-btn :ripple="false" class="pt-3 pb-1" to="/sources" color="accent--text">
         <span class="pt-2">Sources</span>
         <v-icon>local_library</v-icon>
       </v-btn>
-      <v-btn class="pt-3 pb-1" to="/tree" color="accent--text">
+      <v-btn :ripple="false" class="pt-3 pb-1" to="/tree" color="accent--text">
         <span class="pt-2">Tree</span>
         <v-icon>device_hub</v-icon>
       </v-btn>
-      <v-btn class="pt-3 pb-1" to="/profile" color="accent--text">
+      <v-btn :ripple="false" class="pt-3 pb-1" to="/profile" color="accent--text">
         <span class="pt-2">You</span>
         <v-icon>person</v-icon>
       </v-btn>
     </v-bottom-nav>
 
-    <a style="position:fixed;right:1em;top:5em;z-index:1;" class="zoom hidden-sm-and-down copyrighted-badge" title="Copyrighted.com Registered, Protected &amp; Monitored" target="_blank" href="https://www.copyrighted.com/website/dS8B0bc4ACr280Uw"><img class="round" alt="Copyrighted.com Registered &amp; Protected" border="0" width="125" height="75" srcset="https://static.copyrighted.com/badges/125x75/04_2x.png 2x" src="https://static.copyrighted.com/badges/125x75/04.png" /></a>
-    <v-layout class="hidden-sm-and-down" row style="position:fixed;right:1em;top:11em;z-index:1;">
+    <a style="position:fixed;right:1em;top:5em;z-index:1;" class="zoom hidden-sm-and-down copyrighted-badge" title="Copyrighted.com Registered, Protected &amp; Monitored" target="_blank" href="https://www.copyrighted.com/website/dS8B0bc4ACr280Uw"><img class="round" alt="Copyrighted.com Registered &amp; Protected" border="0" width="125" height="25" srcset="https://static.copyrighted.com/badges/125x25/04_2_2x.png 2x" src="https://static.copyrighted.com/badges/125x25/04_2.png" /></a>
+    <v-layout class="hidden-sm-and-down" row style="position:fixed;right:1em;top:8em;z-index:1;">
       <v-icon class="accent--text pb-4">brightness_2</v-icon>
       <v-switch class="px-2 pt-1"
         v-model="theme" color="accent"
@@ -73,7 +73,7 @@ export default {
       this.$vuetify.theme.background = '#eee'
       this.$vuetify.theme.secondary = '#dedede'
       this.$vuetify.theme.primary = '#fff'
-      this.$vuetify.theme.accent = '#009688'
+      this.$vuetify.theme.accent = '#4CAF50'
     }
   }
 }
@@ -85,9 +85,19 @@ export default {
   *{
     font-family: 'Comfortaa', sans-serif;
   }
-  :root{
+  :root {
+    --heroBG: url('https://images.unsplash.com/photo-1477244075012-5cc28286e465?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=76ae2034864198c0b4daf6117ba25e72&auto=format&fit=crop&w=1868&q=80') 100% 100% no-repeat;
     --secondary: #222;
     --accent: #90ee90;
+    --title: #8e8e8e;
+    --text: #ddd;
+  }
+  .light {
+    --heroBG: url('https://images.unsplash.com/photo-1491947153227-33d59da6c448?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=3f475006a86934d5e483676571dde298&auto=format&fit=crop&w=2000&q=80') 100% 100% no-repeat;
+    --secondary: #eee;
+    --accent: #4CAF50;
+    --title: #aeaeae;
+    --text: #555;
   }
   p {
     font-size: 1em;
@@ -106,6 +116,11 @@ export default {
   }
   .fillX{
     width:100vw;
+  }
+  .contact:hover {
+    color: var(--accent);
+    cursor:pointer;
+    text-decoration:underline;
   }
   .round{
     border-radius: 1em;
@@ -141,46 +156,8 @@ export default {
   .center{margin-top:50%;margin-left:50%;-webkit-transform:translate(-50%,-50%);transform:translate(-50%,-50%);}
   .centerABS{position:absolute;top:50%;left:50%;-webkit-transform:translate(-50%,-50%);transform:translate(-50%,-50%);}
 
-  /*scrollbar*/
-  ::-webkit-scrollbar-track{
-    border-radius: 10px;
-    background-color: inherit;
-  }
   ::-webkit-scrollbar{
-    width: 8px;
-    background-color:var(--secondary);
-  }
-  ::-webkit-scrollbar-thumb{
-    border-radius: 20px;
-    background-color: var(--accent);
-  }
-  ::-webkit-scrollbar-thumb:hover{
-    background:  var(--primary);
-  }
-  ::-webkit-scrollbar-thumb:active {
-    background: white;
-  }
-  ::-moz-selection{
-    background: transparent;
-    color: var(--accent);
-  }
-  ::selection{
-    background: transparent;
-    color: var(--accent);
-  }
-  @-webkit-keyframes zoomIn {
-    from {
-      opacity: 0;
-      -webkit-transform: scale3d(.3, .3, .3);
-              transform: scale3d(.3, .3, .3);
-    }
-
-    50% {
-      opacity: 1;
-    }
-    100% {
-      opacity: 1;
-    }
+    width: 0;
   }
   @keyframes zoomIn {
     from {
@@ -198,42 +175,8 @@ export default {
   }
   .zoom {
     opacity: 0;
+    animation: zoomIn .5s ease 1 forwards;
     -webkit-animation: zoomIn .5s ease 1 forwards;
-            animation: zoomIn .5s ease 1 forwards;
-  }
-  #name{  -webkit-transition-duration: 1s;  transition-duration: 1s;  -webkit-transition-property: all;  transition-property: all; cursor:pointer; }
-
-  .contact:hover {
-    color: var(--accent);
-    cursor:pointer;
-    text-decoration:underline;
-  }
-  @-webkit-keyframes bounce {
-    from, 20%, 53%, 80%, to {
-      -webkit-animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
-              animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
-      -webkit-transform: translate3d(0,0,0);
-              transform: translate3d(0,0,0);
-    }
-
-    40%, 43% {
-      -webkit-animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
-              animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
-      -webkit-transform: translate3d(0, -30px, 0);
-              transform: translate3d(0, -30px, 0);
-    }
-
-    70% {
-      -webkit-animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
-              animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
-      -webkit-transform: translate3d(0, -15px, 0);
-              transform: translate3d(0, -15px, 0);
-    }
-
-    90% {
-      -webkit-transform: translate3d(0,-4px,0);
-              transform: translate3d(0,-4px,0);
-    }
   }
   @keyframes bounce {
     from, 20%, 53%, 80%, to {
@@ -263,300 +206,23 @@ export default {
     }
   }
   .bounce{
-    -webkit-animation: bounce 1s linear;
-            animation: bounce 1s linear;
+    -webkit-animation: bounce 1s linear forwards;
+            animation: bounce 1s linear forwards;
   }
 
-  @-webkit-keyframes pulse {
+  @keyframes slideInUp {
     from {
-      -webkit-transform: scale3d(1, 1, 1);
-              transform: scale3d(1, 1, 1);
-    }
-
-    50% {
-      -webkit-transform: scale3d(1.05, 1.05, 1.05);
-              transform: scale3d(1.05, 1.05, 1.05);
+      transform: translate3d(0, 100%, 0);
+      visibility: visible;
     }
 
     to {
-      -webkit-transform: scale3d(1, 1, 1);
-              transform: scale3d(1, 1, 1);
+      transform: translate3d(0, 0, 0);
     }
   }
 
-  @keyframes pulse {
-    from {
-      -webkit-transform: scale3d(1, 1, 1);
-              transform: scale3d(1, 1, 1);
-    }
-
-    50% {
-      -webkit-transform: scale3d(1.05, 1.05, 1.05);
-              transform: scale3d(1.05, 1.05, 1.05);
-    }
-
-    to {
-      -webkit-transform: scale3d(1, 1, 1);
-              transform: scale3d(1, 1, 1);
-    }
-  }
-  .pulse{
-    -webkit-animation: pulse .5s linear;
-            animation: pulse .5s linear;
-  }
-  @-webkit-keyframes Gradient {
-  	0% {
-  		background-position: 0% 50%;
-  	}
-  	50% {
-  		background-position: 100% 50%;
-  	}
-  	100% {
-  		background-position: 0% 50%;
-  	}
-  }
-  @keyframes Gradient {
-  	0% {
-  		background-position: 0% 50%;
-  	}
-  	50% {
-  		background-position: 100% 50%;
-  	}
-  	100% {
-  		background-position: 0% 50%;
-  	}
-  }
-  @-webkit-keyframes fadeIn {
-    from {
-      opacity: 0;
-    }
-
-    to {
-      opacity: 1;
-    }
-  }
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-    }
-
-    to {
-      opacity: 1;
-    }
-  }
-  @-webkit-keyframes fadeInDown {
-    from {
-      opacity: 0;
-      -webkit-transform: translate3d(0, -10%, 0);
-              transform: translate3d(0, -10%, 0);
-    }
-
-    to {
-      opacity: 1;
-      -webkit-transform: none;
-              transform: none;
-    }
-  }
-  @keyframes fadeInDown {
-    from {
-      opacity: 0;
-      -webkit-transform: translate3d(0, -10%, 0);
-              transform: translate3d(0, -10%, 0);
-    }
-
-    to {
-      opacity: 1;
-      -webkit-transform: none;
-              transform: none;
-    }
-  }
-  @-webkit-keyframes rollIn {
-    from {
-      opacity: 0;
-      -webkit-transform: translate3d(-100%, 0, 0) rotate3d(0, 0, 1, -120deg);
-              transform: translate3d(-100%, 0, 0) rotate3d(0, 0, 1, -120deg);
-    }
-
-    to {
-      opacity: 1;
-      -webkit-transform: none;
-              transform: none;
-    }
-  }
-  @keyframes rollIn {
-    from {
-      opacity: 0;
-      -webkit-transform: translate3d(-100%, 0, 0) rotate3d(0, 0, 1, -120deg);
-              transform: translate3d(-100%, 0, 0) rotate3d(0, 0, 1, -120deg);
-    }
-
-    to {
-      opacity: 1;
-      -webkit-transform: none;
-              transform: none;
-    }
-  }
-  @-webkit-keyframes rubberBand {
-    from {
-      -webkit-transform: scale3d(1, 1, 1);
-              transform: scale3d(1, 1, 1);
-    }
-
-    30% {
-      -webkit-transform: scale3d(1.25, 0.75, 1);
-              transform: scale3d(1.25, 0.75, 1);
-    }
-
-    40% {
-      -webkit-transform: scale3d(0.75, 1.25, 1);
-              transform: scale3d(0.75, 1.25, 1);
-    }
-
-    50% {
-      -webkit-transform: scale3d(1.15, 0.85, 1);
-              transform: scale3d(1.15, 0.85, 1);
-    }
-
-    65% {
-      -webkit-transform: scale3d(.95, 1.05, 1);
-              transform: scale3d(.95, 1.05, 1);
-    }
-
-    75% {
-      -webkit-transform: scale3d(1.05, .95, 1);
-              transform: scale3d(1.05, .95, 1);
-    }
-
-    to {
-      -webkit-transform: scale3d(1, 1, 1);
-              transform: scale3d(1, 1, 1);
-    }
-
-  }
-  @keyframes rubberBand {
-    from {
-      -webkit-transform: scale3d(1, 1, 1);
-              transform: scale3d(1, 1, 1);
-    }
-
-    30% {
-      -webkit-transform: scale3d(1.25, 0.75, 1);
-              transform: scale3d(1.25, 0.75, 1);
-    }
-
-    40% {
-      -webkit-transform: scale3d(0.75, 1.25, 1);
-              transform: scale3d(0.75, 1.25, 1);
-    }
-
-    50% {
-      -webkit-transform: scale3d(1.15, 0.85, 1);
-              transform: scale3d(1.15, 0.85, 1);
-    }
-
-    65% {
-      -webkit-transform: scale3d(.95, 1.05, 1);
-              transform: scale3d(.95, 1.05, 1);
-    }
-
-    75% {
-      -webkit-transform: scale3d(1.05, .95, 1);
-              transform: scale3d(1.05, .95, 1);
-    }
-
-    to {
-      -webkit-transform: scale3d(1, 1, 1);
-              transform: scale3d(1, 1, 1);
-    }
-
-  }
-
-  @-webkit-keyframes bounceIn {
-    from, 20%, 40%, 60%, 80%, to {
-      -webkit-animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
-              animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
-    }
-
-    0% {
-      opacity: 0;
-      -webkit-transform: scale3d(.3, .3, .3);
-              transform: scale3d(.3, .3, .3);
-    }
-
-    20% {
-      -webkit-transform: scale3d(1.1, 1.1, 1.1);
-              transform: scale3d(1.1, 1.1, 1.1);
-    }
-
-    40% {
-      -webkit-transform: scale3d(.9, .9, .9);
-              transform: scale3d(.9, .9, .9);
-    }
-
-    60% {
-      opacity: 1;
-      -webkit-transform: scale3d(1.03, 1.03, 1.03);
-              transform: scale3d(1.03, 1.03, 1.03);
-    }
-
-    80% {
-      -webkit-transform: scale3d(.97, .97, .97);
-              transform: scale3d(.97, .97, .97);
-    }
-
-    to {
-      opacity: 1;
-      -webkit-transform: scale3d(1, 1, 1);
-              transform: scale3d(1, 1, 1);
-    }
-  }
-
-  @keyframes bounceIn {
-    from, 20%, 40%, 60%, 80%, to {
-      -webkit-animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
-              animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
-    }
-
-    0% {
-      opacity: 0;
-      -webkit-transform: scale3d(.3, .3, .3);
-              transform: scale3d(.3, .3, .3);
-    }
-
-    20% {
-      -webkit-transform: scale3d(1.1, 1.1, 1.1);
-              transform: scale3d(1.1, 1.1, 1.1);
-    }
-
-    40% {
-      -webkit-transform: scale3d(.9, .9, .9);
-              transform: scale3d(.9, .9, .9);
-    }
-
-    60% {
-      opacity: 1;
-      -webkit-transform: scale3d(1.03, 1.03, 1.03);
-              transform: scale3d(1.03, 1.03, 1.03);
-    }
-
-    80% {
-      -webkit-transform: scale3d(.97, .97, .97);
-              transform: scale3d(.97, .97, .97);
-    }
-
-    to {
-      opacity: 1;
-      -webkit-transform: scale3d(1, 1, 1);
-              transform: scale3d(1, 1, 1);
-    }
-  }
-  .bounceIn {
-    -webkit-animation: bounceIn 1s linear 1;
-            animation: bounceIn 1s linear 1;
-  }
-  .rubberBand {
-    -webkit-animation: rubberBand 1s linear 1;
-            animation: rubberBand 1s linear 1;
+  .slideInUp {
+    animation: slideInUp .5s ease 1 forwards;
   }
   /* Ilin */
   .link--ilin {

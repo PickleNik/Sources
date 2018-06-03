@@ -5,11 +5,11 @@
         <div v-for="branch in branches" :id="branch.id" class="zoom mb-5 mt-3 roundXXL pt-5 pb-3 secondary">
 
           <v-flex xs12 sm8 offset-sm2 class="pb-3">
-            <v-tooltip top>
+            <v-tooltip top color="primary">
               <h1 slot="activator" class="link link--yaku ma-2 text-sm-center text-xs-center title--text">
                 <span v-for="letter in branch.name.split('')">{{ letter }}</span>
               </h1>
-              <span>Click to read about {{ branch.name }}</span>
+              <span class="text--text">Click to read about {{ branch.name }}</span>
             </v-tooltip>
             <p style="text-align:center;" class="text--text">{{ branch.description }}</p>
             <v-divider class="title ma-2"></v-divider>
@@ -117,12 +117,13 @@ export default {
     border-radius:100%;
     transform: scale(1.1);
     cursor:pointer;
+    filter: drop-shadow(0 0 1em var(--title));
     transform-origin: center;
     transition-duration: .8s;
     transition-property: all;
   }
   .leaf:hover > .leafLogo{
-    transform: scale(1.05);
+    transform: scale(1.01);
     transform-origin: center;
     transition-duration: .3s;
     transition-property: all;

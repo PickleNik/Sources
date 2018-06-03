@@ -5,36 +5,17 @@
 <div id="hero">
   <div class="text-sm-center">
     <div class="centerABS">
-    <img class="zoom mx-5" width="200" height="200" src="../assets/treeLogo.png" alt="logo">
-    <h2 class="zoom display-3 text--text hidden-xs-only">TutorialsTree</h2>
-    <h2 class="zoom display-3 text--text hidden-sm-and-up">TutsTree</h2>
-    <p class="white--text typed accent--text background round pa-2" style="font-size:1.5em;"><span id="greeting"></span></p>
-    <a href="#" v-scroll-to="'#about'"><v-btn style="margin-left: 50%;transform:translateX(-50%);" dark large flat icon class="hidden-sm-and-up pa-5">
-      <v-icon x-large class="down">keyboard_arrow_down</v-icon>
-    </v-btn></a>
-    <a href="#" v-scroll-to="'#about'"><v-btn dark large flat icon class="zoom hidden-xs-only mx-auto pa-5">
-      <v-icon x-large class="down">keyboard_arrow_down</v-icon>
-    </v-btn></a>
+      <h2 class="zoom display-3 text--text hidden-xs-only">TutorialsTree</h2>
+      <h2 class="zoom display-3 text--text hidden-sm-and-up">TutsTree</h2>
+      <p class="white--text typed accent--text background round pa-2" style="font-size:1.5em;"><span id="greeting"></span></p>
+      <a href="#" v-scroll-to="'#about'"><v-btn style="margin-left: 50%;transform:translateX(-50%);" dark large flat icon class="hidden-sm-and-up pa-5">
+        <v-icon x-large>keyboard_arrow_down</v-icon>
+      </v-btn></a>
+      <a href="#" v-scroll-to="'#about'"><v-btn dark large flat icon class="zoom hidden-xs-only mx-auto pa-5">
+        <v-icon x-large class="down text--text">keyboard_arrow_down</v-icon>
+      </v-btn></a>
+    </div>
   </div>
-
-  </div>
-  <vue-particles
-  class="particles"
-  color="#90ee90"
-  :particleOpacity=".5"
-  :particlesNumber="33"
-  shapeType="circle"
-  :particleSize="8"
-  linesColor="#ddd"
-  :linesWidth="1"
-  :lineLinked="false"
-  :moveSpeed="3"
-  :hoverEffect="true"
-  hoverMode="grab"
-  :clickEffect="true"
-  clickMode="repulse"
-  >
-</vue-particles>
 </div>
 
 <!--ABOUT US-->
@@ -151,10 +132,9 @@ export default {
 }
 #hero h2{
   font-family: 'Rammetto One', cursive;
-  text-shadow: 0em 0em 1em #222;
 }
 #hero{
-  background: url('https://images.unsplash.com/photo-1477244075012-5cc28286e465?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=76ae2034864198c0b4daf6117ba25e72&auto=format&fit=crop&w=1868&q=80') 100% 100% no-repeat;
+  background: var(--heroBG);
   background-size: cover;
   position:absolute;
   user-select:none;

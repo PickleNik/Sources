@@ -2,7 +2,7 @@
 <v-flex md2 lg2 id="nav" class="zoom hidden-sm-and-down mt-4 pa-3">
     <v-layout column>
     <a v-for="nav in navs" :key="nav.name" href="#" v-scroll-to="{el:nav.href, offset: nav.offset}">
-      <v-btn small round flat :to="nav.to" class="ma-0 pr-2 link link--kukuri text--text">
+      <v-btn small round flat :to="nav.to" class="ma-0 pr-2 link link--kukuri">
         <v-icon left class="accent--text">{{ nav.icon }}</v-icon>
         {{ nav.name }}
         <v-icon>{{ nav.posticon }}</v-icon>
@@ -35,7 +35,7 @@ export default{
 	font-weight: 900;
 	overflow: hidden;
 	line-height: 0.75;
-  color: #eee;
+  color: var(--text);
 }
 
 .link--kukuri:hover {
