@@ -42,7 +42,7 @@
       <v-icon class="accent--text pb-4">brightness_2</v-icon>
       <v-switch class="px-2 pt-1"
         v-model="theme" color="accent"
-        hint="Change Theme" @click="ThemeChange"
+        hint="Change Theme"
         presistent-hint>
       </v-switch>
       <v-icon class="accent--text darken-3 pb-4">brightness_7</v-icon>
@@ -59,23 +59,21 @@ export default {
     e2: 0,
     theme: false
   }),
-  methods: {
-    ThemeChange () {
-      if (this.theme === false) {
-        this.$vuetify.theme.text = '#ddd'
-        this.$vuetify.theme.title = '#8e8e8e'
-        this.$vuetify.theme.background = '#222'
-        this.$vuetify.theme.secondary = '#111'
-        this.$vuetify.theme.primary = '#333'
-        this.$vuetify.theme.accent = '#90ee90'
-      } else {
-        this.$vuetify.theme.text = '#555'
-        this.$vuetify.theme.title = '#aeaeae'
-        this.$vuetify.theme.background = '#eee'
-        this.$vuetify.theme.secondary = '#dedede'
-        this.$vuetify.theme.primary = '#fff'
-        this.$vuetify.theme.accent = '#009688'
-      }
+  updated () {
+    if (this.theme === false) {
+      this.$vuetify.theme.text = '#ddd'
+      this.$vuetify.theme.title = '#8e8e8e'
+      this.$vuetify.theme.background = '#222'
+      this.$vuetify.theme.secondary = '#111'
+      this.$vuetify.theme.primary = '#333'
+      this.$vuetify.theme.accent = '#90ee90'
+    } else {
+      this.$vuetify.theme.text = '#555'
+      this.$vuetify.theme.title = '#aeaeae'
+      this.$vuetify.theme.background = '#eee'
+      this.$vuetify.theme.secondary = '#dedede'
+      this.$vuetify.theme.primary = '#fff'
+      this.$vuetify.theme.accent = '#009688'
     }
   }
 }
