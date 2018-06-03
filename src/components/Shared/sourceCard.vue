@@ -7,8 +7,6 @@
   <v-card-title class="d-inline-block text-xs-center pb-2">
     {{ source.name }}<v-icon v-if="source.icon" dark class="accent--text ml-1">{{ source.icon }}</v-icon>
   </v-card-title>
-
-
   <div class="pt-3 pb-3">
     <img class="src-logo" :src="source.logo"/>
   </div>
@@ -86,9 +84,11 @@
     max-width:90%;
     height:7em;
     border-radius:1em;
+    filter: drop-shadow(0 0 .1em #555);
+    
   }
   .src-card{
-    transition-duration:.5s;
+    transition-duration: .5s;
     transition-property: all;
     border-radius:4em;
   }

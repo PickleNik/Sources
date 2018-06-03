@@ -91,8 +91,7 @@ export default {
     font-family: 'Comfortaa', sans-serif;
   }
   :root{
-    --primary: ;
-    --secondary: #333;
+    --secondary: #222;
     --accent: #90ee90;
   }
   p {

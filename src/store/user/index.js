@@ -21,7 +21,7 @@ export default {
     removeBookmark (state, payload) {
       const bookmarks = state.user.bookmarks
       bookmarks.splice(bookmarks.findIndex(source => source === payload), 1)
-      Reflect.deleteProperty(state.user.fbKeys, payload)
+      Reflect.deleteProperty(state.user.fbKeys, payload.link)
     },
     setUser (state, payload) {
       state.user = payload
