@@ -1,8 +1,7 @@
 <template>
     <v-container id="main" fluid fill-height>
         <v-flex class="text-xs-center text-sm-center text-md-center">
-          <h1 class="primary--text"style="font-size:4em;">Error 404</h1>
-          <p class="pink--text">*Some pages are not finished yet, this one might be in progress!</p>
+          <h1 class="grey--text"style="font-size:4em;">Error 404</h1>
           <p class="primary--text typed" style="font-size:2em;"><span id="areyoulostbot" class="white--text"></span></p>
         </v-flex>
       <vue-particles
