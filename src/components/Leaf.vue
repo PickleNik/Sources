@@ -1,12 +1,12 @@
 <template lang="html">
-  <main class="secondary">
+  <main class="background">
     <v-container fluid class="py-5">
       <v-layout id="whatIs">
 
         <v-flex xs12 sm12 md8 offset-md2 lg8 offset-lg2 class="zoom mb-2 text-xs-center">
           <v-tooltip top>
             <h1 slot="activator" class="titles roundL mb-2 mt-4">
-             <a class="grey--text link link--yaku" :href="leaf.wiki" target="_blank">What is <span v-for="letter in leaf.name.split('')">{{ letter }}</span></a></h1>
+             <a class="title--text link link--yaku" :href="leaf.wiki" target="_blank">What is <span v-for="letter in leaf.name.split('')">{{ letter }}</span></a></h1>
             <span>Click to read in Wikipedia</span>
           </v-tooltip>
 
@@ -15,7 +15,7 @@
               <iframe style="border-top-right-radius: 3em; border-top-left-radius: 3em; border:none" width="100%" height="514" :src="leaf.whatIsVideo" allowfullscreen></iframe>
             </v-card-media>
 
-            <v-card-text class="text-xs-center secondary lighten-1 primary--text">
+            <v-card-text class="text-xs-center primary text--text">
             {{leaf.title}}
             </v-card-text>
           </v-card>
@@ -25,30 +25,30 @@
 
       <v-layout id="sources">
         <v-flex xs12 sm12 md8 offset-md2 lg8 offset-lg2 class="text-xs-center">
-          <h1 class="titles grey--text pt-3">Sources</h1>
+          <h1 class="titles title--text pt-3">Sources</h1>
           <app-src-card class="zoom" :sources="leaf.sources"></app-src-card>
         </v-flex>
       </v-layout>
 
       <v-layout id="addition" v-if="leaf.addition">
         <v-flex xs12 sm12 md8 offset-md2 lg8 offset-lg2 class="pt-3 pb-3 text-xs-center">
-          <h1 class="titles grey--text pt-3">Additionally</h1>
+          <h1 class="titles title--text pt-3">Additionally</h1>
           <app-src-card class="zoom" :sources="leaf.addition"></app-src-card>
       </v-flex>
       </v-layout>
 
     </v-container>
 
-    <v-flex v-if="leaf.next" md2 lg2 class="zoom text-sm-center hidden-sm-and-down transparent" style="position:fixed; right:1em; bottom:1em; background:#fff; border-radius:3em;">
-        <h1 class="grey--text">Next</h1>
-          <v-btn round v-for="next in leaf.next" :key="next.name" :href="next.href" :to="next.to" :class="next.color" :disabled="next.disabled" class="black--text">
+    <v-flex v-if="leaf.next" md2 lg2 class="zoom text-sm-center hidden-sm-and-down transparent" style="position:fixed; right:1em; bottom:1em; border-radius:3em;">
+        <h1 class="title--text">Next</h1>
+          <v-btn round v-for="next in leaf.next" :key="next.name" :href="next.href" :to="next.to" :class="next.color" :disabled="next.disabled" class="background--text">
             <icon v-if="next.icon" :name="next.icon" class="mr-2" scale="1.5" ></icon>{{ next.name }}
           </v-btn>
     </v-flex>
 
-    <v-flex v-if="leaf.req" md2 lg2 class="zoom text-sm-center hidden-sm-and-down transparent" style="position:fixed; left:1em; bottom:1em; background:#fff; border-radius:3em;">
-        <h1 class="grey--text">Required</h1>
-          <v-btn round v-for="req in leaf.req" :key="req.name" :href="req.href" :to="req.to" :class="req.color" :disabled="req.disabled" class="black--text">
+    <v-flex v-if="leaf.req" md2 lg2 class="zoom text-sm-center hidden-sm-and-down transparent" style="position:fixed; left:1em; bottom:1em; border-radius:3em;">
+        <h1 class="title--text">Required</h1>
+          <v-btn round v-for="req in leaf.req" :key="req.name" :href="req.href" :to="req.to" :class="req.color" :disabled="req.disabled" class="background--text">
             <icon v-if="req.icon" :name="req.icon" class="mr-2" scale="1.5" ></icon>{{ req.name }}
           </v-btn>
     </v-flex>

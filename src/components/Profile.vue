@@ -1,5 +1,5 @@
 <template lang="html">
-  <v-app class="secondary py-5">
+  <v-app class="background py-5">
     <v-container fluid fill-height>
       <v-layout align-center column>
         <v-flex>
@@ -14,7 +14,7 @@
       </v-layout>
     </v-container>
         <v-flex xs12 sm12 md8 offset-md2 lg8 offset-lg2 class="text-xs-center">
-          <h1 class="grey--text pt-3">Bookmarks</h1>
+          <h1 class="title--text pt-3">Bookmarks</h1>
           <app-src-card class="zoom" :sources="bookmarks"></app-src-card>
         </v-flex>
   </v-app>

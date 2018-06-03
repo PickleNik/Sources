@@ -1382,7 +1382,7 @@ export default {
         ]
       },
       { name: 'Communities',
-        description: 'Explore, discover and ask questions',
+        description: 'Exploration, practice and inspiration',
         id: 'communities',
         leafs: [
           { name: 'StackOverflow', ripple: 'amber--text', href: 'https://stackoverflow.com/', logo: 'https://i.stack.imgur.com/GKbCl.png' },
@@ -1394,12 +1394,12 @@ export default {
           { name: 'CSS-Tricks', ripple: 'black--text', href: 'https://css-tricks.com/', logo: 'https://cdn.css-tricks.com/wp-content/uploads/2014/03/css-tricks-star.png' },
           { name: 'StackShare', ripple: 'blue--text', href: 'https://stackshare.io/', logo: 'https://static1.squarespace.com/static/564cbcb2e4b0741cdb668fe2/t/56b8c853d51cd41553c43507/1454950492725/StackShare.png' },
           { name: 'Coligo', ripple: 'light-blue--text', href: 'https://coligo.io', logo: 'https://avatars2.githubusercontent.com/u/15895995?s=280&v=4' },
+          { name: 'Awwwards', ripple: 'white--text', href: 'https://www.awwwards.com/', logo: 'https://assets.awwwards.com/bundles/tvweb/images/logo-schema.png' },
           { name: 'Smashing', ripple: 'deep-orange--text', href: 'https://www.smashingmagazine.com/', logo: 'http://www.stickpng.com/assets/images/58482e1fcef1014c0b5e4a66.png' },
           { name: 'HubSpot', ripple: 'orange--text', href: 'https://www.hubspot.com/', logo: 'https://foxtailmarketing.com/wp-content/uploads/2015/05/hubspot-sprocket-logo.png' },
           { name: 'Alligator', ripple: 'lime--text', href: 'https://alligator.io', logo: 'https://d33wubrfki0l68.cloudfront.net/4e5626a0b7db6b84c0b51f1c0cfd56490fc19b74/7a5ad/images/logo-fancy.svg' },
           { name: 'SitePoint', ripple: 'black--text', href: 'https://sitepoint.com', logo: 'http://www.stickpng.com/assets/images/58482e76cef1014c0b5e4a6c.png' },
           { name: 'Coursetro', ripple: 'white--text', href: 'https://coursetro.com', logo: 'https://coursetro.com/images/logo-new.svg' }
-
         ]
       }
     ]

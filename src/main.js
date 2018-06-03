@@ -44,8 +44,11 @@ Vue.use(VueParticles)
 
 Vue.use(Vuetify, {
   theme: {
-    primary: '#eee',
-    secondary: '#333',
+    text: '#ddd',
+    title: '#8e8e8e',
+    background: '#222',
+    secondary: '#111',
+    primary: '#333',
     accent: '#90ee90',
     error: '#F6546A',
     info: '#2196F3',

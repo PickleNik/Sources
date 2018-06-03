@@ -1,10 +1,10 @@
 <template lang="html">
-  <v-app class="secondary pb-5">
+  <v-app class="background pb-5">
     <v-container fluid class="pa-0">
         <v-flex xs12 sm12 md8 offset-md2 lg8 offset-lg2 >
           <v-layout row wrap>
             <v-flex xs12 sm6 md6 lg4 v-for="source in sources" :key="source.name">
-              <v-card :id="source.id" style="border-radius:3em;" hover ripple class="zoom ma-4 secondary lighten-1">
+              <v-card :id="source.id" style="border-radius:3em;" hover ripple class="zoom ma-4 primary">
                 <v-layout column wrap>
                   <v-flex sm2>
                   <a :href="source.link" target="_blank">
@@ -16,8 +16,8 @@
                   <v-divider class="secondary"></v-divider>
                   <v-flex sm8 class="pl-3" style="height:14em;">
                   <a :href="source.link" target="_blank">
-                    <v-card-text class="primary--text">
-                      <h2 class="grey--text mb-3">{{ source.name }}</h2>
+                    <v-card-text class="text--text">
+                      <h2 class="title--text mb-3">{{ source.name }}</h2>
                       <span>{{ source.title }}</span><br/>
                       <v-icon v-for="i in source.icons" :key="i" class="mt-2 accent--text">{{ i }}</v-icon>
                     </v-card-text>
@@ -28,19 +28,19 @@
                     <v-layout row>
                       <v-btn icon flat light class="mx-auto">
                         <vue-star style="z-index:1" color="#222222" animate="rubberBand">
-                          <div slot="icon" style="user-select:none;cursor:pointer;" @click="source.liked = !source.liked"><v-icon medium :class="{ 'red--text' : source.liked, 'grey--text' : !source.liked }" >{{ source.liked ? 'favorite' : 'favorite_border' }}</v-icon></div>
+                          <div slot="icon" style="user-select:none;cursor:pointer;" @click="source.liked = !source.liked"><v-icon medium :class="{ 'error--text' : source.liked, 'title--text' : !source.liked }" >{{ source.liked ? 'favorite' : 'favorite_border' }}</v-icon></div>
                         </vue-star>
                       </v-btn>
 
                       <v-btn icon flat light class="mx-auto">
                         <vue-star style="z-index:1" color="#222222" animate="rubberBand">
-                          <div slot="icon" style="user-select:none;cursor:pointer;" @click="source.todo = !source.todo"><v-icon medium :class="{ 'accent--text' : source.todo, 'grey--text ' : !source.todo }" >{{ source.todo ? 'playlist_add_check' : 'playlist_add' }}</v-icon></div>
+                          <div slot="icon" style="user-select:none;cursor:pointer;" @click="source.todo = !source.todo"><v-icon medium :class="{ 'accent--text' : source.todo, 'title--text ' : !source.todo }" >{{ source.todo ? 'playlist_add_check' : 'playlist_add' }}</v-icon></div>
                         </vue-star>
                       </v-btn>
 
                       <v-btn v-clipboard:copy="source.link" icon flat light class="mx-auto pl-4">
                         <vue-star style="z-index:1" color="#222222" animate="rubberBand">
-                          <div slot="icon" style="user-select:none;cursor:pointer;" @click="source.shared = !source.shared"><v-icon medium :class="{ 'light-blue--text' : source.shared, 'grey--text' : !source.shared }" >shared</v-icon></div>
+                          <div slot="icon" style="user-select:none;cursor:pointer;" @click="source.shared = !source.shared"><v-icon medium :class="{ 'info--text' : source.shared, 'title--text' : !source.shared }" >shared</v-icon></div>
                         </vue-star>
                       </v-btn>
                     </v-layout>
@@ -407,6 +407,6 @@ export default {
 
 <style scoped>
 .shadow{
-  filter: drop-shadow(0 0 .3em #555);
+  filter: drop-shadow(0 0 .1em #555);
 }
 </style>

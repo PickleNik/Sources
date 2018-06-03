@@ -1,5 +1,5 @@
 <template lang="html">
-  <v-app class="secondary">
+  <v-app class="background">
     <v-alert
       transition="fade-transition"
       origin="center center"
@@ -12,7 +12,7 @@
           <h3 class="ma-4 d-inline-block">{{ error.message }}</h3>
         </v-flex>
         <v-flex>
-          <v-btn fab class="d-inline-block primary error--text" @click="Close"><v-icon>close</v-icon></v-btn>
+          <v-btn fab class="d-inline-block text error--text" @click="Close"><v-icon>close</v-icon></v-btn>
         </v-flex>
       </v-layout>
     </v-alert>
@@ -29,13 +29,13 @@
         </v-flex>
         <v-spacer></v-spacer>
         <v-flex>
-          <v-btn fab class="d-inline-block primary error--text" @click="Close"><v-icon>close</v-icon></v-btn>
+          <v-btn fab class="d-inline-block text error--text" @click="Close"><v-icon>close</v-icon></v-btn>
         </v-flex>
       </v-layout>
     </v-alert>
     <v-container fluid class="py-5">
       <v-flex xs12 sm8 offset-sm2 md4 offset-md4 class="my-5 text-xs-center">
-        <h1 class="display-1 grey--text">Profile</h1>
+        <h1 class="display-1 title--text">Profile</h1>
         <form v-if="!sent || error" @submit.prevent="EmailSignIn" class="zoom my-5">
           <v-layout row>
             <v-flex xs10>
@@ -46,32 +46,32 @@
               v-model="email"
               :rules="emailRules"
               prepend-icon="email"
-              class="secondary lighten-1"
+              class="primary"
               color="accent"
               style="border-radius: 2em;"
               clearable
               required>
               </v-text-field>
             </v-flex><v-flex xs2>
-              <v-btn type="submit" light :color="error ? 'error' : 'accent'" icon><v-icon>exit_to_app</v-icon></v-btn>
+              <v-btn type="submit" light :color="error ? 'error' : 'accent'" icon :disabled="loading" :loading="loading"><v-icon>exit_to_app</v-icon></v-btn>
             </v-flex>
           </v-layout>
         </form>
-        <p class="my-4 white--text" v-if="sent && !error">Confirmation link was sent to: &nbsp;&nbsp;
-          <p v-if="sent && !error" class="hidden-sm-and-up grey darken-4 roundXXL pa-1 white--text" style="max-height:60px;font-size:.5em;">{{ this.email }}
-            <v-tooltip top><span>Edit Email</span><v-btn slot="activator" icon color="accent" light @click="Resent"><v-icon>edit</v-icon></v-btn></v-tooltip>
-            <v-tooltip top><span>Check Inbox</span><v-btn slot="activator" icon color="accent" light :href="'https://'+email"><v-icon>link</v-icon></v-btn></v-tooltip>
+        <p class="my-4 text--text" v-if="sent && !error">Confirmation link was sent to: &nbsp;&nbsp;
+          <p v-if="sent && !error" class="hidden-sm-and-up secondary roundXXL pa-1 text--text" style="max-height:60px;font-size:.5em;">{{ this.email }}
+            <v-tooltip top><span>Edit Email</span><v-btn slot="activator" icon color="accent" class="background--text" @click="Resent"><v-icon>edit</v-icon></v-btn></v-tooltip>
+            <v-tooltip top><span>Check Inbox</span><v-btn slot="activator" icon color="accent" class="background--text" :href="'https://'+email"><v-icon>link</v-icon></v-btn></v-tooltip>
           </p>
-          <p v-if="sent && !error" class="hidden-xs-only grey darken-4 roundXL pa-1 white--text" style="max-height:4em;">{{ this.email }}
-            <v-tooltip bottom><span>Edit Email</span><v-btn slot="activator" icon color="accent" light @click="Resent"><v-icon>edit</v-icon></v-btn></v-tooltip>
-            <v-tooltip bottom><span>Check Inbox</span><v-btn slot="activator" icon color="accent" light :href="'https://'+email"><v-icon>link</v-icon></v-btn></v-tooltip>
+          <p v-if="sent && !error" class="hidden-xs-only secondary roundXXL pa-1 text--text" style="max-height:4em;">{{ this.email }}
+            <v-tooltip bottom><span>Edit Email</span><v-btn slot="activator" icon color="accent" class="background--text" @click="Resent"><v-icon>edit</v-icon></v-btn></v-tooltip>
+            <v-tooltip bottom><span>Check Inbox</span><v-btn slot="activator" icon color="accent" class="background--text" :href="'https://'+email"><v-icon>link</v-icon></v-btn></v-tooltip>
           </p>
         </p>
         <v-tooltip bottom><span>Log in with Google</span><v-btn slot="activator" color="accent" icon flat id="b1" @click="GoogleSignIn" ><icon scale="2" name="brands/google"></icon></v-btn></v-tooltip>
         <v-tooltip bottom><span>Log in ingn with Github</span><v-btn slot="activator" color="accent" icon flat id="b2" @click="GithubSignIn" ><icon scale="2" name="brands/github"></icon></v-btn></v-tooltip>
         <v-tooltip bottom><span>Log in with Twitter</span><v-btn slot="activator" color="accent" icon flat id="b3" @click="TwitterSignIn" ><icon scale="2" name="brands/twitter"></icon></v-btn></v-tooltip>
         <v-tooltip bottom><span>Log in with Facebook</span><v-btn slot="activator" color="accent" icon flat id="b4" @click="FacebookSignIn" ><icon scale="2" name="brands/facebook-f"></icon></v-btn></v-tooltip>
-        <br/><br/><br/><a style="animation-delay:.5s;" class="zoom secondary lighten-1 round pa-2" target="_blank" href="https://app.termly.io/document/privacy-policy/cfd2389e-89ab-4341-882a-dd5ed79e213b"><v-icon class="mr-2 accent--text">verified_user</v-icon><span class="contact">Privacy Policy</span></a>
+        <br/><br/><br/><a style="animation-delay:.5s;" class="zoom primary 1 round pa-2 text--text" target="_blank" href="https://app.termly.io/document/privacy-policy/cfd2389e-89ab-4341-882a-dd5ed79e213b"><v-icon class="mr-2 accent--text">verified_user</v-icon><span class="contact">Privacy Policy</span></a>
       </v-flex>
     </v-container>
   </v-app>

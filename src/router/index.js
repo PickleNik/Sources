@@ -5,7 +5,6 @@ import Leaf from '@/components/Leaf'
 import Home from '@/components/Home'
 import Profile from '@/components/Profile'
 import PageNotFound from '@/components/PageNotFound'
-import Article from '@/components/Article'
 import Sources from '@/components/Sources'
 import SignInUp from '@/components/SignInUp'
 import Proceed from '@/components/Proceed'
@@ -43,10 +42,6 @@ export default new Router({
       path: '/leaf-:to',
       props: true,
       component: Leaf
-    },
-    {
-      path: '/about',
-      component: Article
     },
     {
       path: '/sources',

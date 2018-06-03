@@ -2,12 +2,12 @@
   <v-app dark>
     <v-toolbar dark flat fixed class="transparent hidden-sm-and-down pl-4" style="min-width:100vw;">
 
-      <v-toolbar-title id="name" class="ml-0 round"><router-link to="/" tag="span" class="link--ilin"><span><icon class="mx-1 accent--text" name="tree" scale="1.5"></icon>Tuts</span><span>Tree<icon class="mx-1 accent--text" name="terminal" scale="1.5"></icon></span></router-link></v-toolbar-title>
+      <v-toolbar-title id="name" class="ml-0 round"><router-link to="/" tag="span" class="link--ilin text--text"><span><icon class="mx-1 accent--text" name="tree" scale="1.5"></icon>Tuts</span><span>Tree<icon class="mx-1 accent--text" name="terminal" scale="1.5"></icon></span></router-link></v-toolbar-title>
       <v-spacer></v-spacer>
 
-        <v-tooltip bottom><span>Sources</span><v-btn slot="activator" color="primary" flat fab to="/sources" class="zoom ma-0"><v-icon dark>local_library</v-icon></v-btn></v-tooltip>
-        <v-tooltip bottom><span>Tree</span><v-btn slot="activator" color="primary" flat fab to="/tree" class="zoom ma-0"><v-icon dark>device_hub</v-icon></v-btn></v-tooltip>
-        <v-tooltip bottom><span>You</span><v-btn slot="activator" color="primary" flat fab to="/profile" class="zoom ma-0"><v-icon dark>person</v-icon></v-btn></v-tooltip>
+        <v-tooltip bottom><span>Sources</span><v-btn slot="activator" color="accent" flat fab to="/sources" class="zoom ma-0"><v-icon dark>local_library</v-icon></v-btn></v-tooltip>
+        <v-tooltip bottom><span>Tree</span><v-btn slot="activator" color="accent" flat fab to="/tree" class="zoom ma-0"><v-icon dark>device_hub</v-icon></v-btn></v-tooltip>
+        <v-tooltip bottom><span>You</span><v-btn slot="activator" color="accent" flat fab to="/profile" class="zoom ma-0"><v-icon dark>person</v-icon></v-btn></v-tooltip>
 
     </v-toolbar>
 
@@ -41,7 +41,7 @@
     </v-bottom-nav>
 
     <a style="position:fixed;right:1em;top:5em;z-index:1;" class="zoom hidden-sm-and-down copyrighted-badge" title="Copyrighted.com Registered, Protected &amp; Monitored" target="_blank" href="https://www.copyrighted.com/website/dS8B0bc4ACr280Uw"><img class="round" alt="Copyrighted.com Registered &amp; Protected" border="0" width="125" height="75" srcset="https://static.copyrighted.com/badges/125x75/04_2x.png 2x" src="https://static.copyrighted.com/badges/125x75/04.png" /></a>
-    <!-- <v-layout row style="position:fixed;right:1em;top:11em;z-index:1;">
+    <v-layout class="hidden-sm-and-down" row style="position:fixed;right:1em;top:11em;z-index:1;">
       <v-icon class="accent--text pb-4">brightness_2</v-icon>
       <v-switch class="px-2 pt-1"
         v-model="theme" color="accent"
@@ -49,7 +49,7 @@
         presistent-hint>
       </v-switch>
       <v-icon class="accent--text darken-3 pb-4">brightness_7</v-icon>
-    </v-layout> -->
+    </v-layout>
     <!-- <v-content> -->
     <router-view></router-view>
     <!-- </v-content> -->
@@ -64,14 +64,20 @@ export default {
   }),
   computed: {
     ThemeChange () {
-      if (this.theme === true) {
-        this.$vuetify.theme.primary = '#555'
-        this.$vuetify.theme.secondary = '#fff'
+      if (this.theme === false) {
+        this.$vuetify.theme.text = '#ddd'
+        this.$vuetify.theme.title = '#8e8e8e'
+        this.$vuetify.theme.background = '#222'
+        this.$vuetify.theme.secondary = '#111'
+        this.$vuetify.theme.primary = '#333'
         this.$vuetify.theme.accent = '#90ee90'
       } else {
-        this.$vuetify.theme.primary = '#eee'
-        this.$vuetify.theme.secondary = '#333'
-        this.$vuetify.theme.accent = '#90ee90'
+        this.$vuetify.theme.text = '#555'
+        this.$vuetify.theme.title = '#aeaeae'
+        this.$vuetify.theme.background = '#eee'
+        this.$vuetify.theme.secondary = '#dedede'
+        this.$vuetify.theme.primary = '#fff'
+        this.$vuetify.theme.accent = '#009688'
       }
     }
   }

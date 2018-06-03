@@ -15,7 +15,7 @@ export default {
         return null
       } else {
         state.user.bookmarks.push(src)
-        state.user.fbKeys[src] = payload.fbKey
+        state.user.fbKeys[src.link] = payload.fbKey
       }
     },
     removeBookmark (state, payload) {
@@ -44,6 +44,7 @@ export default {
       .push(payload)
       .then(data => {
         commit('setLoading', false)
+        payload.todo = true
         commit('addBookmark', {src: payload, fbKey: data.key})
       })
       .catch(error => {
@@ -57,11 +58,12 @@ export default {
       if (!user.fbKeys) {
         return
       }
-      const fbKey = user.fbKeys[payload]
+      const fbKey = user.fbKeys[payload.link]
       firebase.database().ref('/users/' + user.id + '/bookmarks/').child(fbKey)
       .remove()
       .then(() => {
         commit('setLoading', false)
+        payload.todo = false
         commit('removeBookmark', payload)
       })
       .catch(error => {
@@ -148,7 +150,7 @@ export default {
         let bookmarks = []
         for (let key in dataPairs) {
           bookmarks.push(dataPairs[key])
-          swappedPairs[dataPairs[key]] = key
+          swappedPairs[dataPairs[key].link] = key
         }
         const updatedUser = {
           id: getters.user.id,

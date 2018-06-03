@@ -1,14 +1,14 @@
 <template>
-<v-app class="secondary pb-5">
+<v-app class="background pb-5">
 
 <!--HERO-->
 <div id="hero">
   <div class="text-sm-center">
     <div class="centerABS">
     <img class="zoom mx-5" width="200" height="200" src="../assets/treeLogo.png" alt="logo">
-    <h2 class="zoom display-3 primary--text hidden-xs-only">TutorialsTree</h2>
-    <h2 class="zoom display-3 primary--text hidden-sm-and-up">TutsTree</h2>
-    <p class="white--text typed accent--text secondary round pa-2" style="font-size:1.5em;"><span id="greeting"></span></p>
+    <h2 class="zoom display-3 text--text hidden-xs-only">TutorialsTree</h2>
+    <h2 class="zoom display-3 text--text hidden-sm-and-up">TutsTree</h2>
+    <p class="white--text typed accent--text background round pa-2" style="font-size:1.5em;"><span id="greeting"></span></p>
     <a href="#" v-scroll-to="'#about'"><v-btn style="margin-left: 50%;transform:translateX(-50%);" dark large flat icon class="hidden-sm-and-up pa-5">
       <v-icon x-large class="down">keyboard_arrow_down</v-icon>
     </v-btn></a>
@@ -19,16 +19,15 @@
 
   </div>
   <vue-particles
-  color="#90ee90"class="particles"
+  class="particles"
+  color="#90ee90"
   :particleOpacity=".5"
   :particlesNumber="33"
   shapeType="circle"
   :particleSize="8"
-  linesColor="#eee"
+  linesColor="#ddd"
   :linesWidth="1"
-  :lineLinked="true"
-  :lineOpacity="1"
-  :linesDistance="111"
+  :lineLinked="false"
   :moveSpeed="3"
   :hoverEffect="true"
   hoverMode="grab"
@@ -40,27 +39,27 @@
 
 <!--ABOUT US-->
 <v-layout id="about">
-  <v-flex xs12 sm8 offset-sm2 class="pa-5 white--text text-xs-center">
-    <h1 class="grey--text mb-1 mt-3">About</h1>
-    <h2 class="py-3 primary--text" style="text-align:justify;">TutorialsTree is for learning Web Development with online tutorials organized in
+  <v-flex xs12 sm8 offset-sm2 class="pa-5 text-xs-center">
+    <h1 class="title--text mb-1 mt-3">About</h1>
+    <h2 class="py-3 text--text" style="text-align:justify;">TutorialsTree is for learning Web Development with online tutorials organized in
     <v-btn class="ma-0 accent--text"small flat round to="/tree"><h3><icon name="tree"></icon>Tree<icon dark name="tree"></icon></h3></v-btn>
     . The project is under development yet.</h2>
     <img class="round pa-3 hidden-xs-only" width="100%" src="http://frontenddeveloperjob.com/images/cool.png"/>
 
-      <v-btn @click="welcomeDialog = true" round class="mt-2 secondary darken-1 primary--text"><v-icon class="hidden-xs-only" left>devices_other</v-icon><v-icon left>developer_mode</v-icon><h4>get started</h4><v-icon class="hidden-xs-only" right>code</v-icon><v-icon right>touch_app</v-icon></v-btn>
+      <v-btn @click="welcomeDialog = true" round class="mt-2 secondary text--text"><v-icon class="hidden-xs-only" left>devices_other</v-icon><v-icon left>developer_mode</v-icon><h4>get started</h4><v-icon class="hidden-xs-only" right>code</v-icon><v-icon right>touch_app</v-icon></v-btn>
 
       <v-dialog presistent v-model="welcomeDialog" max-width="500px">
         <v-container class="roundXL secondary" align-content-center>
           <v-flex xs12 class="text-xs-center">
-            <h1 class="grey--text mb-3">WooHoo</h1>
-            <p class="hidden-sm-and-down">Please notice the scroll navigation on the left top and pages navigation on the right top of the screen. Hover titles to read about topics.</p>
-            <p class="hidden-md-and-up">Please notice the navigation at the bottom. For auto-scroll tap the button at the right and choose where to scroll to. Tap on titles to read about topics.</p>
+            <h1 class="title--text mb-3">WooHoo</h1>
+            <p class="hidden-sm-and-down text--text">Please notice the scroll navigation on the left top and pages navigation on the right top of the screen. Hover titles to read about topics.</p>
+            <p class="hidden-md-and-up text--text">Please notice the navigation at the bottom. For auto-scroll tap the button at the right and choose where to scroll to. Tap on titles to read about topics.</p>
             <v-spacer></v-spacer>
             <router-link to="/tree"><v-btn round light class="mt-2 accent"><v-icon class="hidden-xs-only" left>devices_other</v-icon><v-icon left>developer_mode</v-icon><h4>get started</h4><v-icon class="hidden-xs-only" right>code</v-icon><v-icon right>touch_app</v-icon></v-btn></router-link>
           </v-flex>
         </v-container>
       </v-dialog>
-      <v-btn dark href="#" v-scroll-to="'#team'" flat round class="mt-4">
+      <v-btn dark href="#" v-scroll-to="'#team'" flat round class="text--text mt-4">
         <v-icon x-large >keyboard_arrow_down</v-icon>Team<v-icon  x-large >keyboard_arrow_down</v-icon>
       </v-btn>
   </v-flex>
@@ -71,11 +70,8 @@
 
 
 <v-layout id="team">
-
-<v-flex xs12 sm8 offset-sm2 class="pa-5 white--text" style="min-height:100vh;">
-
-    <h1 class="grey--text mb-5 mt-3 text-xs-center">Team</h1>
-
+  <v-flex xs12 sm8 offset-sm2 class="pa-5" style="min-height:100vh;">
+    <h1 class="title--text mb-5 mt-3 text-xs-center">Team</h1>
     <v-layout row wrap>
       <v-flex sm10 offset-sm1 class="text-xs-center">
         <a class="roundXL" target="_blank" href="https://nikita-krupin.firebaseapp.com/" >
@@ -86,7 +82,6 @@
         </a>
       </v-flex>
   </v-layout>
-
 <!-- <v-flex xs12 class="mt-5 mb-5 pb-5">
 
   <v-layout row>
@@ -97,8 +92,7 @@
   <v-flex><div style="float:right"><p class="contact">Our Sponsors</p><p class="contact">Support us</p><p class="contact">Help</p></div></v-flex>
   </v-layout>
 </v-flex> -->
-
-</v-flex>
+  </v-flex>
 </v-layout>
 
 
@@ -164,7 +158,7 @@ export default {
   background-size: cover;
   position:absolute;
   user-select:none;
-  height:101vh;
+  height:100vh;
   min-width: 100vw;
   width:100vw;
   padding-bottom:3em;
@@ -193,6 +187,6 @@ export default {
 
 .particles{
   width:100vw;
-  height:102vh;
+  height:100vh;
 }
 </style>

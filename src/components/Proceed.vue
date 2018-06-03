@@ -1,5 +1,5 @@
 <template lang="html">
-  <v-app class="secondary py-5">
+  <v-app class="baclground py-5">
     <v-container>
       <v-flex xs12 sm8 offset-sm2 md4 offset-md4 class="my-5 text-xs-center">
         <form class="zoom" @submit.prevent="ProceedSignIn">
@@ -11,7 +11,7 @@
             v-model="email"
             prepend-icon="email"
             :rules="emailRules"
-            class="my-5 secondary lighten-1 primary--text"
+            class="my-5 primary text--text"
             style="border-radius: 2em;"
             clearable>
           </v-text-field>
