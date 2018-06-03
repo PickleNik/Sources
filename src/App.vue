@@ -16,27 +16,24 @@
       fixed shift
       style="z-index:99999;"
       value="true"
-      height="30" app
+      height="40" app
       :active.sync="e2"
-      color="secondary">
-      <v-btn to="/" color="accent--text">
-        <span>Home</span>
-        <v-icon v-if="e2 != 0">home</v-icon>
+      color="background">
+      <v-btn class="pt-3 pb-1" to="/" color="accent--text">
+        <span class="pt-2">Home</span>
+        <v-icon>home</v-icon>
       </v-btn>
-      <v-btn to="/sources" color="accent--text">
-        <span>Sources</span>
-        <v-icon v-if="e2 != 1">local_library</v-icon>
+      <v-btn class="pt-3 pb-1" to="/sources" color="accent--text">
+        <span class="pt-2">Sources</span>
+        <v-icon>local_library</v-icon>
       </v-btn>
-      <v-btn to="/tree" color="accent--text">
-        <span>Tree</span>
-        <v-icon v-if="e2 != 2">device_hub</v-icon>
+      <v-btn class="pt-3 pb-1" to="/tree" color="accent--text">
+        <span class="pt-2">Tree</span>
+        <v-icon>device_hub</v-icon>
       </v-btn>
-      <v-btn to="/profile" color="accent--text">
-        <span>You</span>
-        <v-icon v-if="e2 != 3">person</v-icon>
-      </v-btn>
-      <v-btn disabled color="accent--text">
-        <v-icon>menu</v-icon>
+      <v-btn class="pt-3 pb-1" to="/profile" color="accent--text">
+        <span class="pt-2">You</span>
+        <v-icon>person</v-icon>
       </v-btn>
     </v-bottom-nav>
 
@@ -62,7 +59,7 @@ export default {
     e2: 0,
     theme: false
   }),
-  computed: {
+  methods: {
     ThemeChange () {
       if (this.theme === false) {
         this.$vuetify.theme.text = '#ddd'
