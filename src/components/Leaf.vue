@@ -1,25 +1,40 @@
 <template lang="html">
   <main class="background">
     <v-container fluid class="py-5">
-      <v-layout id="whatIs">
-
-        <v-flex xs12 sm12 md8 offset-md2 lg8 offset-lg2 class="zoom mb-2 text-xs-center">
-          <v-tooltip top>
-            <h1 slot="activator" class="titles roundL mb-2 mt-4">
-             <a class="title--text link link--yaku" :href="leaf.wiki" target="_blank">What is <span v-for="letter in leaf.name.split('')">{{ letter }}</span></a></h1>
-            <span>Click to read in Wikipedia</span>
+      <v-layout class="centerX hidden-sm-and-down" row style="filter:drop-shadow(0 .5em 1em var(--secondary)); position:fixed; z-index: 999999999; top:0;" >
+        <div class="t t1"></div>
+        <a :href="leaf.wiki" target="_blank">
+          <v-tooltip bottom color="primary">
+            <h1 slot="activator" class=" py-2 px-5 primary title--text link link--yaku">
+              <span v-for="letter in leaf.name.split('')">{{ letter }}</span>
+            </h1>
+            <span class="text--text">Click to read in Wikipedia</span>
           </v-tooltip>
-
+        </a>
+        <div class="t t2"></div>
+      </v-layout>
+      <v-layout class="hidden-md-and-up" row style="filter:drop-shadow(0 2em 1em var(--secondary)); position:fixed; z-index: 999999999; top:-1px;left:.5em;" >
+        <div class="t t1"></div>
+        <a :href="leaf.wiki" target="_blank">
+          <v-tooltip bottom color="primary">
+            <h1 style="width: calc(100vw - 4em);" slot="activator" class="text-xs-center py-2 px-2 primary title--text link link--yaku">
+              <span v-for="letter in leaf.name.split('')">{{ letter }}</span>
+            </h1>
+            <span class="text--text">Click to read in Wikipedia</span>
+          </v-tooltip>
+        </a>
+        <div class="t t2"></div>
+      </v-layout>
+      <v-layout id="whatIs">
+        <v-flex xs12 sm12 md8 offset-md2 lg8 offset-lg2 class="mt-5 zoom mb-2 text-xs-center">
           <v-card id="fadeIn" dark class="roundXL mb-4" style="border-radius:3em;">
             <v-card-media  v-if="leaf.whatIsVideo">
               <iframe style="border-top-right-radius: 3em; border-top-left-radius: 3em; border:none" width="100%" height="514" :src="leaf.whatIsVideo" allowfullscreen></iframe>
             </v-card-media>
-
             <v-card-text class="text-xs-center primary text--text">
             {{leaf.title}}
             </v-card-text>
           </v-card>
-
         </v-flex>
       </v-layout>
 
@@ -97,5 +112,29 @@ export default {
   }
   .srcard{
     animation: pulse .5s linear 1;
+  }
+  .t {
+    display: inline-block;
+    width:0; height:0;
+    border-color: var(--accent);
+    border-radius: 2em;
+  }
+  .t1 {
+    margin-top:-3.5em;
+    margin-right:-3.6em;
+    transform: rotateZ(45deg);
+    border-top: solid 3.5em transparent;
+    border-left: solid 3.5em transparent;
+    border-right: solid 3.5em transparent;
+    border-bottom: solid 3.5em var(--primary);
+  }
+  .t2 {
+    margin-top:-3.5em;
+    margin-left:-3.6em;
+    transform: rotateZ(-45deg);
+    border-top: solid 3.5em transparent;
+    border-left: solid 3.5em transparent;
+    border-right: solid 3.5em transparent;
+    border-bottom: solid 3.5em var(--primary);
   }
 </style>

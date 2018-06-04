@@ -2,7 +2,7 @@
   <v-app class="background" :class="{ light: theme }">
     <v-toolbar dark flat fixed class="transparent hidden-sm-and-down pl-4" style="min-width:100vw;">
 
-      <v-toolbar-title style="cursor:pointer;" class="ml-0 round"><router-link to="/" tag="span" class="link--ilin text--text"><span><icon class="mx-1 accent--text" name="tree" scale="1.5"></icon>Tuts</span><span>Tree<icon class="mx-1 accent--text" name="terminal" scale="1.5"></icon></span></router-link></v-toolbar-title>
+      <v-toolbar-title style="cursor:pointer;" class="ml-0 round"><router-link to="/" tag="span" class="link--ilin text--text"><icon class="mx-1 accent--text" name="tree" scale="1.5"></icon><span>Tuts</span><span>Tree<icon class="mx-1 accent--text" name="terminal" scale="1.5"></icon></span></router-link></v-toolbar-title>
       <v-spacer></v-spacer>
 
         <v-tooltip bottom color="primary"><span class="text--text">Sources</span><v-btn slot="activator" color="accent" flat fab to="/sources" class="zoom ma-0"><v-icon dark>local_library</v-icon></v-btn></v-tooltip>
@@ -12,7 +12,7 @@
     </v-toolbar>
 
     <v-bottom-nav
-      style="z-index:99999; border-top-right-radius: 3em;border-top-left-radius: 3em;"
+      style="z-index:99999; border-top-right-radius: 3em;border-top-left-radius: 3em; bottom:-1px;"
       class="hidden-md-and-up slideInUp py-1"
       fixed shift
       value="true"
@@ -91,6 +91,7 @@ export default {
     --accent: #90ee90;
     --title: #8e8e8e;
     --text: #ddd;
+    --primary: #333;
   }
   .light {
     --heroBG: url('https://images.unsplash.com/photo-1491947153227-33d59da6c448?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=3f475006a86934d5e483676571dde298&auto=format&fit=crop&w=2000&q=80') 100% 100% no-repeat;
@@ -98,6 +99,7 @@ export default {
     --accent: #4CAF50;
     --title: #aeaeae;
     --text: #555;
+    --primary: #fff;
   }
   p {
     font-size: 1em;
@@ -147,7 +149,7 @@ export default {
     -o-border-radius: 4em;
   }
 
-  .centerX{margin-left:50%;-webkit-transform:translateX(-50%);transform:translateX(-50%);}
+  .centerX{margin-left:50%;-webkit-transform:translateX(-55%);transform:translateX(-55%);}
   .centerXabs{left:50%;-webkit-transform:translateX(-50%);transform:translateX(-50%);}
 
   .centerY{margin-top:50%;-webkit-transform:translateY(-50%);transform:translateY(-50%);}

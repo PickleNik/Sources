@@ -5,14 +5,14 @@
       origin="center center"
       color="error"
       style="left: 50%;transform: translateX(-50%);z-index:987654321;"
-      class="primaryy--text alert ma-0 pa-1 hidden-xs-only"
+      class="primary--text alert ma-0 pa-1 hidden-xs-only"
       :value="error">
       <v-layout row>
         <v-flex>
           <h3 class="ma-4 d-inline-block">{{ error.message }}</h3>
         </v-flex>
         <v-flex>
-          <v-btn fab class="d-inline-block white error--text" @click="Close"><v-icon>close</v-icon></v-btn>
+          <v-btn fab class="d-inline-block primary error--text" @click="Close"><v-icon>close</v-icon></v-btn>
         </v-flex>
       </v-layout>
     </v-alert>
@@ -29,7 +29,7 @@
         </v-flex>
         <v-spacer></v-spacer>
         <v-flex>
-          <v-btn fab class="d-inline-block white error--text" @click="Close"><v-icon>close</v-icon></v-btn>
+          <v-btn fab class="d-inline-block primary error--text" @click="Close"><v-icon>close</v-icon></v-btn>
         </v-flex>
       </v-layout>
     </v-alert>
@@ -59,18 +59,18 @@
         </form>
         <p class="my-4 text--text" v-if="sent && !error">Confirmation link was sent to: &nbsp;&nbsp;
           <p v-if="sent && !error" class="hidden-sm-and-up secondary roundXXL pa-1 text--text" style="max-height:60px;font-size:.5em;">{{ this.email }}
-            <v-tooltip top><span>Edit Email</span><v-btn slot="activator" icon color="accent" class="background--text" @click="Resent"><v-icon>edit</v-icon></v-btn></v-tooltip>
-            <v-tooltip top><span>Check Inbox</span><v-btn slot="activator" icon color="accent" class="background--text" :href="'https://'+email"><v-icon>link</v-icon></v-btn></v-tooltip>
+            <v-tooltip top color="primary"><span class="text--text">Edit Email</span><v-btn slot="activator" icon color="accent" class="background--text" @click="Resent"><v-icon>edit</v-icon></v-btn></v-tooltip>
+            <v-tooltip top color="primary"><span class="text--text">Check Inbox</span><v-btn slot="activator" icon color="accent" class="background--text" :href="'https://'+email"><v-icon>link</v-icon></v-btn></v-tooltip>
           </p>
           <p v-if="sent && !error" class="hidden-xs-only secondary roundXXL pa-1 text--text" style="max-height:4em;">{{ this.email }}
-            <v-tooltip bottom><span>Edit Email</span><v-btn slot="activator" icon color="accent" class="background--text" @click="Resent"><v-icon>edit</v-icon></v-btn></v-tooltip>
-            <v-tooltip bottom><span>Check Inbox</span><v-btn slot="activator" icon color="accent" class="background--text" :href="'https://'+email"><v-icon>link</v-icon></v-btn></v-tooltip>
+            <v-tooltip bottom color="primary"><span class="text--text">Edit Email</span><v-btn slot="activator" icon color="accent" class="background--text" @click="Resent"><v-icon>edit</v-icon></v-btn></v-tooltip>
+            <v-tooltip bottom color="primary"><span class="text--text">Check Inbox</span><v-btn slot="activator" icon color="accent" class="background--text" :href="'https://'+email"><v-icon>link</v-icon></v-btn></v-tooltip>
           </p>
         </p>
-        <v-tooltip bottom><span>Log in with Google</span><v-btn slot="activator" color="accent" icon flat id="b1" @click="GoogleSignIn" ><icon scale="2" name="brands/google"></icon></v-btn></v-tooltip>
-        <v-tooltip bottom><span>Log in ingn with Github</span><v-btn slot="activator" color="accent" icon flat id="b2" @click="GithubSignIn" ><icon scale="2" name="brands/github"></icon></v-btn></v-tooltip>
-        <v-tooltip bottom><span>Log in with Twitter</span><v-btn slot="activator" color="accent" icon flat id="b3" @click="TwitterSignIn" ><icon scale="2" name="brands/twitter"></icon></v-btn></v-tooltip>
-        <v-tooltip bottom><span>Log in with Facebook</span><v-btn slot="activator" color="accent" icon flat id="b4" @click="FacebookSignIn" ><icon scale="2" name="brands/facebook-f"></icon></v-btn></v-tooltip>
+        <v-tooltip bottom color="primary"><span class="text--text">Log in with Google</span><v-btn slot="activator" color="accent" icon flat id="b1" @click="GoogleSignIn" ><icon scale="2" name="brands/google"></icon></v-btn></v-tooltip>
+        <v-tooltip bottom color="primary"><span class="text--text">Log in ingn with Github</span><v-btn slot="activator" color="accent" icon flat id="b2" @click="GithubSignIn" ><icon scale="2" name="brands/github"></icon></v-btn></v-tooltip>
+        <v-tooltip bottom color="primary"><span class="text--text">Log in with Twitter</span><v-btn slot="activator" color="accent" icon flat id="b3" @click="TwitterSignIn" ><icon scale="2" name="brands/twitter"></icon></v-btn></v-tooltip>
+        <v-tooltip bottom color="primary"><span class="text--text">Log in with Facebook</span><v-btn slot="activator" color="accent" icon flat id="b4" @click="FacebookSignIn" ><icon scale="2" name="brands/facebook-f"></icon></v-btn></v-tooltip>
         <br/><br/><br/><a style="animation-delay:.5s;" class="zoom primary 1 round pa-2 text--text" target="_blank" href="https://app.termly.io/document/privacy-policy/cfd2389e-89ab-4341-882a-dd5ed79e213b"><v-icon class="mr-2 accent--text">verified_user</v-icon><span class="contact">Privacy Policy</span></a>
       </v-flex>
     </v-container>
