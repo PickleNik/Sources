@@ -116,7 +116,6 @@ export default {
   .t {
     display: inline-block;
     width:0; height:0;
-    border-color: var(--accent);
     border-radius: 2em;
   }
   .t1 {

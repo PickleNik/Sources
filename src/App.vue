@@ -87,19 +87,21 @@ export default {
   }
   :root {
     --heroBG: url('https://images.unsplash.com/photo-1477244075012-5cc28286e465?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=76ae2034864198c0b4daf6117ba25e72&auto=format&fit=crop&w=1868&q=80') 100% 100% no-repeat;
-    --secondary: #222;
+    --secondary: #111;
     --accent: #90ee90;
     --title: #8e8e8e;
     --text: #ddd;
     --primary: #333;
+    --background: #222;
   }
   .light {
     --heroBG: url('https://images.unsplash.com/photo-1491947153227-33d59da6c448?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=3f475006a86934d5e483676571dde298&auto=format&fit=crop&w=2000&q=80') 100% 100% no-repeat;
-    --secondary: #eee;
+    --secondary: #dedede;
     --accent: #66BB6A;
     --title: #aeaeae;
     --text: #555;
     --primary: #fff;
+    --background: #eee;
   }
   p {
     font-size: 1em;
@@ -259,7 +261,6 @@ export default {
   .rubberBand {
     animation: rubberBand 1s linear 1;
   }
-
   /* Ilin */
   .link--ilin {
   	overflow: hidden;
