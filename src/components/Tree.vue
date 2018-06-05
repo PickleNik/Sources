@@ -18,7 +18,6 @@
           <v-flex style="animation-delay:.2s;" class="zoom hidden-sm-and-down text-md-center text-lg-center">
             <a v-for="leaf in branch.leafs"
             :href="leaf.href" target="_blank"
-            v-ripple="{ class: leaf.ripple }"
             @click="openLeaf(leaf.to)" class="leaf d-inline-block mb-5 mx-4">
               <v-badge v-if="leaf.badge" color="transparent" class="leafLogo"><img class="leafLogo round" :src="leaf.logo" /><icon slot="badge" :name="leaf.badge" scale="10" :class="leaf.badgecolor" ></icon></v-badge>
               <img v-if="!leaf.badge" class="leafLogo round" :src="leaf.logo" />
@@ -29,7 +28,6 @@
           <v-flex style="animation-delay:.2s;" class="zoom hidden-md-and-up text-sm-center text-xs-center">
             <a v-for="leaf in branch.leafs"
             :href="leaf.href" target="_blank"
-            v-ripple="{ class: leaf.ripple }"
             @click="openLeaf(leaf.to)"  class="leaf d-inline-block mb-5 mx-0">
               <v-badge v-if="leaf.badge" color="transparent" class="leafLogo"><icon slot="badge" :name="leaf.badge" scale="10" :class="leaf.badgecolor" ></icon><img class="leafLogo round" :src="leaf.logo" /></v-badge>
               <img v-if="!leaf.badge" class="leafLogo round" :src="leaf.logo" />

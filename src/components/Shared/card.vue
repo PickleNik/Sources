@@ -44,8 +44,8 @@ export default {
       }
     },
     cardBgTransform () {
-      const tX = this.mousePX * -80
-      const tY = this.mousePY * -80
+      const tX = this.mousePX * -77
+      const tY = this.mousePY * -77
       return {
         transform: `translateX(${tX}px) translateY(${tY}px)`
       }
@@ -68,7 +68,7 @@ export default {
       this.mouseLeaveDelay = setTimeout(() => {
         this.mouseX = 0
         this.mouseY = 0
-      }, 1000)
+      }, 100)
     }
   }
 
@@ -123,15 +123,7 @@ h1+p, p+p {
       opacity: 1;
     }
     .card {
-      transition:
-        0.6s $hoverEasing,
-        box-shadow 2s $hoverEasing;
-      box-shadow:
-        rgba(#eee, 0.2) 0 0 40px 5px,
-        rgba(#eee, 1) 0 0 0 1px,
-        rgba(black, 0.66) 0 30px 60px 0,
-        inset #333 0 0 0 5px,
-        inset #111 0 0 0 6px;
+      transition: 0.6s $hoverEasing;
     }
   }
 }
@@ -142,10 +134,7 @@ h1+p, p+p {
   background-color: #333;
   overflow: hidden;
   border-radius: inherit;
-  box-shadow:
-    rgba(#111, 0.55) 0 30px 60px 0,
-    inset #333 0 0 0 5px,
-    inset rgba(#fff, 0.5) 0 0 0 6px;
+  box-shadow:rgba(#111, 0.55) 0 30px 60px 0;
   transition: 1s $returnEasing;
 }
 
@@ -183,9 +172,6 @@ h1+p, p+p {
 }
 
 .card-info h1 {
-  font-family: "Playfair Display";
-  font-size: 36px;
-  font-weight: 700;
   text-shadow: rgba(black, 0.5) 0 0px 1em;
 }
 </style>

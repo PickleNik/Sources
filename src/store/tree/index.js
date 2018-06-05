@@ -7,7 +7,6 @@ export default {
         leafs: [
           { name: 'HTML',
             title: 'HTML - HyperText Markup Language',
-            ripple: 'orange--text',
             to: 'html',
             logo: 'https://www.shareicon.net/download/2015/09/08/97875_html_512x512.png',
             whatIsVideo: 'https://www.youtube.com/embed/3V2q5E4wwko',
@@ -132,7 +131,6 @@ export default {
           },
           { name: 'CSS',
             title: 'CSS - Cascading Style Sheets',
-            ripple: 'blue--text',
             to: 'css',
             logo: 'https://www.shareicon.net/download/2015/09/08/97876_css_512x512.png',
             whatIsVideo: 'https://www.youtube.com/embed/ua3Y-X6-WQc',
@@ -333,7 +331,6 @@ export default {
           },
           { name: 'JavaScript',
             title: 'JavaScript - response and interactivity.',
-            ripple: 'yellow--text',
             to: 'javascript',
             logo: 'https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png',
             whatIsVideo: 'https://www.youtube.com/embed/AgrWeFJWRTg',
@@ -503,7 +500,6 @@ export default {
           },
           { name: 'CLI',
             title: 'CLI - Command Line Interface',
-            ripple: 'black--text',
             to: 'command_line',
             logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Icons8_flat_command_line.svg/2000px-Icons8_flat_command_line.svg.png',
             wiki: 'https://en.wikipedia.org/wiki/Command-line_interface',
@@ -569,7 +565,6 @@ export default {
         leafs: [
           {
             name: 'Typing',
-            ripple: 'orange--text',
             to: 'typing',
             title: 'Learn Touch Typing to work faster.',
             logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Circle-icons-keyboard.svg/1024px-Circle-icons-keyboard.svg.png',
@@ -633,9 +628,9 @@ export default {
               }
             ]
           },
-          { name: 'Atom', ripple: 'green--text', logo: 'https://raw.githubusercontent.com/stvhwrd/icons/master/atom/Atom-no_shadows-512.png', href: 'https://atom.io/' },
-          { name: 'Brackets', ripple: 'blue--text', href: 'http://brackets.io/', logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Brackets_Icon.svg/2000px-Brackets_Icon.svg.png' },
-          { name: 'Sublime Text', ripple: 'orange--text', href: 'https://www.sublimetext.com/', logo: 'https://icon-icons.com/icons2/1381/PNG/512/sublimetext_94866.png' }
+          { name: 'Atom', logo: 'https://raw.githubusercontent.com/stvhwrd/icons/master/atom/Atom-no_shadows-512.png', href: 'https://atom.io/' },
+          { name: 'Brackets', href: 'http://brackets.io/', logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Brackets_Icon.svg/2000px-Brackets_Icon.svg.png' },
+          { name: 'Sublime Text', href: 'https://www.sublimetext.com/', logo: 'https://icon-icons.com/icons2/1381/PNG/512/sublimetext_94866.png' }
         ]
       },
       { name: 'Frontend',
@@ -644,7 +639,6 @@ export default {
         leafs: [
           { name: 'Webpack',
             title: 'Webpack - bundle your files!',
-            ripple: 'light-blue--text',
             to: 'webpack',
             logo: 'https://topheman.github.io/webpack-babel-starter/assets/974262647c82057b6078c432841a53ea.png',
             whatIsVideo: 'https://www.youtube.com/embed/5zeXFC_-gMQ',
@@ -702,7 +696,6 @@ export default {
           },
           {
             name: 'Haml',
-            ripple: 'white--text',
             badge: 'brands/html5',
             badgecolor: 'orange--text',
             href: 'http://haml.info/',
@@ -710,7 +703,6 @@ export default {
           },
           {
             name: 'Slim',
-            ripple: 'grey--text',
             badge: 'brands/html5',
             badgecolor: 'orange--text',
             href: 'http://slim-lang.com/',
@@ -719,7 +711,6 @@ export default {
           {
             name: 'Markdown',
             title: 'Markdown makes writing on the web fast and easy.',
-            ripple: 'grey--text',
             badge: 'brands/html5',
             badgecolor: 'orange--text',
             href: 'https://www.markdownguide.org/',
@@ -727,7 +718,6 @@ export default {
           },
           {
             name: 'Pug',
-            ripple: 'white--text',
             badge: 'brands/html5',
             badgecolor: 'orange--text',
             href: 'https://pugjs.org/api/getting-started.html',
@@ -736,7 +726,6 @@ export default {
           {
             name: 'SASS',
             title: 'SASS - Syntactically Awesome Style Sheets.',
-            ripple: 'pink--text',
             to: 'sass',
             badge: 'brands/css3-alt',
             badgecolor: 'blue--text',
@@ -782,7 +771,6 @@ export default {
           },
           {
             name: 'Less',
-            ripple: 'blue--text',
             logo: 'https://cdn-images-1.medium.com/max/1600/1*O_NwDtfHb1sirw6CAbyoxg.png',
             to: 'less',
             badge: 'brands/css3-alt',
@@ -793,7 +781,6 @@ export default {
           },
           {
             name: 'PostCSS',
-            ripple: 'red--text',
             logo: 'http://postcss.org/_/web_modules/Hero/postcss.svg',
             to: 'postcss',
             badge: 'brands/css3-alt',
@@ -804,7 +791,6 @@ export default {
           },
           {
             name: 'Stylus',
-            ripple: 'black--text',
             logo: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFN9wkn14itSWP4vko1WclfxVkjj1GZ-tFGB0APoh6GddYDlbp',
             to: 'stylus',
             badge: 'brands/css3-alt',
@@ -815,7 +801,6 @@ export default {
           },
           {
             name: 'Babel',
-            ripple: 'yellow--text',
             logo: 'https://cdn-images-1.medium.com/max/800/1*58R0tzuzVXd_7k89Igm9jA.png',
             to: 'babel',
             badge: 'brands/js',
@@ -826,7 +811,6 @@ export default {
           },
           {
             name: 'ECMAScript',
-            ripple: 'yellow--text',
             logo: 'https://codereviewvideos.com/blog/wp-content/uploads/2016/04/es6-logo.png',
             to: 'es6',
             badge: 'brands/js',
@@ -873,7 +857,6 @@ export default {
           },
           {
             name: 'TypeScript',
-            ripple: 'blue--text',
             logo: 'https://lh3.googleusercontent.com/-A0wE9U2zDI0/WJY7M98lmEI/AAAAAAAAcQo/-KHSsKPozoQw1USqlSqlaP3GDBhCFyAqwCE0/s1024/ts.png',
             to: 'ts',
             badge: 'brands/js',
@@ -909,7 +892,6 @@ export default {
           },
           {
             name: 'CofeeScript',
-            ripple: 'blue-grey--text',
             logo: 'https://cdn.worldvectorlogo.com/logos/coffeescript.svg',
             to: 'cofeescript',
             badge: 'brands/js',
@@ -920,7 +902,6 @@ export default {
           },
           {
             name: 'LiveScript',
-            ripple: 'light-blue--text',
             logo: 'https://avatars3.githubusercontent.com/u/25471216?s=200&v=4',
             to: 'cofeescript',
             badge: 'brands/js',
@@ -936,7 +917,6 @@ export default {
         id: 'backend',
         leafs: [
           { name: 'Node.js',
-            ripple: 'lime--text',
             to: 'nodejs',
             title: 'Node.js - javascript for the server side',
             logo: 'http://blog.iampuneet.in/wp-content/uploads/2017/06/nodejs_logo.png',
@@ -962,16 +942,16 @@ export default {
               }
             ]
           },
-          { name: 'PHP', to: 'php', ripple: 'blue--text', logo: 'https://sipexa.com/wp-content/uploads/php-logo.png' },
-          { name: 'Ruby', to: 'ruby', ripple: 'red--text', logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Ruby_logo.svg/2000px-Ruby_logo.svg.png' },
-          { name: 'Python', to: 'python', ripple: 'yellow--text', logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/2000px-Python-logo-notext.svg.png' },
-          { name: 'Expressjs', ripple: 'white--text', href: 'http://expressjs.com/', logo: 'https://camo.githubusercontent.com/647e291a5fd52d50e01deb82f9392c462df148a6/687474703a2f2f617070732e6f63746f636f6e73756c74696e672e636f6d2f696d616765732f6578707265737349636f6e2e706e67' },
-          { name: 'Ruby On Rails', ripple: 'red--text', href: 'https://rubyonrails.org/', logo: 'https://upload.wikimedia.org/wikipedia/commons/1/16/Ruby_on_Rails-logo.png' },
-          { name: 'Django', ripple: 'green--text', href: 'https://www.djangoproject.com/', logo: 'http://www.unixstickers.com/image/data/buttons/png/django.png' },
-          { name: 'Flask', ripple: 'white--text', href: 'http://flask.pocoo.org/', logo: 'http://www.unixstickers.com/image/data/stickers/flask/Flask-logo.sh.png' },
-          { name: 'Symfony', ripple: 'black--text', href: 'https://symfony.com/', logo: 'https://symfony.com/images/v5/pictos/home-main-illu.svg' },
-          { name: 'Laravel', ripple: 'red--text', href: 'https://laravel.com/', logo: 'http://www.stickpng.com/assets/images/58480e35cef1014c0b5e4920.png' },
-          { name: 'MongoDB', ripple: 'green--text', href: 'https://www.mongodb.com/', logo: 'http://www.unixstickers.com/image/cache/data/stickers/mongo/mongo.sh-600x600.png' }
+          { name: 'PHP', to: 'php', logo: 'https://sipexa.com/wp-content/uploads/php-logo.png' },
+          { name: 'Ruby', to: 'ruby', logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Ruby_logo.svg/2000px-Ruby_logo.svg.png' },
+          { name: 'Python', to: 'python', logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/2000px-Python-logo-notext.svg.png' },
+          { name: 'Expressjs', href: 'http://expressjs.com/', logo: 'https://camo.githubusercontent.com/647e291a5fd52d50e01deb82f9392c462df148a6/687474703a2f2f617070732e6f63746f636f6e73756c74696e672e636f6d2f696d616765732f6578707265737349636f6e2e706e67' },
+          { name: 'Ruby On Rails', href: 'https://rubyonrails.org/', logo: 'https://upload.wikimedia.org/wikipedia/commons/1/16/Ruby_on_Rails-logo.png' },
+          { name: 'Django', href: 'https://www.djangoproject.com/', logo: 'http://www.unixstickers.com/image/data/buttons/png/django.png' },
+          { name: 'Flask', href: 'http://flask.pocoo.org/', logo: 'http://www.unixstickers.com/image/data/stickers/flask/Flask-logo.sh.png' },
+          { name: 'Symfony', href: 'https://symfony.com/', logo: 'https://symfony.com/images/v5/pictos/home-main-illu.svg' },
+          { name: 'Laravel', href: 'https://laravel.com/', logo: 'http://www.stickpng.com/assets/images/58480e35cef1014c0b5e4920.png' },
+          { name: 'MongoDB', href: 'https://www.mongodb.com/', logo: 'http://www.unixstickers.com/image/cache/data/stickers/mongo/mongo.sh-600x600.png' }
         ]
       },
       { name: 'JS-Frameworks',
@@ -979,7 +959,6 @@ export default {
         id: 'frameworks',
         leafs: [
           { name: 'Vue',
-            ripple: 'teal--text',
             to: 'vue',
             title: 'Vue.js - progressive framework for building user interfaces.',
             logo: 'http://blog.evanyou.me/images/logo.png',
@@ -1064,7 +1043,6 @@ export default {
             ]
           },
           { name: 'Angular',
-            ripple: 'red--text',
             to: 'angular',
             title: 'Angular - makes it easy to build applications with the web.',
             logo: 'https://cdn.worldvectorlogo.com/logos/angular-icon-1.svg',
@@ -1072,7 +1050,6 @@ export default {
             sources: ['']
           },
           { name: 'React',
-            ripple: 'light-blue--text',
             to: 'react',
             title: 'React - A JavaScript library for building user interfaces.',
             logo: 'https://sandstorm.de/_Resources/Persistent/3285416e8503b2c8354c321bcd690cf550b8b2d3/React-Logo.svg',
@@ -1080,7 +1057,6 @@ export default {
             sources: ['']
           },
           { name: 'Ember',
-            ripple: 'orange--text',
             to: 'ember',
             title: 'Ember - for creating ambitious web applications.',
             logo: 'http://emberjs.com/images/tomster-sm.png',
@@ -1088,22 +1064,18 @@ export default {
             sources: ['']
           },
           { name: 'Hugo',
-            ripple: 'pink--text',
             logo: 'https://gutl.jovenclub.cu/wp-content/uploads/2016/02/apple-touch-icon.png',
             href: 'https://gohugo.io/'
           },
           { name: 'Aurelia',
-            ripple: 'pink--text',
             logo: 'https://user-images.githubusercontent.com/4623561/34425378-352f12c4-ebf9-11e7-86e2-8f20b8693bf5.png',
             href: 'https://aurelia.io/'
           },
           { name: 'Meteor',
-            ripple: 'red--text',
             logo: 'http://www.stickpng.com/assets/images/58480fcfcef1014c0b5e4942.png',
             href: 'https://www.meteor.com/'
           },
           { name: 'JQuery',
-            ripple: 'green--text',
             logo: 'http://ethiopiarabb.com/assets/images/icon-jquery.png',
             to: 'jquery',
             title: 'jQuery - a lightweight javascript library',
@@ -1148,42 +1120,42 @@ export default {
         description: 'Add awesome styles and components with CSS Frameworks.',
         id: 'libraries',
         leafs: [
-          { name: 'Bootstrap', ripple: 'deep-purple--text', href: 'https://getbootstrap.com/', logo: 'https://sdtimes.com/wp-content/uploads/2018/01/bootstrap-stack-490x412.png' },
-          { name: 'Vue-Bootstrap', ripple: 'teal--text', href: 'https://bootstrap-vue.js.org/', logo: 'https://bootstrap-vue.js.org/_nuxt/img/icon.f0a8c9e.png', badge: 'brands/vuejs', badgecolor: 'teal--text' },
-          { name: 'Rct-Bootstrap', ripple: 'light-blue--text', href: 'https://react-bootstrap.github.io/', logo: 'https://qph.ec.quoracdn.net/main-qimg-a1cba7ee0601b2ea0bd44d7900e23cc8', badge: 'brands/react', badgecolor: 'light-blue--text' },
-          { name: 'NG-Bootstrap', ripple: 'blue--text', href: 'https://ng-bootstrap.github.io/#/home', logo: 'https://ng-bootstrap.github.io/img/logo.svg', badge: 'brands/angular', badgecolor: 'pink--text' },
-          { name: 'Bootstrap UI', ripple: 'blue--text', href: 'https://angular-ui.github.io/bootstrap/', logo: 'https://anantanandgupta.github.io/nuget-modules/images/ui-logo.png', badge: 'brands/angular', badgecolor: 'pink--text' },
+          { name: 'Bootstrap', href: 'https://getbootstrap.com/', logo: 'https://sdtimes.com/wp-content/uploads/2018/01/bootstrap-stack-490x412.png' },
+          { name: 'Vue-Bootstrap', href: 'https://bootstrap-vue.js.org/', logo: 'https://bootstrap-vue.js.org/_nuxt/img/icon.f0a8c9e.png', badge: 'brands/vuejs', badgecolor: 'teal--text' },
+          { name: 'Rct-Bootstrap', href: 'https://react-bootstrap.github.io/', logo: 'https://qph.ec.quoracdn.net/main-qimg-a1cba7ee0601b2ea0bd44d7900e23cc8', badge: 'brands/react', badgecolor: 'light-blue--text' },
+          { name: 'NG-Bootstrap', href: 'https://ng-bootstrap.github.io/#/home', logo: 'https://ng-bootstrap.github.io/img/logo.svg', badge: 'brands/angular', badgecolor: 'pink--text' },
+          { name: 'Bootstrap UI', href: 'https://angular-ui.github.io/bootstrap/', logo: 'https://anantanandgupta.github.io/nuget-modules/images/ui-logo.png', badge: 'brands/angular', badgecolor: 'pink--text' },
 
-          { name: 'Semantic', ripple: 'teal--text', href: 'https://semantic-ui.com/', logo: 'https://cdn.worldvectorlogo.com/logos/semantic-ui.svg' },
-          { name: 'Vue-Semantic', ripple: 'teal--text', href: 'https://semantic-ui-vue.github.io/#/', logo: 'https://semantic-ui-vue.github.io/static/images/logo.png', badge: 'brands/vuejs', badgecolor: 'teal--text' },
-          { name: 'Rct-Semantic', ripple: 'teal--text', href: 'https://react.semantic-ui.com/introduction', logo: 'https://react.semantic-ui.com/logo.png', badge: 'brands/react', badgecolor: 'light-blue--text' },
-          { name: 'NG-Semantic', ripple: 'teal--text', href: 'https://ng-semantic.herokuapp.com/#/', logo: 'https://raw.githubusercontent.com/edcarroll/ng2-semantic-ui/master/demo/src/assets/logo.png', badge: 'brands/angular', badgecolor: 'pink--text' },
+          { name: 'Semantic', href: 'https://semantic-ui.com/', logo: 'https://cdn.worldvectorlogo.com/logos/semantic-ui.svg' },
+          { name: 'Vue-Semantic', href: 'https://semantic-ui-vue.github.io/#/', logo: 'https://semantic-ui-vue.github.io/static/images/logo.png', badge: 'brands/vuejs', badgecolor: 'teal--text' },
+          { name: 'Rct-Semantic', href: 'https://react.semantic-ui.com/introduction', logo: 'https://react.semantic-ui.com/logo.png', badge: 'brands/react', badgecolor: 'light-blue--text' },
+          { name: 'NG-Semantic', href: 'https://ng-semantic.herokuapp.com/#/', logo: 'https://raw.githubusercontent.com/edcarroll/ng2-semantic-ui/master/demo/src/assets/logo.png', badge: 'brands/angular', badgecolor: 'pink--text' },
 
-          { name: 'Material Lite', ripple: 'black--text', href: 'https://getmdl.io/', logo: 'https://www.3pillarglobal.com/wp-content/uploads/2015/10/mdl_logo_320x260-300x260.png' },
-          { name: 'Vue-Material', ripple: 'light-green--text', href: 'https://vuematerial.io/', logo: 'https://camo.githubusercontent.com/55e8a928e9fca0eeb4e7cb7836cb60dc05703c65/68747470733a2f2f7675656d6174657269616c2e696f2f6173736574732f6c6f676f2d636f6c6f722e706e67', badge: 'brands/vuejs', badgecolor: 'teal--text' },
-          { name: 'Material UI', ripple: 'light-blue--text', href: 'https://www.material-ui.com/#/', logo: 'https://material-ui-next.com/static/brand.png', badge: 'brands/react', badgecolor: 'light-blue--text' },
-          { name: 'NG-Material', ripple: 'indigo--text', href: 'https://material.angular.io/', logo: 'http://angularexpo.com/content/images/2016/11/icon_192.png', badge: 'brands/angular', badgecolor: 'pink--text' },
-          { name: 'Teradata', ripple: 'orange--text', href: 'https://teradata.github.io/covalent/#/', logo: 'https://cdn-images-1.medium.com/max/1600/1*ZPOa0Nn_fk0XtNTmeESQzA.png', badge: 'brands/angular', badgecolor: 'pink--text' },
+          { name: 'Material Lite', href: 'https://getmdl.io/', logo: 'https://www.3pillarglobal.com/wp-content/uploads/2015/10/mdl_logo_320x260-300x260.png' },
+          { name: 'Vue-Material', href: 'https://vuematerial.io/', logo: 'https://camo.githubusercontent.com/55e8a928e9fca0eeb4e7cb7836cb60dc05703c65/68747470733a2f2f7675656d6174657269616c2e696f2f6173736574732f6c6f676f2d636f6c6f722e706e67', badge: 'brands/vuejs', badgecolor: 'teal--text' },
+          { name: 'Material UI', href: 'https://www.material-ui.com/#/', logo: 'https://material-ui-next.com/static/brand.png', badge: 'brands/react', badgecolor: 'light-blue--text' },
+          { name: 'NG-Material', href: 'https://material.angular.io/', logo: 'http://angularexpo.com/content/images/2016/11/icon_192.png', badge: 'brands/angular', badgecolor: 'pink--text' },
+          { name: 'Teradata', href: 'https://teradata.github.io/covalent/#/', logo: 'https://cdn-images-1.medium.com/max/1600/1*ZPOa0Nn_fk0XtNTmeESQzA.png', badge: 'brands/angular', badgecolor: 'pink--text' },
 
-          { name: 'Materialize', ripple: 'pink--text', href: 'http://materializecss.com/', logo: 'http://materializecss.com/images/favicon/apple-touch-icon-152x152.png' },
-          { name: 'Vuetify', ripple: 'blue--text', href: 'https://vuetifyjs.com/en/', logo: 'https://next.vuetifyjs.com/static/apple-touch-icon-180x180.png', badge: 'brands/vuejs', badgecolor: 'teal--text' },
-          { name: 'Rct-Material...', ripple: 'white-text', href: 'https://react-materialize.github.io/#/', logo: 'https://avatars1.githubusercontent.com/u/10089934?s=280&v=4', badge: 'brands/react', badgecolor: 'light-blue--text' },
+          { name: 'Materialize', href: 'http://materializecss.com/', logo: 'http://materializecss.com/images/favicon/apple-touch-icon-152x152.png' },
+          { name: 'Vuetify', href: 'https://vuetifyjs.com/en/', logo: 'https://next.vuetifyjs.com/static/apple-touch-icon-180x180.png', badge: 'brands/vuejs', badgecolor: 'teal--text' },
+          { name: 'Rct-Material...', href: 'https://react-materialize.github.io/#/', logo: 'https://avatars1.githubusercontent.com/u/10089934?s=280&v=4', badge: 'brands/react', badgecolor: 'light-blue--text' },
 
-          { name: 'Bulma', ripple: 'teal--text', href: 'https://bulma.io/', logo: 'https://jgthms.com/web-design-in-4-minutes/bulma.png' },
-          { name: 'Buefy', ripple: 'purple--text', href: 'https://buefy.github.io/#/', logo: 'https://avatars3.githubusercontent.com/u/26799900?s=400&v=4', badge: 'brands/vuejs', badgecolor: 'teal--text' },
+          { name: 'Bulma', href: 'https://bulma.io/', logo: 'https://jgthms.com/web-design-in-4-minutes/bulma.png' },
+          { name: 'Buefy', href: 'https://buefy.github.io/#/', logo: 'https://avatars3.githubusercontent.com/u/26799900?s=400&v=4', badge: 'brands/vuejs', badgecolor: 'teal--text' },
 
-          { name: 'UIkit', ripple: 'blue--text', href: 'https://getuikit.com/', logo: 'https://pbs.twimg.com/profile_images/818852933483823104/YYr9qgV8_400x400.jpg' },
-          { name: 'Vuikit', ripple: 'white--text', href: 'https://vuikit.js.org/', logo: 'https://avatars2.githubusercontent.com/u/19988804?s=400&v=4', badge: 'brands/vuejs', badgecolor: 'teal--text' },
+          { name: 'UIkit', href: 'https://getuikit.com/', logo: 'https://pbs.twimg.com/profile_images/818852933483823104/YYr9qgV8_400x400.jpg' },
+          { name: 'Vuikit', href: 'https://vuikit.js.org/', logo: 'https://avatars2.githubusercontent.com/u/19988804?s=400&v=4', badge: 'brands/vuejs', badgecolor: 'teal--text' },
 
-          { name: 'Foundation', ripple: 'white--text', href: 'https://foundation.zurb.com/', logo: 'https://foundation.zurb.com/assets/img/learn/features/svgs/code-reduction-01.svg' },
-          { name: 'Rct-Foundati...', ripple: 'light-blue--text', href: 'https://react.foundation/', logo: 'https://cdn.worldvectorlogo.com/logos/react.svg', badge: 'brands/react', badgecolor: 'light-blue--text' },
+          { name: 'Foundation', href: 'https://foundation.zurb.com/', logo: 'https://foundation.zurb.com/assets/img/learn/features/svgs/code-reduction-01.svg' },
+          { name: 'Rct-Foundati...', href: 'https://react.foundation/', logo: 'https://cdn.worldvectorlogo.com/logos/react.svg', badge: 'brands/react', badgecolor: 'light-blue--text' },
 
-          { name: 'Pure CSS', ripple: 'light-blue--text', href: 'https://purecss.io/', logo: 'http://www.developersfeed.com/wp-content/uploads/2016/02/pure-css-logo-e1455594006843.png' },
-          { name: 'Element', ripple: 'light-blue--text', href: 'http://element.eleme.io/1.4/#/en-US', logo: 'http://element.eleme.io/1.4/static/banner-bg.75437e1.svg' },
-          { name: 'Vuesax', ripple: 'purple--text', href: 'https://lusaxweb.github.io/vuesax/#/en/home', logo: 'https://madewithvuejs.com/uploads/07/11/vuesax.png', badge: 'brands/vuejs', badgecolor: 'teal--text' },
+          { name: 'Pure CSS', href: 'https://purecss.io/', logo: 'http://www.developersfeed.com/wp-content/uploads/2016/02/pure-css-logo-e1455594006843.png' },
+          { name: 'Element', href: 'http://element.eleme.io/1.4/#/en-US', logo: 'http://element.eleme.io/1.4/static/banner-bg.75437e1.svg' },
+          { name: 'Vuesax', href: 'https://lusaxweb.github.io/vuesax/#/en/home', logo: 'https://madewithvuejs.com/uploads/07/11/vuesax.png', badge: 'brands/vuejs', badgecolor: 'teal--text' },
 
-          { name: 'PrimeNG', ripple: 'red--text', href: 'https://www.primefaces.org/primeng/#/', logo: 'https://www.primefaces.org/presskit/primeng-logo.png', badge: 'brands/angular', badgecolor: 'pink--text' },
-          { name: 'Clarity', ripple: 'orange--text', href: 'https://vmware.github.io/clarity/', logo: 'https://habrastorage.org/webt/59/f0/51/59f05155beffd369502984.png', badge: 'brands/angular', badgecolor: 'pink--text' }
+          { name: 'PrimeNG', href: 'https://www.primefaces.org/primeng/#/', logo: 'https://www.primefaces.org/presskit/primeng-logo.png', badge: 'brands/angular', badgecolor: 'pink--text' },
+          { name: 'Clarity', href: 'https://vmware.github.io/clarity/', logo: 'https://habrastorage.org/webt/59/f0/51/59f05155beffd369502984.png', badge: 'brands/angular', badgecolor: 'pink--text' }
         ]
       },
       { name: 'SSR',
@@ -1192,7 +1164,6 @@ export default {
         leafs: [
           {
             name: 'Nuxt.js',
-            ripple: 'white--text',
             to: 'nuxt',
             title: 'Nuxt.js is a framework for creating Universal Vue.js Applications.Its main scope is UI rendering while abstracting away the client/server distribution.Our goal is to create a framework flexible enough that you can use it as a main project base or in addition to your current project based on Node.js.Nuxt.js presets all the configuration needed to make your development of a Vue.js Application Server Rendered more enjoyable.In addition, we also provide another deployment option called: nuxt generate. It will build a Static Generated Vue.js Application. We believe that option could be the next big step in the development of Web Applications with microservices.As a framework, Nuxt.js comes with a lot of features to help you in your development between the client side and the server side such as Asynchronous Data, Middleware, Layouts, etc.',
             logo: 'https://pbs.twimg.com/profile_images/805469971664998400/UAIojlzx_400x400.jpg',
@@ -1213,7 +1184,6 @@ export default {
           },
           {
             name: 'Next.js',
-            ripple: 'white--text',
             to: 'next',
             logo: 'https://d2eip9sf3oo6c2.cloudfront.net/tags/images/000/001/074/full/nextjs.png',
             badge: 'brands/react',
@@ -1239,7 +1209,6 @@ export default {
         leafs: [
           {
             name: 'SVG',
-            ripple: 'amber--text',
             logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/SVG_Logo.svg/2000px-SVG_Logo.svg.png',
             to: 'svg',
             sources: [
@@ -1255,7 +1224,6 @@ export default {
           },
           {
             name: 'HTML Canvas',
-            ripple: 'lime--text',
             logo: 'https://img08.deviantart.net/aed0/i/2012/172/5/0/html5_canvas_logo_by_netgoblin154-d54alet.png',
             to: 'canvas',
             req: [
@@ -1280,58 +1248,58 @@ export default {
               }
             ]
           },
-          { name: 'WebGL', ripple: 'red--text', href: 'https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API', logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/WebGL_Logo.svg/2000px-WebGL_Logo.svg.png' },
-          { name: 'Three.js', ripple: 'white--text', href: 'https://threejs.org/', logo: 'https://kenoleon.github.io/Front-End-Web-Dev-UI-UX/assets/images/threejsLogo.jpg' },
-          { name: 'Vivus.js', ripple: 'light-blue--text', href: 'http://maxwellito.github.io/vivus/', logo: 'https://taxi-luxembourg.lu/wp-content/uploads/2016/04/dummy-post-square-1.jpg' },
-          { name: 'Bonsai.js', ripple: 'indigo--text', href: 'http://bonsaijs.org/', logo: 'https://taxi-luxembourg.lu/wp-content/uploads/2016/04/dummy-post-square-1.jpg' },
-          { name: 'Velocity.js', ripple: 'indigo--text', href: 'http://velocityjs.org/', logo: 'https://taxi-luxembourg.lu/wp-content/uploads/2016/04/dummy-post-square-1.jpg' },
-          { name: 'Raphaël.js', ripple: 'orange--text', href: 'http://dmitrybaranovskiy.github.io/raphael/', logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Rapha%C3%ABl_logo.svg/2000px-Rapha%C3%ABl_logo.svg.png' },
-          { name: 'SnapSVG', ripple: 'teal--text', href: 'http://snapsvg.io/', logo: 'http://www.stickpng.com/assets/images/58482e09cef1014c0b5e4a65.png' },
-          { name: 'Lazy Line Painter', ripple: 'white--text', href: 'http://lazylinepainter.info/', logo: 'https://www.jqueryscript.net/images/SVG-Path-Animation-Plugin-with-jQuery-Lazy-Line-Painter.jpg' },
-          { name: 'SVG.js', ripple: 'pink--text', href: 'http://svgjs.com/', logo: 'http://svgjs.com/assets/images/logo-svg-js-01d.png' },
-          { name: 'Walkway.js', ripple: 'orange--text', href: 'https://www.connoratherton.com/walkway', logo: 'http://maxcdn.webappers.com/img/2014/11/walkway-js.jpg' },
-          { name: 'Popmotion', ripple: 'pink--text', href: 'https://popmotion.io/', logo: 'https://pbs.twimg.com/profile_images/932879315343167488/m4w3StTy_400x400.jpg' },
-          { name: 'Bounce.js', ripple: 'light-blue--text', href: 'http://bouncejs.com/', logo: 'https://taxi-luxembourg.lu/wp-content/uploads/2016/04/dummy-post-square-1.jpg' },
-          { name: 'Typed.js', ripple: 'amber--text', href: 'https://mattboldt.com/demos/typed-js/', logo: 'https://taxi-luxembourg.lu/wp-content/uploads/2016/04/dummy-post-square-1.jpg' },
-          { name: 'GSAP', ripple: 'white--text', href: 'https://greensock.com/', logo: 'https://d2eip9sf3oo6c2.cloudfront.net/tags/images/000/001/088/thumb/tweenmax.png' },
-          { name: 'Tilt.js', ripple: 'pink--text', href: 'https://gijsroge.github.io/tilt.js/', logo: 'https://taxi-luxembourg.lu/wp-content/uploads/2016/04/dummy-post-square-1.jpg' },
-          { name: 'Sketch.js', ripple: 'grey--text', href: 'http://soulwire.github.io/sketch.js/', logo: 'https://taxi-luxembourg.lu/wp-content/uploads/2016/04/dummy-post-square-1.jpg' },
-          { name: 'Animejs', ripple: 'black--text', href: 'http://animejs.com', logo: 'https://codepen.io/juliangarnier/pen/oZNYXB/image/large.png' },
-          { name: 'Animate.css', ripple: 'white--text', href: 'https://daneden.github.io/animate.css/', logo: 'http://worthyofnote.co.uk/wp-content/uploads/2013/07/animate-css.jpg' }
+          { name: 'WebGL', href: 'https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API', logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/WebGL_Logo.svg/2000px-WebGL_Logo.svg.png' },
+          { name: 'Three.js', href: 'https://threejs.org/', logo: 'https://kenoleon.github.io/Front-End-Web-Dev-UI-UX/assets/images/threejsLogo.jpg' },
+          { name: 'Vivus.js', href: 'http://maxwellito.github.io/vivus/', logo: 'https://taxi-luxembourg.lu/wp-content/uploads/2016/04/dummy-post-square-1.jpg' },
+          { name: 'Bonsai.js', href: 'http://bonsaijs.org/', logo: 'https://taxi-luxembourg.lu/wp-content/uploads/2016/04/dummy-post-square-1.jpg' },
+          { name: 'Velocity.js', href: 'http://velocityjs.org/', logo: 'https://taxi-luxembourg.lu/wp-content/uploads/2016/04/dummy-post-square-1.jpg' },
+          { name: 'Raphaël.js', href: 'http://dmitrybaranovskiy.github.io/raphael/', logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Rapha%C3%ABl_logo.svg/2000px-Rapha%C3%ABl_logo.svg.png' },
+          { name: 'SnapSVG', href: 'http://snapsvg.io/', logo: 'http://www.stickpng.com/assets/images/58482e09cef1014c0b5e4a65.png' },
+          { name: 'Lazy Line Painter', href: 'http://lazylinepainter.info/', logo: 'https://www.jqueryscript.net/images/SVG-Path-Animation-Plugin-with-jQuery-Lazy-Line-Painter.jpg' },
+          { name: 'SVG.js', href: 'http://svgjs.com/', logo: 'http://svgjs.com/assets/images/logo-svg-js-01d.png' },
+          { name: 'Walkway.js', href: 'https://www.connoratherton.com/walkway', logo: 'http://maxcdn.webappers.com/img/2014/11/walkway-js.jpg' },
+          { name: 'Popmotion', href: 'https://popmotion.io/', logo: 'https://pbs.twimg.com/profile_images/932879315343167488/m4w3StTy_400x400.jpg' },
+          { name: 'Bounce.js', href: 'http://bouncejs.com/', logo: 'https://taxi-luxembourg.lu/wp-content/uploads/2016/04/dummy-post-square-1.jpg' },
+          { name: 'Typed.js', href: 'https://mattboldt.com/demos/typed-js/', logo: 'https://taxi-luxembourg.lu/wp-content/uploads/2016/04/dummy-post-square-1.jpg' },
+          { name: 'GSAP', href: 'https://greensock.com/', logo: 'https://d2eip9sf3oo6c2.cloudfront.net/tags/images/000/001/088/thumb/tweenmax.png' },
+          { name: 'Tilt.js', href: 'https://gijsroge.github.io/tilt.js/', logo: 'https://taxi-luxembourg.lu/wp-content/uploads/2016/04/dummy-post-square-1.jpg' },
+          { name: 'Sketch.js', href: 'http://soulwire.github.io/sketch.js/', logo: 'https://taxi-luxembourg.lu/wp-content/uploads/2016/04/dummy-post-square-1.jpg' },
+          { name: 'Animejs', href: 'http://animejs.com', logo: 'https://codepen.io/juliangarnier/pen/oZNYXB/image/large.png' },
+          { name: 'Animate.css', href: 'https://daneden.github.io/animate.css/', logo: 'http://worthyofnote.co.uk/wp-content/uploads/2013/07/animate-css.jpg' }
         ]
       },
       { name: 'Hosting',
         description: 'Put your project on the web',
         id: 'hosting',
         leafs: [
-          { name: 'Amazon S3', ripple: 'red--text', to: '/s3', logo: 'https://cdn.worldvectorlogo.com/logos/aws-s3.svg' },
-          { name: 'Amazon EC2', ripple: 'amber--text', to: '/ec2', logo: 'https://cdn.worldvectorlogo.com/logos/aws-ec2.svg' },
-          { name: 'Netlify', ripple: 'teal--text', href: 'https://www.netlify.com/', logo: 'https://www.netlify.com/img/press/logos/logomark.png' },
-          { name: 'Bluehost', ripple: 'blue--text', href: 'https://www.bluehost.com/', logo: 'https://www.bluehost.com/blog/wp-content/uploads/2017/07/logo5.png' },
-          { name: 'Firebase', ripple: 'amber--text', to: '/firease', logo: 'https://firebase.google.com/_static/images/firebase/touchicon-180.png' }
+          { name: 'Amazon S3', to: '/s3', logo: 'https://cdn.worldvectorlogo.com/logos/aws-s3.svg' },
+          { name: 'Amazon EC2', to: '/ec2', logo: 'https://cdn.worldvectorlogo.com/logos/aws-ec2.svg' },
+          { name: 'Netlify', href: 'https://www.netlify.com/', logo: 'https://www.netlify.com/img/press/logos/logomark.png' },
+          { name: 'Bluehost', href: 'https://www.bluehost.com/', logo: 'https://www.bluehost.com/blog/wp-content/uploads/2017/07/logo5.png' },
+          { name: 'Firebase', todo: '/firease', logo: 'https://firebase.google.com/_static/images/firebase/touchicon-180.png' }
         ]
       },
       { name: 'Apps',
         description: 'Build cross-platform native apps using web development skill',
         id: 'apps',
         leafs: [
-          { name: 'Flutter', ripple: 'blue--text', href: 'https://flutter.io/', logo: 'https://cdn-images-1.medium.com/max/1200/1*5-aoK8IBmXve5whBQM90GA.png' },
-          { name: 'Ionic', ripple: 'black-text', href: 'https://ionicframework.com/', logo: 'https://lh3.googleusercontent.com/s4KD6rLbGKZz-q9YzfVt_FgSk_q2yt-Jp6Al-KY14hAaVW2IFX_QOj56iC8lJoamECs=w300' },
-          { name: 'Electron', ripple: 'indigo--text', href: 'https://electronjs.org/', logo: 'https://pbs.twimg.com/profile_images/730268134460903424/8WOgriUU_400x400.jpg' },
-          { name: 'NativeScript', ripple: 'blue--text', href: 'https://www.nativescript.org/', logo: 'https://d2odgkulk9w7if.cloudfront.net/images/default-source/default-album/nativescript.png?sfvrsn=69909fe_0' },
-          { name: 'NS-Vue', ripple: 'teal--text', href: 'https://nativescript-vue.org/', logo: 'https://avatars1.githubusercontent.com/u/32681046?s=280&v=4', badge: 'brands/vuejs', badgecolor: 'teal--text' },
-          { name: 'React Native', ripple: 'light-blue--text', href: 'https://facebook.github.io/react-native/', logo: 'https://cdn-images-1.medium.com/max/1600/1*XXF26vmDRr6vRY84d1BCKA.png', badge: 'brands/react', badgecolor: 'light-blue--text' },
-          { name: 'Fuse', ripple: 'white--text', href: 'https://www.fusetools.com/', logo: 'https://avatars1.githubusercontent.com/u/10243317?s=280&v=4' },
-          { name: 'Onsen UI', ripple: 'red--text', href: 'https://onsen.io/', logo: 'https://s3.amazonaws.com/media-p.slid.es/uploads/344767/images/2769652/g7.png' },
-          { name: 'Framework7', ripple: 'red--text', href: 'https://framework7.io/', logo: 'https://discoversdkcdn.azureedge.net/runtimecontent/companyfiles/6680/2706/thumbnail.png?v131157447489100864' },
-          { name: 'Appcelerator', ripple: 'red--text', href: 'https://www.appcelerator.com/', logo: 'https://pbs.twimg.com/profile_images/865600112868769794/TECPQ7Rb_400x400.jpg' },
-          { name: 'Weex', ripple: 'light-blue--text', href: 'https://weex.incubator.apache.org/', logo: 'https://cdn-images-1.medium.com/max/358/1*JGQP6WjsRwiiLTNPiCAH5A.png' },
-          { name: 'Quasar', ripple: 'blue--text', href: 'https://quasar-framework.org/', logo: 'https://avatars3.githubusercontent.com/u/23064371?v=4' },
-          { name: 'Cocoon', ripple: 'grey--text', href: 'https://cocoon.io/', logo: 'https://pbs.twimg.com/profile_images/590908349471916033/GGl0hWfy_400x400.png' },
-          { name: 'Monaca', ripple: 'blue--text', href: 'https://monaca.io', logo: 'https://img.crx4chrome.com/4e/79/df/igimoohpkianbofjknpbnfehmkecbegl-logo.png' },
-          { name: 'Cordova', ripple: 'grey--text', href: 'https://cordova.apache.org/', logo: 'https://cordova.apache.org/static/img/cordova_bot.png' },
-          { name: 'RubyMotion', ripple: 'red--text', href: 'http://www.rubymotion.com/', logo: 'http://www.rubymotion.com/img/rubymotion-logo.png' },
-          { name: 'PhoneGap', ripple: 'black--text', href: 'https://phonegap.com/', logo: 'https://cdn.worldvectorlogo.com/logos/phonegap.svg' }
+          { name: 'Flutter', href: 'https://flutter.io/', logo: 'https://cdn-images-1.medium.com/max/1200/1*5-aoK8IBmXve5whBQM90GA.png' },
+          { name: 'Ionic', href: 'https://ionicframework.com/', logo: 'https://lh3.googleusercontent.com/s4KD6rLbGKZz-q9YzfVt_FgSk_q2yt-Jp6Al-KY14hAaVW2IFX_QOj56iC8lJoamECs=w300' },
+          { name: 'Electron', href: 'https://electronjs.org/', logo: 'https://pbs.twimg.com/profile_images/730268134460903424/8WOgriUU_400x400.jpg' },
+          { name: 'NativeScript', href: 'https://www.nativescript.org/', logo: 'https://d2odgkulk9w7if.cloudfront.net/images/default-source/default-album/nativescript.png?sfvrsn=69909fe_0' },
+          { name: 'NS-Vue', href: 'https://nativescript-vue.org/', logo: 'https://avatars1.githubusercontent.com/u/32681046?s=280&v=4', badge: 'brands/vuejs', badgecolor: 'teal--text' },
+          { name: 'React Native', href: 'https://facebook.github.io/react-native/', logo: 'https://cdn-images-1.medium.com/max/1600/1*XXF26vmDRr6vRY84d1BCKA.png', badge: 'brands/react', badgecolor: 'light-blue--text' },
+          { name: 'Fuse', href: 'https://www.fusetools.com/', logo: 'https://avatars1.githubusercontent.com/u/10243317?s=280&v=4' },
+          { name: 'Onsen UI', href: 'https://onsen.io/', logo: 'https://s3.amazonaws.com/media-p.slid.es/uploads/344767/images/2769652/g7.png' },
+          { name: 'Framework7', href: 'https://framework7.io/', logo: 'https://discoversdkcdn.azureedge.net/runtimecontent/companyfiles/6680/2706/thumbnail.png?v131157447489100864' },
+          { name: 'Appcelerator', href: 'https://www.appcelerator.com/', logo: 'https://pbs.twimg.com/profile_images/865600112868769794/TECPQ7Rb_400x400.jpg' },
+          { name: 'Weex', href: 'https://weex.incubator.apache.org/', logo: 'https://cdn-images-1.medium.com/max/358/1*JGQP6WjsRwiiLTNPiCAH5A.png' },
+          { name: 'Quasar', href: 'https://quasar-framework.org/', logo: 'https://avatars3.githubusercontent.com/u/23064371?v=4' },
+          { name: 'Cocoon', href: 'https://cocoon.io/', logo: 'https://pbs.twimg.com/profile_images/590908349471916033/GGl0hWfy_400x400.png' },
+          { name: 'Monaca', href: 'https://monaca.io', logo: 'https://img.crx4chrome.com/4e/79/df/igimoohpkianbofjknpbnfehmkecbegl-logo.png' },
+          { name: 'Cordova', href: 'https://cordova.apache.org/', logo: 'https://cordova.apache.org/static/img/cordova_bot.png' },
+          { name: 'RubyMotion', href: 'http://www.rubymotion.com/', logo: 'http://www.rubymotion.com/img/rubymotion-logo.png' },
+          { name: 'PhoneGap', href: 'https://phonegap.com/', logo: 'https://cdn.worldvectorlogo.com/logos/phonegap.svg' }
         ]
       },
       { name: 'Tools',
@@ -1341,7 +1309,6 @@ export default {
           {
             name: 'GitHub',
             to: 'github',
-            ripple: 'light-blue--text',
             logo: 'https://assets-cdn.github.com/images/modules/logos_page/Octocat.png',
             sources: [
               { name: 'Documentation',
@@ -1362,23 +1329,25 @@ export default {
               }
             ]
           },
-          { name: 'Firebase', ripple: 'amber--text', to: '/firease', logo: 'https://firebase.google.com/_static/images/firebase/touchicon-180.png' },
-          { name: 'NPM', ripple: 'red--text', href: 'https://www.npmjs.com/', logo: 'https://d2eip9sf3oo6c2.cloudfront.net/tags/images/000/000/188/full/npmlogo.png' },
-          { name: 'Stenciljs', ripple: 'black--text', href: 'https://stenciljs.com/', logo: 'https://pbs.twimg.com/profile_images/895677818998185985/mWrrADXf_400x400.jpg' },
-          { name: 'Material Design', ripple: 'grey--text', href: 'https://material.io/', logo: 'https://cdn.dribbble.com/users/75794/screenshots/3051672/mb_social_1.gif' },
-          { name: 'CodePen', ripple: 'white--text', href: 'https://codepen.io/', logo: 'http://blog.codepen.io/wp-content/uploads/2012/06/Button-Fill-White-Large.png' },
-          { name: 'Tryit Editor', ripple: 'light-green--text', href: 'https://www.w3schools.com/html/tryit.asp?filename=tryhtml_basic', logo: 'http://www.karlsjohnson.com/link/resources/images/w3school.png' },
-          { name: 'jsFiddle', ripple: 'blue--text', href: 'https://jsfiddle.net/', logo: 'https://cdn.iconscout.com/public/images/icon/free/png-512/jsfiddle-logo-cloud-38db5faa6163991e-512x512.png' },
-          { name: 'jsBin', ripple: 'white--text', href: 'https://jsbin.com/', logo: 'https://static.jsbin.com/images/logo.png' },
-          { name: 'Sketch', ripple: 'orange--text', href: 'https://www.sketchapp.com/', logo: 'https://www.sketchapp.com/images/press/sketch-press-kit/app-icons/sketch-mac-icon@2x.png' },
-          { name: 'Loaders.css', ripple: 'pink--text', href: 'https://connoratherton.com/loaders', logo: 'https://i.pinimg.com/originals/da/96/c9/da96c94b507e4c508dd6e901455cfe68.jpg' },
-          { name: 'Particles.js', ripple: 'red--text', href: 'https://vincentgarreau.com/particles.js/', logo: 'https://i.pinimg.com/originals/84/30/d2/8430d2bfcdfe8d00a9eaacb62fb272df.png' },
-          { name: 'Vue-Particles', ripple: 'grey--text', href: 'http://vue-particles.netlify.com/', logo: 'https://madewithvuejs.com/uploads/09/15/9e63f3fe-2e67-11e7-9074-7bd9458ed691.png' },
-          { name: 'Vue-Flat-Su...', ripple: 'green--text', href: 'https://grzhan.github.io/vue-flat-surface-shader/', logo: 'https://camo.githubusercontent.com/66719bf4fc62612031c20a927c19afaeb372fbc2/68747470733a2f2f7773332e73696e61696d672e636e2f6c617267652f303036744b665463677931666a78626633316370356a33306d383065697133702e6a7067' },
-          { name: '30s of CSS', ripple: 'cyan--text', href: 'https://atomiks.github.io/30-seconds-of-css/', logo: 'https://atomiks.github.io/30-seconds-of-css/e5b4b9ce166177b1bc2dc3772012e0a1.png' },
-          { name: 'Stripe', ripple: 'indigo--text', href: 'https://stripe.com', logo: 'https://stripe.com/img/v3/home/twitter.png' },
-          { name: 'Termly', ripple: 'light-blue--text', href: 'https://termly.io', logo: 'https://termly.io/wp-content/themes/genesis-tly-v2/build/images/favicon-192.png' },
-          { name: 'Copyrighted', ripple: 'red--text', href: 'https://www.copyrighted.com/', logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Red_copyright.svg/768px-Red_copyright.svg.png' }
+          { name: 'Firebase', to: 'firease', logo: 'https://firebase.google.com/_static/images/firebase/touchicon-180.png' },
+          { name: 'NPM', href: 'https://www.npmjs.com/', logo: 'https://d2eip9sf3oo6c2.cloudfront.net/tags/images/000/000/188/full/npmlogo.png' },
+          { name: 'Stenciljs', href: 'https://stenciljs.com/', logo: 'https://pbs.twimg.com/profile_images/895677818998185985/mWrrADXf_400x400.jpg' },
+          { name: 'Material Design', href: 'https://material.io/', logo: 'https://cdn.dribbble.com/users/75794/screenshots/3051672/mb_social_1.gif' },
+          { name: 'CodePen', href: 'https://codepen.io/', logo: 'http://blog.codepen.io/wp-content/uploads/2012/06/Button-Fill-White-Large.png' },
+          { name: 'Tryit Editor', href: 'https://www.w3schools.com/html/tryit.asp?filename=tryhtml_basic', logo: 'http://www.karlsjohnson.com/link/resources/images/w3school.png' },
+          { name: 'jsFiddle', href: 'https://jsfiddle.net/', logo: 'https://cdn.iconscout.com/public/images/icon/free/png-512/jsfiddle-logo-cloud-38db5faa6163991e-512x512.png' },
+          { name: 'jsBin', href: 'https://jsbin.com/', logo: 'https://static.jsbin.com/images/logo.png' },
+          { name: 'Sketch', href: 'https://www.sketchapp.com/', logo: 'https://www.sketchapp.com/images/press/sketch-press-kit/app-icons/sketch-mac-icon@2x.png' },
+          { name: 'Loaders.css', href: 'https://connoratherton.com/loaders', logo: 'https://i.pinimg.com/originals/da/96/c9/da96c94b507e4c508dd6e901455cfe68.jpg' },
+          { name: 'Particles.js', href: 'https://vincentgarreau.com/particles.js/', logo: 'https://i.pinimg.com/originals/84/30/d2/8430d2bfcdfe8d00a9eaacb62fb272df.png' },
+          { name: 'Vue-Particles', href: 'http://vue-particles.netlify.com/', logo: 'https://madewithvuejs.com/uploads/09/15/9e63f3fe-2e67-11e7-9074-7bd9458ed691.png' },
+          { name: 'Vue-Flat-Su...', href: 'https://grzhan.github.io/vue-flat-surface-shader/', logo: 'https://camo.githubusercontent.com/66719bf4fc62612031c20a927c19afaeb372fbc2/68747470733a2f2f7773332e73696e61696d672e636e2f6c617267652f303036744b665463677931666a78626633316370356a33306d383065697133702e6a7067' },
+          { name: 'uiGradients', href: 'https://uigradients.com', logo: 'http://wowacrylic.co.uk/71-189-large/75cm-x-50cm.jpg' }, 
+          { name: '30s of CSS', href: 'https://atomiks.github.io/30-seconds-of-css/', logo: 'https://atomiks.github.io/30-seconds-of-css/e5b4b9ce166177b1bc2dc3772012e0a1.png' },
+          { name: 'Stripe', href: 'https://stripe.com', logo: 'https://stripe.com/img/v3/home/twitter.png' },
+          { name: 'Termly', href: 'https://termly.io', logo: 'https://termly.io/wp-content/themes/genesis-tly-v2/build/images/favicon-192.png' },
+          { name: 'Copyrighted', href: 'https://www.copyrighted.com/', logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Red_copyright.svg/768px-Red_copyright.svg.png' },
+          { name: 'startupnamecheck', href: 'https://startupnamecheck.com/?ref=producthunt', logo: 'http://downloadicons.net/sites/default/files/list-icon-63778.png' }
 
         ]
       },
@@ -1386,21 +1355,21 @@ export default {
         description: 'Exploration, practice and inspiration',
         id: 'communities',
         leafs: [
-          { name: 'StackOverflow', ripple: 'amber--text', href: 'https://stackoverflow.com/', logo: 'https://i.stack.imgur.com/GKbCl.png' },
-          { name: 'Medium', ripple: 'black--text', href: 'https://medium.com', logo: 'https://cdn-images-1.medium.com/max/1600/1*emiGsBgJu2KHWyjluhKXQw.png' },
-          { name: 'HackerRank', ripple: 'lime--text', href: 'https://www.hackerrank.com/dashboard', logo: 'http://www.lukashejtmanek.cz/assets/img/symbol_transparent.png' },
-          { name: 'codewars', ripple: 'red--text', href: 'https://www.codewars.com/', logo: 'http://www.softlab.ntua.gr/~nickie/images/logo/codewars.png' },
-          { name: 'Codrops', ripple: 'blue--text', href: 'https://tympanus.net/codrops/category/tutorials/', logo: 'http://www.stickpng.com/assets/images/5847ebc2cef1014c0b5e4857.png' },
-          { name: 'Tutorialzine', ripple: 'white--text', href: 'https://tutorialzine.com/', logo: 'https://pbs.twimg.com/profile_images/868061114160099328/BD0P3vsp_400x400.jpg' },
-          { name: 'CSS-Tricks', ripple: 'black--text', href: 'https://css-tricks.com/', logo: 'https://cdn.css-tricks.com/wp-content/uploads/2014/03/css-tricks-star.png' },
-          { name: 'StackShare', ripple: 'blue--text', href: 'https://stackshare.io/', logo: 'https://static1.squarespace.com/static/564cbcb2e4b0741cdb668fe2/t/56b8c853d51cd41553c43507/1454950492725/StackShare.png' },
-          { name: 'Coligo', ripple: 'light-blue--text', href: 'https://coligo.io', logo: 'https://avatars2.githubusercontent.com/u/15895995?s=280&v=4' },
-          { name: 'Awwwards', ripple: 'white--text', href: 'https://www.awwwards.com/', logo: 'https://assets.awwwards.com/bundles/tvweb/images/logo-schema.png' },
-          { name: 'Smashing', ripple: 'deep-orange--text', href: 'https://www.smashingmagazine.com/', logo: 'http://www.stickpng.com/assets/images/58482e1fcef1014c0b5e4a66.png' },
-          { name: 'HubSpot', ripple: 'orange--text', href: 'https://www.hubspot.com/', logo: 'https://foxtailmarketing.com/wp-content/uploads/2015/05/hubspot-sprocket-logo.png' },
-          { name: 'Alligator', ripple: 'lime--text', href: 'https://alligator.io', logo: 'https://d33wubrfki0l68.cloudfront.net/4e5626a0b7db6b84c0b51f1c0cfd56490fc19b74/7a5ad/images/logo-fancy.svg' },
-          { name: 'SitePoint', ripple: 'black--text', href: 'https://sitepoint.com', logo: 'http://www.stickpng.com/assets/images/58482e76cef1014c0b5e4a6c.png' },
-          { name: 'Coursetro', ripple: 'white--text', href: 'https://coursetro.com', logo: 'https://coursetro.com/images/logo-new.svg' }
+          { name: 'StackOverflow', href: 'https://stackoverflow.com/', logo: 'https://i.stack.imgur.com/GKbCl.png' },
+          { name: 'Medium', href: 'https://medium.com', logo: 'https://cdn-images-1.medium.com/max/1600/1*emiGsBgJu2KHWyjluhKXQw.png' },
+          { name: 'HackerRank', href: 'https://www.hackerrank.com/dashboard', logo: 'http://www.lukashejtmanek.cz/assets/img/symbol_transparent.png' },
+          { name: 'codewars', href: 'https://www.codewars.com/', logo: 'http://www.softlab.ntua.gr/~nickie/images/logo/codewars.png' },
+          { name: 'Codrops', href: 'https://tympanus.net/codrops/category/tutorials/', logo: 'http://www.stickpng.com/assets/images/5847ebc2cef1014c0b5e4857.png' },
+          { name: 'Tutorialzine', href: 'https://tutorialzine.com/', logo: 'https://pbs.twimg.com/profile_images/868061114160099328/BD0P3vsp_400x400.jpg' },
+          { name: 'CSS-Tricks', href: 'https://css-tricks.com/', logo: 'https://cdn.css-tricks.com/wp-content/uploads/2014/03/css-tricks-star.png' },
+          { name: 'StackShare', href: 'https://stackshare.io/', logo: 'https://static1.squarespace.com/static/564cbcb2e4b0741cdb668fe2/t/56b8c853d51cd41553c43507/1454950492725/StackShare.png' },
+          { name: 'Coligo', href: 'https://coligo.io', logo: 'https://avatars2.githubusercontent.com/u/15895995?s=280&v=4' },
+          { name: 'Awwwards', href: 'https://www.awwwards.com/', logo: 'https://assets.awwwards.com/bundles/tvweb/images/logo-schema.png' },
+          { name: 'Smashing', href: 'https://www.smashingmagazine.com/', logo: 'http://www.stickpng.com/assets/images/58482e1fcef1014c0b5e4a66.png' },
+          { name: 'HubSpot', href: 'https://www.hubspot.com/', logo: 'https://foxtailmarketing.com/wp-content/uploads/2015/05/hubspot-sprocket-logo.png' },
+          { name: 'Alligator', href: 'https://alligator.io', logo: 'https://d33wubrfki0l68.cloudfront.net/4e5626a0b7db6b84c0b51f1c0cfd56490fc19b74/7a5ad/images/logo-fancy.svg' },
+          { name: 'SitePoint', href: 'https://sitepoint.com', logo: 'http://www.stickpng.com/assets/images/58482e76cef1014c0b5e4a6c.png' },
+          { name: 'Coursetro', href: 'https://coursetro.com', logo: 'https://coursetro.com/images/logo-new.svg' }
         ]
       }
     ]

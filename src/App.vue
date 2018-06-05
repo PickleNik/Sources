@@ -73,7 +73,7 @@ export default {
       this.$vuetify.theme.background = '#eee'
       this.$vuetify.theme.secondary = '#dedede'
       this.$vuetify.theme.primary = '#fff'
-      this.$vuetify.theme.accent = '#4CAF50'
+      this.$vuetify.theme.accent = '#66BB6A'
     }
   }
 }
@@ -96,7 +96,7 @@ export default {
   .light {
     --heroBG: url('https://images.unsplash.com/photo-1491947153227-33d59da6c448?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=3f475006a86934d5e483676571dde298&auto=format&fit=crop&w=2000&q=80') 100% 100% no-repeat;
     --secondary: #eee;
-    --accent: #4CAF50;
+    --accent: #66BB6A;
     --title: #aeaeae;
     --text: #555;
     --primary: #fff;
@@ -226,6 +226,40 @@ export default {
   .slideInUp {
     animation: slideInUp .5s ease 1 forwards;
   }
+  @keyframes rubberBand {
+    from {
+      transform: scale3d(1, 1, 1);
+    }
+
+    30% {
+      transform: scale3d(1.25, 0.75, 1);
+    }
+
+    40% {
+      transform: scale3d(0.75, 1.25, 1);
+    }
+
+    50% {
+      transform: scale3d(1.15, 0.85, 1);
+    }
+
+    65% {
+      transform: scale3d(.95, 1.05, 1);
+    }
+
+    75% {
+      transform: scale3d(1.05, .95, 1);
+    }
+
+    to {
+      transform: scale3d(1, 1, 1);
+    }
+  }
+
+  .rubberBand {
+    animation: rubberBand 1s linear 1;
+  }
+
   /* Ilin */
   .link--ilin {
   	overflow: hidden;
