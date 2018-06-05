@@ -62,17 +62,22 @@
         </div>
       </v-flex>
 
-      <v-flex md2 lg2 id="nav" class="zoom hidden-sm-and-down mt-4 pa-3">
-        <v-layout column>
-          <a v-for="nav in navs" :key="nav.name" href="#" v-scroll-to="{el:nav.href, offset: nav.offset}">
-            <v-btn small round flat :to="nav.to" class="ma-0 pr-2 link link--kukuri">
-              <v-icon left class="accent--text">{{ nav.icon }}</v-icon>
-              {{ nav.name }}
-              <v-icon class="pb-1">{{ nav.posticon }}</v-icon>
-            </v-btn>
-          </a>
-        </v-layout>
+      <v-flex id="add" xs12 sm12 md8 offset-md2 lg8 offset-lg2 class="zoom mt-4">
+          <v-layout row style="animation-delay:.2s;" class="pa-3 mb-3 roundXXL secondary text-align-right">
+            <v-text-field dark
+            name="Folder Name"
+            label="Folder Name"
+            prepend-icon="folder"
+            class="text--text mx-3"
+            color="accent"
+            counter="10"
+            clearable>
+            </v-text-field>
+            <v-btn fab large class="ma-0 background text--text"><v-icon>add_circle</v-icon></v-btn>
+          </v-layout>
       </v-flex>
+
+      <app-nav :navs="navs"></app-nav>
 
     </v-container>
   </v-app>
@@ -85,7 +90,7 @@ export default {
       navs: [
         { name: 'Folder 1', href: '#folder1', offset: -33, icon: 'folder' },
         { name: 'Folder 2', href: '#folder2', offset: -33, icon: 'folder' },
-        { name: 'Add folder', click: '', icon: 'create_new_folder' }
+        { name: 'Add folder', href: '#add', offset: -33, icon: 'create_new_folder' }
       ]
     }
   },
@@ -125,47 +130,5 @@ export default {
   position:fixed;
   left:0;
   top:1em;
-}
-.link {
-  text-decoration: none;
-  position: relative;
-}
-/* Kukuri */
-.link--kukuri {
-  text-transform: uppercase;
-  font-weight: 900;
-  overflow: hidden;
-  line-height: 0.75;
-  color: var(--text);
-}
-
-.link--kukuri:hover {
-  color: var(--accent);
-}
-
-.link--kukuri::after {
-  content: '';
-  position: absolute;
-  height: 6px;
-  width: 100%;
-  top: 50%;
-  margin-top: -4px;
-  right: 0;
-  background: var(--accent);
-  border-radius:1em;
-  -webkit-transform: translate3d(-111%,0,0);
-  transform: translate3d(-111%,0,0);
-  -webkit-transition: -webkit-transform 0.4s;
-  transition: transform .3s;
-  -webkit-transition-timing-function: cubic-bezier(0.7,0,0.3,1);
-  transition-timing-function: cubic-bezier(0.7,0,0.3,1);
-}
-
-.link--kukuri:hover::after {
-  -webkit-transform: translate3d(100%,0,0);
-  transform: translate3d(100%,0,0);
-}
-.link--kukuri:hover::before {
-  width: 100%;
 }
 </style>
