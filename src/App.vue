@@ -2,7 +2,7 @@
   <v-app class="background" :class="{ light: theme }">
     <v-toolbar dark flat fixed class="transparent hidden-sm-and-down pl-4" style="min-width:100vw;">
 
-      <v-toolbar-title style="cursor:pointer;" class="ml-0 round"><router-link to="/" tag="span" class="link--ilin text--text"><icon class="mx-1 accent--text" name="tree" scale="1.5"></icon><span>Tuts</span><span>Tree<icon class="mx-1 accent--text" name="terminal" scale="1.5"></icon></span></router-link></v-toolbar-title>
+      <v-toolbar-title style="cursor:pointer;" class="ml-0 round"><router-link to="/" tag="span" class="link--ilin text--text"><span><icon class="mx-1 accent--text" name="tree" scale="1.5"></icon>Tuts</span><span>Tree<icon class="mx-1 accent--text" name="terminal" scale="1.5"></icon></span></router-link></v-toolbar-title>
       <v-spacer></v-spacer>
 
         <v-tooltip bottom color="primary"><span class="text--text">Sources</span><v-btn slot="activator" color="accent" flat fab to="/sources" class="zoom ma-0"><v-icon dark>local_library</v-icon></v-btn></v-tooltip>

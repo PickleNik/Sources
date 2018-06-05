@@ -1342,7 +1342,7 @@ export default {
           { name: 'Particles.js', href: 'https://vincentgarreau.com/particles.js/', logo: 'https://i.pinimg.com/originals/84/30/d2/8430d2bfcdfe8d00a9eaacb62fb272df.png' },
           { name: 'Vue-Particles', href: 'http://vue-particles.netlify.com/', logo: 'https://madewithvuejs.com/uploads/09/15/9e63f3fe-2e67-11e7-9074-7bd9458ed691.png' },
           { name: 'Vue-Flat-Su...', href: 'https://grzhan.github.io/vue-flat-surface-shader/', logo: 'https://camo.githubusercontent.com/66719bf4fc62612031c20a927c19afaeb372fbc2/68747470733a2f2f7773332e73696e61696d672e636e2f6c617267652f303036744b665463677931666a78626633316370356a33306d383065697133702e6a7067' },
-          { name: 'uiGradients', href: 'https://uigradients.com', logo: 'http://wowacrylic.co.uk/71-189-large/75cm-x-50cm.jpg' }, 
+          { name: 'uiGradients', href: 'https://uigradients.com', logo: 'http://wowacrylic.co.uk/71-189-large/75cm-x-50cm.jpg' },
           { name: '30s of CSS', href: 'https://atomiks.github.io/30-seconds-of-css/', logo: 'https://atomiks.github.io/30-seconds-of-css/e5b4b9ce166177b1bc2dc3772012e0a1.png' },
           { name: 'Stripe', href: 'https://stripe.com', logo: 'https://stripe.com/img/v3/home/twitter.png' },
           { name: 'Termly', href: 'https://termly.io', logo: 'https://termly.io/wp-content/themes/genesis-tly-v2/build/images/favicon-192.png' },
