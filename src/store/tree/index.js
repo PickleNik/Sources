@@ -556,13 +556,30 @@ export default {
                 logo: 'http://www.softlab.ntua.gr/~nickie/images/logo/codewars.png',
                 icon: 'games' }
             ]
-          }
-        ]
-      },
-      { name: 'Text-Editors',
-        description: '',
-        id: 'editors',
-        leafs: [
+          },
+          {
+            name: 'GitHub',
+            to: 'github',
+            logo: 'https://assets-cdn.github.com/images/modules/logos_page/Octocat.png',
+            sources: [
+              { name: 'Documentation',
+                todo: false,
+                starred: false,
+                shared: false,
+                link: 'https://guides.github.com/',
+                logo: 'https://image.flaticon.com/icons/svg/25/25231.svg',
+                icon: 'important_devices'
+              },
+              { name: 'The Net Ninja',
+                todo: false,
+                starred: false,
+                shared: false,
+                link: 'https://www.youtube.com/playlist?list=PL4cUxeGkcC9goXbgTDQ0n_4TBzOO0ocPR;',
+                logo: 'https://yt3.ggpht.com/a-/AJLlDp2oM9rg7DFu7iit71Ndh0yNIEL7F_j0VCRWuQ=s900-mo-c-c0xffffffff-rj-k-no',
+                icon: 'important_devices'
+              }
+            ]
+          },
           {
             name: 'Typing',
             to: 'typing',
@@ -628,6 +645,13 @@ export default {
               }
             ]
           },
+          { name: 'NPM', href: 'https://www.npmjs.com/', logo: 'https://d2eip9sf3oo6c2.cloudfront.net/tags/images/000/000/188/full/npmlogo.png' }
+        ]
+      },
+      { name: 'Text-Editors',
+        description: '',
+        id: 'editors',
+        leafs: [
           { name: 'Atom', logo: 'https://raw.githubusercontent.com/stvhwrd/icons/master/atom/Atom-no_shadows-512.png', href: 'https://atom.io/' },
           { name: 'Brackets', href: 'http://brackets.io/', logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Brackets_Icon.svg/2000px-Brackets_Icon.svg.png' },
           { name: 'Sublime Text', href: 'https://www.sublimetext.com/', logo: 'https://icon-icons.com/icons2/1381/PNG/512/sublimetext_94866.png' }
@@ -1158,49 +1182,26 @@ export default {
           { name: 'Clarity', href: 'https://vmware.github.io/clarity/', logo: 'https://habrastorage.org/webt/59/f0/51/59f05155beffd369502984.png', badge: 'brands/angular', badgecolor: 'pink--text' }
         ]
       },
-      { name: 'SSR',
-        description: 'Make your website load faster with Server Side Rendering',
-        id: 'ssr',
+      { name: 'Hosting',
+        description: 'Put your project on the web',
+        id: 'hosting',
         leafs: [
-          {
-            name: 'Nuxt.js',
-            to: 'nuxt',
-            title: 'Nuxt.js is a framework for creating Universal Vue.js Applications.Its main scope is UI rendering while abstracting away the client/server distribution.Our goal is to create a framework flexible enough that you can use it as a main project base or in addition to your current project based on Node.js.Nuxt.js presets all the configuration needed to make your development of a Vue.js Application Server Rendered more enjoyable.In addition, we also provide another deployment option called: nuxt generate. It will build a Static Generated Vue.js Application. We believe that option could be the next big step in the development of Web Applications with microservices.As a framework, Nuxt.js comes with a lot of features to help you in your development between the client side and the server side such as Asynchronous Data, Middleware, Layouts, etc.',
-            logo: 'https://pbs.twimg.com/profile_images/805469971664998400/UAIojlzx_400x400.jpg',
-            badge: 'brands/vuejs',
-            badgecolor: 'teal--text',
-            req: [
-              { name: 'Vue', color: 'teal', to: 'leaf-vue', icon: 'brands/vuejs' }
-            ],
-            sources: [
-              { name: 'Documentation',
-                todo: false,
-                starred: false,
-                shared: false,
-                link: 'https://nuxtjs.org/',
-                logo: 'https://pbs.twimg.com/profile_images/805469971664998400/UAIojlzx_400x400.jpg',
-                icon: 'important_devices' }
-            ]
-          },
-          {
-            name: 'Next.js',
-            to: 'next',
-            logo: 'https://d2eip9sf3oo6c2.cloudfront.net/tags/images/000/001/074/full/nextjs.png',
-            badge: 'brands/react',
-            badgecolor: 'light-blue--text',
-            req: [
-              { name: 'React', color: 'light-blue', to: 'leaf-react', icon: 'brands/react' }
-            ],
-            sources: [
-              { name: 'Documentation',
-                todo: false,
-                starred: false,
-                shared: false,
-                link: 'https://nextjs.org/',
-                logo: 'https://d2eip9sf3oo6c2.cloudfront.net/tags/images/000/001/074/full/nextjs.png',
-                icon: 'important_devices' }
-            ]
-          }
+          { name: 'Amazon S3', to: '/s3', logo: 'https://cdn.worldvectorlogo.com/logos/aws-s3.svg' },
+          { name: 'Amazon EC2', to: '/ec2', logo: 'https://cdn.worldvectorlogo.com/logos/aws-ec2.svg' },
+          { name: 'Netlify', href: 'https://www.netlify.com/', logo: 'https://www.netlify.com/img/press/logos/logomark.png' },
+          { name: 'Bluehost', href: 'https://www.bluehost.com/', logo: 'https://www.bluehost.com/blog/wp-content/uploads/2017/07/logo5.png' },
+          { name: 'Firebase', to: 'firease', logo: 'https://firebase.google.com/_static/images/firebase/touchicon-180.png' }
+        ]
+      },
+      { name: 'Testing',
+        description: 'Check for bugs, typos and errors without a headache.',
+        id: 'testing',
+        leafs: [
+          { name: 'Jest', href: 'https://facebook.github.io/jest/', logo: 'https://d279iyy6fmg6l4.cloudfront.net/blog/Jest-For-Unit-Testing.png' },
+          { name: 'Mocha', href: 'https://mochajs.org/', logo: 'https://js.foundation/wp-content/uploads/sites/33/2017/02/mocha.png' },
+          { name: 'Jasmine', href: 'https://jasmine.github.io/', logo: 'https://upload.wikimedia.org/wikipedia/fa/2/22/Logo_jasmine.svg' },
+          { name: 'Karma', href: 'https://karma-runner.github.io/2.0/index.html', logo: 'https://odoruinu.files.wordpress.com/2014/11/3284117.png' },
+          { name: 'CircleCI', href: 'https://circleci.com/', logo: 'https://cdn.worldvectorlogo.com/logos/circleci.svg' }
         ]
       },
       { name: 'Graphics',
@@ -1268,15 +1269,49 @@ export default {
           { name: 'Animate.css', href: 'https://daneden.github.io/animate.css/', logo: 'http://worthyofnote.co.uk/wp-content/uploads/2013/07/animate-css.jpg' }
         ]
       },
-      { name: 'Hosting',
-        description: 'Put your project on the web',
-        id: 'hosting',
+      { name: 'SSR',
+        description: 'Make your website load faster with Server Side Rendering',
+        id: 'ssr',
         leafs: [
-          { name: 'Amazon S3', to: '/s3', logo: 'https://cdn.worldvectorlogo.com/logos/aws-s3.svg' },
-          { name: 'Amazon EC2', to: '/ec2', logo: 'https://cdn.worldvectorlogo.com/logos/aws-ec2.svg' },
-          { name: 'Netlify', href: 'https://www.netlify.com/', logo: 'https://www.netlify.com/img/press/logos/logomark.png' },
-          { name: 'Bluehost', href: 'https://www.bluehost.com/', logo: 'https://www.bluehost.com/blog/wp-content/uploads/2017/07/logo5.png' },
-          { name: 'Firebase', todo: '/firease', logo: 'https://firebase.google.com/_static/images/firebase/touchicon-180.png' }
+          {
+            name: 'Nuxt.js',
+            to: 'nuxt',
+            title: 'Nuxt.js is a framework for creating Universal Vue.js Applications.Its main scope is UI rendering while abstracting away the client/server distribution.Our goal is to create a framework flexible enough that you can use it as a main project base or in addition to your current project based on Node.js.Nuxt.js presets all the configuration needed to make your development of a Vue.js Application Server Rendered more enjoyable.In addition, we also provide another deployment option called: nuxt generate. It will build a Static Generated Vue.js Application. We believe that option could be the next big step in the development of Web Applications with microservices.As a framework, Nuxt.js comes with a lot of features to help you in your development between the client side and the server side such as Asynchronous Data, Middleware, Layouts, etc.',
+            logo: 'https://pbs.twimg.com/profile_images/805469971664998400/UAIojlzx_400x400.jpg',
+            badge: 'brands/vuejs',
+            badgecolor: 'teal--text',
+            req: [
+              { name: 'Vue', color: 'teal', to: 'leaf-vue', icon: 'brands/vuejs' }
+            ],
+            sources: [
+              { name: 'Documentation',
+                todo: false,
+                starred: false,
+                shared: false,
+                link: 'https://nuxtjs.org/',
+                logo: 'https://pbs.twimg.com/profile_images/805469971664998400/UAIojlzx_400x400.jpg',
+                icon: 'important_devices' }
+            ]
+          },
+          {
+            name: 'Next.js',
+            to: 'next',
+            logo: 'https://d2eip9sf3oo6c2.cloudfront.net/tags/images/000/001/074/full/nextjs.png',
+            badge: 'brands/react',
+            badgecolor: 'light-blue--text',
+            req: [
+              { name: 'React', color: 'light-blue', to: 'leaf-react', icon: 'brands/react' }
+            ],
+            sources: [
+              { name: 'Documentation',
+                todo: false,
+                starred: false,
+                shared: false,
+                link: 'https://nextjs.org/',
+                logo: 'https://d2eip9sf3oo6c2.cloudfront.net/tags/images/000/001/074/full/nextjs.png',
+                icon: 'important_devices' }
+            ]
+          }
         ]
       },
       { name: 'Apps',
@@ -1306,48 +1341,26 @@ export default {
         description: 'Definitely check theese out',
         id: 'tools',
         leafs: [
-          {
-            name: 'GitHub',
-            to: 'github',
-            logo: 'https://assets-cdn.github.com/images/modules/logos_page/Octocat.png',
-            sources: [
-              { name: 'Documentation',
-                todo: false,
-                starred: false,
-                shared: false,
-                link: 'https://guides.github.com/',
-                logo: 'https://image.flaticon.com/icons/svg/25/25231.svg',
-                icon: 'important_devices'
-              },
-              { name: 'The Net Ninja',
-                todo: false,
-                starred: false,
-                shared: false,
-                link: 'https://www.youtube.com/playlist?list=PL4cUxeGkcC9goXbgTDQ0n_4TBzOO0ocPR;',
-                logo: 'https://yt3.ggpht.com/a-/AJLlDp2oM9rg7DFu7iit71Ndh0yNIEL7F_j0VCRWuQ=s900-mo-c-c0xffffffff-rj-k-no',
-                icon: 'important_devices'
-              }
-            ]
-          },
           { name: 'Firebase', to: 'firease', logo: 'https://firebase.google.com/_static/images/firebase/touchicon-180.png' },
-          { name: 'NPM', href: 'https://www.npmjs.com/', logo: 'https://d2eip9sf3oo6c2.cloudfront.net/tags/images/000/000/188/full/npmlogo.png' },
           { name: 'Stenciljs', href: 'https://stenciljs.com/', logo: 'https://pbs.twimg.com/profile_images/895677818998185985/mWrrADXf_400x400.jpg' },
           { name: 'Material Design', href: 'https://material.io/', logo: 'https://cdn.dribbble.com/users/75794/screenshots/3051672/mb_social_1.gif' },
           { name: 'CodePen', href: 'https://codepen.io/', logo: 'http://blog.codepen.io/wp-content/uploads/2012/06/Button-Fill-White-Large.png' },
           { name: 'Tryit Editor', href: 'https://www.w3schools.com/html/tryit.asp?filename=tryhtml_basic', logo: 'http://www.karlsjohnson.com/link/resources/images/w3school.png' },
           { name: 'jsFiddle', href: 'https://jsfiddle.net/', logo: 'https://cdn.iconscout.com/public/images/icon/free/png-512/jsfiddle-logo-cloud-38db5faa6163991e-512x512.png' },
           { name: 'jsBin', href: 'https://jsbin.com/', logo: 'https://static.jsbin.com/images/logo.png' },
+          { name: 'Heroku', href: 'https://www.heroku.com/', logo: 'https://agileleague.com/wp-content/uploads/2012/09/heroku-logo-light3.png' },
           { name: 'Sketch', href: 'https://www.sketchapp.com/', logo: 'https://www.sketchapp.com/images/press/sketch-press-kit/app-icons/sketch-mac-icon@2x.png' },
+          { name: 'Stripe', href: 'https://stripe.com', logo: 'https://stripe.com/img/v3/home/twitter.png' },
+          { name: 'Termly', href: 'https://termly.io', logo: 'https://termly.io/wp-content/themes/genesis-tly-v2/build/images/favicon-192.png' },
+          { name: 'Copyrighted', href: 'https://www.copyrighted.com/', logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Red_copyright.svg/768px-Red_copyright.svg.png' },
           { name: 'Loaders.css', href: 'https://connoratherton.com/loaders', logo: 'https://i.pinimg.com/originals/da/96/c9/da96c94b507e4c508dd6e901455cfe68.jpg' },
           { name: 'Particles.js', href: 'https://vincentgarreau.com/particles.js/', logo: 'https://i.pinimg.com/originals/84/30/d2/8430d2bfcdfe8d00a9eaacb62fb272df.png' },
           { name: 'Vue-Particles', href: 'http://vue-particles.netlify.com/', logo: 'https://madewithvuejs.com/uploads/09/15/9e63f3fe-2e67-11e7-9074-7bd9458ed691.png' },
           { name: 'Vue-Flat-Su...', href: 'https://grzhan.github.io/vue-flat-surface-shader/', logo: 'https://camo.githubusercontent.com/66719bf4fc62612031c20a927c19afaeb372fbc2/68747470733a2f2f7773332e73696e61696d672e636e2f6c617267652f303036744b665463677931666a78626633316370356a33306d383065697133702e6a7067' },
           { name: 'uiGradients', href: 'https://uigradients.com', logo: 'http://wowacrylic.co.uk/71-189-large/75cm-x-50cm.jpg' },
           { name: '30s of CSS', href: 'https://atomiks.github.io/30-seconds-of-css/', logo: 'https://atomiks.github.io/30-seconds-of-css/e5b4b9ce166177b1bc2dc3772012e0a1.png' },
-          { name: 'Stripe', href: 'https://stripe.com', logo: 'https://stripe.com/img/v3/home/twitter.png' },
-          { name: 'Termly', href: 'https://termly.io', logo: 'https://termly.io/wp-content/themes/genesis-tly-v2/build/images/favicon-192.png' },
-          { name: 'Copyrighted', href: 'https://www.copyrighted.com/', logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Red_copyright.svg/768px-Red_copyright.svg.png' },
-          { name: 'startupnamecheck', href: 'https://startupnamecheck.com/?ref=producthunt', logo: 'http://downloadicons.net/sites/default/files/list-icon-63778.png' }
+          { name: 'startupnamecheck', href: 'https://startupnamecheck.com/?ref=producthunt', logo: 'http://downloadicons.net/sites/default/files/list-icon-63778.png' },
+          { name: 'p5.js', href: 'https://p5js.org/', logo: 'https://cdn-images-1.medium.com/max/790/0*VBze2-2kX06fDv8A.' }
 
         ]
       },
@@ -1413,6 +1426,9 @@ export default {
           return leaf.to === leafTo
         }) ||
         state.branches[11].leafs.find((leaf) => {
+          return leaf.to === leafTo
+        }) ||
+        state.branches[12].leafs.find((leaf) => {
           return leaf.to === leafTo
         })
       }

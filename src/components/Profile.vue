@@ -22,7 +22,7 @@
             <v-layout row>
               <h2 slot="activator" class="link link--yaku title--text pt-3 pl-3">
                 <v-btn class="ma-0 error primary--text mr-2" icon><v-icon>delete</v-icon></v-btn>
-                <v-btn class="ma-0 warning primary--text mr-2" icon><v-icon>remove</v-icon></v-btn>
+                <v-btn @click="folder1 = !folder1" class="ma-0 warning primary--text mr-2" icon><v-icon>remove</v-icon></v-btn>
                 <v-btn class="ma-0 accent primary--text mr-2" icon><v-icon>edit</v-icon></v-btn>
                 <span class="hidden-md-and-down" v-for="letter in 'Folder-1'.split('')">{{ letter }}</span>
               </h2>
@@ -33,8 +33,8 @@
           </v-flex>
         </v-layout>
         <div class="pa-3 mb-3 roundXXL secondary" style="border-top-left-radius:0;">
-          <v-flex style="animation-delay:.2s;" class="text-xs-center">
-            <app-src-card :sources="bookmarks"></app-src-card>
+          <v-flex style="animation-delay:.2s;transition-duration: 2s;transition-property:height;" class="text-xs-center">
+            <app-src-card v-if="folder1" :sources="bookmarks"></app-src-card>
           </v-flex>
         </div>
       </v-flex>
@@ -45,7 +45,7 @@
             <v-layout row>
               <h2 slot="activator" class="link link--yaku title--text pt-3 pl-3">
                 <v-btn class="ma-0 error primary--text mr-2" icon><v-icon>delete</v-icon></v-btn>
-                <v-btn class="ma-0 warning primary--text mr-2" icon><v-icon>remove</v-icon></v-btn>
+                <v-btn @click="folder2 = !folder2" class="ma-0 warning primary--text mr-2" icon><v-icon>remove</v-icon></v-btn>
                 <v-btn class="ma-0 accent primary--text mr-2" icon><v-icon>edit</v-icon></v-btn>
                 <span class="hidden-md-and-down" v-for="letter in 'Folder-2'.split('')">{{ letter }}</span>
               </h2>
@@ -57,7 +57,7 @@
         </v-layout>
         <div class="pa-3 mb-3 roundXXL secondary" style="border-top-left-radius:0;">
           <v-flex style="animation-delay:.2s;" class="text-xs-center">
-            <app-src-card :sources="bookmarks.slice(2,10)"></app-src-card>
+            <app-src-card v-if="folder2" :sources="bookmarks.slice(2,10)"></app-src-card>
           </v-flex>
         </div>
       </v-flex>
@@ -87,6 +87,8 @@
 export default {
   data () {
     return {
+      folder1: true,
+      folder2: true,
       navs: [
         { name: 'Folder 1', href: '#folder1', offset: -33, icon: 'folder' },
         { name: 'Folder 2', href: '#folder2', offset: -33, icon: 'folder' },
