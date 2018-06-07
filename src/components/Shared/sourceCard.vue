@@ -19,12 +19,12 @@
           </v-btn>
           <v-btn icon flat light class="mx-auto">
             <vue-star style="z-index:0" color="#222222" animate="rubberBand">
-              <div slot="icon" style="user-select:none;cursor:pointer;" @click="addBookmark(source)"><v-icon :class="{ 'success--text' : source.todo, 'title--text ' : !source.todo }" large>{{ source.todo ? 'close' : 'playlist_add' }}</v-icon></div>
+              <div slot="icon" style="user-select:none;cursor:pointer;" @click="addBookmark(source)"><v-icon :class="{ 'warning--text' : source.todo, 'title--text ' : !source.todo }" large>{{ source.todo ? 'star' : 'star_outline' }}</v-icon></div>
             </vue-star>
           </v-btn>
-          <v-btn v-clipboard:copy="source.link" icon flat light class="mx-auto pl-4">
+          <v-btn v-clipboard:copy="source.link" icon flat light class="mx-auto pr-2">
             <vue-star style="z-index:0" color="#222222" animate="rubberBand">
-              <div slot="icon" style="user-select:none;cursor:pointer;" @click.once="source.shared = !source.shared"><v-icon :class="{ 'info--text' : source.shared, 'title--text' : !source.shared }" large>shared</v-icon></div>
+              <div slot="icon" style="user-select:none;cursor:pointer;" @click.once="source.shared = !source.shared"><v-icon :class="{ 'accent--text' : source.shared, 'title--text' : !source.shared }" large>share</v-icon></div>
             </vue-star>
           </v-btn>
         </v-layout>

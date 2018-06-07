@@ -131,7 +131,7 @@ h1+p, p+p {
 .card {
   width: 100%;
   height: 100%;
-  background-color: #333;
+  background-color: #444;
   overflow: hidden;
   border-radius: inherit;
   box-shadow:rgba(#111, 0.55) 0 30px 60px 0;
@@ -172,6 +172,6 @@ h1+p, p+p {
 }
 
 .card-info h1 {
-  text-shadow: rgba(black, 0.5) 0 0px 1em;
+  text-shadow: #111 0 5px 1em;
 }
 </style>

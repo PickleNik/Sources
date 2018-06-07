@@ -654,7 +654,8 @@ export default {
         leafs: [
           { name: 'Atom', logo: 'https://raw.githubusercontent.com/stvhwrd/icons/master/atom/Atom-no_shadows-512.png', href: 'https://atom.io/' },
           { name: 'Brackets', href: 'http://brackets.io/', logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Brackets_Icon.svg/2000px-Brackets_Icon.svg.png' },
-          { name: 'Sublime Text', href: 'https://www.sublimetext.com/', logo: 'https://icon-icons.com/icons2/1381/PNG/512/sublimetext_94866.png' }
+          { name: 'Sublime Text', href: 'https://www.sublimetext.com/', logo: 'https://icon-icons.com/icons2/1381/PNG/512/sublimetext_94866.png' },
+          { name: 'VSCode', href: 'https://code.visualstudio.com/', logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Visual_Studio_Code_1.17_icon.svg/2000px-Visual_Studio_Code_1.17_icon.svg.png' }
         ]
       },
       { name: 'Frontend',
@@ -1349,6 +1350,7 @@ export default {
           { name: 'jsFiddle', href: 'https://jsfiddle.net/', logo: 'https://cdn.iconscout.com/public/images/icon/free/png-512/jsfiddle-logo-cloud-38db5faa6163991e-512x512.png' },
           { name: 'jsBin', href: 'https://jsbin.com/', logo: 'https://static.jsbin.com/images/logo.png' },
           { name: 'Heroku', href: 'https://www.heroku.com/', logo: 'https://agileleague.com/wp-content/uploads/2012/09/heroku-logo-light3.png' },
+          { name: 'Atlassian', href: 'https://www.atlassian.com/', logo: 'https://wac-cdn.atlassian.com/dam/jcr:89e146b4-642e-41fc-8e65-7848337d7bdd/atlassian_charlie_square.png' },
           { name: 'Sketch', href: 'https://www.sketchapp.com/', logo: 'https://www.sketchapp.com/images/press/sketch-press-kit/app-icons/sketch-mac-icon@2x.png' },
           { name: 'Stripe', href: 'https://stripe.com', logo: 'https://stripe.com/img/v3/home/twitter.png' },
           { name: 'Termly', href: 'https://termly.io', logo: 'https://termly.io/wp-content/themes/genesis-tly-v2/build/images/favicon-192.png' },

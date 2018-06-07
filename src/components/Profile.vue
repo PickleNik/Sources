@@ -17,54 +17,46 @@
     <v-container fluid>
 
       <v-flex id="folder1" xs12 sm12 md8 offset-md2 lg8 offset-lg2 class="zoom mt-4">
-        <v-layout row class="hidden-xs-only">
-          <v-flex xs4 class="roundXL secondary" style="border-bottom-left-radius: 0;border-bottom-right-radius: 0;">
-            <v-layout row>
-              <h2 slot="activator" class="link link--yaku title--text pt-3 pl-3">
-                <v-btn class="ma-0 error primary--text mr-2" icon><v-icon>delete</v-icon></v-btn>
-                <v-btn @click="folder1 = !folder1" class="ma-0 warning primary--text mr-2" icon><v-icon>remove</v-icon></v-btn>
-                <v-btn class="ma-0 accent primary--text mr-2" icon><v-icon>edit</v-icon></v-btn>
-                <span class="hidden-md-and-down" v-for="letter in 'Folder-1'.split('')">{{ letter }}</span>
-              </h2>
-            </v-layout>
+        <v-layout row>
+          <v-flex xs8 sm4 md4 lg3 xl2 class="pt-2 text-xs-center roundXL secondary" style="border-bottom-left-radius: 0;border-bottom-right-radius: 0;">
+                <v-btn small class="hidden-sm-and-up ma-0 error primary--text mr-2" icon><v-icon>delete</v-icon></v-btn>
+                <v-btn small @click="folder1 = !folder1" class="hidden-sm-and-up ma-0 warning primary--text mr-2" icon><v-icon>{{ folder1 ? 'remove' : 'crop_square' }}</v-icon></v-btn>
+                <v-btn small @click="edit = !edit" class="hidden-sm-and-up ma-0 accent primary--text mr-2" icon><v-icon>{{ edit ? 'check' : 'edit' }}</v-icon></v-btn>
+                <v-btn class="hidden-xs-only ma-0 error primary--text mr-2" icon><v-icon>delete</v-icon></v-btn>
+                <v-btn @click="folder1 = !folder1" class="hidden-xs-only ma-0 warning primary--text mr-2" icon><v-icon>{{ folder1 ? 'remove' : 'crop_square' }}</v-icon></v-btn>
+                <v-btn @click="edit = !edit" class="hidden-xs-only ma-0 accent primary--text mr-2" icon><v-icon>{{ edit ? 'check' : 'edit' }}</v-icon></v-btn>
           </v-flex>
-          <v-flex >
+          <v-flex>
             <div class="t t1"></div>
           </v-flex>
         </v-layout>
-        <div class="pa-3 mb-3 roundXXL secondary" style="border-top-left-radius:0;">
+        <div class="mb-3 pb-3 roundXXL secondary text-xs-center" style="border-top-left-radius:0;">
+          <v-flex xs8 class="mx-auto pt-4 pb-4">
+            <h1 v-if="!edit" v-scroll-to="{el:'#folder1', offset: -22}"  class="link link--yaku title--text">
+              <span v-for="letter in foldername.split('')">{{ letter }}</span>
+            </h1>
+            <v-text-field dark
+            v-if="edit"
+            name="Folder Name"
+            label="Folder Name"
+            prepend-icon="folder"
+            v-model="foldername"
+            class="text--text"
+            color="accent"
+            counter="10"
+            clearable>>
+            </v-text-field>
+          </v-flex>
           <v-flex style="animation-delay:.2s;transition-duration: 2s;transition-property:height;" class="text-xs-center">
             <app-src-card v-if="folder1" :sources="bookmarks"></app-src-card>
           </v-flex>
         </div>
       </v-flex>
 
-      <v-flex id="folder2" xs12 sm12 md8 offset-md2 lg8 offset-lg2 class="zoom mt-4">
-        <v-layout row class="hidden-xs-only">
-          <v-flex xs4 class="roundXL secondary" style="border-bottom-left-radius: 0;border-bottom-right-radius: 0;">
-            <v-layout row>
-              <h2 slot="activator" class="link link--yaku title--text pt-3 pl-3">
-                <v-btn class="ma-0 error primary--text mr-2" icon><v-icon>delete</v-icon></v-btn>
-                <v-btn @click="folder2 = !folder2" class="ma-0 warning primary--text mr-2" icon><v-icon>remove</v-icon></v-btn>
-                <v-btn class="ma-0 accent primary--text mr-2" icon><v-icon>edit</v-icon></v-btn>
-                <span class="hidden-md-and-down" v-for="letter in 'Folder-2'.split('')">{{ letter }}</span>
-              </h2>
-            </v-layout>
-          </v-flex>
-          <v-flex >
-            <div class="t t1"></div>
-          </v-flex>
-        </v-layout>
-        <div class="pa-3 mb-3 roundXXL secondary" style="border-top-left-radius:0;">
-          <v-flex style="animation-delay:.2s;" class="text-xs-center">
-            <app-src-card v-if="folder2" :sources="bookmarks.slice(2,10)"></app-src-card>
-          </v-flex>
-        </div>
-      </v-flex>
-
       <v-flex id="add" xs12 sm12 md8 offset-md2 lg8 offset-lg2 class="zoom mt-4">
           <v-layout row style="animation-delay:.2s;" class="pa-3 mb-3 roundXXL secondary text-align-right">
-            <v-text-field dark
+            <v-text-field light
+            autofocus
             name="Folder Name"
             label="Folder Name"
             prepend-icon="folder"
@@ -88,11 +80,12 @@ export default {
   data () {
     return {
       folder1: true,
-      folder2: true,
+      foldername: 'Folder-1',
+      edit: false,
       navs: [
-        { name: 'Folder 1', href: '#folder1', offset: -33, icon: 'folder' },
-        { name: 'Folder 2', href: '#folder2', offset: -33, icon: 'folder' },
-        { name: 'Add folder', href: '#add', offset: -33, icon: 'create_new_folder' }
+        { name: 'Folder 1', href: '#folder1', offset: -20, icon: 'folder' },
+        { name: 'Folder 2', href: '#folder2', offset: -20, icon: 'folder' },
+        { name: 'Add folder', href: '#add', offset: -20, icon: 'create_new_folder' }
       ]
     }
   },
@@ -120,7 +113,7 @@ export default {
   border-radius: 4em;
 }
 .t1 {
-  margin-left: -5.6em;
+  margin-left: -5.4em;
   margin-bottom: -5.3em;
   transform: rotateZ(45deg);
   border-bottom: 0;
