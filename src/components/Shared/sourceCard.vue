@@ -17,7 +17,7 @@
               <div slot="icon" style="user-select:none;cursor:pointer;" @click="source.starred = !source.starred"><v-icon :class="{ 'error--text' : source.starred, 'title--text' : !source.starred }" large>{{ source.starred ? 'favorite' : 'favorite_border' }}</v-icon></div>
             </vue-star>
           </v-btn>
-          <v-btn icon flat light class="mx-auto">
+          <v-btn icon flat light class="mx-auto" :loading="loading" :disabled="loading">
             <vue-star style="z-index:0" color="#222222" animate="rubberBand">
               <div slot="icon" style="user-select:none;cursor:pointer;" @click="addBookmark(source)"><v-icon :class="{ 'warning--text' : source.todo, 'title--text ' : !source.todo }" large>{{ source.todo ? 'star' : 'star_outline' }}</v-icon></div>
             </vue-star>
@@ -43,6 +43,9 @@
     computed: {
       user () {
         return this.$store.getters.user
+      },
+      loading () {
+        return this.$store.getters.loading
       }
     },
     methods: {

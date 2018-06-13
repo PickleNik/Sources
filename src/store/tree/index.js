@@ -558,9 +558,13 @@ export default {
             ]
           },
           {
-            name: 'GitHub',
-            to: 'github',
-            logo: 'https://assets-cdn.github.com/images/modules/logos_page/Octocat.png',
+            name: 'Git',
+            to: 'git',
+            logo: 'https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png',
+            wiki: 'https://en.wikipedia.org/wiki/Git',
+            req: [
+              { name: 'ClI', color: 'grey lighten-2', to: 'leaf-command_line', icon: 'terminal' }
+            ],
             sources: [
               { name: 'Documentation',
                 todo: false,
@@ -577,7 +581,14 @@ export default {
                 link: 'https://www.youtube.com/playlist?list=PL4cUxeGkcC9goXbgTDQ0n_4TBzOO0ocPR;',
                 logo: 'https://yt3.ggpht.com/a-/AJLlDp2oM9rg7DFu7iit71Ndh0yNIEL7F_j0VCRWuQ=s900-mo-c-c0xffffffff-rj-k-no',
                 icon: 'important_devices'
-              }
+              },
+              { name: 'Academind',
+                todo: false,
+                starred: false,
+                shared: false,
+                link: 'https://www.youtube.com/playlist?list=PL55RiY5tL51poFMpbva1IqfO-pylwSNsN',
+                logo: 'https://yt3.ggpht.com/a-/AJLlDp2SxGyOXg1EdT5FzOlL3VyDzSUN-567RzdUZg=s900-mo-c-c0xffffffff-rj-k-no',
+                icon: 'video_library' }
             ]
           },
           {
@@ -1384,7 +1395,8 @@ export default {
           { name: 'HubSpot', href: 'https://www.hubspot.com/', logo: 'https://foxtailmarketing.com/wp-content/uploads/2015/05/hubspot-sprocket-logo.png' },
           { name: 'Alligator', href: 'https://alligator.io', logo: 'https://d33wubrfki0l68.cloudfront.net/4e5626a0b7db6b84c0b51f1c0cfd56490fc19b74/7a5ad/images/logo-fancy.svg' },
           { name: 'SitePoint', href: 'https://sitepoint.com', logo: 'http://www.stickpng.com/assets/images/58482e76cef1014c0b5e4a6c.png' },
-          { name: 'Coursetro', href: 'https://coursetro.com', logo: 'https://coursetro.com/images/logo-new.svg' }
+          { name: 'Coursetro', href: 'https://coursetro.com', logo: 'https://coursetro.com/images/logo-new.svg' },
+          { name: 'Symphosis', href: 'https://symphosis.com', logo: 'https://i.imgur.com/UAy9Yik.png' }
         ]
       }
     ]
