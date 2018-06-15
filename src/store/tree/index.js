@@ -1365,6 +1365,7 @@ export default {
           { name: 'Sketch', href: 'https://www.sketchapp.com/', logo: 'https://www.sketchapp.com/images/press/sketch-press-kit/app-icons/sketch-mac-icon@2x.png' },
           { name: 'Stripe', href: 'https://stripe.com', logo: 'https://stripe.com/img/v3/home/twitter.png' },
           { name: 'Termly', href: 'https://termly.io', logo: 'https://termly.io/wp-content/themes/genesis-tly-v2/build/images/favicon-192.png' },
+          { name: 'Flowmagic', href: 'https://flowmagic.co/', logo: 'https://pbs.twimg.com/profile_images/986372073638518785/DyqqojkX_400x400.jpg' },
           { name: 'Copyrighted', href: 'https://www.copyrighted.com/', logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Red_copyright.svg/768px-Red_copyright.svg.png' },
           { name: 'Loaders.css', href: 'https://connoratherton.com/loaders', logo: 'https://i.pinimg.com/originals/da/96/c9/da96c94b507e4c508dd6e901455cfe68.jpg' },
           { name: 'Particles.js', href: 'https://vincentgarreau.com/particles.js/', logo: 'https://i.pinimg.com/originals/84/30/d2/8430d2bfcdfe8d00a9eaacb62fb272df.png' },
