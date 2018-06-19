@@ -125,15 +125,15 @@ export default {
           logo: 'https://images-na.ssl-images-amazon.com/images/I/61QutevBNiL.png'
         },
         {
-          name: 'Code School',
+          name: 'Progate',
           id: 'apps',
-          icons: ['developer_mode', 'video_library'],
-          title: 'The interactive learning destination for aspiring and experienced developers.',
+          icons: ['developer_mode', 'attach_money'],
+          title: 'Learn to code, learn to be creative.',
           liked: false,
           shared: false,
           todo: false,
-          link: 'https://www.codeschool.com/',
-          logo: 'https://www.codeschool.com/assets/pages/brand/downloads/brand-mark-47100518b9ef3c7d41cb081576451d74f8ce24b4cc6f7948cb6913f84da3072d.png'
+          link: 'https://progate.com',
+          logo: 'https://s3-ap-northeast-1.amazonaws.com/progate/shared/images/about/default.jpg'
         },
         {
           name: 'Code Hub',

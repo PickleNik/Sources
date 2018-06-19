@@ -503,6 +503,9 @@ export default {
             to: 'command_line',
             logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Icons8_flat_command_line.svg/2000px-Icons8_flat_command_line.svg.png',
             wiki: 'https://en.wikipedia.org/wiki/Command-line_interface',
+            next: [
+              { name: 'Git', color: 'orange', to: 'leaf-git', icon: 'code-branch' }
+            ],
             sources: [
               { name: 'Wikipedia',
                 todo: false,
@@ -560,18 +563,23 @@ export default {
           {
             name: 'Git',
             to: 'git',
+            title: 'Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency.',
             logo: 'https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png',
             wiki: 'https://en.wikipedia.org/wiki/Git',
             req: [
               { name: 'ClI', color: 'grey lighten-2', to: 'leaf-command_line', icon: 'terminal' }
+            ],
+            next: [
+              { name: 'GitHub', color: 'text', href: 'https://github.com/', icon: 'brands/github' },
+              { name: 'BitBucket', color: 'blue', href: 'https://bitbucket.org', icon: 'brands/bitbucket' }
             ],
             sources: [
               { name: 'Documentation',
                 todo: false,
                 starred: false,
                 shared: false,
-                link: 'https://guides.github.com/',
-                logo: 'https://image.flaticon.com/icons/svg/25/25231.svg',
+                link: 'https://git-scm.com/doc',
+                logo: 'https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png',
                 icon: 'important_devices'
               },
               { name: 'The Net Ninja',
