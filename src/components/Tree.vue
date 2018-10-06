@@ -69,6 +69,7 @@ export default {
         { name: 'Testing', href: '#testing', offset: -33, icon: 'bug_report' },
         { name: 'Graphics', href: '#graphics', offset: -33, icon: 'format_paint' },
         { name: 'SSR', href: '#ssr', offset: -33, icon: 'access_time' },
+        { name: 'SEO', href: '#seo', offset: -33, icon: 'search' },
         { name: 'Apps', href: '#apps', offset: -33, icon: 'developer_mode' },
         { name: 'Tools', href: '#tools', offset: -33, icon: 'build' },
         { name: 'Communities', href: '#communities', offset: -33, icon: 'group' }

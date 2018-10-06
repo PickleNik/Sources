@@ -663,12 +663,11 @@ export default {
                 logo: 'https://www.shareicon.net/data/2016/07/10/119686_keyboard_512x512.png'
               }
             ]
-          },
-          { name: 'NPM', href: 'https://www.npmjs.com/', logo: 'https://d2eip9sf3oo6c2.cloudfront.net/tags/images/000/000/188/full/npmlogo.png' }
+          }
         ]
       },
-      { name: 'Text-Editors',
-        description: '',
+      { name: 'IDE',
+        description: 'Integrated development environment',
         id: 'editors',
         leafs: [
           { name: 'Atom', logo: 'https://raw.githubusercontent.com/stvhwrd/icons/master/atom/Atom-no_shadows-512.png', href: 'https://atom.io/' },
@@ -844,6 +843,26 @@ export default {
             sources: ['']
           },
           {
+            name: 'Tailwind CSS',
+            logo: 'https://tailwindcss.com/img/tailwind-square.png',
+            to: 'tailwind',
+            badge: 'brands/css3-alt',
+            badgecolor: 'blue--text',
+            title: 'A Utility-First CSS Framework for Rapid UI Development',
+            whatIsVideo: '',
+            sources: [
+              {
+                name: 'Documentation',
+                todo: false,
+                starred: false,
+                shared: false,
+                link: 'https://tailwindcss.com/',
+                logo: 'https://tailwindcss.com/img/tailwind-square.png',
+                icon: 'important_devices'
+              }
+            ]
+          },
+          {
             name: 'Babel',
             logo: 'https://cdn-images-1.medium.com/max/800/1*58R0tzuzVXd_7k89Igm9jA.png',
             to: 'babel',
@@ -953,6 +972,26 @@ export default {
             title: 'LiveScript is a language which compiles to JavaScript.',
             whatIsVideo: '',
             sources: ['']
+          },
+          {
+            name: 'Dart',
+            logo: 'https://cdn-images-1.medium.com/max/1200/1*pnXLk7ddXxZWySDc7s3LOA.png',
+            to: 'dartlang',
+            badge: 'brands/angular',
+            badgecolor: 'pink--text',
+            title: 'Developers at Google and elsewhere use Dart to create high-quality, mission-critical apps for iOS, Android, and the web. With features aimed at client-side development, Dart is a great fit for both mobile and web apps.',
+            whatIsVideo: 'https://www.youtube.com/watch?v=5KlnlCq2M5Q',
+            sources: [
+              {
+                name: 'Documentation',
+                todo: false,
+                starred: false,
+                shared: false,
+                link: 'https://webdev.dartlang.org/',
+                logo: 'https://cdn-images-1.medium.com/max/1200/1*pnXLk7ddXxZWySDc7s3LOA.png',
+                icon: 'important_devices'
+              }
+            ]
           }
         ]
       },
@@ -965,6 +1004,7 @@ export default {
             title: 'Node.js - javascript for the server side',
             logo: 'http://blog.iampuneet.in/wp-content/uploads/2017/06/nodejs_logo.png',
             whatIsVideo: 'https://www.youtube.com/embed/lNiGH21gMiw?list=PL55RiY5tL51qXR-9ypW3HyzyWKpuuglKg',
+            wiki: 'https://en.wikipedia.org/wiki/Node.js',
             req: [
               { name: 'HTML', color: 'orange', to: 'leaf-html', icon: 'brands/html5' },
               { name: 'CSS', color: 'blue', to: 'leaf-css', icon: 'brands/css3-alt' },
@@ -983,6 +1023,41 @@ export default {
                 link: 'https://www.w3schools.com/nodejs/',
                 logo: 'https://store-images.s-microsoft.com/image/apps.30495.13510798887792718.c58f517f-a070-448d-9f42-44c93b19dcae.05c3b4ed-79d8-4d84-be6d-7d3290f1533e?w=180&h=180&q=60',
                 icon: 'library_books'
+              },
+              {
+                name: 'Academind',
+                todo: false,
+                starred: false,
+                shared: false,
+                link: 'https://www.youtube.com/playlist?list=PL55RiY5tL51oGJorjEgl6NVeDbx_fO5jR',
+                logo: 'https://yt3.ggpht.com/a-/AJLlDp2SxGyOXg1EdT5FzOlL3VyDzSUN-567RzdUZg=s900-mo-c-c0xffffffff-rj-k-no',
+                icon: 'video_library'
+              },
+              { name: 'The Net Ninja',
+                todo: false,
+                starred: false,
+                shared: false,
+                link: 'https://www.youtube.com/playlist?list=PL4cUxeGkcC9gcy9lrvMJ75z9maRw4byYp',
+                logo: 'https://yt3.ggpht.com/a-/AJLlDp2oM9rg7DFu7iit71Ndh0yNIEL7F_j0VCRWuQ=s900-mo-c-c0xffffffff-rj-k-no',
+                icon: 'important_devices'
+              },
+              { name: 'Plurasight',
+                todo: false,
+                starred: false,
+                shared: false,
+                link: 'https://www.pluralsight.com/paths/node-js',
+                logo: 'https://images-na.ssl-images-amazon.com/images/I/51-Hci2bYjL.png',
+                icon: 'attach_money' }
+            ],
+            addition: [
+              {
+                name: 'Academind',
+                todo: false,
+                starred: false,
+                shared: false,
+                link: 'https://www.youtube.com/playlist?list=PL55RiY5tL51q4D-B63KBnygU6opNPFk_q',
+                logo: 'https://yt3.ggpht.com/a-/AJLlDp2SxGyOXg1EdT5FzOlL3VyDzSUN-567RzdUZg=s900-mo-c-c0xffffffff-rj-k-no',
+                icon: 'video_library'
               }
             ]
           },
@@ -1334,25 +1409,35 @@ export default {
           }
         ]
       },
+      {
+        name: 'SEO',
+        description: 'Search Engine Optimization',
+        id: 'seo',
+        leafs: [
+        ]
+      },
       { name: 'Apps',
         description: 'Build cross-platform native apps using web development skill',
         id: 'apps',
         leafs: [
-          { name: 'Flutter', href: 'https://flutter.io/', logo: 'https://cdn-images-1.medium.com/max/1200/1*5-aoK8IBmXve5whBQM90GA.png' },
+          { name: 'Cordova', href: 'https://cordova.apache.org/', logo: 'https://cordova.apache.org/static/img/cordova_bot.png' },
           { name: 'Ionic', href: 'https://ionicframework.com/', logo: 'https://lh3.googleusercontent.com/s4KD6rLbGKZz-q9YzfVt_FgSk_q2yt-Jp6Al-KY14hAaVW2IFX_QOj56iC8lJoamECs=w300' },
-          { name: 'Electron', href: 'https://electronjs.org/', logo: 'https://pbs.twimg.com/profile_images/730268134460903424/8WOgriUU_400x400.jpg' },
           { name: 'NativeScript', href: 'https://www.nativescript.org/', logo: 'https://d2odgkulk9w7if.cloudfront.net/images/default-source/default-album/nativescript.png?sfvrsn=69909fe_0' },
+          { name: 'Flutter', href: 'https://flutter.io/', logo: 'https://cdn-images-1.medium.com/max/1200/1*5-aoK8IBmXve5whBQM90GA.png' },
           { name: 'NS-Vue', href: 'https://nativescript-vue.org/', logo: 'https://avatars1.githubusercontent.com/u/32681046?s=280&v=4', badge: 'brands/vuejs', badgecolor: 'teal--text' },
           { name: 'React Native', href: 'https://facebook.github.io/react-native/', logo: 'https://cdn-images-1.medium.com/max/1600/1*XXF26vmDRr6vRY84d1BCKA.png', badge: 'brands/react', badgecolor: 'light-blue--text' },
-          { name: 'Fuse', href: 'https://www.fusetools.com/', logo: 'https://avatars1.githubusercontent.com/u/10243317?s=280&v=4' },
+          { name: 'Vue Native', href: 'https://vue-native.io/', logo: 'https://vue-native.io/images/logo.png', badge: 'brands/vuejs', badgecolor: 'teal--text' },
+          { name: 'Electron', href: 'https://electronjs.org/', logo: 'https://pbs.twimg.com/profile_images/730268134460903424/8WOgriUU_400x400.jpg' },
+          { name: 'Expo', href: 'https://expo.io/', logo: 'https://cdn.cybrhome.com/media/website/live/favicon/fav_expo.io_9c492c.ico' },
+          { name: 'Native Base', href: 'https://nativebase.io/', logo: 'https://nativebase.io/assets/img/front-page-icon.png' },
           { name: 'Onsen UI', href: 'https://onsen.io/', logo: 'https://s3.amazonaws.com/media-p.slid.es/uploads/344767/images/2769652/g7.png' },
-          { name: 'Framework7', href: 'https://framework7.io/', logo: 'https://discoversdkcdn.azureedge.net/runtimecontent/companyfiles/6680/2706/thumbnail.png?v131157447489100864' },
           { name: 'Appcelerator', href: 'https://www.appcelerator.com/', logo: 'https://pbs.twimg.com/profile_images/865600112868769794/TECPQ7Rb_400x400.jpg' },
+          { name: 'Framework7', href: 'https://framework7.io/', logo: 'https://discoversdkcdn.azureedge.net/runtimecontent/companyfiles/6680/2706/thumbnail.png?v131157447489100864' },
           { name: 'Weex', href: 'https://weex.incubator.apache.org/', logo: 'https://cdn-images-1.medium.com/max/358/1*JGQP6WjsRwiiLTNPiCAH5A.png' },
           { name: 'Quasar', href: 'https://quasar-framework.org/', logo: 'https://avatars3.githubusercontent.com/u/23064371?v=4' },
+          { name: 'Fuse', href: 'https://www.fusetools.com/', logo: 'https://avatars1.githubusercontent.com/u/10243317?s=280&v=4' },
           { name: 'Cocoon', href: 'https://cocoon.io/', logo: 'https://pbs.twimg.com/profile_images/590908349471916033/GGl0hWfy_400x400.png' },
           { name: 'Monaca', href: 'https://monaca.io', logo: 'https://img.crx4chrome.com/4e/79/df/igimoohpkianbofjknpbnfehmkecbegl-logo.png' },
-          { name: 'Cordova', href: 'https://cordova.apache.org/', logo: 'https://cordova.apache.org/static/img/cordova_bot.png' },
           { name: 'RubyMotion', href: 'http://www.rubymotion.com/', logo: 'http://www.rubymotion.com/img/rubymotion-logo.png' },
           { name: 'PhoneGap', href: 'https://phonegap.com/', logo: 'https://cdn.worldvectorlogo.com/logos/phonegap.svg' }
         ]
@@ -1361,6 +1446,9 @@ export default {
         description: 'Definitely check theese out',
         id: 'tools',
         leafs: [
+          { name: 'NPM', href: 'https://www.npmjs.com/', logo: 'https://d2eip9sf3oo6c2.cloudfront.net/tags/images/000/000/188/full/npmlogo.png' },
+          { name: 'Yarn', href: 'https://yarnpkg.com/en/', logo: 'https://avatars3.githubusercontent.com/u/22247014?s=400&v=4' },
+          { name: 'Bit', href: 'https://bitsrc.io/', logo: 'https://storage.googleapis.com/bit-docs/bit-logo%402x.png' },
           { name: 'Firebase', to: 'firease', logo: 'https://firebase.google.com/_static/images/firebase/touchicon-180.png' },
           { name: 'Stenciljs', href: 'https://stenciljs.com/', logo: 'https://pbs.twimg.com/profile_images/895677818998185985/mWrrADXf_400x400.jpg' },
           { name: 'Material Design', href: 'https://material.io/', logo: 'https://cdn.dribbble.com/users/75794/screenshots/3051672/mb_social_1.gif' },
@@ -1373,6 +1461,7 @@ export default {
           { name: 'Sketch', href: 'https://www.sketchapp.com/', logo: 'https://www.sketchapp.com/images/press/sketch-press-kit/app-icons/sketch-mac-icon@2x.png' },
           { name: 'Stripe', href: 'https://stripe.com', logo: 'https://stripe.com/img/v3/home/twitter.png' },
           { name: 'Termly', href: 'https://termly.io', logo: 'https://termly.io/wp-content/themes/genesis-tly-v2/build/images/favicon-192.png' },
+          { name: 'Javascripting', href: 'https://www.javascripting.com/', logo: 'https://pbs.twimg.com/profile_images/510427637898944512/b9F9dBfQ_400x400.png' },
           { name: 'Flowmagic', href: 'https://flowmagic.co/', logo: 'https://pbs.twimg.com/profile_images/986372073638518785/DyqqojkX_400x400.jpg' },
           { name: 'Copyrighted', href: 'https://www.copyrighted.com/', logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Red_copyright.svg/768px-Red_copyright.svg.png' },
           { name: 'Loaders.css', href: 'https://connoratherton.com/loaders', logo: 'https://i.pinimg.com/originals/da/96/c9/da96c94b507e4c508dd6e901455cfe68.jpg' },
